@@ -1,0 +1,1560 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  1 APR 2024 16:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**tatka_dissertation.tex
+(./tatka_dissertation.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen135
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen136
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count176
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count177
+\leftroot@=\count178
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count179
+\DOTSCASE@=\count180
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen137
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count181
+\c@MaxMatrixCols=\count182
+\dotsspace@=\muskip16
+\c@parentequation=\count183
+\dspbrk@lvl=\count184
+\tag@help=\toks17
+\row@=\count185
+\column@=\count186
+\maxfields@=\count187
+\andhelp@=\toks18
+\eqnshift@=\dimen138
+\alignsep@=\dimen139
+\tagshift@=\dimen140
+\tagwidth@=\dimen141
+\totwidth@=\dimen142
+\lineht@=\dimen143
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@tempdima=\dimen147
+\caption@indent=\dimen148
+\caption@parindent=\dimen149
+\caption@hangindent=\dimen150
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count188
+\c@continuedfloat=\count189
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count190
+\Hy@pagecounter=\count191
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count192
+\pdfmajorversion=\count193
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count194
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen154
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count195
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count196
+\c@Item=\count197
+\c@Hfootnote=\count198
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count199
+\c@bookmark@seq@number=\count266
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip53
+\multirow@cntb=\count267
+\multirow@dima=\skip54
+\bigstrutjot=\dimen157
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blkarray/blkarray.sty
+Package: blkarray 2015/02/27 v0.07 Block array (dpc)
+\c@BAenumi=\count268
+\BA@col=\count269
+\BA@block@cnt=\count270
+\BA@final@box=\box47
+\BA@first@box=\box48
+\BA@colsep=\dimen158
+\BA@ftn=\toks22
+\BAextrarowheight=\dimen159
+\BAextraheightafterhline=\dimen160
+\BAarrayrulewidth=\dimen161
+\BAdoublerulesep=\dimen162
+\BAfootskip=\dimen163
+\BA@dashbox=\box49
+\BA@ddashbox=\box50
+)
+(/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count271
+\cp@tempcnt=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count273
+\l__pdf_internal_box=\box51
+)
+No file tatka_dissertation.aux.
+\openout1 = `tatka_dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count274
+\scratchdimen=\dimen164
+\scratchbox=\box52
+\nofMPsegments=\count275
+\nofMParguments=\count276
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count277
+\MPscratchDim=\dimen165
+\MPnumerator=\count278
+\makeMPintoPDFobject=\count279
+\everyMPtoPDFconversion=\toks24
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 36.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count280
+)
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
+\@outlinefile=\write3
+\openout3 = `tatka_dissertation.out'.
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1]
+\tf@toc=\write4
+\openout4 = `tatka_dissertation.toc'.
+
+ [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 85--103
+
+ []
+
+[3
+
+]
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 109
+.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 109
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.126 \end{equation}
+                     [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--145
+
+ []
+
+
+LaTeX Warning: Citation `Gnanvi2021' on page 2 undefined on input line 147.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+[3] [4]
+Chapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 170.
+
+
+LaTeX Warning: Citation `deckard2009' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Citation `pantea2010' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Citation `nobile2013' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Citation `donnell2014' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Citation `deckard2009' on page 5 undefined on input line 172.
+
+
+LaTeX Warning: Citation `Novak2008' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Aulehla2008' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `GevaZatorsky2006' on page 5 undefined on input line 17
+4.
+
+
+LaTeX Warning: Citation `Pol1928' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Lotka1910' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Higgins1967' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Novak2008' on page 5 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Paladugu2006' on page 5 undefined on input line 174.
+
+[5
+
+]
+
+LaTeX Warning: Citation `Smith2009' on page 6 undefined on input line 176.
+
+
+LaTeX Warning: Reference `fig:reaction' on page 6 undefined on input line 189.
+
+
+LaTeX Warning: File `images/Reactions.png' not found on input line 194.
+
+
+! Package pdftex.def Error: File `images/Reactions.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 ...graphics[width=7cm]{images/Reactions.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (50.58968pt too wide) in paragraph at lines 189--199
+\OT1/cmr/m/n/12 Oscillating mod-els were gen-er-ated us-ing evo-lu-tion scripts
+ writ-ten in python, avail-able at https://github.com/sys-
+ []
+
+[6]
+
+LaTeX Warning: Citation `Smith2009' on page 7 undefined on input line 206.
+
+
+LaTeX Warning: Reference `fig:fitness' on page 7 undefined on input line 210.
+
+
+LaTeX Warning: Citation `Paladugu2006' on page 7 undefined on input line 210.
+
+[7]
+
+LaTeX Warning: File `images/fitness.png' not found on input line 214.
+
+
+! Package pdftex.def Error: File `images/fitness.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 ...egraphics[width=10cm]{images/fitness.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `Somogyi2015' on page 8 undefined on input line 220.
+
+
+LaTeX Warning: Citation `hindmarsh2005sundials' on page 8 undefined on input li
+ne 220.
+
+[8]
+
+LaTeX Warning: Citation `Miller1995' on page 9 undefined on input line 223.
+
+
+LaTeX Warning: Reference `fig:reaction' on page 9 undefined on input line 228.
+
+
+LaTeX Warning: Citation `SauroteUtils_2020' on page 9 undefined on input line 2
+31.
+
+
+LaTeX Warning: File `images/algorithm.png' not found on input line 233.
+
+
+! Package pdftex.def Error: File `images/algorithm.png' not found: using draft 
+setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.233 ...raphics[width=12cm]{images/algorithm.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[9]
+
+LaTeX Warning: Citation `Katoch2020' on page 10 undefined on input line 240.
+
+[10]
+
+LaTeX Warning: Reference `fig:algorithm' on page 11 undefined on input line 244
+.
+
+[11]
+
+LaTeX Warning: File `images/examples.png' not found on input line 253.
+
+
+! Package pdftex.def Error: File `images/examples.png' not found: using draft s
+etting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.253 ...raphics[width=8.5cm]{images/examples.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 255.
+See the caption package documentation for explanation.
+
+[12]
+
+LaTeX Warning: Reference `fig:website' on page 13 undefined on input line 260.
+
+
+LaTeX Warning: File `images/website.png' not found on input line 274.
+
+
+! Package pdftex.def Error: File `images/website.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 ...degraphics[width=8cm]{images/website.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:model-diagrams' on page 13 undefined on input lin
+e 280.
+
+
+LaTeX Warning: File `images/model-diagrams.png' not found on input line 285.
+
+
+! Package pdftex.def Error: File `images/model-diagrams.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.285 ...ics[width=8cm]{images/model-diagrams.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[13]
+
+LaTeX Warning: Reference `fig:feedback' on page 14 undefined on input line 301.
+
+
+
+LaTeX Warning: File `images/feedback-cycle.png' not found on input line 304.
+
+
+! Package pdftex.def Error: File `images/feedback-cycle.png' not found: using d
+raft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 ...ics[width=5cm]{images/feedback-cycle.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 305.
+See the caption package documentation for explanation.
+
+[14]
+
+LaTeX Warning: Citation `Tyson1975' on page 15 undefined on input line 312.
+
+
+LaTeX Warning: Citation `tyson2007' on page 15 undefined on input line 312.
+
+
+LaTeX Warning: Citation `Tyson2004' on page 15 undefined on input line 312.
+
+
+LaTeX Warning: Citation `Sauro_dynamics' on page 15 undefined on input line 312
+.
+
+[15]
+
+LaTeX Warning: Reference `fig:avg-comp' on page 16 undefined on input line 316.
+
+
+[16]
+
+LaTeX Warning: File `images/composition.png' not found on input line 319.
+
+
+! Package pdftex.def Error: File `images/composition.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 ...aphics[width=8cm]{images/composition.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 320.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:autocatal' on page 17 undefined on input line 324
+.
+
+
+LaTeX Warning: File `images/autocomp.png' not found on input line 327.
+
+
+! Package pdftex.def Error: File `images/autocomp.png' not found: using draft s
+etting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...egraphics[width=8cm]{images/autocomp.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 328.
+See the caption package documentation for explanation.
+
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 344--352
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--352
+
+ []
+
+[19]
+Chapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 355.
+
+
+LaTeX Warning: Citation `Wang2021' on page 20 undefined on input line 360.
+
+
+LaTeX Warning: Citation `Hassell2021' on page 20 undefined on input line 360.
+
+
+LaTeX Warning: Citation `Bartocci2016' on page 20 undefined on input line 360.
+
+
+LaTeX Warning: Citation `FDAguidelines' on page 20 undefined on input line 362.
+
+
+
+LaTeX Warning: Citation `shin_standards_nodate' on page 20 undefined on input l
+ine 362.
+
+
+LaTeX Warning: Citation `BioModels2020' on page 20 undefined on input line 362.
+
+
+
+LaTeX Warning: Citation `tiwari_reproducibility_2021' on page 20 undefined on i
+nput line 362.
+
+[20
+
+]
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 21 undefined on input line 3
+64.
+
+
+LaTeX Warning: Citation `FDAguidelines' on page 21 undefined on input line 364.
+
+
+
+LaTeX Warning: Citation `Shepard2015' on page 21 undefined on input line 364.
+
+
+LaTeX Warning: Citation `Klipp2007StandardsIC' on page 21 undefined on input li
+ne 370.
+
+
+LaTeX Warning: Citation `Klipp2007StandardsIC' on page 21 undefined on input li
+ne 370.
+
+
+LaTeX Warning: Citation `SBGN' on page 21 undefined on input line 372.
+
+
+LaTeX Warning: Citation `SBRML' on page 21 undefined on input line 372.
+
+[21]
+
+LaTeX Warning: Citation `Klipp2007StandardsIC' on page 22 undefined on input li
+ne 375.
+
+
+LaTeX Warning: Citation `machado_modeling_2011' on page 22 undefined on input l
+ine 375.
+
+
+LaTeX Warning: Citation `CellML' on page 22 undefined on input line 375.
+
+
+LaTeX Warning: Citation `demir_biopax_2010' on page 22 undefined on input line 
+375.
+
+
+LaTeX Warning: Citation `Gleeson2010' on page 22 undefined on input line 375.
+
+
+LaTeX Warning: Citation `SBML' on page 22 undefined on input line 379.
+
+
+LaTeX Warning: Citation `Finney2003' on page 22 undefined on input line 379.
+
+
+LaTeX Warning: Citation `Klipp2007StandardsIC' on page 22 undefined on input li
+ne 379.
+
+
+LaTeX Warning: Citation `machado_modeling_2011' on page 22 undefined on input l
+ine 379.
+
+
+LaTeX Warning: Citation `SBML' on page 22 undefined on input line 379.
+
+
+LaTeX Warning: Citation `Kohl2011' on page 22 undefined on input line 379.
+
+
+LaTeX Warning: Citation `Kohl2011' on page 22 undefined on input line 379.
+
+
+LaTeX Warning: Citation `machado_modeling_2011' on page 22 undefined on input l
+ine 379.
+
+
+LaTeX Warning: Citation `Keating2020' on page 22 undefined on input line 381.
+
+
+LaTeX Warning: Citation `Smith2020' on page 22 undefined on input line 381.
+
+
+LaTeX Warning: Citation `Olivier2018' on page 22 undefined on input line 381.
+
+
+LaTeX Warning: Citation `Gauges2015' on page 22 undefined on input line 381.
+
+
+LaTeX Warning: Citation `Keating2020' on page 22 undefined on input line 381.
+
+[22]
+
+LaTeX Warning: Citation `Beard2009' on page 23 undefined on input line 385.
+
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 23 undefined on input line 38
+5.
+
+
+LaTeX Warning: Citation `Mesiti' on page 23 undefined on input line 385.
+
+
+LaTeX Warning: Citation `Caprotti1999' on page 23 undefined on input line 388.
+
+
+LaTeX Warning: Citation `Smith2013' on page 23 undefined on input line 388.
+
+
+LaTeX Warning: Citation `Hucka2015' on page 23 undefined on input line 388.
+
+
+LaTeX Warning: Citation `machado_modeling_2011' on page 23 undefined on input l
+ine 388.
+
+
+LaTeX Warning: Citation `Smith2013' on page 23 undefined on input line 388.
+
+
+LaTeX Warning: Citation `demir_biopax_2010' on page 23 undefined on input line 
+392.
+
+
+LaTeX Warning: Citation `demir_biopax_2010' on page 23 undefined on input line 
+392.
+
+
+LaTeX Warning: Citation `demir_biopax_2010' on page 23 undefined on input line 
+392.
+
+
+LaTeX Warning: Citation `buchel_qualitative_2012' on page 23 undefined on input
+ line 392.
+
+[23]
+
+LaTeX Warning: Citation `demir_biopax_2010' on page 24 undefined on input line 
+394.
+
+
+LaTeX Warning: Citation `buchel_qualitative_2012' on page 24 undefined on input
+ line 394.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 24 undefined on input line 398.
+
+
+LaTeX Warning: Citation `Gennari2021' on page 24 undefined on input line 398.
+
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 24 undefined on input line 39
+8.
+
+
+LaTeX Warning: Citation `Noy2001OntologyD1' on page 24 undefined on input line 
+398.
+
+
+LaTeX Warning: Citation `Gennari2021' on page 24 undefined on input line 400.
+
+
+LaTeX Warning: Citation `Hastings2015' on page 24 undefined on input line 400.
+
+
+LaTeX Warning: Citation `Shin2021' on page 24 undefined on input line 400.
+
+[24]
+
+LaTeX Warning: Citation `novere_minimum_2005' on page 25 undefined on input lin
+e 403.
+
+
+LaTeX Warning: Citation `berners2005uniform' on page 25 undefined on input line
+ 403.
+
+
+LaTeX Warning: Citation `SBO' on page 25 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 25 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 25 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 25 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Hucka2015' on page 25 undefined on input line 406.
+
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 25 undefined on input line 40
+6.
+
+
+LaTeX Warning: Citation `Gennari2021' on page 25 undefined on input line 410.
+
+
+LaTeX Warning: Citation `Decker2000' on page 25 undefined on input line 410.
+
+
+LaTeX Warning: Citation `Hastings2015' on page 25 undefined on input line 410.
+
+
+LaTeX Warning: Citation `Apweiler2004' on page 25 undefined on input line 410.
+
+[25]
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 26 undefined on input line 41
+3.
+
+
+LaTeX Warning: Citation `Beard2009' on page 26 undefined on input line 413.
+
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 26 undefined on input line 41
+3.
+
+
+LaTeX Warning: Citation `Wimalaratne2009' on page 26 undefined on input line 41
+3.
+
+
+LaTeX Warning: Citation `Swainston2009' on page 26 undefined on input line 416.
+
+
+
+LaTeX Warning: Citation `Decker2000' on page 26 undefined on input line 416.
+
+
+LaTeX Warning: Citation `LeNovere2006' on page 26 undefined on input line 416.
+
+
+LaTeX Warning: Citation `Hucka2019' on page 26 undefined on input line 416.
+
+
+LaTeX Warning: Citation `SBO' on page 26 undefined on input line 416.
+
+
+LaTeX Warning: Citation `libSBML' on page 26 undefined on input line 416.
+
+
+LaTeX Warning: Citation `Rodriguez2015' on page 26 undefined on input line 416.
+
+
+[26]
+
+LaTeX Warning: Citation `waltemath_minimum_2011' on page 27 undefined on input 
+line 421.
+
+
+LaTeX Warning: Citation `waltemath_minimum_2011' on page 27 undefined on input 
+line 424.
+
+
+LaTeX Warning: Citation `novere_minimum_2005' on page 27 undefined on input lin
+e 424.
+
+
+LaTeX Warning: Citation `Zhukova2011' on page 27 undefined on input line 427.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 27 undefined on input line 427.
+
+[27]
+
+LaTeX Warning: Citation `bergmann_simulation_2018' on page 28 undefined on inpu
+t line 430.
+
+
+LaTeX Warning: Citation `Smith2021simulation' on page 28 undefined on input lin
+e 430.
+
+
+LaTeX Warning: Citation `waltemath_minimum_2011' on page 28 undefined on input 
+line 430.
+
+
+LaTeX Warning: Citation `Curtout2011' on page 28 undefined on input line 430.
+
+
+LaTeX Warning: Citation `choi_phrased-ml_2016' on page 28 undefined on input li
+ne 430.
+
+
+LaTeX Warning: Citation `Schmiester2021' on page 28 undefined on input line 433
+.
+
+
+LaTeX Warning: Citation `Schmiester2021' on page 28 undefined on input line 433
+.
+
+
+LaTeX Warning: Citation `Smith2021simulation' on page 28 undefined on input lin
+e 433.
+
+
+LaTeX Warning: Citation `porubsky_best_2020' on page 28 undefined on input line
+ 436.
+
+[28]
+
+LaTeX Warning: Citation `novere_minimum_2005' on page 29 undefined on input lin
+e 440.
+
+
+LaTeX Warning: Citation `Wilkinson2016' on page 29 undefined on input line 443.
+
+
+[29]
+
+LaTeX Warning: Citation `schreiber_specifications_2020' on page 30 undefined on
+ input line 449.
+
+
+LaTeX Warning: Citation `bergmann_combine_2014' on page 30 undefined on input l
+ine 449.
+
+
+LaTeX Warning: Citation `erdemir_credible_2020' on page 30 undefined on input l
+ine 455.
+
+
+LaTeX Warning: Reference `fig:10rules' on page 30 undefined on input line 455.
+
+[30]
+
+LaTeX Warning: Citation `erdemir_credible_2020' on page 31 undefined on input l
+ine 457.
+
+
+LaTeX Warning: Citation `erdemir_credible_2020' on page 31 undefined on input l
+ine 460.
+
+
+LaTeX Warning: File `images/10rules.png' not found on input line 467.
+
+
+! Package pdftex.def Error: File `images/10rules.png' not found: using draft se
+tting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.467 ...degraphics[width=6cm]{images/10rules.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[31]
+
+LaTeX Warning: Citation `Blattnig2013-qx' on page 32 undefined on input line 47
+9.
+
+
+LaTeX Warning: Citation `Howell2021' on page 32 undefined on input line 479.
+
+
+LaTeX Warning: Citation `Niewoehner2008' on page 32 undefined on input line 479
+.
+
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 32 undefined on input line 4
+79.
+
+
+LaTeX Warning: Reference `fig:NASA' on page 32 undefined on input line 479.
+
+
+LaTeX Warning: Citation `FDAguidelines' on page 32 undefined on input line 481.
+
+
+
+LaTeX Warning: Citation `Blattnig2013-qx' on page 32 undefined on input line 48
+1.
+
+
+LaTeX Warning: Citation `FDAguidelines' on page 32 undefined on input line 481.
+
+
+
+LaTeX Warning: File `images/NASA_CAS.png' not found on input line 485.
+
+
+! Package pdftex.def Error: File `images/NASA_CAS.png' not found: using draft s
+etting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.485 ...raphics[width=8.5cm]{images/NASA_CAS.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[32]
+
+LaTeX Warning: Citation `blattnig_towards_2008' on page 33 undefined on input l
+ine 491.
+
+
+LaTeX Warning: Citation `Blattnig2013-qx' on page 33 undefined on input line 49
+1.
+
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 33 undefined on input line 4
+91.
+
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 33 undefined on input line 4
+93.
+
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 33 undefined on input line 4
+95.
+
+[33]
+
+LaTeX Warning: Citation `babula_nasa_2009' on page 34 undefined on input line 4
+97.
+
+
+LaTeX Warning: Citation `Blattnig2013-qx' on page 34 undefined on input line 49
+9.
+
+
+LaTeX Warning: Citation `Chen2015' on page 34 undefined on input line 503.
+
+
+LaTeX Warning: Citation `Kuh2000' on page 34 undefined on input line 503.
+
+
+LaTeX Warning: Citation `Kung2019' on page 34 undefined on input line 503.
+
+
+LaTeX Warning: Citation `viceconti_credibility_2020' on page 34 undefined on in
+put line 503.
+
+
+LaTeX Warning: Citation `FDAguidelines' on page 34 undefined on input line 503.
+
+
+[34]
+
+LaTeX Warning: Citation `viceconti_credibility_2020' on page 35 undefined on in
+put line 508.
+
+
+LaTeX Warning: Citation `viceconti_credibility_2020' on page 35 undefined on in
+put line 510.
+
+
+LaTeX Warning: Citation `viceconti_credibility_2020' on page 35 undefined on in
+put line 510.
+
+
+LaTeX Warning: Citation `viceconti_credibility_2020' on page 35 undefined on in
+put line 512.
+
+[35]
+
+LaTeX Warning: Citation `FDAguidelines' on page 36 undefined on input line 518.
+
+
+[36]
+
+LaTeX Warning: Citation `viceconti2021' on page 37 undefined on input line 529.
+
+
+
+LaTeX Warning: Citation `Shepard2015' on page 37 undefined on input line 529.
+
+
+LaTeX Warning: Citation `porubsky_best_2020' on page 37 undefined on input line
+ 533.
+
+
+LaTeX Warning: Citation `porubsky_best_2020' on page 37 undefined on input line
+ 537.
+
+[37]
+
+LaTeX Warning: Citation `Lieven2020-kj' on page 38 undefined on input line 546.
+
+
+
+LaTeX Warning: Citation `Lieven2020-kj' on page 38 undefined on input line 546.
+
+
+
+LaTeX Warning: Citation `Olivier2018-tx' on page 38 undefined on input line 546
+.
+
+
+LaTeX Warning: Citation `sbmlsim21' on page 38 undefined on input line 551.
+
+
+LaTeX Warning: Citation `BioModels2018a' on page 38 undefined on input line 551
+.
+
+
+LaTeX Warning: Citation `BioModels2020' on page 38 undefined on input line 551.
+
+
+[38]
+
+LaTeX Warning: Citation `sbmlsim21' on page 39 undefined on input line 553.
+
+
+LaTeX Warning: Citation `SBMpy' on page 39 undefined on input line 553.
+
+
+LaTeX Warning: Citation `hari2020' on page 39 undefined on input line 553.
+
+
+LaTeX Warning: Citation `fbc_curation' on page 39 undefined on input line 553.
+
+
+LaTeX Warning: Citation `Kaddi2007-js' on page 39 undefined on input line 558.
+
+[39]
+
+LaTeX Warning: Citation `Hellerstein2019' on page 40 undefined on input line 56
+2.
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 579--584
+
+ []
+
+[41]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 585.
+
+
+LaTeX Warning: Citation `SBML' on page 42 undefined on input line 591.
+
+[42
+
+] [43] [44]
+Chapter 5.
+
+LaTeX Warning: Citation `Fairley78' on page 45 undefined on input line 622.
+
+[45
+
+]
+
+LaTeX Warning: Reference `fig:infinity' on page 46 undefined on input line 635.
+
+
+[46]
+
+LaTeX Warning: File `images/infinity.png' not found on input line 643.
+
+
+! Package pdftex.def Error: File `images/infinity.png' not found: using draft s
+etting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.643 ...graphics[width=15cm]{images/infinity.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 644.
+See the caption package documentation for explanation.
+
+[47]
+
+LaTeX Warning: Citation `Smith2009' on page 48 undefined on input line 658.
+
+[48]
+
+LaTeX Warning: Citation `Guemes569' on page 49 undefined on input line 664.
+
+
+LaTeX Warning: Citation `schreiber_specifications_2020' on page 49 undefined on
+ input line 671.
+
+[49]
+
+LaTeX Warning: Citation `bergmann_simulation_2018' on page 50 undefined on inpu
+t line 673.
+
+
+LaTeX Warning: Citation `Smith2021simulation' on page 50 undefined on input lin
+e 673.
+
+
+LaTeX Warning: Citation `bergmann_combine_2014' on page 50 undefined on input l
+ine 673.
+
+[50]
+Chapter 6.
+
+LaTeX Warning: Citation `Thacker2004' on page 51 undefined on input line 680.
+
+[51
+
+]
+
+LaTeX Warning: Citation `Thacker2004' on page 52 undefined on input line 691.
+
+
+LaTeX Warning: Citation `Choi2018' on page 52 undefined on input line 693.
+
+
+LaTeX Warning: Citation `Hoops2006' on page 52 undefined on input line 693.
+
+
+LaTeX Warning: Citation `Shaikh2022' on page 52 undefined on input line 693.
+
+[52] [53]
+Chapter 7.
+
+LaTeX Warning: Citation `Marino2008' on page 54 undefined on input line 700.
+
+
+LaTeX Warning: Citation `Saltelli' on page 54 undefined on input line 700.
+
+
+LaTeX Warning: Reference `fig:sensitivity' on page 54 undefined on input line 7
+00.
+
+
+LaTeX Warning: File `images/sensitivity_uncertainty.png' not found on input lin
+e 706.
+
+
+! Package pdftex.def Error: File `images/sensitivity_uncertainty.png' not found
+: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.706 ...13cm]{images/sensitivity_uncertainty.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Citation `Loucks2005' on page 54 undefined on input line 707.
+
+
+LaTeX Warning: Citation `Lal1995' on page 54 undefined on input line 707.
+
+
+LaTeX Warning: Citation `Loucks2005' on page 54 undefined on input line 707.
+
+
+LaTeX Warning: Citation `Lal1995' on page 54 undefined on input line 707.
+
+
+LaTeX Warning: Citation `Zi2008' on page 54 undefined on input line 711.
+
+
+LaTeX Warning: Citation `Gutenkunst2007' on page 54 undefined on input line 711
+.
+
+[54
+
+] [55]
+
+LaTeX Warning: Citation `Vanlier2013' on page 56 undefined on input line 718.
+
+
+LaTeX Warning: Citation `Vanlier2013' on page 56 undefined on input line 719.
+
+
+LaTeX Warning: Citation `Zi2011' on page 56 undefined on input line 719.
+
+
+LaTeX Warning: Citation `vanMourik2014' on page 56 undefined on input line 719.
+
+
+
+LaTeX Warning: Citation `Volodina2021' on page 56 undefined on input line 719.
+
+[56]
+
+LaTeX Warning: Citation `Saltelli' on page 57 undefined on input line 723.
+
+
+LaTeX Warning: Citation `Somogyi2015' on page 57 undefined on input line 725.
+
+
+LaTeX Warning: Citation `RoadRunnerdocs' on page 57 undefined on input line 725
+.
+
+
+LaTeX Warning: Citation `Zi2011' on page 57 undefined on input line 725.
+
+
+LaTeX Warning: Citation `RoadRunnerdocs' on page 57 undefined on input line 727
+.
+
+[57]
+
+LaTeX Warning: Citation `Zi2011' on page 58 undefined on input line 735.
+
+[58]
+Chapter 8.
+
+LaTeX Warning: Reference `table:sensitivity' on page 59 undefined on input line
+ 742.
+
+[59
+
+]
+
+LaTeX Warning: File `images/testSummary.png' not found on input line 748.
+
+
+! Package pdftex.def Error: File `images/testSummary.png' not found: using draf
+t setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.748 ...phics[width=19cm]{images/testSummary.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (24.12987pt too wide) in paragraph at lines 748--749
+ [][] 
+ []
+
+No file tatka_dissertation.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+[60] [61]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+ (./tatka_dissertation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
+
+
+Package rerunfilecheck Warning: File `tatka_dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tatka_dissertation.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  C4D6F20D4426C604681E56231EA60DAF;3671.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
+ ) 
+Here is how much of TeX's memory you used:
+ 8216 strings out of 483183
+ 125443 string characters out of 5966292
+ 368611 words of memory out of 5000000
+ 22903 multiletter control sequences out of 15000+600000
+ 542364 words of font info for 62 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 41i,15n,43p,1558b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/hellsbells/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
+0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on tatka_dissertation.pdf (65 pages, 275811 bytes).
+PDF statistics:
+ 473 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
