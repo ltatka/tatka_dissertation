@@ -333,12 +333,42 @@ https://doi.org/10.1016/j.biosystems.2023.104836.
 
 
 \chapter{This is my next paper with a clever title}
+Genetic algorithms (GAs), inspired by the principles of natural selection and genetics, have emerged as a powerful computational technique for solving optimization and search problems.Developed by John Holland in the 1960s, GAs mimic the process of biological evolution to solve optimization and search problems. At their core, genetic algorithms operate on a population of potential solutions, represented as individuals or "chromosomes," each encoding a candidate solution to the problem at hand. Through iterative generations, genetic algorithms apply mechanisms of selection, crossover, and mutation to evolve and refine the population, gradually converging towards optimal or near-optimal solutions. Selection favors individuals with higher fitness, mirroring the process of natural selection, while crossover and mutation introduce variation and diversity into the population, allowing for exploration of the solution space. By leveraging the principles of evolution, genetic algorithms offer a versatile and robust approach to solving complex problems across various domains, from engineering and optimization to biology and beyond.
+
+
+Applying GAs to problems of parameter optimization is fairly straightforward as "chromosomes" can be sequences of values, easily mutated and crossed over with other strings of values. This approach becomes more complex when applied to network problems, where network topology is deeply intertwined with parameter values. In these problems, the challenges becomes innovating while preserving decent candidate solutions. Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs). Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously.
+
+At its core, NEAT employs a genetic algorithm to evolve populations of neural networks. Each individual in the population represents a neural network with its own unique topology (i.e., arrangement of nodes and connections). NEAT starts with a population of simple neural networks, often with minimal structure, and evolves them over generations to solve a given task.
+
+One of the key innovations of NEAT is its ability to handle the complex task of evolving neural network topological structures. NEAT accomplishes this by employing three main mechanisms: speciation, historical marking, and structural innovation. Speciation encourages diversity within the population by comparing individuals against similar individuals as opposed to the entire population. This shelters innovations that may be weak at first, but will develop into robust solutions over several generations. A historical record of topological innovations serves as a "chromosome" and enables meaningful crossover without computationally expensive matching procedures required in other algorithms. Lastly, NEAT allows for the introduction of new structural innovations in neural networks through mutation. New nodes and connections can be added to existing networks, providing the potential for incremental growth and improvement over successive generations.
+
+
+Systems biologist are no strangers to genetic algorithms. 
+
+The similarity between ANNs and genetic regulatory networks was not lost on Dinh et al, who adapted this technique to getic
+
+Francois and Hakim (Design of genetic networks with specified function...) were among the first to apply genetic algorithms to systems biology. They were trying to create small gene networks that functioned as either bistable switches or oscillators. Their algorithm only involved mutation and selection. For oscillators, they used the same objective function that I'm using here. SEems to have worked pretty well encourging further exploration in this space
+
+Fujimoto et al looked at oscillaotry gene regulatory networks in the context of creating striped body pattens in developing drosophila. Well really arthorpods in general it seems. Similar approach to Francois and Hakim.
+
+Kobayahsi et al also look at evolving oscillatory genetic networks. They fix parameter values and only allow connection rewiring to achieve oscillatory function. They wanted to look at statisticsal properties of genetic networsk as a relationship to oscillation period. THey only allow inhibitory reactions and thus all designs are essentailly extended versionf of the three-gene repressilator circuit
+
 
 Oscillatory behavior is useful in a variety of biological processes including p53, circadian rhythm, and cell cycle. But also, you might want to generate oscillators as a component in a syntehtic biology ciruit. But really, this isn't about oscillators, that's just the test case. You might want a certain behavior and don't know how to build a  network to get it. Well This algorithm is for you! 
 
 Other people have done similar things, but this is different. It starts with the concept of genetic algorithms, way back in 1975. These are algorithms to come up with optimization solutions. The algorithms kind of look like biologic evolution. You have a bunch of individuals, the fitter individuals share their genes and reproduce, less fit individuals die off, sometimes mutations occur and these can be either good or bad. Since then, the concept of genetic algorithms has been thoroughly explored, but here we present something slightly new. And that's how I'm going to get my PhD lol.
 
 This all starts with the NEAt algorithm which is a way of evolving neural networks to do stuff.  What's interesting about this is they claim to have meaningful crossover and they use speciation to protect innovation. Dinh et al somehwat adapted this appraoch to genetic circuits, but those are a much easier problem because they just have activation and inhibition. Here, I adapt this algorthim to mass-action networks. That's way harder because there is way more complexity. In the first case, you just have an edge that connects two nodes and a weight. In the second, you add that the edge can either be activating or inhibiting, but here we add that the edge could connect multiple nodes (in the case of everything beyond a uni-uni reaction) and the reaction weight depends on what nodes it connects. More on that later.
+
+I need to go over a bunch of times that this was done for a similar thing. Just as a quick review
+
+
+---------------------------------
+Some review stuff
+
+
+Evolutionary design of oscillatory genetic networks (Kobayashi 2010)
+Wanted to evolve genetic oscillatory networks. Get a large population of them and then mine them for statistics about oscillators and network motifs. They have fixed parameter values though and only change connections (?). Looks like they are also trying to evolve oscillators with specific frequencies. They have a cost function which looks at periodicity
 
 
 
