@@ -1,0 +1,836 @@
+\begin{thebibliography}{100}
+
+\bibitem{Gnanvi2021}
+Janyce~Eunice Gnanvi, Kolawol{\'{e}}~Val{\`{e}}re Salako, Gaëtan~Brezesky
+  Kotanmi, and Romain~Gl{\`{e}}l{\`{e}} Kakaï.
+\newblock On the reliability of predictions on covid-19 dynamics: A systematic
+  and critical review of modelling techniques.
+\newblock {\em Infectious Disease Modelling}, 6:258--272, 2021.
+
+\bibitem{deckard2009}
+Anastasia~C Deckard, Frank~T Bergmann, and Herbert~M Sauro.
+\newblock Enumeration and online library of mass-action reaction networks.
+\newblock {\em arXiv preprint arXiv:0901.3067}, 2009.
+
+\bibitem{pantea2010}
+Casian Pantea and Gheorghe Craciun.
+\newblock Computational methods for analyzing bistability in biochemical
+  reaction networks.
+\newblock In {\em Proceedings of 2010 IEEE International Symposium on Circuits
+  and Systems}, pages 549--552, 2010.
+
+\bibitem{nobile2013}
+Marco~S. Nobile, Daniela Besozzi, Paolo Cazzaniga, Dario Pescini, and Giancarlo
+  Mauri.
+\newblock Reverse engineering of kinetic reaction networks by means of
+  cartesian genetic programming and particle swarm optimization.
+\newblock pages 1594--1601, 2013.
+
+\bibitem{donnell2014}
+Pete Donnell, Murad Banaji, Anca Marginean, and Casian Pantea.
+\newblock {CoNtRol: an open source framework for the analysis of chemical
+  reaction networks}.
+\newblock {\em Bioinformatics}, 30(11):1633--1634, 01 2014.
+
+\bibitem{Novak2008}
+B{\'{e}}la Nov{\'{a}}k and John~J. Tyson.
+\newblock Design principles of biochemical oscillators.
+\newblock {\em Nature Reviews Molecular Cell Biology}, 9(12):981--991, oct
+  2008.
+
+\bibitem{Aulehla2008}
+Alexander Aulehla and Olivier Pourqui{\'e}.
+\newblock Oscillating signaling pathways during embryonic development.
+\newblock {\em Current opinion in cell biology}, 20(6):632--637, dec 2008.
+
+\bibitem{GevaZatorsky2006}
+Naama Geva-Zatorsky, Nitzan Rosenfeld, Shalev Itzkovitz, Ron Milo, Alex Sigal,
+  Erez Dekel, Talia Yarnitzky, Yuvalal Liron, Paz Polak, Galit Lahav, and Uri
+  Alon.
+\newblock Oscillations and variability in the p53 system.
+\newblock {\em Molecular systems biology}, 2(1):2006--0033, jan 2006.
+
+\bibitem{Pol1928}
+Balth. van~der Pol and J.~van~der Mark.
+\newblock {LXXII}.the heartbeat considered as a relaxation oscillation, and an
+  electrical model of the heart.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
+  Journal of Science}, 6(38):763--775, nov 1928.
+
+\bibitem{Lotka1910}
+Alfred~J. Lotka.
+\newblock Contribution to the theory of periodic reactions.
+\newblock {\em The Journal of Physical Chemistry}, 14(3):271--274, March 1910.
+
+\bibitem{Higgins1967}
+Joseph Higgins.
+\newblock The theory of oscillating reactions - kinetics symposium.
+\newblock {\em Industrial {\&}amp; Engineering Chemistry}, 59(5):18--62, May
+  1967.
+
+\bibitem{Paladugu2006}
+SR~Paladugu, V~Chickarmane, A~Deckard, JP~Frumkin, M~McCormack, and HM~Sauro.
+\newblock In silico evolution of functional modules in biochemical networks.
+\newblock {\em IEE Proceedings-Systems Biology}, 2006.
+
+\bibitem{Smith2009}
+Lucian Smith, Frank Bergmann, Deepak Chandran, and Herbert Sauro.
+\newblock Antimony: A modular model definition language.
+\newblock {\em Bioinformatics (Oxford, England)}, 25:2452--4, 08 2009.
+
+\bibitem{Somogyi2015}
+Endre~T Somogyi, Jean-Marie Bouteiller, James~A Glazier, Matthias K{\"o}nig,
+  J~Kyle Medley, Maciej~H Swat, and Herbert~M Sauro.
+\newblock libroadrunner: a high performance sbml simulation and analysis
+  library.
+\newblock {\em Bioinformatics}, 31(20):3315--3321, jun 2015.
+
+\bibitem{hindmarsh2005sundials}
+Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
+  Dan~E Shumaker, and Carol~S Woodward.
+\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
+  solvers.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)},
+  31(3):363--396, 2005.
+
+\bibitem{Miller1995}
+Brad~L. Miller and David~E. Goldberg.
+\newblock Genetic algorithms, tournament selection, and the effects of noise.
+\newblock {\em Complex Syst.}, 9, 1995.
+
+\bibitem{SauroteUtils_2020}
+Herbert Sauro.
+\newblock Network dynamics.
+\newblock {\em Methods in Molecular Biology}, 2009.
+
+\bibitem{Katoch2020}
+Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
+\newblock A review on genetic algorithm: past, present, and future.
+\newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
+  2020.
+
+\bibitem{Tyson1975}
+John~J. Tyson.
+\newblock Classification of instabilities in chemical reaction systems.
+\newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
+  1975.
+
+\bibitem{tyson2007}
+J.J Tyson.
+\newblock Biochemical oscillators.
+\newblock In {\em Computational Cell Biology}. Springer New York, 2007.
+
+\bibitem{Tyson2004}
+John~J. Tyson.
+\newblock Biochemical oscillations.
+\newblock In {\em Interdisciplinary Applied Mathematics}, pages 230--260.
+  Springer New York.
+
+\bibitem{Sauro_dynamics}
+Herbert Sauro.
+\newblock {teUtils} [software].
+\newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
+
+\bibitem{Wang2021}
+Chengyuan Wang, Si~Li, Adesola~S. Ademiloye, and Perumal Nithiarasu.
+\newblock Biomechanics of cells and subcellular components: A comprehensive
+  review of computational models and applications.
+\newblock {\em International Journal for Numerical Methods in Biomedical
+  Engineering}, 37(12), August 2021.
+
+\bibitem{Hassell2021}
+James~M. Hassell, Tim Newbold, Andrew~P. Dobson, Yvonne-Marie Linton, Lydia
+  H.~V. Franklinos, Dawn Zimmerman, and Katrina M.~Pagenkopp Lohan.
+\newblock Towards an ecosystem model of infectious disease.
+\newblock {\em Nature Ecology {\&}amp; Evolution}, 5(7):907--918, May 2021.
+
+\bibitem{Bartocci2016}
+Ezio Bartocci and Pietro Li{\'{o}}.
+\newblock Computational modeling, formal analysis, and tools for systems
+  biology.
+\newblock {\em {PLOS} Computational Biology}, 12(1):e1004591, January 2016.
+
+\bibitem{FDAguidelines}
+Assessing the credibility of computational modeling and simulation in medical
+  device submissions: Draft guidance for industry and food and drug
+  administration staff.
+\newblock {\em U.S. Food and Drug Administration}, 2021.
+
+\bibitem{shin_standards_nodate}
+Janis Shin, Veronica Porubsky, James Carothers, and Herbert~M Sauro.
+\newblock Standards, {Dissemination}, and {Best} {Practices} in {Systems}
+  {Biology}.
+
+\bibitem{BioModels2020}
+Rahuman~S Malik-Sheriff, Mihai Glont, Tung V~N Nguyen, Krishna Tiwari,
+  Matthew~G Roberts, Ashley Xavier, Manh~T Vu, Jinghao Men, Matthieu Maire,
+  Sarubini Kananathan, Emma~L Fairbanks, Johannes~P Meyer, Chinmay Arankalle,
+  Thawfeek~M Varusai, Vincent Knight-Schrijver, Lu~Li, Corina Dueñas-Roca,
+  Gaurhari Dass, Sarah~M Keating, Young~M Park, Nicola Buso, Nicolas Rodriguez,
+  Michael Hucka, and Henning Hermjakob.
+\newblock {BioModels — 15 years of sharing computational models in life
+  science}.
+\newblock {\em Nucleic Acids Research}, 48(D1):D407--D415, 1 2020.
+\newblock gkz1055.
+
+\bibitem{tiwari_reproducibility_2021}
+Krishna Tiwari, Sarubini Kananathan, Matthew~G. Roberts, Johannes~P. Meyer,
+  Mohammad Umer~Sharif Shohan, Ashley Xavier, Matthieu Maire, Ahmad Zyoud,
+  Jinghao Men, Szeyi Ng, Tung V.~N. Nguyen, Mihai Glont, Henning Hermjakob, and
+  Rahuman~S. Malik-Sheriff.
+\newblock Reproducibility in systems biology modelling.
+\newblock {\em Molecular Systems Biology}, 17(2):e9982, February 2021.
+\newblock Publisher: John Wiley \& Sons, Ltd.
+
+\bibitem{babula_nasa_2009}
+Maria Babula, William Bertch, Lawrence Green, Joseph Hale, Gary Mosier, Martin
+  Steele, and Jody Woods.
+\newblock {NASA} {Standard} for {Models} and {Simulations}: {Credibility}
+  {Assessment} {Scale}.
+\newblock In {\em 47th {AIAA} {Aerospace} {Sciences} {Meeting} including {The}
+  {New} {Horizons} {Forum} and {Aerospace} {Exposition}}, Orlando, Florida,
+  January 2009. American Institute of Aeronautics and Astronautics.
+
+\bibitem{Shepard2015}
+T~Shepard, G~Scott, S~Cole, A~Nordmark, and F~Bouzom.
+\newblock Physiologically based models in regulatory submissions: Output from
+  the {ABPI/MHRA} forum on physiologically based modeling and simulation.
+\newblock {\em CPT Pharmacometrics Syst. Pharmacol.}, 4(4):221--225, April
+  2015.
+
+\bibitem{Klipp2007StandardsIC}
+Edda Klipp, Wolfram Liebermeister, Anselm Helbig, Axel Kowald, and J{\"o}rg
+  Schaber.
+\newblock Standards in computational systems biology.
+\newblock 2007.
+
+\bibitem{SBGN}
+N.~Novère, M.~Hucka, and H~Mi.
+\newblock The systems biology graphical notation.
+\newblock {\em Nature Biotechnology}, 27, 2009.
+
+\bibitem{SBRML}
+Dada, Spasić, Paton, and Mendes.
+\newblock Sbrml: a markup language for associating systems biology data with
+  models.
+\newblock {\em Bioinformatics}, 26, 2010.
+
+\bibitem{machado_modeling_2011}
+Daniel Machado, Rafael~S Costa, Miguel Rocha, Eugénio~C Ferreira, Bruce Tidor,
+  and Isabel Rocha.
+\newblock Modeling formalisms in {Systems} {Biology}.
+\newblock {\em AMB Express}, 1:45, December 2011.
+
+\bibitem{CellML}
+Autumn~A. Cuellar, Catherine~M. Lloyd, Poul~F. Nielsen, David~P. Bullivant,
+  David~P. Nickerson, and Peter~J. Hunter.
+\newblock An overview of {CellML} 1.1, a biological model description language.
+\newblock {\em {SIMULATION}}, 79(12):740--747, December 2003.
+
+\bibitem{demir_biopax_2010}
+Emek Demir, Michael~P. Cary, Suzanne Paley, Ken Fukuda, Christian Lemer, Imre
+  Vastrik, Guanming Wu, Peter D’Eustachio, Carl Schaefer, Joanne Luciano,
+  Frank Schacherer, Irma Martinez-Flores, Zhenjun Hu, Veronica Jimenez-Jacinto,
+  Geeta Joshi-Tope, Kumaran Kandasamy, Alejandra~C. Lopez-Fuentes, Huaiyu Mi,
+  Elgar Pichler, Igor Rodchenkov, Andrea Splendiani, Sasha Tkachev, Jeremy
+  Zucker, Gopal Gopinath, Harsha Rajasimha, Ranjani Ramakrishnan, Imran Shah,
+  Mustafa Syed, Nadia Anwar, Ozgun Babur, Michael Blinov, Erik Brauner, Dan
+  Corwin, Sylva Donaldson, Frank Gibbons, Robert Goldberg, Peter Hornbeck,
+  Augustin Luna, Peter Murray-Rust, Eric Neumann, Oliver Reubenacker, Matthias
+  Samwald, Martijn van Iersel, Sarala Wimalaratne, Keith Allen, Burk Braun,
+  Michelle Whirl-Carrillo, Kam Dahlquist, Andrew Finney, Marc Gillespie,
+  Elizabeth Glass, Li~Gong, Robin Haw, Michael Honig, Olivier Hubaut, David
+  Kane, Shiva Krupa, Martina Kutmon, Julie Leonard, Debbie Marks, David
+  Merberg, Victoria Petri, Alex Pico, Dean Ravenscroft, Liya Ren, Nigam Shah,
+  Margot Sunshine, Rebecca Tang, Ryan Whaley, Stan Letovksy, Kenneth~H. Buetow,
+  Andrey Rzhetsky, Vincent Schachter, Bruno~S. Sobral, Ugur Dogrusoz, Shannon
+  McWeeney, Mirit Aladjem, Ewan Birney, Julio Collado-Vides, Susumu Goto,
+  Michael Hucka, Nicolas Le~Novère, Natalia Maltsev, Akhilesh Pandey, Paul
+  Thomas, Edgar Wingender, Peter~D. Karp, Chris Sander, and Gary~D. Bader.
+\newblock {BioPAX} – {A} community standard for pathway data sharing.
+\newblock {\em Nat Biotechnol}, 28(9):935--942, September 2010.
+
+\bibitem{Gleeson2010}
+Padraig Gleeson, Sharon Crook, Robert~C. Cannon, Michael~L. Hines, Guy~O.
+  Billings, Matteo Farinella, Thomas~M. Morse, Andrew~P. Davison, Subhasis Ray,
+  Upinder~S. Bhalla, Simon~R. Barnes, Yoana~D. Dimitrova, and R.~Angus Silver.
+\newblock {NeuroML}: A language for describing data driven models of neurons
+  and networks with a high degree of biological detail.
+\newblock {\em {PLoS} Computational Biology}, 6(6):e1000815, June 2010.
+
+\bibitem{SBML}
+Hucka, Bolouri H., Finney A., Sauro H.M., Doyle J.C., Kitano H., Arkin A.P.,
+  and Bornstein~B.J. et~al.
+\newblock The systems biology markup language (sbml): A medium for
+  representation and exchange of biochemical network models.
+\newblock {\em bioinformatics}, 19, 2003.
+
+\bibitem{Finney2003}
+A.~Finney and M.~Hucka.
+\newblock Systems biology markup language: Level 2 and beyond.
+\newblock {\em Biochemical Society Transactions}, 31(6):1472--1473, December
+  2003.
+
+\bibitem{Kohl2011}
+Michael Kohl.
+\newblock Standards, {Databases}, and {Modeling} {Tools} in {Systems}
+  {Biology}.
+\newblock In Michael Hamacher, Martin Eisenacher, and Christian Stephan,
+  editors, {\em Data {Mining} in {Proteomics}}, volume 696, pages 413--427.
+  Humana Press, Totowa, NJ, 2011.
+\newblock Series Title: Methods in Molecular Biology.
+
+\bibitem{Keating2020}
+Sarah~M Keating, Dagmar Waltemath, Matthias K\"{o}nig, Fengkai Zhang, Andreas
+  Dr\"{a}ger, Claudine Chaouiya, Frank~T Bergmann, Andrew Finney, Colin~S
+  Gillespie, Tom{\'{a}}{\v{s}} Helikar, Stefan Hoops, Rahuman~S Malik-Sheriff,
+  Stuart~L Moodie, Ion~I Moraru, Chris~J Myers, Aur{\'{e}}lien Naldi, Brett~G
+  Olivier, Sven Sahle, James~C Schaff, Lucian~P Smith, Maciej~J Swat, Denis
+  Thieffry, Leandro Watanabe, Darren~J Wilkinson, Michael~L Blinov, Kimberly
+  Begley, James~R Faeder, Harold~F G{\'{o}}mez, Thomas~M Hamm, Yuichiro
+  Inagaki, Wolfram Liebermeister, Allyson~L Lister, Daniel Lucio, Eric
+  Mjolsness, Carole~J Proctor, Karthik Raman, Nicolas Rodriguez, Clifford~A
+  Shaffer, Bruce~E Shapiro, Joerg Stelling, Neil Swainston, Naoki Tanimura,
+  John Wagner, Martin Meier-Schellersheim, Herbert~M Sauro, Bernhard Palsson,
+  Hamid Bolouri, Hiroaki Kitano, Akira Funahashi, Henning Hermjakob, John~C
+  Doyle, Michael Hucka, Richard~R Adams, Nicholas~A Allen, Bastian~R Angermann,
+  Marco Antoniotti, Gary~D Bader, Jan {\v{C}}erven{\'{y}}, M{\'{e}}lanie
+  Courtot, Chris~D Cox, Piero~Dalle Pezze, Emek Demir, William~S Denney, Harish
+  Dharuri, Julien Dorier, Dirk Drasdo, Ali Ebrahim, Johannes Eichner, Johan
+  Elf, Lukas Endler, Chris~T Evelo, Christoph Flamm, Ronan~MT Fleming, Martina
+  Fr\"{o}hlich, Mihai Glont, Emanuel Gon{\c{c}}alves, Martin Golebiewski,
+  Hovakim Grabski, Alex Gutteridge, Damon Hachmeister, Leonard~A Harris,
+  Benjamin~D Heavner, Ron Henkel, William~S Hlavacek, Bin Hu, Daniel~R Hyduke,
+  Hidde Jong, Nick Juty, Peter~D Karp, Jonathan~R Karr, Douglas~B Kell, Roland
+  Keller, Ilya Kiselev, Steffen Klamt, Edda Klipp, Christian Kn\"{u}pfer, Fedor
+  Kolpakov, Falko Krause, Martina Kutmon, Camille Laibe, Conor Lawless, Lu~Li,
+  Leslie~M Loew, Rainer Machne, Yukiko Matsuoka, Pedro Mendes, Huaiyu Mi,
+  Florian Mittag, Pedro~T Monteiro, Kedar~Nath Natarajan, Poul~MF Nielsen,
+  Tramy Nguyen, Alida Palmisano, Jean-Baptiste Pettit, Thomas Pfau, Robert~D
+  Phair, Tomas Radivoyevitch, Johann~M Rohwer, Oliver~A Ruebenacker, Julio
+  Saez-Rodriguez, Martin Scharm, Henning Schmidt, Falk Schreiber, Michael
+  Schubert, Roman Schulte, Stuart~C Sealfon, Kieran Smallbone, Sylvain Soliman,
+  Melanie~I Stefan, Devin~P Sullivan, Koichi Takahashi, Bas Teusink, David
+  Tolnay, Ibrahim Vazirabad, Axel Kamp, Ulrike Wittig, Clemens Wrzodek, Finja
+  Wrzodek, Ioannis Xenarios, Anna Zhukova, and Jeremy~Zucker and.
+\newblock Sbml level 3: an extensible format for the exchange and reuse of
+  biological models.
+\newblock {\em Molecular Systems Biology}, 16(8), August 2020.
+
+\bibitem{Smith2020}
+Lucian~P. Smith, Stuart~L. Moodie, Frank~T. Bergmann, Colin Gillespie, Sarah~M.
+  Keating, Matthias K\"{o}nig, Chris~J. Myers, Maciek~J. Swat, Darren~J.
+  Wilkinson, and Michael Hucka.
+\newblock Systems biology markup language ({SBML}) level 3 package:
+  Distributions, version 1, release 1.
+\newblock {\em Journal of Integrative Bioinformatics}, 17(2-3), June 2020.
+
+\bibitem{Olivier2018}
+Brett~G. Olivier and Frank~T. Bergmann.
+\newblock {SBML} level 3 package: Flux balance constraints version 2.
+\newblock {\em Journal of Integrative Bioinformatics}, 15(1), March 2018.
+
+\bibitem{Gauges2015}
+Ralph Gauges, Ursula Rost, Sven Sahle, Katja Wengler, and Frank~T. Bergmann.
+\newblock The systems biology markup language ({SBML}) level 3 package: Layout,
+  version 1 core.
+\newblock {\em Journal of Integrative Bioinformatics}, 12(2):550--602, June
+  2015.
+
+\bibitem{Beard2009}
+Daniel~A. Beard, Randall Britten, Mike~T. Cooling, Alan Garny, Matt~D.B.
+  Halstead, Peter~J. Hunter, James Lawson, Catherine~M. Lloyd, Justin Marsh,
+  Andrew Miller, David~P. Nickerson, Poul~M.F. Nielsen, Taishin Nomura, Shankar
+  Subramanium, Sarala~M. Wimalaratne, and Tommy Yu.
+\newblock {CellML} metadata standards, associated tools and repositories.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}, 367(1895):1845--1867, May 2009.
+
+\bibitem{Wimalaratne2009}
+S.~M. Wimalaratne, M.~D.~B. Halstead, C.~M. Lloyd, E.~J. Crampin, and P.~F.
+  Nielsen.
+\newblock Biophysical annotation and representation of {CellML} models.
+\newblock {\em Bioinformatics}, 25(17):2263--2270, June 2009.
+
+\bibitem{Mesiti}
+Marco Mesiti, Ernesto~Jim{\'{e}}nez Ruiz, Ismael Sanz, Rafael~Berlanga Llavori,
+  Giorgio Valentini, Paolo Perlasca, and David Manset.
+\newblock Data integration issues and opportunities in biological {XML} data
+  management.
+\newblock In {\em Open and Novel Issues in {XML} Database Applications}, pages
+  263--286. {IGI} Global, 2009.
+
+\bibitem{Caprotti1999}
+O.~Caprotti and D.~Carlisle.
+\newblock {OpenMath} and {MathML}: semantic markup for mathematics.
+\newblock {\em {XRDS}: Crossroads, The {ACM} Magazine for Students},
+  6(2):11--14, November 1999.
+
+\bibitem{Smith2013}
+L.~P. Smith, E.~Butterworth, J.~B. Bassingthwaighte, and H.~M. Sauro.
+\newblock {SBML} and {CellML} translation in antimony and {JSim}.
+\newblock {\em Bioinformatics}, 30(7):903--907, November 2013.
+
+\bibitem{Hucka2015}
+Michael Hucka, Frank~T. Bergmann, Andreas Dr\"{a}ger, Stefan Hoops, Sarah~M.
+  Keating, Nicolas~Le Nov{\`{e}}re, Chris~J. Myers, Brett~G. Olivier, Sven
+  Sahle, James~C. Schaff, Lucian~P. Smith, Dagmar Waltemath, and Darren~J.
+  Wilkinson.
+\newblock Systems biology markup language ({SBML}) level 2 version 5:
+  Structures and facilities for model definitions.
+\newblock {\em Journal of Integrative Bioinformatics}, 12(2):731--901, June
+  2015.
+
+\bibitem{buchel_qualitative_2012}
+Finja Büchel, Clemens Wrzodek, Florian Mittag, Andreas Dräger, Johannes
+  Eichner, Nicolas Rodriguez, Nicolas Le~Novère, and Andreas Zell.
+\newblock Qualitative translation of relations from {BioPAX} to {SBML} qual.
+\newblock {\em Bioinformatics}, 28(20):2648--2653, October 2012.
+
+\bibitem{Curtout2011}
+Courtot, Juty N, Knupfer C, Waltemath D, Zhukova A, Drager A, Dumontier M,
+  Finney A, and Golebiewski M.
+\newblock Controlled vocabularies and semantics in systems biology, 2011.
+
+\bibitem{Gennari2021}
+John~H. Gennari, Matthias K\"{o}nig, Goksel Misirli, Maxwell~L. Neal, David~P.
+  Nickerson, and Dagmar Waltemath.
+\newblock {OMEX} metadata specification (version 1.2).
+\newblock {\em Journal of Integrative Bioinformatics}, 18(3), September 2021.
+
+\bibitem{Noy2001OntologyD1}
+Natasha Noy.
+\newblock Ontology development 101: A guide to creating your first ontology.
+\newblock 2001.
+
+\bibitem{Hastings2015}
+Janna Hastings, Gareth Owen, Adriano Dekker, Marcus Ennis, Namrata Kale,
+  Venkatesh Muthukrishnan, Steve Turner, Neil Swainston, Pedro Mendes, and
+  Christoph Steinbeck.
+\newblock {ChEBI} in 2016: Improved services and an expanding collection of
+  metabolites.
+\newblock {\em Nucleic Acids Research}, 44(D1):D1214--D1219, October 2015.
+
+\bibitem{Shin2021}
+Woosub Shin, Joseph~L. Hellerstein, Yuda Munarko, Maxwell~L. Neal, David~P.
+  Nickerson, Anand~K. Rampadarath, Herbert~M. Sauro, and John~H. Gennari.
+\newblock {SBMate}: A framework for evaluating quality of annotations in
+  systems biology models.
+\newblock {\em BioRxivs}, October 2021.
+
+\bibitem{novere_minimum_2005}
+Nicolas~Le Novère, Andrew Finney, Michael Hucka, Upinder~S Bhalla, Fabien
+  Campagne, Julio Collado-Vides, Edmund~J Crampin, Matt Halstead, Edda Klipp,
+  Pedro Mendes, Poul Nielsen, Herbert Sauro, Bruce Shapiro, Jacky~L Snoep,
+  Hugh~D Spence, and Barry~L Wanner.
+\newblock Minimum information requested in the annotation of biochemical models
+  ({MIRIAM}).
+\newblock {\em Nat Biotechnol}, 23(12):1509--1515, December 2005.
+
+\bibitem{berners2005uniform}
+Tim Berners-Lee, Roy Fielding, and Larry Masinter.
+\newblock Uniform resource identifier (uri): Generic syntax.
+\newblock Technical report, 2005.
+
+\bibitem{SBO}
+N~Juty.
+\newblock Systems biology ontology: Update.
+\newblock {\em Nature Precedings}, 2010.
+
+\bibitem{Decker2000}
+S.~Decker, S.~Melnik, F.~van Harmelen, D.~Fensel, M.~Klein, J.~Broekstra,
+  M.~Erdmann, and I.~Horrocks.
+\newblock The semantic web: the roles of {XML} and {RDF}.
+\newblock {\em {IEEE} Internet Computing}, 4(5):63--73, 2000.
+
+\bibitem{Apweiler2004}
+R.~Apweiler.
+\newblock {UniProt}: the universal protein knowledgebase.
+\newblock {\em Nucleic Acids Research}, 32(90001):115D--119, January 2004.
+
+\bibitem{Swainston2009}
+N.~Swainston and P.~Mendes.
+\newblock {libAnnotationSBML}: a library for exploiting {SBML} annotations.
+\newblock {\em Bioinformatics}, 25(17):2292--2293, June 2009.
+
+\bibitem{LeNovere2006}
+N.~Le Novere.
+\newblock {BioModels} database: a free, centralized database of curated,
+  published, quantitative kinetic models of biochemical and cellular systems.
+\newblock {\em Nucleic Acids Research}, 34(90001):D689--D691, January 2006.
+
+\bibitem{Hucka2019}
+Michael Hucka, Frank~T. Bergmann, Claudine Chaouiya, Andreas Dr\"{a}ger, Stefan
+  Hoops, Sarah~M. Keating, Matthias K\"{o}nig, Nicolas~Le Nov{\`{e}}re,
+  Chris~J. Myers, Brett~G. Olivier, Sven Sahle, James~C. Schaff, Rahuman
+  Sheriff, Lucian~P. Smith, Dagmar Waltemath, Darren~J. Wilkinson, and Fengkai
+  Zhang.
+\newblock The systems biology markup language ({SBML}): Language specification
+  for level 3 version 2 core release 2.
+\newblock {\em Journal of Integrative Bioinformatics}, 16(2), June 2019.
+
+\bibitem{libSBML}
+BJ~Bornstein, SM~Keating, A~Jouraku, and M~Hucka.
+\newblock Libsbml: an api library for sbml.
+\newblock {\em Bioinformatics}, 24, 2008.
+
+\bibitem{Rodriguez2015}
+Nicolas Rodriguez, Alex Thomas, Leandro Watanabe, Ibrahim~Y. Vazirabad, Victor
+  Kofia, Harold~F. G{\'{o}}mez, Florian Mittag, Jakob Matthes, Jan Rudolph,
+  Finja Wrzodek, Eugen Netz, Alexander Diamantikos, Johannes Eichner, Roland
+  Keller, Clemens Wrzodek, Sebastian Fr\"{o}hlich, Nathan~E. Lewis, Chris~J.
+  Myers, Nicolas~Le Nov{\`{e}}re, Bernhard~{\O}. Palsson, Michael Hucka, and
+  Andreas Dr\"{a}ger.
+\newblock {JSBML} 1.0: providing a smorgasbord of options to encode systems
+  biology models: Table 1.
+\newblock {\em Bioinformatics}, 31(20):3383--3386, June 2015.
+
+\bibitem{waltemath_minimum_2011}
+Dagmar Waltemath, Richard Adams, Daniel~A. Beard, Frank~T. Bergmann, Upinder~S.
+  Bhalla, Randall Britten, Vijayalakshmi Chelliah, Michael~T. Cooling, Jonathan
+  Cooper, Edmund~J. Crampin, Alan Garny, Stefan Hoops, Michael Hucka, Peter
+  Hunter, Edda Klipp, Camille Laibe, Andrew~K. Miller, Ion Moraru, David
+  Nickerson, Poul Nielsen, Macha Nikolski, Sven Sahle, Herbert~M. Sauro,
+  Henning Schmidt, Jacky~L. Snoep, Dominic Tolle, Olaf Wolkenhauer, and Nicolas
+  Le~Novère.
+\newblock Minimum {Information} {About} a {Simulation} {Experiment} ({MIASE}).
+\newblock {\em PLoS Comput Biol}, 7(4):e1001122, April 2011.
+
+\bibitem{Zhukova2011}
+Anna Zhukova, Anna Zhukova, Dagmar Waltemath, Nick Juty, Camille Laibe, and
+  Nicolas~Le Nov{\`{e}}re.
+\newblock Kinetic simulation algorithm ontology.
+\newblock {\em Nature Precedings}, September 2011.
+
+\bibitem{bergmann_simulation_2018}
+Frank~T. Bergmann, Jonathan Cooper, Matthias König, Ion Moraru, David
+  Nickerson, Nicolas Le~Novère, Brett~G. Olivier, Sven Sahle, Lucian Smith,
+  and Dagmar Waltemath.
+\newblock Simulation {Experiment} {Description} {Markup} {Language}
+  ({SED}-{ML}) {Level} 1 {Version} 3 ({L1V3}).
+\newblock {\em J Integr Bioinform}, 15(1):20170086, March 2018.
+
+\bibitem{Smith2021simulation}
+Lucian~P Smith, Frank~T Bergmann, Alan Garny, Tom{\'a}{\v{s}} Helikar, Jonathan
+  Karr, David Nickerson, Herbert Sauro, Dagmar Waltemath, and Matthias
+  K{\"o}nig.
+\newblock The simulation experiment description markup language (sed-ml):
+  language specification for level 1 version 4.
+\newblock {\em Journal of integrative bioinformatics}, 18(3), 2021.
+
+\bibitem{choi_phrased-ml_2016}
+Kiri Choi, Lucian~P. Smith, J.~Kyle Medley, and Herbert~M. Sauro.
+\newblock {phraSED}-{ML}: {A} paraphrased, human-readable adaptation of
+  {SED}-{ML}.
+\newblock {\em J Bioinform Comput Biol}, 14(6):1650035, December 2016.
+
+\bibitem{Schmiester2021}
+Leonard Schmiester, Yannik Sch\"{a}lte, Frank~T. Bergmann, Tacio Camba, Erika
+  Dudkin, Janine Egert, Fabian Fr\"{o}hlich, Lara Fuhrmann, Adrian~L. Hauber,
+  Svenja Kemmer, Polina Lakrisenko, Carolin Loos, Simon Merkt, Wolfgang
+  M\"{u}ller, Dilan Pathirana, Elba Raim{\'{u}}ndez, Lukas Refisch, Marcus
+  Rosenblatt, Paul~L. Stapor, Philipp St\"{a}dter, Dantong Wang, Franz-Georg
+  Wieland, Julio~R. Banga, Jens Timmer, Alejandro~F. Villaverde, Sven Sahle,
+  Clemens Kreutz, Jan Hasenauer, and Daniel Weindl.
+\newblock {PEtab}{\textemdash}interoperable specification of parameter
+  estimation problems in systems biology.
+\newblock {\em {PLOS} Computational Biology}, 17(1):e1008646, January 2021.
+
+\bibitem{porubsky_best_2020}
+Veronica~L. Porubsky, Arthur~P. Goldberg, Anand~K. Rampadarath, David~P.
+  Nickerson, Jonathan~R. Karr, and Herbert~M. Sauro.
+\newblock Best {Practices} for {Making} {Reproducible} {Biochemical} {Models}.
+\newblock {\em Cell Syst}, 11(2):109--120, August 2020.
+
+\bibitem{Wilkinson2016}
+Mark~D. Wilkinson, Michel Dumontier, IJsbrand~Jan Aalbersberg, Gabrielle
+  Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten,
+  Luiz~Bonino da~Silva~Santos, Philip~E. Bourne, Jildau Bouwman, Anthony~J.
+  Brookes, Tim Clark, Merc{\`{e}} Crosas, Ingrid Dillo, Olivier Dumon, Scott
+  Edmunds, Chris~T. Evelo, Richard Finkers, Alejandra Gonzalez-Beltran,
+  Alasdair~J.G. Gray, Paul Groth, Carole Goble, Jeffrey~S. Grethe, Jaap
+  Heringa, Peter~A.C 't~Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok,
+  Scott~J. Lusher, Maryann~E. Martone, Albert Mons, Abel~L. Packer, Bengt
+  Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta
+  Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn,
+  Morris~A. Swertz, Mark Thompson, Johan van~der Lei, Erik van Mulligen, Jan
+  Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun
+  Zhao, and Barend Mons.
+\newblock The {FAIR} guiding principles for scientific data management and
+  stewardship.
+\newblock {\em Scientific Data}, 3(1), March 2016.
+
+\bibitem{schreiber_specifications_2020}
+Falk Schreiber, Björn Sommer, Tobias Czauderna, Martin Golebiewski, Thomas~E.
+  Gorochowski, Michael Hucka, Sarah~M. Keating, Matthias König, Chris Myers,
+  David Nickerson, and Dagmar Waltemath.
+\newblock Specifications of standards in systems and synthetic biology: status
+  and developments in 2020.
+\newblock {\em J Integr Bioinform}, 17(2-3):20200022, June 2020.
+
+\bibitem{bergmann_combine_2014}
+Frank~T Bergmann, Richard Adams, Stuart Moodie, Jonathan Cooper, Mihai Glont,
+  Martin Golebiewski, Michael Hucka, Camille Laibe, Andrew~K Miller, David~P
+  Nickerson, Brett~G Olivier, Nicolas Rodriguez, Herbert~M Sauro, Martin
+  Scharm, Stian Soiland-Reyes, Dagmar Waltemath, Florent Yvon, and Nicolas
+  Le~Novère.
+\newblock {COMBINE} archive and {OMEX} format: one file to share all
+  information to reproduce a modeling project.
+\newblock {\em BMC Bioinformatics}, 15(1):369, December 2014.
+
+\bibitem{erdemir_credible_2020}
+Ahmet Erdemir, Lealem Mulugeta, Joy~P. Ku, Andrew Drach, Marc Horner, Tina~M.
+  Morrison, Grace C.~Y. Peng, Rajanikanth Vadigepalli, William~W. Lytton, and
+  Jerry~G. Myers.
+\newblock Credible practice of modeling and simulation in healthcare: ten rules
+  from a multidisciplinary perspective.
+\newblock {\em J Transl Med}, 18(1):369, December 2020.
+
+\bibitem{Blattnig2013-qx}
+Steve~R Blattnig, James~M Luckring, Joseph~H Morrison, Andre~J Sylvester, Ram~K
+  Tripathi, and Thomas~A Zang.
+\newblock {NASA} standard for models and simulations: Philosophy and
+  requirements overview.
+\newblock {\em J. Aircr.}, 50(1):20--28, 2013.
+
+\bibitem{Howell2021}
+Elizabeth Howell and Dobrijevic Daisy.
+\newblock Columbia disaster: What happened and what nasa learned, 2021.
+
+\bibitem{Niewoehner2008}
+Robert Niewoehner, Craig Steidle, and Eric Johnson.
+\newblock The loss of the space shuttle columbia: Portaging the leadership
+  lessons with a critical thinking model.
+\newblock {\em American Society for Engineering Education}, 2008.
+
+\bibitem{blattnig_towards_2008}
+Steve Blattnig, Lawrence Green, James Luckring, Joseph Morrison, Ram Tripathi,
+  and Thomas Zang.
+\newblock Towards a {Credibility} {Assessment} of {Models} and {Simulations}.
+\newblock In {\em 49th {AIAA}/{ASME}/{ASCE}/{AHS}/{ASC} {Structures},
+  {Structural} {Dynamics}, and {Materials} {Conference}}, Schaumburg, IL, April
+  2008. American Institute of Aeronautics and Astronautics.
+
+\bibitem{Chen2015}
+Xing Chen, Chenggang~Clarence Yan, Xiaotian Zhang, Xu~Zhang, Feng Dai, Jian
+  Yin, and Yongdong Zhang.
+\newblock Drug{\textendash}target interaction prediction: databases, web
+  servers and computational models.
+\newblock {\em Briefings in Bioinformatics}, 17(4):696--712, August 2015.
+
+\bibitem{Kuh2000}
+Hyo-Jeong Kuh, Seong~Hoon Jang, M.~Guillaume Wientjes, and Jess~L.S. Au.
+\newblock Computational model of intracellular pharmacokinetics of paclitaxel.
+\newblock {\em Journal of Pharmacology and Experimental Therapeutics},
+  293(3):761--740, June 2000.
+
+\bibitem{Kung2019}
+Ethan Kung, Masoud Farahmand, and Akash Gupta.
+\newblock A hybrid experimental-computational modeling framework for
+  cardiovascular device testing.
+\newblock {\em Journal of Biomechanical Engineering}, 141(5), March 2019.
+
+\bibitem{viceconti_credibility_2020}
+Marco Viceconti, Miguel~A. Juárez, Cristina Curreli, Marzio Pennisi, Giulia
+  Russo, and Francesco Pappalardo.
+\newblock Credibility of {In} {Silico} {Trial} {Technologies}—{A}
+  {Theoretical} {Framing}.
+\newblock {\em IEEE Journal of Biomedical and Health Informatics}, 24(1):4--13,
+  January 2020.
+\newblock Conference Name: IEEE Journal of Biomedical and Health Informatics.
+
+\bibitem{viceconti2021}
+Marco Viceconti, Francesco Pappalardo, Blanca Rodriguez, Marc Horner, Jeff
+  Bischoff, and Flora Musuamba-Tshinanu.
+\newblock In silico trials: Verification, validation and uncertainty
+  quantification of predictive models used in the regulatory evaluation of
+  biomedical products.
+\newblock {\em Methods}, 185, 2021.
+
+\bibitem{Lieven2020-kj}
+Christian Lieven, Moritz~E Beber, Brett~G Olivier, Frank~T Bergmann, Meric
+  Ataman, Parizad Babaei, Jennifer~A Bartell, Lars~M Blank, Siddharth Chauhan,
+  Kevin Correia, Christian Diener, Andreas Dr{\"a}ger, Birgitta~E Ebert,
+  Janaka~N Edirisinghe, Jos{\'e}~P Faria, Adam~M Feist, Georgios Fengos, Ronan
+  M~T Fleming, Beatriz Garc{\'\i}a-Jim{\'e}nez, Vassily Hatzimanikatis, Wout
+  van Helvoirt, Christopher~S Henry, Henning Hermjakob, Markus~J Herrg{\aa}rd,
+  Ali Kaafarani, Hyun~Uk Kim, Zachary King, Steffen Klamt, Edda Klipp, Jasper~J
+  Koehorst, Matthias K{\"o}nig, Meiyappan Lakshmanan, Dong-Yup Lee, Sang~Yup
+  Lee, Sunjae Lee, Nathan~E Lewis, Filipe Liu, Hongwu Ma, Daniel Machado,
+  Radhakrishnan Mahadevan, Paulo Maia, Adil Mardinoglu, Gregory~L Medlock,
+  Jonathan~M Monk, Jens Nielsen, Lars~Keld Nielsen, Juan Nogales, Intawat
+  Nookaew, Bernhard~O Palsson, Jason~A Papin, Kiran~R Patil, Mark Poolman,
+  Nathan~D Price, Osbaldo Resendis-Antonio, Anne Richelle, Isabel Rocha,
+  Benjam{\'\i}n~J S{\'a}nchez, Peter~J Schaap, Rahuman~S Malik~Sheriff, Saeed
+  Shoaie, Nikolaus Sonnenschein, Bas Teusink, Paulo Vila{\c c}a, Jon~Olav Vik,
+  Judith A~H Wodke, Joana~C Xavier, Qianqian Yuan, Maksim Zakhartsev, and Cheng
+  Zhang.
+\newblock {MEMOTE} for standardized genome-scale metabolic model testing.
+\newblock {\em Nat. Biotechnol.}, 38(3):272--276, March 2020.
+
+\bibitem{Olivier2018-tx}
+Brett~G Olivier and Frank~T Bergmann.
+\newblock {SBML} level 3 package: Flux balance constraints version 2.
+\newblock {\em J. Integr. Bioinform.}, 15(1), March 2018.
+
+\bibitem{sbmlsim21}
+Matthias K\"{o}nig.
+\newblock sbmlsim: Sbml simulation made easy, 2021.
+
+\bibitem{BioModels2018a}
+Mihai Glont, Tung V~N Nguyen, Martin Graesslin, Robert Hälke, Raza Ali, Jochen
+  Schramm, Sarala~M Wimalaratne, Varun~B Kothamachu, Nicolas Rodriguez,
+  Maciej~J Swat, Jurgen Eils, Roland Eils, Camille Laibe, Rahuman~S
+  Malik-Sheriff, Vijayalakshmi Chelliah, Nicolas Le~Novère, and Henning
+  Hermjakob.
+\newblock Biomodels: expanding horizons to include more modelling approaches
+  and formats.
+\newblock {\em Nucleic Acids Research}, 46(D1):D1248–D1253, 2018.
+
+\bibitem{SBMpy}
+Brett Olivier, Willi Gottstein, Douwe Molenaar, and Bas Teusink.
+\newblock Cbmpy release 0.8.2, 2021.
+
+\bibitem{hari2020}
+Archana Hari and Daniel Lobo.
+\newblock Fluxer: a web application to compute, analyze and visualize
+  genome-scale metabolic flux networks.
+\newblock {\em Nucleic Acids Research}, 48(W1):W427--W435, May 2020.
+
+\bibitem{fbc_curation}
+Karthik Raman.
+\newblock Matlab/cobra helper for frog analysis of fbc models, 2022.
+
+\bibitem{Kaddi2007-js}
+Chanchala Kaddi, Erica~D Oden, Chang~F Quo, and May~D Wang.
+\newblock Exploration of quantitative scoring metrics to compare systems
+  biology modeling approaches.
+\newblock In {\em 2007 29th Annual International Conference of the {IEEE}
+  Engineering in Medicine and Biology Society}. IEEE, August 2007.
+
+\bibitem{Hellerstein2019}
+Joseph~L. Hellerstein, Stanley Gu, Kiri Choi, and Herbert~M. Sauro.
+\newblock Recent advances in biomedical simulations: a manifesto for model
+  engineering.
+\newblock {\em F1000Research}, 8:261, March 2019.
+
+\bibitem{Fairley78}
+R.E. Fairley.
+\newblock Tutorial: Static analysis and dynamic testing of computer software.
+\newblock {\em Computer}, 11(4):14--23, 1978.
+
+\bibitem{Guemes569}
+Maria G{\"u}emes, Sofia~A Rahman, and Khalid Hussain.
+\newblock What is a normal blood glucose?
+\newblock {\em Archives of Disease in Childhood}, 101(6):569--574, 2016.
+
+\bibitem{Thacker2004}
+B.H.Thacker, S.W.Doebling, F.M.Hemez, M.C. Anderson, J.E. Pepin, and E.A.
+  Rodriguez.
+\newblock Concepts of model verification and validation.
+\newblock Technical report, October 2004.
+
+\bibitem{Choi2018}
+Kiri Choi, J.~Kyle Medley, Matthias K\"{o}nig, Kaylene Stocking, Lucian Smith,
+  Stanley Gu, and Herbert~M. Sauro.
+\newblock Tellurium: An extensible python-based modeling environment for
+  systems and synthetic biology.
+\newblock {\em Biosystems}, 171:74--79, September 2018.
+
+\bibitem{Hoops2006}
+Stefan Hoops, Sven Sahle, Ralph Gauges, Christine Lee, J\"{u}rgen Pahle,
+  Natalia Simus, Mudita Singhal, Liang Xu, Pedro Mendes, and Ursula Kummer.
+\newblock {COPASI}{\textemdash}a {COmplex} {PAthway} {SImulator}.
+\newblock {\em Bioinformatics}, 22(24):3067--3074, October 2006.
+
+\bibitem{Shaikh2022}
+Bilal Shaikh, Lucian~P Smith, Dan Vasilescu, Gnaneswara Marupilla, Michael
+  Wilson, Eran Agmon, Henry Agnew, Steven~S Andrews, Azraf Anwar, Moritz~E
+  Beber, Frank~T Bergmann, David Brooks, Lutz Brusch, Laurence Calzone, Kiri
+  Choi, Joshua Cooper, John Detloff, Brian Drawert, Michel Dumontier, G~Bard
+  Ermentrout, James~R Faeder, Andrew~P Freiburger, Fabian Fr\"{o}hlich, Akira
+  Funahashi, Alan Garny, John~H Gennari, Padraig Gleeson, Anne Goelzer, Zachary
+  Haiman, Jan Hasenauer, Joseph~L Hellerstein, Henning Hermjakob, Stefan Hoops,
+  Jon~C Ison, Diego Jahn, Henry~V Jakubowski, Ryann Jordan, Mat{\'{u}}{\v{s}}
+  Kala{\v{s}}, Matthias K\"{o}nig, Wolfram Liebermeister, Rahuman~S~Malik
+  Sheriff, Synchon Mandal, Robert McDougal, J~Kyle Medley, Pedro Mendes, Robert
+  M\"{u}ller, Chris~J Myers, Aurelien Naldi, Tung V~N Nguyen, David~P
+  Nickerson, Brett~G Olivier, Drashti Patoliya, Loïc Paulev{\'{e}}, Linda~R
+  Petzold, Ankita Priya, Anand~K Rampadarath, Johann~M Rohwer, Ali~S Saglam,
+  Dilawar Singh, Ankur Sinha, Jacky Snoep, Hugh Sorby, Ryan Spangler, J\"{o}rn
+  Starru{\ss}, Payton~J Thomas, David van Niekerk, Daniel Weindl, Fengkai
+  Zhang, Anna Zhukova, Arthur~P Goldberg, James~C Schaff, Michael~L Blinov,
+  Herbert~M Sauro, Ion~I Moraru, and Jonathan~R Karr.
+\newblock {BioSimulators}: a central registry of simulation engines and
+  services for recommending specific tools.
+\newblock {\em Nucleic Acids Research}, 50(W1):W108--W114, May 2022.
+
+\bibitem{Marino2008}
+Simeone Marino, Ian~B. Hogue, Christian~J. Ray, and Denise~E. Kirschner.
+\newblock A methodology for performing global uncertainty and sensitivity
+  analysis in systems biology.
+\newblock {\em Journal of Theoretical Biology}, 254(1):178--196, September
+  2008.
+
+\bibitem{Saltelli}
+A.~Saltelli, M.~Ratto, T.~Andres, F.~Campolongo, J.~Cariboni, D.~Gatelli,
+  M.~Saisana, and S.~Tarantola.
+\newblock {\em Global Sensitivity Analysis: the Primer}.
+\newblock Wiley, 2008.
+
+\bibitem{Loucks2005}
+D.~Loucks, E.~van Beek, J.~Stedinger, J.~Dijkman, and M.~Villars.
+\newblock {\em Water Resource Systems Planning and Management: An Introduction
+  to Methods, Models, and Applications}.
+\newblock United Nations Educational, Scientific and Cultural Organization,
+  2005.
+
+\bibitem{Lal1995}
+W.~Lal.
+\newblock Sensitivity and uncertainty analysis of a regional model for the
+  natural system of south florida.
+\newblock Technical report, South Florida Water Management District, 1995.
+
+\bibitem{Zi2008}
+Zhike Zi, Yanan Zheng, Ann~E Rundell, and Edda Klipp.
+\newblock {SBML}-{SAT}: a systems biology markup language ({SBML}) based
+  sensitivity analysis tool.
+\newblock {\em {BMC} Bioinformatics}, 9(1), August 2008.
+
+\bibitem{Gutenkunst2007}
+Ryan~N Gutenkunst, Joshua~J Waterfall, Fergal~P Casey, Kevin~S Brown,
+  Christopher~R Myers, and James~P Sethna.
+\newblock Universally sloppy parameter sensitivities in systems biology models.
+\newblock {\em {PLoS} Computational Biology}, 3(10):e189, October 2007.
+
+\bibitem{Vanlier2013}
+J.~Vanlier, C.A. Tiemann, P.A.J. Hilbers, and N.A.W. van Riel.
+\newblock Parameter uncertainty in biochemical models described by ordinary
+  differential equations.
+\newblock {\em Mathematical Biosciences}, 246(2):305--314, December 2013.
+
+\bibitem{Zi2011}
+Z.~Zi.
+\newblock Sensitivity analysis approaches applied to systems biology models.
+\newblock {\em {IET} Systems Biology}, 5(6):336--346, November 2011.
+
+\bibitem{vanMourik2014}
+Simon van Mourik, Cajo ter Braak, Hans Stigter, and Jaap Molenaar.
+\newblock Prediction uncertainty assessment of a systems biology model requires
+  a sample of the full probability distribution of its parameters.
+\newblock {\em {PeerJ}}, 2:e433, June 2014.
+
+\bibitem{Volodina2021}
+Victoria Volodina and Peter Challenor.
+\newblock The importance of uncertainty quantification in model
+  reproducibility.
+\newblock {\em Philosophical Transactions of the Royal Society A: Mathematical,
+  Physical and Engineering Sciences}, 379(2197), March 2021.
+
+\bibitem{RoadRunnerdocs}
+A.~Somogyi, J.K. Medley, K.~Choi, C.~Welsh, and L.~Smith.
+\newblock libroadrunner, release 1.1.16.
+\newblock
+  \url{https://libroadrunner.readthedocs.io/_/downloads/en/latest/pdf/}.
+
+\end{thebibliography}
