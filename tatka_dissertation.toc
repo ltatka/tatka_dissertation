@@ -1,73 +1,76 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Previous Work: \\ \textit {A Public Database of Evolved Oscillatory Reaction Networks}}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Background}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Methods}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Model Representation}{7}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Objective Function}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}ODE Solver}{8}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Selection}{9}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Mutation}{9}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Random Networks for Evolution}{9}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Custom Evolution Algorithm}{10}{subsection.2.2.7}%
-\contentsline {subsection}{\numberline {2.2.8}Random Control Networks}{11}{subsection.2.2.8}%
-\contentsline {section}{\numberline {2.3}Results}{12}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Database Construction}{12}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Oscillating Network Examples}{14}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Discussion}{15}{section.2.4}%
-\contentsline {chapter}{\numberline {3}This is my next paper with a clever title}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Existing Software}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Methods}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Encoding}{23}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Background: \\\textit {Adapting Credibility Standards to Computational Systems Biology}}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{24}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Current Standards in Systems Biology}{25}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Model Representation}{26}{subsection.4.2.1}%
-\contentsline {subsubsection}{SBML}{26}{section*.10}%
-\contentsline {subsubsection}{CellML}{27}{section*.11}%
-\contentsline {subsubsection}{BioPAX}{27}{section*.12}%
-\contentsline {subsection}{\numberline {4.2.2}Annotation}{28}{subsection.4.2.2}%
-\contentsline {subsubsection}{MIRIAM}{29}{section*.13}%
-\contentsline {subsubsection}{Systems Biology Ontology (SBO)}{29}{section*.14}%
-\contentsline {subsubsection}{OMEX}{30}{section*.15}%
-\contentsline {subsubsection}{Annotation in CellML and SBML}{30}{section*.16}%
-\contentsline {subsection}{\numberline {4.2.3}Simulation and Parameter Estimation}{31}{subsection.4.2.3}%
-\contentsline {subsubsection}{MIASE}{31}{section*.17}%
-\contentsline {subsubsection}{KiSAO}{31}{section*.18}%
-\contentsline {subsubsection}{SED-ML}{32}{section*.19}%
-\contentsline {subsubsection}{PEtab}{32}{section*.20}%
-\contentsline {subsection}{\numberline {4.2.4}Dissemination}{33}{subsection.4.2.4}%
-\contentsline {subsubsection}{MIRIAM Curation Guidelines}{33}{section*.21}%
-\contentsline {subsubsection}{FAIR}{33}{section*.22}%
-\contentsline {subsubsection}{COMBINE Archives}{34}{section*.23}%
-\contentsline {section}{\numberline {4.3}Credibility Guidelines in Systems Biology}{34}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Qualitative Credibility Assessment in Other Modeling Fields}{36}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}NASA Credibility Assessment Scale}{36}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Credibility Standards for Medical Models}{38}{subsection.4.4.2}%
-\contentsline {subsubsection}{ASME V\&V 40}{39}{section*.26}%
-\contentsline {subsubsection}{FDA Guidance on Computational Model Credibility in Medical Devices}{40}{section*.27}%
-\contentsline {subsubsection}{EMA Guidelines for PBPK Models}{41}{section*.28}%
-\contentsline {subsection}{\numberline {4.4.3}Current Tools for Systems Biology Model Testing}{41}{subsection.4.4.3}%
-\contentsline {subsubsection}{MEMOTE}{42}{section*.29}%
-\contentsline {subsubsection}{FROG Analysis}{42}{section*.30}%
-\contentsline {section}{\numberline {4.5}Discussion}{43}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Conclusion}{44}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Overview of Proposed Research:\\\textit {Software for Automated Credibility Assessment in Systems Biology Models}}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Types of Software Testing}{47}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Sensitivity Analysis}{47}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Research Aims}{48}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Dynamic Testing}{49}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Model dynamics}{49}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Negative Concentrations and Concentrations Approaching Infinity}{50}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Specific Changes in Model Variables}{52}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Bounds Checking}{53}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Infrastructure}{53}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Verification and Validation}{55}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Validation}{55}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Verification}{56}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Sensitivity and Uncertainty Analysis}{58}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{58}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Sources of Parameter Uncertainty}{60}{section.8.2}%
-\contentsline {section}{\numberline {8.3}One-at-a-Time (OAT) Sensitivity Analysis}{60}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Weaknesses of OAT Sensitivity Analysis}{61}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Summary}{63}{chapter.9}%
+\contentsline {section}{\numberline {1.1}A brief history of chemical oscillators}{4}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Previous Work: \\ \textit {A Public Database of Evolved Oscillatory Reaction Networks}}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Background}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Methods}{10}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Model Representation}{10}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Objective Function}{11}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}ODE Solver}{11}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Selection}{12}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Mutation}{12}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Random Networks for Evolution}{12}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Custom Evolution Algorithm}{13}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Random Control Networks}{14}{subsection.2.2.8}%
+\contentsline {section}{\numberline {2.3}Results}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Database Construction}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Oscillating Network Examples}{17}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Discussion}{18}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Parking lot for abandoned text that might be useful later}{22}{chapter.3}%
+\contentsline {chapter}{\numberline {4}This is my next paper with a clever title}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Existing Software}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Evolving Reaction Networks}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Methods}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Encoding}{28}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Background: \\\textit {Adapting Credibility Standards to Computational Systems Biology}}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Current Standards in Systems Biology}{30}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Model Representation}{31}{subsection.5.2.1}%
+\contentsline {subsubsection}{SBML}{31}{section*.10}%
+\contentsline {subsubsection}{CellML}{32}{section*.11}%
+\contentsline {subsubsection}{BioPAX}{32}{section*.12}%
+\contentsline {subsection}{\numberline {5.2.2}Annotation}{33}{subsection.5.2.2}%
+\contentsline {subsubsection}{MIRIAM}{34}{section*.13}%
+\contentsline {subsubsection}{Systems Biology Ontology (SBO)}{34}{section*.14}%
+\contentsline {subsubsection}{OMEX}{35}{section*.15}%
+\contentsline {subsubsection}{Annotation in CellML and SBML}{35}{section*.16}%
+\contentsline {subsection}{\numberline {5.2.3}Simulation and Parameter Estimation}{36}{subsection.5.2.3}%
+\contentsline {subsubsection}{MIASE}{36}{section*.17}%
+\contentsline {subsubsection}{KiSAO}{36}{section*.18}%
+\contentsline {subsubsection}{SED-ML}{37}{section*.19}%
+\contentsline {subsubsection}{PEtab}{37}{section*.20}%
+\contentsline {subsection}{\numberline {5.2.4}Dissemination}{38}{subsection.5.2.4}%
+\contentsline {subsubsection}{MIRIAM Curation Guidelines}{38}{section*.21}%
+\contentsline {subsubsection}{FAIR}{38}{section*.22}%
+\contentsline {subsubsection}{COMBINE Archives}{39}{section*.23}%
+\contentsline {section}{\numberline {5.3}Credibility Guidelines in Systems Biology}{39}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Qualitative Credibility Assessment in Other Modeling Fields}{41}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}NASA Credibility Assessment Scale}{41}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Credibility Standards for Medical Models}{43}{subsection.5.4.2}%
+\contentsline {subsubsection}{ASME V\&V 40}{44}{section*.26}%
+\contentsline {subsubsection}{FDA Guidance on Computational Model Credibility in Medical Devices}{45}{section*.27}%
+\contentsline {subsubsection}{EMA Guidelines for PBPK Models}{46}{section*.28}%
+\contentsline {subsection}{\numberline {5.4.3}Current Tools for Systems Biology Model Testing}{46}{subsection.5.4.3}%
+\contentsline {subsubsection}{MEMOTE}{47}{section*.29}%
+\contentsline {subsubsection}{FROG Analysis}{47}{section*.30}%
+\contentsline {section}{\numberline {5.5}Discussion}{48}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Conclusion}{49}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Overview of Proposed Research:\\\textit {Software for Automated Credibility Assessment in Systems Biology Models}}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Types of Software Testing}{52}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Sensitivity Analysis}{52}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Research Aims}{53}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Dynamic Testing}{54}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Model dynamics}{54}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Negative Concentrations and Concentrations Approaching Infinity}{55}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Specific Changes in Model Variables}{57}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Bounds Checking}{58}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Infrastructure}{58}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Verification and Validation}{60}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Validation}{60}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Verification}{61}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Sensitivity and Uncertainty Analysis}{63}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{63}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Sources of Parameter Uncertainty}{65}{section.9.2}%
+\contentsline {section}{\numberline {9.3}One-at-a-Time (OAT) Sensitivity Analysis}{65}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Weaknesses of OAT Sensitivity Analysis}{66}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Summary}{68}{chapter.10}%

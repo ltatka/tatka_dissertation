@@ -7,6 +7,28 @@ Janyce~Eunice Gnanvi, Kolawol{\'{e}}~Val{\`{e}}re Salako, Gaëtan~Brezesky
   and critical review of modelling techniques.
 \newblock {\em Infectious Disease Modelling}, 6:258--272, 2021.
 
+\bibitem{Tyson1975}
+John~J. Tyson.
+\newblock Classification of instabilities in chemical reaction systems.
+\newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
+  1975.
+
+\bibitem{tyson2007}
+J.J Tyson.
+\newblock Biochemical oscillators.
+\newblock In {\em Computational Cell Biology}. Springer New York, 2007.
+
+\bibitem{Tyson2004}
+John~J. Tyson.
+\newblock Biochemical oscillations.
+\newblock In {\em Interdisciplinary Applied Mathematics}, pages 230--260.
+  Springer New York.
+
+\bibitem{Sauro_dynamics}
+Herbert Sauro.
+\newblock {teUtils} [software].
+\newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
+
 \bibitem{deckard2009}
 Anastasia~C Deckard, Frank~T Bergmann, and Herbert~M Sauro.
 \newblock Enumeration and online library of mass-action reaction networks.
@@ -108,28 +130,6 @@ Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
 \newblock A review on genetic algorithm: past, present, and future.
 \newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
   2020.
-
-\bibitem{Tyson1975}
-John~J. Tyson.
-\newblock Classification of instabilities in chemical reaction systems.
-\newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
-  1975.
-
-\bibitem{tyson2007}
-J.J Tyson.
-\newblock Biochemical oscillators.
-\newblock In {\em Computational Cell Biology}. Springer New York, 2007.
-
-\bibitem{Tyson2004}
-John~J. Tyson.
-\newblock Biochemical oscillations.
-\newblock In {\em Interdisciplinary Applied Mathematics}, pages 230--260.
-  Springer New York.
-
-\bibitem{Sauro_dynamics}
-Herbert Sauro.
-\newblock {teUtils} [software].
-\newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
 
 \bibitem{Wang2021}
 Chengyuan Wang, Si~Li, Adesola~S. Ademiloye, and Perumal Nithiarasu.

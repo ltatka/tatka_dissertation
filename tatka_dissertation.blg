@@ -3,8 +3,8 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tatka_dissertation.aux
 The style file: unsrt.bst
 Database file #1: researchbib.bib
-Warning--empty journal in nobile2013
 Warning--empty year in Tyson2004
+Warning--empty journal in nobile2013
 Warning--empty author in FDAguidelines
 Warning--empty note in shin_standards_nodate
 Warning--empty booktitle in Klipp2007StandardsIC

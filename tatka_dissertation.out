@@ -1,54 +1,57 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Previous Work: \040A Public Database of Evolved Oscillatory Reaction Networks}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Background}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Methods}{chapter.2}% 4
-\BOOKMARK [2][-]{subsection.2.2.1}{Model Representation}{section.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.2}{Objective Function}{section.2.2}% 6
-\BOOKMARK [2][-]{subsection.2.2.3}{ODE Solver}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.4}{Selection}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.5}{Mutation}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.6}{Random Networks for Evolution}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.7}{Custom Evolution Algorithm}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.8}{Random Control Networks}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Results}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Database Construction}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Oscillating Network Examples}{section.2.3}% 15
-\BOOKMARK [1][-]{section.2.4}{Discussion}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{This is my next paper with a clever title}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Existing Software}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Encoding}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Background: Adapting Credibility Standards to Computational Systems Biology}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Current Standards in Systems Biology}{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{Model Representation}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{Annotation}{section.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.2.3}{Simulation and Parameter Estimation}{section.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.2.4}{Dissemination}{section.4.2}% 27
-\BOOKMARK [1][-]{section.4.3}{Credibility Guidelines in Systems Biology}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.4}{Qualitative Credibility Assessment in Other Modeling Fields}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.4.1}{NASA Credibility Assessment Scale}{section.4.4}% 30
-\BOOKMARK [2][-]{subsection.4.4.2}{Credibility Standards for Medical Models}{section.4.4}% 31
-\BOOKMARK [2][-]{subsection.4.4.3}{Current Tools for Systems Biology Model Testing}{section.4.4}% 32
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Overview of Proposed Research:Software for Automated Credibility Assessment in Systems Biology Models}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.2}{Types of Software Testing}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.3}{Sensitivity Analysis}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.4}{Research Aims}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{Dynamic Testing}{}% 40
-\BOOKMARK [1][-]{section.6.1}{Model dynamics}{chapter.6}% 41
-\BOOKMARK [1][-]{section.6.2}{Negative Concentrations and Concentrations Approaching Infinity}{chapter.6}% 42
-\BOOKMARK [1][-]{section.6.3}{Specific Changes in Model Variables}{chapter.6}% 43
-\BOOKMARK [1][-]{section.6.4}{Bounds Checking}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.5}{Infrastructure}{chapter.6}% 45
-\BOOKMARK [0][-]{chapter.7}{Verification and Validation}{}% 46
-\BOOKMARK [1][-]{section.7.1}{Validation}{chapter.7}% 47
-\BOOKMARK [1][-]{section.7.2}{Verification}{chapter.7}% 48
-\BOOKMARK [0][-]{chapter.8}{Sensitivity and Uncertainty Analysis}{}% 49
-\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 50
-\BOOKMARK [1][-]{section.8.2}{Sources of Parameter Uncertainty}{chapter.8}% 51
-\BOOKMARK [1][-]{section.8.3}{One-at-a-Time \(OAT\) Sensitivity Analysis}{chapter.8}% 52
-\BOOKMARK [1][-]{section.8.4}{Weaknesses of OAT Sensitivity Analysis}{chapter.8}% 53
-\BOOKMARK [0][-]{chapter.9}{Summary}{}% 54
+\BOOKMARK [1][-]{section.1.1}{A brief history of chemical oscillators}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Previous Work: \040A Public Database of Evolved Oscillatory Reaction Networks}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Background}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Methods}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Model Representation}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Objective Function}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.3}{ODE Solver}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.4}{Selection}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.5}{Mutation}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.6}{Random Networks for Evolution}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.7}{Custom Evolution Algorithm}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.8}{Random Control Networks}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Results}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Database Construction}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.2}{Oscillating Network Examples}{section.2.3}% 16
+\BOOKMARK [1][-]{section.2.4}{Discussion}{chapter.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Parking lot for abandoned text that might be useful later}{}% 18
+\BOOKMARK [0][-]{chapter.4}{This is my next paper with a clever title}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Existing Software}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Evolving Reaction Networks}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Methods}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{Encoding}{chapter.4}% 23
+\BOOKMARK [0][-]{chapter.5}{Background: Adapting Credibility Standards to Computational Systems Biology}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.2}{Current Standards in Systems Biology}{chapter.5}% 26
+\BOOKMARK [2][-]{subsection.5.2.1}{Model Representation}{section.5.2}% 27
+\BOOKMARK [2][-]{subsection.5.2.2}{Annotation}{section.5.2}% 28
+\BOOKMARK [2][-]{subsection.5.2.3}{Simulation and Parameter Estimation}{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.4}{Dissemination}{section.5.2}% 30
+\BOOKMARK [1][-]{section.5.3}{Credibility Guidelines in Systems Biology}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.4}{Qualitative Credibility Assessment in Other Modeling Fields}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.4.1}{NASA Credibility Assessment Scale}{section.5.4}% 33
+\BOOKMARK [2][-]{subsection.5.4.2}{Credibility Standards for Medical Models}{section.5.4}% 34
+\BOOKMARK [2][-]{subsection.5.4.3}{Current Tools for Systems Biology Model Testing}{section.5.4}% 35
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Overview of Proposed Research:Software for Automated Credibility Assessment in Systems Biology Models}{}% 38
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Types of Software Testing}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.3}{Sensitivity Analysis}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.4}{Research Aims}{chapter.6}% 42
+\BOOKMARK [0][-]{chapter.7}{Dynamic Testing}{}% 43
+\BOOKMARK [1][-]{section.7.1}{Model dynamics}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.2}{Negative Concentrations and Concentrations Approaching Infinity}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.3}{Specific Changes in Model Variables}{chapter.7}% 46
+\BOOKMARK [1][-]{section.7.4}{Bounds Checking}{chapter.7}% 47
+\BOOKMARK [1][-]{section.7.5}{Infrastructure}{chapter.7}% 48
+\BOOKMARK [0][-]{chapter.8}{Verification and Validation}{}% 49
+\BOOKMARK [1][-]{section.8.1}{Validation}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.2}{Verification}{chapter.8}% 51
+\BOOKMARK [0][-]{chapter.9}{Sensitivity and Uncertainty Analysis}{}% 52
+\BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}% 53
+\BOOKMARK [1][-]{section.9.2}{Sources of Parameter Uncertainty}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.3}{One-at-a-Time \(OAT\) Sensitivity Analysis}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.4}{Weaknesses of OAT Sensitivity Analysis}{chapter.9}% 56
+\BOOKMARK [0][-]{chapter.10}{Summary}{}% 57
