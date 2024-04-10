@@ -5,51 +5,45 @@ The style file: unsrt.bst
 Database file #1: researchbib.bib
 Warning--empty year in Tyson2004
 Warning--empty journal in nobile2013
-Warning--empty author in FDAguidelines
-Warning--empty note in shin_standards_nodate
-Warning--empty booktitle in Klipp2007StandardsIC
-Warning--empty booktitle in Noy2001OntologyD1
-Warning--empty institution in berners2005uniform
-Warning--empty institution in Thacker2004
-You've used 113 entries,
+You've used 21 entries,
             1791 wiz_defined-function locations,
-            1136 strings with 39032 characters,
-and the built_in function-call counts, 34865 in all, are:
-= -- 2193
-> -- 3441
-< -- 6
-+ -- 1190
-- -- 1077
-* -- 3478
-:= -- 6320
-add.period$ -- 343
-call.type$ -- 113
-change.case$ -- 114
+            596 strings with 7497 characters,
+and the built_in function-call counts, 5265 in all, are:
+= -- 470
+> -- 236
+< -- 3
++ -- 88
+- -- 67
+* -- 399
+:= -- 834
+add.period$ -- 65
+call.type$ -- 21
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 121
-duplicate$ -- 1033
-empty$ -- 2424
-format.name$ -- 1077
-if$ -- 6948
+cite$ -- 23
+duplicate$ -- 224
+empty$ -- 498
+format.name$ -- 67
+if$ -- 1157
 int.to.chr$ -- 0
-int.to.str$ -- 113
-missing$ -- 105
-newline$ -- 565
-num.names$ -- 114
-pop$ -- 241
+int.to.str$ -- 21
+missing$ -- 21
+newline$ -- 108
+num.names$ -- 21
+pop$ -- 50
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 420
+skip$ -- 105
 stack$ -- 0
-substring$ -- 1689
-swap$ -- 158
-text.length$ -- 6
+substring$ -- 409
+swap$ -- 50
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 233
-width$ -- 116
-write$ -- 1218
-(There were 8 warnings)
+warning$ -- 2
+while$ -- 50
+width$ -- 23
+write$ -- 228
+(There were 2 warnings)

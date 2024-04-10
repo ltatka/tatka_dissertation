@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  9 APR 2024 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  10 APR 2024 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -384,267 +384,172 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
-] [3])
+])
 \tf@toc=\write4
 \openout4 = `tatka_dissertation.toc'.
 
- [4]
+ [3]
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 \end{equation}
-                     [1
+l.93 
+      [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--126
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
-
- []
-
-[3] [4] [5] [6] [7]
+] [2] [3] [4] [5] [6]
 Chapter 2.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 203.
-
-[8
+[7
 
 ]
-<images/Reactions.png, id=406, 1186.4325pt x 996.72375pt>
+<images/Reactions.png, id=223, 1186.4325pt x 996.72375pt>
 File: images/Reactions.png Graphic file (type png)
 <use images/Reactions.png>
-Package pdftex.def Info: images/Reactions.png  used on input line 228.
+Package pdftex.def Info: images/Reactions.png  used on input line 190.
 (pdftex.def)             Requested size: 199.16928pt x 167.31157pt.
 
-Overfull \hbox (50.58968pt too wide) in paragraph at lines 223--233
+Overfull \hbox (50.58968pt too wide) in paragraph at lines 185--195
 \OT1/cmr/m/n/12 Oscillating mod-els were gen-er-ated us-ing evo-lu-tion scripts
  writ-ten in python, avail-able at https://github.com/sys-
  []
 
-[9] [10 <./images/Reactions.png>]
-<images/fitness.png, id=425, 975.645pt x 596.2275pt>
+[8] [9 <./images/Reactions.png>]
+<images/fitness.png, id=242, 975.645pt x 596.2275pt>
 File: images/fitness.png Graphic file (type png)
 <use images/fitness.png>
-Package pdftex.def Info: images/fitness.png  used on input line 248.
+Package pdftex.def Info: images/fitness.png  used on input line 210.
 (pdftex.def)             Requested size: 284.52756pt x 173.875pt.
- [11 <./images/fitness.png>]
-<images/algorithm.png, id=438, 1555.8125pt x 880.28876pt>
+ [10 <./images/fitness.png>]
+<images/algorithm.png, id=255, 1555.8125pt x 880.28876pt>
 File: images/algorithm.png Graphic file (type png)
 <use images/algorithm.png>
-Package pdftex.def Info: images/algorithm.png  used on input line 267.
+Package pdftex.def Info: images/algorithm.png  used on input line 229.
 (pdftex.def)             Requested size: 341.43306pt x 193.18056pt.
- [12] [13 <./images/algorithm.png>] [14]
-<images/examples.png, id=461, 1260.71pt x 944.52875pt>
+ [11] [12 <./images/algorithm.png>] [13]
+<images/examples.png, id=277, 1260.71pt x 944.52875pt>
 File: images/examples.png Graphic file (type png)
 <use images/examples.png>
-Package pdftex.def Info: images/examples.png  used on input line 287.
+Package pdftex.def Info: images/examples.png  used on input line 249.
 (pdftex.def)             Requested size: 241.84842pt x 181.1918pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 289.
+(caption)                particular \caption on input line 251.
 See the caption package documentation for explanation.
 
-[15 <./images/examples.png>]
-<images/website.png, id=471, 486.81876pt x 624.3325pt>
+[14 <./images/examples.png>]
+<images/website.png, id=287, 486.81876pt x 624.3325pt>
 File: images/website.png Graphic file (type png)
 <use images/website.png>
-Package pdftex.def Info: images/website.png  used on input line 308.
+Package pdftex.def Info: images/website.png  used on input line 270.
 (pdftex.def)             Requested size: 227.62204pt x 291.9216pt.
- [16 <./images/website.png>]
-<images/model-diagrams.png, id=479, 1136.245pt x 863.225pt>
+ [15 <./images/website.png>]
+<images/model-diagrams.png, id=295, 1136.245pt x 863.225pt>
 File: images/model-diagrams.png Graphic file (type png)
 <use images/model-diagrams.png>
-Package pdftex.def Info: images/model-diagrams.png  used on input line 319.
+Package pdftex.def Info: images/model-diagrams.png  used on input line 281.
 (pdftex.def)             Requested size: 227.62204pt x 172.91855pt.
-<images/feedback-cycle.png, id=481, 402.50375pt x 320.19624pt>
+<images/feedback-cycle.png, id=297, 402.50375pt x 320.19624pt>
 File: images/feedback-cycle.png Graphic file (type png)
 <use images/feedback-cycle.png>
-Package pdftex.def Info: images/feedback-cycle.png  used on input line 338.
+Package pdftex.def Info: images/feedback-cycle.png  used on input line 300.
 (pdftex.def)             Requested size: 142.26378pt x 113.16966pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 339.
+(caption)                particular \caption on input line 301.
 See the caption package documentation for explanation.
 
-[17 <./images/model-diagrams.png>] [18 <./images/feedback-cycle.png>]
-<images/composition.png, id=499, 895.345pt x 368.37625pt>
+[16 <./images/model-diagrams.png>] [17 <./images/feedback-cycle.png>]
+<images/composition.png, id=317, 895.345pt x 368.37625pt>
 File: images/composition.png Graphic file (type png)
 <use images/composition.png>
-Package pdftex.def Info: images/composition.png  used on input line 353.
+Package pdftex.def Info: images/composition.png  used on input line 315.
 (pdftex.def)             Requested size: 227.62204pt x 93.65083pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 354.
+(caption)                particular \caption on input line 316.
 See the caption package documentation for explanation.
 
-[19 <./images/composition.png>]
-<images/autocomp.png, id=507, 887.315pt x 395.4775pt>
+[18 <./images/composition.png>]
+<images/autocomp.png, id=326, 887.315pt x 395.4775pt>
 File: images/autocomp.png Graphic file (type png)
 <use images/autocomp.png>
-Package pdftex.def Info: images/autocomp.png  used on input line 361.
+Package pdftex.def Info: images/autocomp.png  used on input line 323.
 (pdftex.def)             Requested size: 227.62204pt x 101.44585pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 362.
+(caption)                particular \caption on input line 324.
 See the caption package documentation for explanation.
 
-[20 <./images/autocomp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
+[19 <./images/autocomp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--386
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
-[21]
+[20]
 Chapter 3.
-[22
+[21
 
-] [23]
+] [22] [23]
 Chapter 4.
 [24
 
-] [25] [26] [27] [28]
-Chapter 5.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 464.
-
-[29
-
-] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39]
-<images/10rules.png, id=767, 726.715pt x 1024.82875pt>
-File: images/10rules.png Graphic file (type png)
-<use images/10rules.png>
-Package pdftex.def Info: images/10rules.png  used on input line 576.
-(pdftex.def)             Requested size: 170.71652pt x 240.74097pt.
- [40 <./images/10rules.png>]
-<images/NASA_CAS.png, id=782, 708.39656pt x 462.97969pt>
-File: images/NASA_CAS.png Graphic file (type png)
-<use images/NASA_CAS.png>
-Package pdftex.def Info: images/NASA_CAS.png  used on input line 594.
-(pdftex.def)             Requested size: 241.84842pt x 158.06093pt.
- [41] [42 <./images/NASA_CAS.PNG>] [43] [44] [45] [46] [47] [48] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 688--693
-
- []
-
-[50]
-Chapter 6.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 694.
-
-[51
-
-] [52] [53]
-Chapter 7.
-[54
-
-] [55]
-<images/infinity.png, id=915, 1310.8975pt x 885.3075pt>
-File: images/infinity.png Graphic file (type png)
-<use images/infinity.png>
-Package pdftex.def Info: images/infinity.png  used on input line 752.
-(pdftex.def)             Requested size: 426.79134pt x 288.23485pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 753.
-See the caption package documentation for explanation.
-
-[56 <./images/infinity.png>] [57] [58] [59]
-Chapter 8.
-[60
-
-] [61] [62]
-Chapter 9.
-<images/sensitivity_uncertainty.png, id=966, 711.65875pt x 411.5375pt>
-File: images/sensitivity_uncertainty.png Graphic file (type png)
-<use images/sensitivity_uncertainty.png>
-Package pdftex.def Info: images/sensitivity_uncertainty.png  used on input line
- 815.
-(pdftex.def)             Requested size: 369.88582pt x 213.89398pt.
-[63
-
-] [64 <./images/sensitivity_uncertainty.png>] [65] [66] [67]
-Chapter 10.
-[68
-
-]
-<images/testSummary.png, id=1025, 1004.75375pt x 626.34pt>
+] [25] [26] [27]
+<images/testSummary.png, id=374, 1004.75375pt x 626.34pt>
 File: images/testSummary.png Graphic file (type png)
 <use images/testSummary.png>
-Package pdftex.def Info: images/testSummary.png  used on input line 857.
+Package pdftex.def Info: images/testSummary.png  used on input line 459.
 (pdftex.def)             Requested size: 540.60236pt x 336.99524pt.
 
-Overfull \hbox (24.12987pt too wide) in paragraph at lines 857--858
+Overfull \hbox (24.12987pt too wide) in paragraph at lines 459--460
  [][] 
  []
 
-(./tatka_dissertation.bbl [69 <./images/testSummary.png>] [70
+(./tatka_dissertation.bbl [28 <./images/testSummary.png>] [29
 
-] [71] [72]
-[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 867.
- [86]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 867.
+] [30])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 469.
+ [31]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 469.
 
 (./tatka_dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 867.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 867.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 469.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 469.
 Package rerunfilecheck Info: File `tatka_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 3DC8FC26EA88593AC32DBAC3BA1AE994;4174.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 867.
+(rerunfilecheck)             Checksum: 521DE207A7E177884F95F1C50BDC8157;1646.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 469.
  ) 
 Here is how much of TeX's memory you used:
- 8402 strings out of 483183
- 126782 string characters out of 5966292
- 376735 words of memory out of 5000000
- 22954 multiletter control sequences out of 15000+600000
- 542723 words of font info for 63 fonts, out of 8000000 for 9000
+ 8025 strings out of 483183
+ 121505 string characters out of 5966292
+ 370599 words of memory out of 5000000
+ 22789 multiletter control sequences out of 15000+600000
+ 541659 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,43p,1558b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,42p,1515b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/hellsbells/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
 0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tatka_dissertation.pdf (91 pages, 1911601 bytes).
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on tatka_dissertation.pdf (35 pages, 1452940 bytes).
 PDF statistics:
- 1225 PDF objects out of 1440 (max. 8388607)
- 1076 compressed objects within 11 object streams
- 309 named destinations out of 1000 (max. 500000)
- 527 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 456 PDF objects out of 1000 (max. 8388607)
+ 384 compressed objects within 4 object streams
+ 103 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
