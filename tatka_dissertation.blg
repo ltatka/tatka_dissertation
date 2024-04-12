@@ -6,45 +6,45 @@ Database file #1: researchbib.bib
 Warning--empty year in Tyson2004
 Warning--empty journal in nobile2013
 Warning--empty journal in francois_hakim_2004
-You've used 33 entries,
+You've used 34 entries,
             1791 wiz_defined-function locations,
-            671 strings with 9662 characters,
-and the built_in function-call counts, 8020 in all, are:
-= -- 719
-> -- 343
+            680 strings with 9885 characters,
+and the built_in function-call counts, 8274 in all, are:
+= -- 738
+> -- 360
 < -- 4
-+ -- 128
-- -- 95
-* -- 605
-:= -- 1260
-add.period$ -- 102
-call.type$ -- 33
-change.case$ -- 32
++ -- 134
+- -- 100
+* -- 628
+:= -- 1304
+add.period$ -- 105
+call.type$ -- 34
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 347
-empty$ -- 780
-format.name$ -- 95
-if$ -- 1770
+cite$ -- 37
+duplicate$ -- 356
+empty$ -- 802
+format.name$ -- 100
+if$ -- 1823
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 34
-newline$ -- 168
-num.names$ -- 33
-pop$ -- 82
+int.to.str$ -- 34
+missing$ -- 35
+newline$ -- 173
+num.names$ -- 34
+pop$ -- 83
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 159
+skip$ -- 162
 stack$ -- 0
-substring$ -- 613
-swap$ -- 71
+substring$ -- 631
+swap$ -- 72
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 77
-width$ -- 35
-write$ -- 358
+while$ -- 79
+width$ -- 36
+write$ -- 369
 (There were 3 warnings)

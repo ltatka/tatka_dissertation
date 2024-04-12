@@ -18,7 +18,18 @@
 \BOOKMARK [0][-]{chapter.3}{Parking lot for abandoned text that might be useful later}{}% 18
 \BOOKMARK [1][-]{section.3.1}{Existing Software}{chapter.3}% 19
 \BOOKMARK [1][-]{section.3.2}{CRN basics}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{This is my next paper with a clever title}{}% 21
+\BOOKMARK [0][-]{chapter.4}{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{}% 21
 \BOOKMARK [1][-]{section.4.1}{Evolving Reaction Networks}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.3}{Encoding}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.2.1}{Encoding}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.2}{Mutation}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.3}{crossover}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.4}{Speciation}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.5}{Fitness Calculation}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.6}{Reproduction}{section.4.2}% 29
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.3.1}{Effect of Crossover}{section.4.3}% 31
+\BOOKMARK [2][-]{subsection.4.3.2}{Diversity Maintenance with Speciation}{section.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.3.3}{Effect of Selection Method}{section.4.3}% 33
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 35

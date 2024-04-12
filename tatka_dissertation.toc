@@ -18,7 +18,18 @@
 \contentsline {chapter}{\numberline {3}Parking lot for abandoned text that might be useful later}{21}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Existing Software}{22}{section.3.1}%
 \contentsline {section}{\numberline {3.2}CRN basics}{22}{section.3.2}%
-\contentsline {chapter}{\numberline {4}This is my next paper with a clever title}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Evolving Reaction Networks}{26}{section.4.1}%
+\contentsline {chapter}{\numberline {4}In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evolving Reaction Networks}{27}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Methods}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Encoding}{28}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.1}Encoding}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Mutation}{28}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}crossover}{29}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Speciation}{29}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Fitness Calculation}{31}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Reproduction}{31}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Results}{31}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Effect of Crossover}{31}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Diversity Maintenance with Speciation}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Effect of Selection Method}{31}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Discussion}{31}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{31}{section.4.5}%

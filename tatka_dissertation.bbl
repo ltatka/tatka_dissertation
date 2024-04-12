@@ -193,4 +193,10 @@ Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
 \newblock Julia: A fresh approach to numerical computing.
 \newblock {\em SIAM review}, 59(1):65--98, 2017.
 
+\bibitem{Tatka2023}
+Lillian~T. Tatka, Wesley Luk, Timothy~C. Elston, Joseph~L. Hellerstein, and
+  Herbert~M. Sauro.
+\newblock Cesium: A public database of evolved oscillatory reaction networks.
+\newblock {\em Biosystems}, 224:104836, February 2023.
+
 \end{thebibliography}
