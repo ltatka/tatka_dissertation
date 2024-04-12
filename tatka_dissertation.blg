@@ -5,45 +5,46 @@ The style file: unsrt.bst
 Database file #1: researchbib.bib
 Warning--empty year in Tyson2004
 Warning--empty journal in nobile2013
-You've used 21 entries,
+Warning--empty journal in francois_hakim_2004
+You've used 33 entries,
             1791 wiz_defined-function locations,
-            596 strings with 7497 characters,
-and the built_in function-call counts, 5265 in all, are:
-= -- 470
-> -- 236
-< -- 3
-+ -- 88
-- -- 67
-* -- 399
-:= -- 834
-add.period$ -- 65
-call.type$ -- 21
-change.case$ -- 21
+            671 strings with 9662 characters,
+and the built_in function-call counts, 8020 in all, are:
+= -- 719
+> -- 343
+< -- 4
++ -- 128
+- -- 95
+* -- 605
+:= -- 1260
+add.period$ -- 102
+call.type$ -- 33
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 224
-empty$ -- 498
-format.name$ -- 67
-if$ -- 1157
+cite$ -- 36
+duplicate$ -- 347
+empty$ -- 780
+format.name$ -- 95
+if$ -- 1770
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 21
-newline$ -- 108
-num.names$ -- 21
-pop$ -- 50
+int.to.str$ -- 33
+missing$ -- 34
+newline$ -- 168
+num.names$ -- 33
+pop$ -- 82
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 105
+skip$ -- 159
 stack$ -- 0
-substring$ -- 409
-swap$ -- 50
-text.length$ -- 3
+substring$ -- 613
+swap$ -- 71
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 50
-width$ -- 23
-write$ -- 228
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 77
+width$ -- 35
+write$ -- 358
+(There were 3 warnings)

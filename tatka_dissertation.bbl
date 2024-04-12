@@ -124,4 +124,73 @@ Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
 \newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
   2020.
 
+\bibitem{holland_1975}
+John Holland.
+\newblock {\em Adaptation in natural and artificial systems: An introductory
+  analysis with applications in biology, control, and artificial intelligence}.
+\newblock U Michigan Press, 1975.
+
+\bibitem{francois_hakim_2004}
+Paul Francois and Vincent Hakim.
+\newblock Design of genetic networks with specified functions by evolution in
+  silico.
+\newblock 2004.
+
+\bibitem{fujimoto_network_2008}
+Koichi Fujimoto, Shuji Ishihara, and Kunihiko Kaneko.
+\newblock Network {Evolution} of {Body} {Plans}.
+\newblock {\em PLoS ONE}, 3(7):e2772, July 2008.
+
+\bibitem{kobayashi_evolutionary_2010}
+Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
+\newblock Evolutionary design of oscillatory genetic networks.
+\newblock {\em Eur. Phys. J. B}, 76(1):167--178, July 2010.
+
+\bibitem{deckard_preliminary_2004}
+Anastasia Deckard and Herbert~M Sauro.
+\newblock Preliminary {Studies} on the {In} {Silico} {Evolution} of
+  {Biochemical} {Networks}.
+\newblock {\em ChemBioChem}, 5(10):1423--1431, October 2004.
+
+\bibitem{marchisio_automatic_2011}
+Mario~A. Marchisio and Jörg Stelling.
+\newblock Automatic {Design} of {Digital} {Synthetic} {Gene} {Circuits}.
+\newblock {\em PLoS Comput Biol}, 7(2):e1001083, February 2011.
+
+\bibitem{jin_evolving_2008}
+Yaochu Jin and Bernhard Sendhoff.
+\newblock Evolving in silico bistable and oscillatory dynamics for gene
+  regulatory network motifs.
+\newblock In {\em 2008 {IEEE} {Congress} on {Evolutionary} {Computation}
+  ({IEEE} {World} {Congress} on {Computational} {Intelligence})}, pages
+  386--391, Hong Kong, China, June 2008. IEEE.
+
+\bibitem{porubsky2019}
+Veronica Porubsky and Herbert Sauro.
+\newblock Application of parameter optimization to search for oscillatory
+  mass-action networks using python.
+\newblock {\em Processes}, 7(3):163, mar 2019.
+
+\bibitem{Elowitz2000}
+Michael~B. Elowitz and Stanislas Leibler.
+\newblock A synthetic oscillatory network of transcriptional regulators.
+\newblock {\em Nature}, 403(6767):335–338, January 2000.
+
+\bibitem{drennan_beer}
+Barry Drennan and Randall~D. Beer.
+\newblock Evolution of repressilators using a biologically-motivated model of
+  gene expression.
+\newblock In {\em Artificial Life X: Proceedings of the Tenth International
+  Conf. on the Simulation and Synthesis of Living Systems}, 2006.
+
+\bibitem{stanley_evolving_2002}
+Kenneth~O. Stanley and Risto Miikkulainen.
+\newblock Evolving {Neural} {Networks} through {Augmenting} {Topologies}.
+\newblock {\em Evolutionary Computation}, 10(2):99--127, June 2002.
+
+\bibitem{bezanson2017julia}
+Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
+\newblock Julia: A fresh approach to numerical computing.
+\newblock {\em SIAM review}, 59(1):65--98, 2017.
+
 \end{thebibliography}
