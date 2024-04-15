@@ -32,7 +32,7 @@
 \usepackage{changepage}
 
 \author{Lillian Tatka}
-\title{Automated Credibility Assessment of Computational Models in Systems Biology}
+\title{In Silico Evolution of Oscillating Mass-Action Chemical Reaction Networks}
 \begin{document}
 \begin{titlepage}
 \begin{center}
@@ -42,41 +42,65 @@
 %\vspace*{\fill}
 %\end{spacing}
 \begin{spacing}{2.5}
-\textbf{\Large Automated Credibility Assessment of Computational Models in Systems Biology}\\[0.5cm]
+In Silico Evolution of Oscillating Mass-Action Chemical Reaction Networks
 \vspace*{\fill}
 %\textit{Submitted by}
 \end{spacing}
 
 \begin{spacing}{1.15}
-\textbf{\large Lillian Tatka}
+Lillian Tatka
 
 \vspace*{\fill}
 
 
-Submitted in partial fulfillment\\of the requirements for the\\Bioengineering Ph.D. General Exam
-
+A dissertation\\submitted in partial fulfillment of the\\requirements for the degree of
+\\
 \vspace*{\fill}
+Doctor of Philosophy\\
+\vspace*{\fill}
+University of Washington\\
+2024
+\vspace{\fill}
 
-Supervisory Committee:\\
+Reading Committee:\\
 Herbert Sauro, Chair\\
 Patrick Boyle\\
-Joseph Hellerstein\\
 Lucian Smith\\
-Wendy Thomas\\
-Georg Seelig, GSR\\
+
 
 \vspace*{\fill}
-\textnormal{\large Department of Bioengineering\\ University of Washington \\ May 2023}
+Program Authorized to Offer Degree:\\
+Bioengineering
 
 \end{spacing}
 \end{center}
 \end{titlepage}
 
 %\maketitle
-
+\null
+\begin{center}
+\textcopyright Copyright 2024\\
+Lillian Tatka
+\end{center}
+\pagenumbering{gobble}
+\newpage
 
 \pagenumbering{roman}
-\section*{Abstract}
+\begin{center}
+University of Washington\\
+\vspace*{\fill}
+\textbf{Abstract} \\
+\vspace*{\fill}
+In Silico Evolution of Oscillating Mass-Action Chemical Reaction Networks\\
+\vspace*{\fill}
+Lillian Tatka\\
+\vspace*{\fill}
+Chair of the Supervisory Committee:\\
+Herbert Sauro\\
+Bioengineering
+\pagenumbering{gobble}
+\end{center}
+\vspace*{\fill}
 Computational models are increasingly used in high-impact decision making in science, engineering, and medicine. It is crucial that computational models meet a standard of credibility when using them in high-stakes decision making. For this reason, institutes including NASA, the FDA, and the EMA have developed standards to promote and assess the credibility of computational models and simulations. However, due to the breadth of models these institutes assess, these credibility standards are mostly qualitative and avoid making specific recommendations. On the other hand, modeling and simulation in systems biology is a narrower domain and several standards are already in place. These factors facilitate the development of a quantitative credibility standard. A systems biology credibility standard is essential given the rise in complexity and influence of models. This proposal describes the development of a testing suite to standardize and automate credibility testing and scoring of computational systems biology models. The test suite will include dynamic tests that examine the output of a simulated model, verification and validation tests, and a preliminary assessment of parameter sensitivity to gauge uncertainty in the model's predictions. 
 
 \tableofcontents
@@ -203,7 +227,7 @@ Models and reactions were represented by custom data structures. An instance of 
 
 \subsection{Objective Function}
 
-The objective function minimized error between the candidate model's time course data and a series of points corresponding to the peaks and troughs of an oscillator. This "idealized" oscillator time series consisted of nine concentration points, alternative between 5 and 30 concentration units over the course of 1.25 seconds (figure \ref{fig:fitness}). The output time series of each species was compared to these points by summing the squared difference between the observed point and the "ideal" point and the smallest error value was considered the model's fitness. This is similar to MSE but the sum is not divided by the number of observations as this number is constant across all models. This has been demonstrated to be an effective objective function for the in silico evolution of chemical oscillators~\cite{Paladugu2006}.  In cases where candidate models could not be simulated, an arbitrarily high fitness value was assigned resulting in their subsequent removal from the population in the selection step.  
+The objective function minimized error between the candidate model's time course data and a series of points corresponding to the peaks and troughs of an oscillator. This "idealized" oscillator time series consisted of nine concentration points, alternating between 5 and 30 concentration units over the course of 1.25 seconds (figure \ref{fig:fitness}). The output time series of each species was compared to these points by summing the squared difference between the observed point and the ``ideal" point and the smallest error value was considered the model's fitness. This is similar to MSE but the sum is not divided by the number of observations as this number is constant across all models. This has been demonstrated to be an effective objective function for the in silico evolution of chemical oscillators~\cite{Paladugu2006}.  In cases where candidate models could not be simulated, an arbitrarily high fitness value was assigned resulting in their subsequent removal from the population in the selection step.  
 
 \begin{figure}
     \centering
@@ -430,18 +454,26 @@ Wanted to evolve genetic oscillatory networks. Get a large population of them an
 
 
 \section{Methods}
+
+\begin{center}
+    \includegraphics[width=8cm]{images/algo_description_crossover.png}
+    \captionof{figure}{The evolutionary algorithm begins with a population of randomly generated reaction networks. These networks are then grouped into species and their fitness evaluated. The next generation is constructed by first selecting the top performing individuals from each species without modification. The rest of the subsequent generation is populated by networks that are modified by either crossover, mutation, or both. This new generation is then grouped into species based on structural similarity and the process repeats.}
+    \label{fig:algo_description_crossover}
+\end{center}
 \subsection{Encoding}
 Chemical reactions are represented as custom data structures that contain one or two reactants, one or two products, a rate constant, and a boolean value indicating if the reaction is active or inactive. Four types of mass-action reaction are possible: uni-uni (a single reactant to a single product), bi-uni (two reactants form a single product), uni-bi, and bi-bi. A reaction that is active participates in the network that it is part of. An inactive reaction is ``turned off" but remains part of the network as a historical record. It can be activated again or crossed over under certain circumstances. 
 
 A reaction network is a custom data structure consisting of several reactions, initial concentrations for the floating species, and other information to track the individual network. A network can include boundary species (which are assumed to be at a constant concentration throughout the simulation), but boundary species were not used in this study.
 
 \subsection{Mutation}
+\label{section: mutation}
 There are two types of mutation: rate constant mutation and reaction addition or subtraction. The probability of each of these mutations occurring and the range in which rate constants are mutated can be set by the user. A rate constant mutation can occur in two possible forms. The rate can be increased or reduce by a random percentage, uniformly distributed in a custom range (by default $\pm20\%$), or more rarely a completely new rate constant can be selected, uniformly distributed within a custom range (by default 0.1 to 50). Rate constants were not allowed to become negative, but they did not have an upper bound as previous studies observed that many synthetic oscillating systems rely on a single reaction with an abnormally large rate constant \cite{Tatka2023}.
 
 A reaction mutation is either the addition of a new random reaction or the deletion of an existing reaction, with 50\% chance of each. When a new reaction is added, it is generated randomly with a 
 probability of 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactions respectively. These probabilities are also configurable. If the randomly generated reaction is already present in the reaction network, the new reaction's rate constant is added to the existing reaction's rate constant. This feature can allow some rate constants to grow to several multiples of the next largest rate constant in the network. When a reaction is deleted, it is ``switched off" and becomes inactive in the network, but is preserved as it can become reactivated under certain circumstances.
 
-\subsection{crossover}
+\subsection{Crossover}
+During crossover, two parent networks from the same species group are chosen to mate. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent. 
 
 \subsection{Speciation}
 In many cases, modifying a network, especially through the addition or deletion of reactions, initially makes the system less fit. Without speciation, these innovations seldom last for more than a generation. However, often these topological innovations prove an essential step in evolution \cite{stanley_evolving_2002}. For this reason, a speciation strategy is employed to protect innovations and allow them time to optimize. Individuals with similar topologies are grouped into species. Members of a species compete only with each other and not the population at large.  A compatibility distance metric, $\delta$, is used to assign reaction networks to a species, defined as
@@ -461,11 +493,60 @@ The speciation threshold $\delta_{t}$ is adjusted with each generation to steer 
 	\end{cases}
 \end{equation}
 
-\subsection{Fitness Calculation}
+\subsection{Objective Function}
+
+The objective function evaluated how well a candidate model oscillated at the imposed time period, $T$.  Two arbitrary concentrations, $[C]_{1}$ and $[C]_{2}$,  were chosen \textit{a priori}. The fitness score of a particular network was then attributes to how well any of its chemical species approached $[C]_{1}$ at half periods ($T/2$, $3T/2$, $5T/2$,...) and  $[C]_{2}$ at each period ($T$, $2T$, $3T$,...) over the course of 5.5 periods. The candidate model's single chemical species that best approached these points was selected and the fitness was evaluated as the maximum of the reciprocal of the absolute difference between the timeseries data and $[C]_{1}$ or $[C]_{2}$, the ``ideal oscillator" time points, (equation \ref{equation: fitness}). The reciprocal was taken so that higher values represented better fitness, which is necessary for determining the number of offspring for each species in subsequent steps. This objective function has been shown to be an effective means of evolving oscillators in similar and previous works \cite{Paladugu2006, francois_hakim_2004, Tatka2023}. In cases where candidate models could not be simulated, a fitness of 0.0 was assigned resulting in the candidate model's subsequent removal from the population.
+
+\begin{equation}
+\label{equation: fitness}
+fitness = max(\frac{1}{\sum|ideal - candidate|})
+\end{equation}
+
+\subsection{ODE Solver}
+During the fitness evaluation phase, reaction networks were converted to systems of ordinary differential equations. These equations were then numerically solved using the DifferentialEquations.jl julia package \cite{DifferentialEquations.jl-2017} and the CVODE solver from the Sundials suite for solving initial value problems \cite{hindmarsh2005sundials}. The CVODE solver was shown to be effective for this application in previous work \cite{Tatka2023}.
 
 \subsection{Reproduction}
+Each model species was allotted offspring in proportion with its fitness. More fit species were allowed more offspring. To calculate the number of offspring allotted to each species group the sum of fitness values was computed across the entire population. Then each species, $s$, was assigned an offspring number proportional to its contribution to the fitness of the entire population (equation \ref{equation: num_offspring}). The calculated number of offspring for each species was rounded to the nearest integer. By default, a single species was only allowed to produce at most 10\% of the subsequent generation in order to prevent a single species from taking over the entire population (but this value could be adjusted by the user). For these reasons, the total number of individuals fluctuated slightly over time.
+
+
+\begin{equation}
+\label{equation: num_offspring}
+offspring_{s} = \frac{\sum{fitness_{s}}}{\sum{fitness_{pop}}}*populationsize
+\end{equation} 
+
+The reproduction phase began with an elitism selection strategy. The top 10\% of networks in each species were copied to the next generation directly. If a species had 10 or fewer individuals, the single best network was copied without modification to the next generation. Then, the bottom 10\% of networks in each species are deleted. For the remainder of the allotted offspring for each species, a random number, $p$, was generated. If the $p$ was less than the probability of crossover, then two networks from the same species were selected and crossed over to produce a single offspring network. Otherwise a single network was chosen. If $p$ was greater than or equal to 1 - the probability of mutation, the network was mutated. Outside of the elite networks, all networks were either crossed over or mutated. Some were both crossed over and mutated. The probabilities of crossover and mutation could be configured by the user. Probabilities for specific types of mutations are described in section \ref{section: mutation}.
+
+Tournament selection was also explored and can be configured in settings. In this case, two networks from the same species were randomly chosen and the more fit network was then crossed over, mutated, or both. If crossed over, a second network was also chosen by tournament selection.
+
+\subsection{Output}
+The evolutonary aglorithm was repeated for a preset number of generations (800 by defualt) or until the best model reached a predefined fitness level. At this point, the best model from each species was converted to Antimony, a human readable model definition language \cite{Smith2009} and written to a text file along with the model's fitness. All settings were also written out to a JSON file, which could be used without modification to repeat the evolution trial.
+
+The best models from each evolution trial were automatically assessed with a Python script using the Tellurium modeling environment \cite{Choi2018} and RoadRunner simulation software \cite{andy2020}. A model was considered an oscillator if its Eigen values at steady state contained a positive real number with a nonzero imaginary number and if all concentrations were positive at steady state. Models that met the Eigen value criteria but had negative steady state concentrations were flagged. Flagged models then underwent a simple automated repair process wherein each reaction was deleted one at a time in an effort to meet the oscillation criteria. Models that met criteria after the simple repair process were counted as oscillators.
 
 \section{Results}
+The software was evaluated with multiple hyperparameter settings to assess its ability to generate oscillatory mass-action chemical reaction networks. Each set of hyperparameters were evaluated over 700 evolutionary trials and the success rate recorded. A trial was deemed successful if it generated a network with sustained oscillations, as evaluated by the criteria described previously.
+
+\subsection{Speciation Maintains Diversity and Increases Success Rate}
+In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then crossover and mutation is performed on the entire population to populate the remainder of the subsequent generation. Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. 
+
+In trials where no speciation was allowed, the average portion of unique networks was 0.228 $\pm$ 0.026 across 800 generations. This is significantly (p \textless 0.0001) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.298 $\pm$ 0.033 (figure \ref{fig:num_unique_species}).
+
+\begin{center}
+    \includegraphics[width=18cm]{images/num_unique_networks.png}
+    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (left), 0.0298 $\pm$ 0.033, and without (right), 0.228 $\pm$ 0.026. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
+    \label{fig:num_unique_species}
+\end{center}
+
+One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  
+
+  
+
+\begin{center}
+    \includegraphics[width=18cm]{images/portion_best_network.png}
+    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (left), 0.0298 $\pm$ 0.033, and without (right), 0.228 $\pm$ 0.026. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
+    \label{fig:num_unique_species}
+\end{center}
+
 \subsection{Effect of Crossover}
 \subsection{Diversity Maintenance with Speciation}
 \subsection{Effect of Selection Method}

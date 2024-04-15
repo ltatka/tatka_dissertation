@@ -22,14 +22,17 @@
 \contentsline {section}{\numberline {4.1}Evolving Reaction Networks}{27}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Methods}{28}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Encoding}{28}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Mutation}{28}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}crossover}{29}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Speciation}{29}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Fitness Calculation}{31}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Reproduction}{31}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Results}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Effect of Crossover}{31}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Diversity Maintenance with Speciation}{31}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Effect of Selection Method}{31}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Discussion}{31}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusion}{31}{section.4.5}%
+\contentsline {subsection}{\numberline {4.2.2}Mutation}{29}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Crossover}{29}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Speciation}{30}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Objective Function}{31}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}ODE Solver}{32}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Reproduction}{32}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}Output}{33}{subsection.4.2.8}%
+\contentsline {section}{\numberline {4.3}Results}{33}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Speciation Maintains Diversity and Increases Success Rate}{34}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Effect of Crossover}{35}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Diversity Maintenance with Speciation}{35}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Effect of Selection Method}{35}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Discussion}{35}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{35}{section.4.5}%
