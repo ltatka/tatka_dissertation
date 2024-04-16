@@ -527,6 +527,7 @@ The best models from each evolution trial were automatically assessed with a Pyt
 The software was evaluated with multiple hyperparameter settings to assess its ability to generate oscillatory mass-action chemical reaction networks. Each set of hyperparameters were evaluated over 700 evolutionary trials and the success rate recorded. A trial was deemed successful if it generated a network with sustained oscillations, as evaluated by the criteria described previously.
 
 \subsection{Speciation Maintains Diversity and Increases Success Rate}
+\label{section:speciation}
 In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then mutation is performed on the entire population to populate the remainder of the subsequent generation (crossover was not performed for these experiments). Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. Significance levels were calculated using two-tailed t-tests. 
 
 In trials where no speciation was allowed, the average portion of unique networks was 0.228 $\pm$ 0.026 across 800 generations. This is significantly (p \textless 0.0001) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.298 $\pm$ 0.033 (figure \ref{fig:num_unique_species}).
@@ -558,8 +559,12 @@ With a target species of 10 (the default condition), evolution trials resulted i
     \label{fig:species_success_rate}
 \end{center}
 
-\subsection{Effect of Crossover}
-\subsection{Diversity Maintenance with Speciation}
+\subsection{Crossover Does Not Improve Success Rate}
+Batches of 700 evolution trials with and without crossover were compared. The batch without crossover was the same batch described in \ref{section:speciation} with a target species number of 10 and a success rate of 0.19. This batch had 0.0 probability of crossover and 0.75 probability of mutation. This meant that there was a 25\% chance that a network was passed on to the next generation without modification. The batch with crossover used the crossover procedure described in the Methods section. The probability of crossover was 0.75 and the probability of mutation was 0.75. All networks were either crossed over or mutated ($p_{crossover} + p_{mutation} - p_{crossover} \cap p_{mutation} = 1$). This meant that networks had a 50\% chance of being crossed over and then mutated ($p_{crossover} \cap p_{mutation} = p_{crossover} + p_{mutation} -1$). With these settings, evolution trials with crossover enabled resulted in a sustained oscillator at a rate of 0.16 (112/700). This was significantly lower than the success rate without crossover (p = 0.0344).
+
+
+\textbf{Just realized that in the non crossover batch, there were some networks that wouldn't get changed at all under the right circumstances. Should redo this}
+
 \subsection{Effect of Selection Method}
 
 \section{Discussion}

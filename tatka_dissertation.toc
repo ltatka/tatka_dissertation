@@ -31,8 +31,7 @@
 \contentsline {subsection}{\numberline {4.2.8}Output}{33}{subsection.4.2.8}%
 \contentsline {section}{\numberline {4.3}Results}{33}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Speciation Maintains Diversity and Increases Success Rate}{34}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Effect of Crossover}{36}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Diversity Maintenance with Speciation}{36}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Effect of Selection Method}{36}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Discussion}{36}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.2}Crossover Does Not Improve Success Rate}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Effect of Selection Method}{37}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Discussion}{37}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{37}{section.4.5}%
