@@ -527,7 +527,7 @@ The best models from each evolution trial were automatically assessed with a Pyt
 The software was evaluated with multiple hyperparameter settings to assess its ability to generate oscillatory mass-action chemical reaction networks. Each set of hyperparameters were evaluated over 700 evolutionary trials and the success rate recorded. A trial was deemed successful if it generated a network with sustained oscillations, as evaluated by the criteria described previously.
 
 \subsection{Speciation Maintains Diversity and Increases Success Rate}
-In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then crossover and mutation is performed on the entire population to populate the remainder of the subsequent generation. Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. 
+In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then mutation is performed on the entire population to populate the remainder of the subsequent generation (crossover was not performed for these experiments). Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. Significance levels were calculated using two-tailed t-tests. 
 
 In trials where no speciation was allowed, the average portion of unique networks was 0.228 $\pm$ 0.026 across 800 generations. This is significantly (p \textless 0.0001) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.298 $\pm$ 0.033 (figure \ref{fig:num_unique_species}).
 
@@ -537,14 +537,25 @@ In trials where no speciation was allowed, the average portion of unique network
     \label{fig:num_unique_species}
 \end{center}
 
-One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  
-
-  
+One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  When speciated was enabled, the portion of the population occupied by copies of the most fit network remained constant with an average portion of best networks of 0.079 $\pm$ 0.011. Without speciation, the portion of best networks rose gradually over time with an average portion of 0.495 $\pm$ 0.094 (figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless 0.0001).
 
 \begin{center}
     \includegraphics[width=18cm]{images/portion_best_network.png}
-    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (left), 0.0298 $\pm$ 0.033, and without (right), 0.228 $\pm$ 0.026. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
-    \label{fig:num_unique_species}
+    \captionof{figure}{The average portion of best networks over 800 generations with speciation (left), 0.079 $\pm$ 0.011, and without (right), 0.495 $\pm$ 0.094. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
+    \label{fig:portion_best_network}
+\end{center}
+
+
+Next, the effects of speciation on evolution success rate was evaluated comparing no speciation to speciation with a target species number of 10 and 30. Again, crossover was omitted from these studies. For each speciation level, a batch of 700 trials of evolution were run and the number of oscillators resulting from each batch. Significance levels were calculated using a binomial distribution. 
+
+With a target species of 10 (the default condition), evolution trials resulted in sustained oscillators at a rate of 0.19 (134/700). Without speciation, the success was significantly reduced (p \textless 0.0001), with oscillators occurring at a rate of 0.06 (44/700). TO more thoroughly evaluate the benefits of speciation, a batch of 700 evolution trials was run with a target species number of 30. This resulted in a success rate of 0.17 (117/700). This rate is not significantly different (p = 0.1127) than the rate with a target species number of 10. Speciation increases the success rate of evolution, but grouping networks into more species with fewer members does not improve success (figure \ref{fig:species_success_rate}). 
+
+\textbf{Might be interesting to try with 50 species and see if I can get it to be worse just to make a point}
+ 
+\begin{center}
+    \includegraphics[width=15cm]{images/species_success_rate.png}
+    \captionof{figure}{Evolution success rate of 700 trials with no speciation, with a target species of 10, and with a target species of 30. Speciation significantly improves success rate, but more species does not improve success.}
+    \label{fig:species_success_rate}
 \end{center}
 
 \subsection{Effect of Crossover}

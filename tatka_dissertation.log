@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  15 APR 2024 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  16 APR 2024 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,11 +302,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count273
 \l__pdf_internal_box=\box51
 )
-(./tatka_dissertation.aux
-
-LaTeX Warning: Label `fig:num_unique_species' multiply defined.
-
-)
+(./tatka_dissertation.aux)
 \openout1 = `tatka_dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
@@ -328,7 +324,8 @@ LaTeX Font Info:    ... okay on input line 36.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count274
 \scratchdimen=\dimen164
@@ -559,47 +556,57 @@ See the caption package documentation for explanation.
 File: images/portion_best_network.png Graphic file (type png)
 <use images/portion_best_network.png>
 Package pdftex.def Info: images/portion_best_network.png  used on input line 54
-5.
+3.
 (pdftex.def)             Requested size: 512.1496pt x 169.24565pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 546.
+(caption)                particular \caption on input line 544.
 See the caption package documentation for explanation.
 
-<images/testSummary.png, id=530, 1004.75375pt x 626.34pt>
+[35 <./images/portion_best_network.png>]
+<images/species_success_rate.png, id=537, 924.45375pt x 678.535pt>
+File: images/species_success_rate.png Graphic file (type png)
+<use images/species_success_rate.png>
+Package pdftex.def Info: images/species_success_rate.png  used on input line 55
+6.
+(pdftex.def)             Requested size: 426.79134pt x 313.25842pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 557.
+See the caption package documentation for explanation.
+
+[36 <./images/species_success_rate.png>]
+<images/testSummary.png, id=544, 1004.75375pt x 626.34pt>
 File: images/testSummary.png Graphic file (type png)
 <use images/testSummary.png>
-Package pdftex.def Info: images/testSummary.png  used on input line 567.
+Package pdftex.def Info: images/testSummary.png  used on input line 578.
 (pdftex.def)             Requested size: 540.60236pt x 336.99524pt.
 
-Overfull \hbox (24.12987pt too wide) in paragraph at lines 567--568
+Overfull \hbox (24.12987pt too wide) in paragraph at lines 578--579
  [][] 
  []
 
-(./tatka_dissertation.bbl [35 <./images/portion_best_network.png>] [36 <./image
-s/testSummary.png>] [37
+(./tatka_dissertation.bbl [37 <./images/testSummary.png>] [38
 
-] [38] [39])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 577.
- [40]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 577.
+] [39] [40])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 588.
+
+[41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 588.
  (./tatka_dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 577.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 577.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 588.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 588.
 Package rerunfilecheck Info: File `tatka_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 194856D0A38F07ED1E799D8CFF9C6C19;2660.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 577.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 588.
  ) 
 Here is how much of TeX's memory you used:
- 8140 strings out of 483183
- 123791 string characters out of 5966292
- 372275 words of memory out of 5000000
- 22855 multiletter control sequences out of 15000+600000
+ 8150 strings out of 483183
+ 124058 string characters out of 5966292
+ 372758 words of memory out of 5000000
+ 22862 multiletter control sequences out of 15000+600000
  541659 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,15n,42p,1515b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -614,10 +621,10 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on tatka_dissertation.pdf (45 pages, 1681617 bytes).
+Output written on tatka_dissertation.pdf (46 pages, 1718033 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 544 compressed objects within 6 object streams
- 146 named destinations out of 1000 (max. 500000)
- 370 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 550 compressed objects within 6 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
