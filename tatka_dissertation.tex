@@ -133,6 +133,7 @@ Inspired by the use of evolutionary algorithms to create artificial neural netwo
 
 This research will result in two first author publications, the titles of which are to be determined. The first publication will describe the design and purpose of the software package and include some preliminary examples of implementation. The second publication will present the full software package and demonstrate its use on several existing models. I hope to finish this work by June 2024.
 
+\chapter{Background}
 \section{A brief history of chemical oscillators}
 The first oscillating chemical system was described in 1828. Gustav Fechner described and electrochemical cell that produced an oscillating current. Later, in 1899, Fredriech Ostwald observed that the rate of chromium dissolution in acid periodically increased and decreased. Both these systems were heterogenous mixtures, leading to the belief that homogenous oscillating reactions were impossible, a belief that persisted through much of the 20th century. Their relatively recent discovery and study makes homogenous chemical oscillators a topic of particular interest. Mentions of "oscillators" in this dissertation refer to this type of chemical oscillator.
 
@@ -185,6 +186,24 @@ of Chemical Reaction Networks"
 
 """
 Most oscillators are associated with unstable steady states. Destabilizing processes can be classified as 1) direct autocatalysis, 2) indirect autocatalysis (a positive feedback loop), and 3) end-product inhibition (a negative feedback loop)~\cite{Tyson1975, tyson2007}. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Given the two types of oscillators, negative feedback and negative feedback coupled with positive feedback~\cite{Sauro_dynamics}, it is unsurprising that autocatalytic reactions are enriched in the oscillator population as these reactions are a form of positive feedback."""
+
+\section{Existing Tools}
+Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the exisiting tools require advanced programming skill to use them.
+
+\subsection{Software Packages for Evolutionary Algorithms}
+In 2012, Fortin et al. released the python package DEAP (Distributed Evolutionary Algorithms in Python) \cite{DEAP_JMLR2012}. The packages offers a toolbox of evolutionary algorithm features including different types of crossover, evolutionary strategies, and mutation operators. Unlike other frameworks DEAP makes algorithm explicit and data structures transparent, as opposed to black-box frameworks. Although DEAP allows for extensive customization, individuals are represented as arrays of values. Users can customize these arrays, such as specifying integers or floats at specific locations, but individuals must be in this form. For most optimization problems, this representation is adequate, however it is difficult to fully represent a chemical reaction network in this form. Reaction networks have varying numbers of reaction, so a stoichiometry matrix would be inadequate unless it contained a row for every possible reaction. Additionally, reactions require rate constants, and networks require initial values for each species. 
+
+But beyond the encoding issue, the DEAP package, while highly versatile and proven in many research application, requires extensive programming knowledge. For example to build a population, a user must: (1) register the data type for each gene, (2) register an individuals that combines these gene data types, (3) register a population that uses the individual, and finally (4) build the population. Running an entire genetic algorithm requires far more additional programming. 
+
+More recently, in 2020, Gad introduced the python package pyGAD for optimization using genetic algorithms \cite{gad2023pygad}. Like DEAP pyGAD offers users a range of genetic operators, algorithms, and objective functions. PyGAD aims to offer a more user friendly form of DEAP with additional capabilities such as built in visualization tools and more adaptable mutation.
+
+
+Perhaps one
+python:
+- DEAP 
+- pyGAD 
+
+
 
 \chapter{A Public Database of Evolved Oscillatory Reaction Networks}
 \label{chap: cesium_paper}

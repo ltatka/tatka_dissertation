@@ -22,6 +22,17 @@ Herbert Sauro.
 \newblock {teUtils} [software].
 \newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
 
+\bibitem{DEAP_JMLR2012}
+F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
+  Gardner, Marc Parizeau, and Christian Gagn\'e.
+\newblock {DEAP}: Evolutionary algorithms made easy.
+\newblock {\em Journal of Machine Learning Research}, 13:2171--2175, jul 2012.
+
+\bibitem{gad2023pygad}
+Ahmed~Fawzy Gad.
+\newblock Pygad: An intuitive genetic algorithm python library.
+\newblock {\em Multimedia Tools and Applications}, pages 1--14, 2023.
+
 \bibitem{deckard2009}
 Anastasia~C Deckard, Frank~T Bergmann, and Herbert~M Sauro.
 \newblock Enumeration and online library of mass-action reaction networks.
