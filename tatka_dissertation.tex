@@ -187,22 +187,62 @@ of Chemical Reaction Networks"
 """
 Most oscillators are associated with unstable steady states. Destabilizing processes can be classified as 1) direct autocatalysis, 2) indirect autocatalysis (a positive feedback loop), and 3) end-product inhibition (a negative feedback loop)~\cite{Tyson1975, tyson2007}. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Given the two types of oscillators, negative feedback and negative feedback coupled with positive feedback~\cite{Sauro_dynamics}, it is unsurprising that autocatalytic reactions are enriched in the oscillator population as these reactions are a form of positive feedback."""
 
-\section{Existing Tools}
+\section{Existing Tools for Evolutionary and Genetic Algorithms}
 Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the exisiting tools require advanced programming skill to use them.
 
-\subsection{Software Packages for Evolutionary Algorithms}
+\subsection{Python Libraries}
+
+Most packages for implementing genetic and evolutionary algorithms are written in python \cite{python3}. Python is one of the most ubiquitous programming languages frequently topping lists of the most commonly used languages. It is often used in scientific applications due to it being open source, easy to use, and having vast library support. Likely for these reasons, most existing evolutionary algorithm tools are python libraries.
+
+Although likely not an exhaustive list, the main python packages for evolutionary and genetic algorithms are described here.
+
+\subsubsection{DEAP}
 In 2012, Fortin et al. released the python package DEAP (Distributed Evolutionary Algorithms in Python) \cite{DEAP_JMLR2012}. The packages offers a toolbox of evolutionary algorithm features including different types of crossover, evolutionary strategies, and mutation operators. Unlike other frameworks DEAP makes algorithm explicit and data structures transparent, as opposed to black-box frameworks. Although DEAP allows for extensive customization, individuals are represented as arrays of values. Users can customize these arrays, such as specifying integers or floats at specific locations, but individuals must be in this form. For most optimization problems, this representation is adequate, however it is difficult to fully represent a chemical reaction network in this form. Reaction networks have varying numbers of reaction, so a stoichiometry matrix would be inadequate unless it contained a row for every possible reaction. Additionally, reactions require rate constants, and networks require initial values for each species. 
 
 But beyond the encoding issue, the DEAP package, while highly versatile and proven in many research application, requires extensive programming knowledge. For example to build a population, a user must: (1) register the data type for each gene, (2) register an individuals that combines these gene data types, (3) register a population that uses the individual, and finally (4) build the population. Running an entire genetic algorithm requires far more additional programming. 
 
-More recently, in 2020, Gad introduced the python package pyGAD for optimization using genetic algorithms \cite{gad2023pygad}. Like DEAP pyGAD offers users a range of genetic operators, algorithms, and objective functions. PyGAD aims to offer a more user friendly form of DEAP with additional capabilities such as built in visualization tools and more adaptable mutation.
+\subsubsection{Pyevolve}
+Pyevolve is more simple framework for genetic algorithms compared to DEAP but has limited features \cite{pyevolve}. Despite its relative simplicity, it still requires extensive programming knowledge to implement an evolutionary process and problems are still limited to those whose ``genes" can be encoded as arrays of numbers. 
+
+Pyevolve also requires significantly more programming to accomplish the same task comapred to DEAP. DEAP requires 59 lines of code to solve the OneMax problem\footnote{The OneMax problem is a classic problem in the field of evolutionary computation. It is a simple bit sting problem where the objective is the maximize the number of ones in a binary string. The fitness of each individual is the total number of ones in its string. The simplicity of the OneMax problem makes it an ideal benchmark for testing optimization algorithms}, compared to 378 for pyevolve \cite{LEAP}. 
+
+The most recent release was 2014 and the library is no longer maintained.
+
+\subsubsection{EasyGA}
+EasyGA is a more recent (2021) python tool for genetic algorithms \cite{easyGA}. EasyGA makes it relatively easy to implement simple genetic algorithms, but still requires the user to have some advanced programming knowledge. The simplicity of easyGA makes it useful to only selected problems due to gene encoding restrictions.
+
+The library has a limited number of genetic operators. Additionally, EasyGA randomly mutates both parents and offspring, a feature that goes against the basic premise of genetic algorithms. 
+
+At the time of writing, the EasyGA GitHub repository only had 47 stars, suggesting that it is infrequently used.
+
+\subsubsection{LEAP}
+LEAP (Library for Evolutionary Algorithms in Python) is another recently developed library published in 2020 \cite{LEAP}. LEAP was designed to simplify the process of implementing evolutionary and genetic algorithms. However, LEAP has some core design weaknesses that impact usability. 
+
+Despite one of the objectives of LEAP being to simplify the process of implementing genetic algorithms, it still requires the user to write the evolution loop resulting in more code to solve simple problems. The user also has to manually increment the generation counter by calling a function specific to this purpose. Failing to call the function results in an infinite evolution loop, a problem that may not be immediately identifiable and solvable by less experienced users.
+
+Additionally, LEAP has no means of tracing the results of each generation of evolution. This makes troubleshooting more difficult and renders LEAP an ineffective tool for those who may wish to study the evolution process and not just the final results.
+
+LEAP is also a relatively unpopular choice for implementing evolutionary algorithms with only 77 stars at the time of writing.
+
+\subsubsection{PyGAD}
+In 2020, pyGAD was released with the aim to simplify the implementation of genetic algorithms for users with less programming experience while simultaneously proving control over ``everything possible" \cite{gad2023pygad}. PyGAD requires 3 core steps: (1) build the fitness function, (2) instantiate the relevant genetic algorithm class, (3) call the run function. The operation of pyGAD is relatively simple. Some programming knowledge is required for the user to create a fitness function and implement any further customization, but the bulk of the algorithm is run automatically. 
+
+As with the other software tools described here, the main drawback of pyGAD for applications in systems biology is the restrictions on encoding individual solutions. Solutions must be encoded as a 1D vector of numbers. This is insufficient for evolving chemical reaction networks, where a solution is an entire reaction network and all parameters needed to simulate the network.
 
 
-Perhaps one
-python:
-- DEAP 
-- pyGAD 
+\subsection{Libraries in Other Languages}
+Beyond python, R and MATLAB are languages commonly found in science applications. Julia has fewer users and less package support, but this can likely be attributed to it's relative newness. Julia was first introduced 2012, a new language compared to MATLAB (1984), Python (1990), and R (1993). R is widely used in statistics applications. MATLAB is commonly used in academia, but less often in industry applications owing to its expensive license.
 
+CITATIONS FOR THIS PARAGRAPH
+
+
+GA (R)
+MATLAB toolbox
+-Evolutionary.jl
+
+Maybe ju
+-GALGO (R)
+-Resistance GA (R)
 
 
 \chapter{A Public Database of Evolved Oscillatory Reaction Networks}
@@ -241,6 +281,8 @@ Oscillating models were generated using evolution scripts written in python, ava
 
 
 \subsection{Model Representation}
+
+see figure \ref{fig:reaction}
 
 Models and reactions were represented by custom data structures. An instance of the \textit{reaction} object represents a single reaction and consists of one or two reactants, one or two products, a rate constant, and an integer representing the reaction type (uni-uni, uni-bi, bi-uni, or bi-bi). The \textit{model} object represents a single reaction network and consists of a list of species, a list of initial concentrations, and a list of \textit{reaction} objects. The software converts \textit{model} objects into systems of ordinary differential equations which are then numerically solved to produce time series data of species concentrations. After the evolution process is complete, the models are converted to antimony~\cite{Smith2009}, a human readable model definition language.
 
@@ -557,7 +599,8 @@ In trials where no speciation was allowed, the average portion of unique network
     \label{fig:num_unique_species}
 \end{center}
 
-One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  When speciated was enabled, the portion of the population occupied by copies of the most fit network remained constant with an average portion of best networks of 0.079 $\pm$ 0.011. Without speciation, the portion of best networks rose gradually over time with an average portion of 0.495 $\pm$ 0.094 (figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless 0.0001).
+One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  When speciated was enabled, the portion of the population occupied by copies of the most fit network
+remained constant with an average portion of best networks of 0.071 $\pm$ 0.008. Without speciation, the portion of best networks rose gradually over time with an average portion of XXX $\pm$ XXX(figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless XXX).
 
 \begin{center}
     \includegraphics[width=18cm]{images/portion_best_network.png}

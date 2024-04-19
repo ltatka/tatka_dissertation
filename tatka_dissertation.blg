@@ -4,48 +4,49 @@ The top-level auxiliary file: tatka_dissertation.aux
 The style file: unsrt.bst
 Database file #1: researchbib.bib
 Warning--empty year in Tyson2004
+Warning--empty title in LEAP
 Warning--empty journal in nobile2013
 Warning--empty journal in francois_hakim_2004
 Warning--empty journal in andy2020
-You've used 39 entries,
+You've used 43 entries,
             1791 wiz_defined-function locations,
-            709 strings with 10857 characters,
-and the built_in function-call counts, 9435 in all, are:
-= -- 838
-> -- 426
+            728 strings with 11290 characters,
+and the built_in function-call counts, 10054 in all, are:
+= -- 883
+> -- 457
 < -- 5
-+ -- 158
-- -- 119
-* -- 712
-:= -- 1499
-add.period$ -- 121
-call.type$ -- 39
-change.case$ -- 38
++ -- 170
+- -- 127
+* -- 739
+:= -- 1600
+add.period$ -- 131
+call.type$ -- 43
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 404
-empty$ -- 901
-format.name$ -- 119
-if$ -- 2071
+cite$ -- 48
+duplicate$ -- 441
+empty$ -- 974
+format.name$ -- 127
+if$ -- 2212
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 40
-newline$ -- 199
-num.names$ -- 39
-pop$ -- 93
+int.to.str$ -- 43
+missing$ -- 44
+newline$ -- 217
+num.names$ -- 43
+pop$ -- 112
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 185
+skip$ -- 199
 stack$ -- 0
 substring$ -- 700
-swap$ -- 81
+swap$ -- 87
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 91
-width$ -- 41
-write$ -- 424
-(There were 4 warnings)
+warning$ -- 5
+while$ -- 95
+width$ -- 45
+write$ -- 462
+(There were 5 warnings)

@@ -22,11 +22,30 @@ Herbert Sauro.
 \newblock {teUtils} [software].
 \newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
 
+\bibitem{python3}
+Guido Van~Rossum and Fred~L. Drake.
+\newblock {\em Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+
 \bibitem{DEAP_JMLR2012}
 F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
   Gardner, Marc Parizeau, and Christian Gagn\'e.
 \newblock {DEAP}: Evolutionary algorithms made easy.
 \newblock {\em Journal of Machine Learning Research}, 13:2171--2175, jul 2012.
+
+\bibitem{pyevolve}
+Christian~S. Perone.
+\newblock Pyevolve: a python open-source framework for genetic algorithms.
+\newblock {\em SIGEVOlution}, 4, 2009.
+
+\bibitem{LEAP}
+Mark~A. Coletti, Eric~O. Scott, and Jeffrey~K. Basset.
+\newblock In {\em Proceedings of the 2020 Genetic and Evolutionary Computationa
+  Conference Companion}, 2020.
+
+\bibitem{easyGA}
+Daniel Wilczak and Jack Nguyen.
+\newblock {\em EasyGA - Genetic Aglorithms made Easy}, 2021.
 
 \bibitem{gad2023pygad}
 Ahmed~Fawzy Gad.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  17 APR 2024 09:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  19 APR 2024 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,7 +391,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 ...that might be useful later}{23}{chapter.4}
+l.27 ...that might be useful later}{25}{chapter.4}
                                                   % [2
 
 ])
@@ -416,201 +416,200 @@ l.117
 Chapter 2.
 [4
 
-] [5] [6] [7] [8]
+] [5] [6] [7] [8] [9] [10]
 Chapter 3.
-[9
+[11
 
 ]
-<images/Reactions.png, id=316, 1186.4325pt x 996.72375pt>
+<images/Reactions.png, id=349, 1186.4325pt x 996.72375pt>
 File: images/Reactions.png Graphic file (type png)
 <use images/Reactions.png>
-Package pdftex.def Info: images/Reactions.png  used on input line 233.
+Package pdftex.def Info: images/Reactions.png  used on input line 273.
 (pdftex.def)             Requested size: 199.16928pt x 167.31157pt.
 
-Overfull \hbox (50.58968pt too wide) in paragraph at lines 228--238
+Overfull \hbox (50.58968pt too wide) in paragraph at lines 268--278
 \OT1/cmr/m/n/12 Oscillating mod-els were gen-er-ated us-ing evo-lu-tion scripts
  writ-ten in python, avail-able at https://github.com/sys-
  []
 
-[10] [11 <./images/Reactions.png>]
-<images/fitness.png, id=335, 975.645pt x 596.2275pt>
+[12] [13 <./images/Reactions.png>]
+<images/fitness.png, id=368, 975.645pt x 596.2275pt>
 File: images/fitness.png Graphic file (type png)
 <use images/fitness.png>
-Package pdftex.def Info: images/fitness.png  used on input line 253.
+Package pdftex.def Info: images/fitness.png  used on input line 295.
 (pdftex.def)             Requested size: 284.52756pt x 173.875pt.
- [12 <./images/fitness.png>]
-<images/algorithm.png, id=348, 1555.8125pt x 880.28876pt>
+ [14 <./images/fitness.png>]
+<images/algorithm.png, id=382, 1555.8125pt x 880.28876pt>
 File: images/algorithm.png Graphic file (type png)
 <use images/algorithm.png>
-Package pdftex.def Info: images/algorithm.png  used on input line 272.
+Package pdftex.def Info: images/algorithm.png  used on input line 314.
 (pdftex.def)             Requested size: 341.43306pt x 193.18056pt.
- [13] [14 <./images/algorithm.png>] [15]
-<images/examples.png, id=371, 1260.71pt x 944.52875pt>
+ [15] [16 <./images/algorithm.png>] [17]
+<images/examples.png, id=404, 1260.71pt x 944.52875pt>
 File: images/examples.png Graphic file (type png)
 <use images/examples.png>
-Package pdftex.def Info: images/examples.png  used on input line 292.
+Package pdftex.def Info: images/examples.png  used on input line 334.
 (pdftex.def)             Requested size: 241.84842pt x 181.1918pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 294.
+(caption)                particular \caption on input line 336.
 See the caption package documentation for explanation.
 
-[16 <./images/examples.png>]
-<images/website.png, id=381, 486.81876pt x 624.3325pt>
+[18 <./images/examples.png>]
+<images/website.png, id=414, 486.81876pt x 624.3325pt>
 File: images/website.png Graphic file (type png)
 <use images/website.png>
-Package pdftex.def Info: images/website.png  used on input line 313.
+Package pdftex.def Info: images/website.png  used on input line 355.
 (pdftex.def)             Requested size: 227.62204pt x 291.9216pt.
- [17 <./images/website.png>]
-<images/model-diagrams.png, id=388, 1136.245pt x 863.225pt>
+ [19 <./images/website.png>]
+<images/model-diagrams.png, id=421, 1136.245pt x 863.225pt>
 File: images/model-diagrams.png Graphic file (type png)
 <use images/model-diagrams.png>
-Package pdftex.def Info: images/model-diagrams.png  used on input line 324.
+Package pdftex.def Info: images/model-diagrams.png  used on input line 366.
 (pdftex.def)             Requested size: 227.62204pt x 172.91855pt.
-<images/feedback-cycle.png, id=390, 402.50375pt x 320.19624pt>
+<images/feedback-cycle.png, id=423, 402.50375pt x 320.19624pt>
 File: images/feedback-cycle.png Graphic file (type png)
 <use images/feedback-cycle.png>
-Package pdftex.def Info: images/feedback-cycle.png  used on input line 343.
+Package pdftex.def Info: images/feedback-cycle.png  used on input line 385.
 (pdftex.def)             Requested size: 142.26378pt x 113.16966pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 344.
+(caption)                particular \caption on input line 386.
 See the caption package documentation for explanation.
 
-[18 <./images/model-diagrams.png>] [19 <./images/feedback-cycle.png>]
-<images/composition.png, id=409, 895.345pt x 368.37625pt>
+[20 <./images/model-diagrams.png>] [21 <./images/feedback-cycle.png>]
+<images/composition.png, id=443, 895.345pt x 368.37625pt>
 File: images/composition.png Graphic file (type png)
 <use images/composition.png>
-Package pdftex.def Info: images/composition.png  used on input line 358.
+Package pdftex.def Info: images/composition.png  used on input line 400.
 (pdftex.def)             Requested size: 227.62204pt x 93.65083pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 359.
+(caption)                particular \caption on input line 401.
 See the caption package documentation for explanation.
 
-[20 <./images/composition.png>]
-<images/autocomp.png, id=419, 887.315pt x 395.4775pt>
+[22 <./images/composition.png>]
+<images/autocomp.png, id=451, 887.315pt x 395.4775pt>
 File: images/autocomp.png Graphic file (type png)
 <use images/autocomp.png>
-Package pdftex.def Info: images/autocomp.png  used on input line 366.
+Package pdftex.def Info: images/autocomp.png  used on input line 408.
 (pdftex.def)             Requested size: 227.62204pt x 101.44585pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 367.
+(caption)                particular \caption on input line 409.
 See the caption package documentation for explanation.
 
-[21 <./images/autocomp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 383--391
+[23 <./images/autocomp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 425--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--391
+Underfull \hbox (badness 10000) in paragraph at lines 425--433
 
  []
 
-[22]
+[24]
 Chapter 4.
-[23
+[25
 
-] [24] [25]
+] [26] [27]
 Chapter 5.
-[26
+[28
 
-] [27] [28] [29]
-<images/algo_description_crossover.png, id=492, 1053.9375pt x 1166.3575pt>
+] [29] [30] [31]
+<images/algo_description_crossover.png, id=524, 1053.9375pt x 1166.3575pt>
 File: images/algo_description_crossover.png Graphic file (type png)
 <use images/algo_description_crossover.png>
 Package pdftex.def Info: images/algo_description_crossover.png  used on input l
-ine 478.
+ine 520.
 (pdftex.def)             Requested size: 227.62204pt x 251.90099pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 479.
+(caption)                particular \caption on input line 521.
 See the caption package documentation for explanation.
 
-[30 <./images/algo_description_crossover.png>] [31] [32] [33] [34] [35]
+[32 <./images/algo_description_crossover.png>] [33] [34] [35] [36] [37]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 5
-52.
+94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 552.
-<images/num_unique_networks.png, id=543, 949.5475pt x 373.395pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 594.
+<images/num_unique_networks.png, id=575, 462.528pt x 346.896pt>
 File: images/num_unique_networks.png Graphic file (type png)
 <use images/num_unique_networks.png>
-Package pdftex.def Info: images/num_unique_networks.png  used on input line 555
+Package pdftex.def Info: images/num_unique_networks.png  used on input line 597
 .
-(pdftex.def)             Requested size: 512.1496pt x 201.40239pt.
+(pdftex.def)             Requested size: 512.1496pt x 384.1328pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 556.
+(caption)                particular \caption on input line 598.
 See the caption package documentation for explanation.
 
-[36 <./images/num_unique_networks.png>]
-<images/portion_best_network.png, id=551, 929.4725pt x 307.1475pt>
+[38] [39 <./images/num_unique_networks.png>]
+<images/portion_best_network.png, id=590, 929.4725pt x 307.1475pt>
 File: images/portion_best_network.png Graphic file (type png)
 <use images/portion_best_network.png>
-Package pdftex.def Info: images/portion_best_network.png  used on input line 56
-3.
+Package pdftex.def Info: images/portion_best_network.png  used on input line 60
+6.
 (pdftex.def)             Requested size: 512.1496pt x 169.24565pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 564.
+(caption)                particular \caption on input line 607.
 See the caption package documentation for explanation.
 
-[37 <./images/portion_best_network.png>]
-<images/species_success_rate.png, id=559, 924.45375pt x 678.535pt>
+<images/species_success_rate.png, id=592, 924.45375pt x 678.535pt>
 File: images/species_success_rate.png Graphic file (type png)
 <use images/species_success_rate.png>
-Package pdftex.def Info: images/species_success_rate.png  used on input line 57
-6.
+Package pdftex.def Info: images/species_success_rate.png  used on input line 61
+9.
 (pdftex.def)             Requested size: 426.79134pt x 313.25842pt.
 
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 577.
+(caption)                particular \caption on input line 620.
 See the caption package documentation for explanation.
 
-[38 <./images/species_success_rate.png>]
-<images/testSummary.png, id=568, 1004.75375pt x 626.34pt>
+[40 <./images/portion_best_network.png>] [41 <./images/species_success_rate.png
+>]
+<images/testSummary.png, id=605, 1004.75375pt x 626.34pt>
 File: images/testSummary.png Graphic file (type png)
 <use images/testSummary.png>
-Package pdftex.def Info: images/testSummary.png  used on input line 602.
+Package pdftex.def Info: images/testSummary.png  used on input line 645.
 (pdftex.def)             Requested size: 540.60236pt x 336.99524pt.
 
-Overfull \hbox (24.12987pt too wide) in paragraph at lines 602--603
+Overfull \hbox (24.12987pt too wide) in paragraph at lines 645--646
  [][] 
  []
 
-(./tatka_dissertation.bbl [39] [40 <./images/testSummary.png>] [41
+(./tatka_dissertation.bbl [42] [43 <./images/testSummary.png>] [44
 
-] [42]
-[43])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 612.
- [44]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 612.
+] [45]
+[46] [47])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
+ [48]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
  (./tatka_dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 612.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 612.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 655.
 Package rerunfilecheck Info: File `tatka_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 9ACA5EEC8EC595F4C851FF639E0CBA35;2795.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 612.
+(rerunfilecheck)             Checksum: D746CD5B3D9D99AE743A5E3997B4EF69;2888.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
- 8163 strings out of 483183
- 124215 string characters out of 5966292
- 372922 words of memory out of 5000000
- 22868 multiletter control sequences out of 15000+600000
+ 8183 strings out of 483183
+ 124421 string characters out of 5966292
+ 373043 words of memory out of 5000000
+ 22873 multiletter control sequences out of 15000+600000
  541659 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,15n,42p,1515b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -619,16 +618,18 @@ Here is how much of TeX's memory you used:
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb>
-Output written on tatka_dissertation.pdf (49 pages, 1725097 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+12.pfb>
+Output written on tatka_dissertation.pdf (53 pages, 1744799 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
- 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 
