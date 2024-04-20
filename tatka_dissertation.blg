@@ -8,45 +8,45 @@ Warning--empty title in LEAP
 Warning--empty journal in nobile2013
 Warning--empty journal in francois_hakim_2004
 Warning--empty journal in andy2020
-You've used 43 entries,
+You've used 44 entries,
             1791 wiz_defined-function locations,
-            728 strings with 11290 characters,
-and the built_in function-call counts, 10054 in all, are:
-= -- 883
-> -- 457
+            734 strings with 11414 characters,
+and the built_in function-call counts, 10283 in all, are:
+= -- 903
+> -- 465
 < -- 5
-+ -- 170
-- -- 127
-* -- 739
-:= -- 1600
-add.period$ -- 131
-call.type$ -- 43
-change.case$ -- 39
++ -- 173
+- -- 129
+* -- 759
+:= -- 1636
+add.period$ -- 134
+call.type$ -- 44
+change.case$ -- 40
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 441
-empty$ -- 974
-format.name$ -- 127
-if$ -- 2212
+cite$ -- 49
+duplicate$ -- 450
+empty$ -- 998
+format.name$ -- 129
+if$ -- 2262
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 44
-newline$ -- 217
-num.names$ -- 43
-pop$ -- 112
+int.to.str$ -- 44
+missing$ -- 45
+newline$ -- 222
+num.names$ -- 44
+pop$ -- 113
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 199
+skip$ -- 203
 stack$ -- 0
-substring$ -- 700
-swap$ -- 87
+substring$ -- 721
+swap$ -- 88
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 95
-width$ -- 45
-write$ -- 462
+while$ -- 97
+width$ -- 46
+write$ -- 473
 (There were 5 warnings)

@@ -1,41 +1,42 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 2
-\BOOKMARK [1][-]{section.2.1}{A brief history of chemical oscillators}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Existing Tools for Evolutionary and Genetic Algorithms}{chapter.2}% 4
-\BOOKMARK [2][-]{subsection.2.2.1}{Python Libraries}{section.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.2}{Libraries in Other Languages}{section.2.2}% 6
-\BOOKMARK [0][-]{chapter.3}{A Public Database of Evolved Oscillatory Reaction Networks}{}% 7
-\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.2.1}{Model Representation}{section.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 11
-\BOOKMARK [2][-]{subsection.3.2.3}{ODE Solver}{section.3.2}% 12
-\BOOKMARK [2][-]{subsection.3.2.4}{Selection}{section.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.2.5}{Mutation}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.6}{Random Networks for Evolution}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.7}{Custom Evolution Algorithm}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.8}{Random Control Networks}{section.3.2}% 17
-\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.3.1}{Database Construction}{section.3.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.2}{Oscillating Network Examples}{section.3.3}% 20
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 21
-\BOOKMARK [0][-]{chapter.4}{Parking lot for abandoned text that might be useful later}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Existing Software}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.2}{CRN basics}{chapter.4}% 24
-\BOOKMARK [0][-]{chapter.5}{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Evolving Reaction Networks}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 27
-\BOOKMARK [2][-]{subsection.5.2.1}{Encoding}{section.5.2}% 28
-\BOOKMARK [2][-]{subsection.5.2.2}{Mutation}{section.5.2}% 29
-\BOOKMARK [2][-]{subsection.5.2.3}{Crossover}{section.5.2}% 30
-\BOOKMARK [2][-]{subsection.5.2.4}{Speciation}{section.5.2}% 31
-\BOOKMARK [2][-]{subsection.5.2.5}{Objective Function}{section.5.2}% 32
-\BOOKMARK [2][-]{subsection.5.2.6}{ODE Solver}{section.5.2}% 33
-\BOOKMARK [2][-]{subsection.5.2.7}{Reproduction}{section.5.2}% 34
-\BOOKMARK [2][-]{subsection.5.2.8}{Output}{section.5.2}% 35
-\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.3.1}{Speciation Maintains Diversity and Increases Success Rate}{section.5.3}% 37
-\BOOKMARK [2][-]{subsection.5.3.2}{Crossover Does Not Improve Success Rate}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.3}{Effect of Selection Method}{section.5.3}% 39
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 41
+\BOOKMARK [1][-]{section.2.1}{Introduction to Chemical Reaction Network Modeling}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Chemical Oscillators}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{A Brief History of Evolutionary Computing}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Existing Tools for Evolutionary and Genetic Algorithms}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.4.1}{Python Libraries}{section.2.4}% 7
+\BOOKMARK [2][-]{subsection.2.4.2}{Libraries in Other Languages}{section.2.4}% 8
+\BOOKMARK [0][-]{chapter.3}{A Public Database of Evolved Oscillatory Reaction Networks}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.2.1}{Model Representation}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.3}{ODE Solver}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.4}{Selection}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.5}{Mutation}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.6}{Random Networks for Evolution}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.7}{Custom Evolution Algorithm}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.8}{Random Control Networks}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Database Construction}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Oscillating Network Examples}{section.3.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Parking lot for abandoned text that might be useful later}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Existing Software}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Evolving Reaction Networks}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.2.1}{Encoding}{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.2}{Mutation}{section.5.2}% 30
+\BOOKMARK [2][-]{subsection.5.2.3}{Crossover}{section.5.2}% 31
+\BOOKMARK [2][-]{subsection.5.2.4}{Speciation}{section.5.2}% 32
+\BOOKMARK [2][-]{subsection.5.2.5}{Objective Function}{section.5.2}% 33
+\BOOKMARK [2][-]{subsection.5.2.6}{ODE Solver}{section.5.2}% 34
+\BOOKMARK [2][-]{subsection.5.2.7}{Reproduction}{section.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.2.8}{Output}{section.5.2}% 36
+\BOOKMARK [1][-]{section.5.3}{Results}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.3.1}{Speciation Maintains Diversity and Increases Success Rate}{section.5.3}% 38
+\BOOKMARK [2][-]{subsection.5.3.2}{Crossover Does Not Improve Success Rate}{section.5.3}% 39
+\BOOKMARK [2][-]{subsection.5.3.3}{Effect of Selection Method}{section.5.3}% 40
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 42

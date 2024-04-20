@@ -1,32 +1,33 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}A brief history of chemical oscillators}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Existing Tools for Evolutionary and Genetic Algorithms}{7}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Python Libraries}{7}{subsection.2.2.1}%
-\contentsline {subsubsection}{DEAP}{7}{section*.2}%
-\contentsline {subsubsection}{Pyevolve}{8}{section*.3}%
-\contentsline {subsubsection}{EasyGA}{8}{section*.4}%
-\contentsline {subsubsection}{LEAP}{9}{section*.5}%
-\contentsline {subsubsection}{PyGAD}{9}{section*.6}%
-\contentsline {subsection}{\numberline {2.2.2}Libraries in Other Languages}{10}{subsection.2.2.2}%
-\contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Background}{11}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Methods}{13}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Model Representation}{13}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Objective Function}{14}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}ODE Solver}{14}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Selection}{15}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Mutation}{15}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{15}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Custom Evolution Algorithm}{16}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Random Control Networks}{17}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Results}{18}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Database Construction}{18}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Oscillating Network Examples}{20}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Discussion}{21}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Parking lot for abandoned text that might be useful later}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Existing Software}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}CRN basics}{26}{section.4.2}%
+\contentsline {section}{\numberline {2.1}Introduction to Chemical Reaction Network Modeling}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Chemical Oscillators}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}A Brief History of Evolutionary Computing}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Existing Tools for Evolutionary and Genetic Algorithms}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Python Libraries}{8}{subsection.2.4.1}%
+\contentsline {subsubsection}{DEAP}{9}{section*.2}%
+\contentsline {subsubsection}{Pyevolve}{9}{section*.3}%
+\contentsline {subsubsection}{EasyGA}{10}{section*.4}%
+\contentsline {subsubsection}{LEAP}{10}{section*.5}%
+\contentsline {subsubsection}{PyGAD}{11}{section*.6}%
+\contentsline {subsection}{\numberline {2.4.2}Libraries in Other Languages}{11}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Background}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Methods}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Model Representation}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Objective Function}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}ODE Solver}{15}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Selection}{16}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Mutation}{16}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{16}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Custom Evolution Algorithm}{17}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Random Control Networks}{18}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Results}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Database Construction}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Oscillating Network Examples}{21}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Discussion}{22}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Parking lot for abandoned text that might be useful later}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Existing Software}{27}{section.4.1}%
 \contentsline {chapter}{\numberline {5}In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Evolving Reaction Networks}{31}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Methods}{32}{section.5.2}%

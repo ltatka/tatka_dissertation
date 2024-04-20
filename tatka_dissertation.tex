@@ -134,7 +134,40 @@ Inspired by the use of evolutionary algorithms to create artificial neural netwo
 This research will result in two first author publications, the titles of which are to be determined. The first publication will describe the design and purpose of the software package and include some preliminary examples of implementation. The second publication will present the full software package and demonstrate its use on several existing models. I hope to finish this work by June 2024.
 
 \chapter{Background}
-\section{A brief history of chemical oscillators}
+
+\section{Introduction to Chemical Reaction Network Modeling}
+The projects described here focus on computational models of (bio)chemical reaction networks (CRNs). Although several modeling paradigms exist to describe CRNs, this work uses CRNs represented by systems of ordinary differential equations. A CRN is a set of chemical reactions $R_i$ where i is the index over the range 1 to n, the total number of reactions in the network . Reactions involve the chemical species of the network, $S_j$ where j is the index of each species from 1 to the total number of species. A reaction is then represented as follows:
+\begin{equation*}
+Ri: \sum_{j\in S}^{}\alpha_{ij}S_j\to \sum_{j\in S}^{}\beta_{ij}S_j
+\end{equation*}
+where $\alpha_{ij}$ and $\beta_{ij}$ are non-negative integers, stoichiometry coefficients. For example, a simple 3-species, 2-reaction network can be represented by the following reactions:
+\begin{equation}
+\begin{split}
+S1 + S2 \to S3 \\
+S3 \to S1 + S2
+\end{split}
+\end{equation}
+However, these reactions alone are insufficient to completely describe the small network.  Assuming mass-action kinetics, the rate at which a reaction proceeds is proportional to the concentration of the reactants. The constant of proportionality is referred to as the rate constant. To discern the dynamics of the system, the rate constants must be specified.
+
+\begin{equation}
+\begin{split}
+S1 + S2 \to S3; \;\;\;\;\;\; k_1*S1*S2\\
+S3 \to S1 + S2; \;\;\;\;\;\;\;\;\;\;\;\;\; k_2*S3
+\end{split}
+\end{equation}
+The rate of change of each species can then be put in the form of a system of differential equations. When the initial concentrations of the species are given, this system can be solved numerically to describe the change of species concentrations over time.
+\begin{equation}
+\begin{split}
+\frac{dS1}{dt}=k_2S3 - k_1S1S2\\
+\frac{dS2}{dt}=k_2S3 -k_1S1S2\\
+\frac{dS3}{dt}=k1S1S2 - k_2S3
+\end{split}
+\end{equation}
+
+Chemical reaction network modeling is used across a variety of fields including pharmacology, biological sciences, physical chemistry, chemical engineering, and synthetic biology \textbf{CITATIONS}. To this end, numerous tools have been developed to aid in model development, description, and simulation. This dissertation introduces an additional software tool for exploring small chemical reaction networks. Of particular interest are chemical oscillators.
+
+
+\section{Chemical Oscillators}
 The first oscillating chemical system was described in 1828. Gustav Fechner described and electrochemical cell that produced an oscillating current. Later, in 1899, Fredriech Ostwald observed that the rate of chromium dissolution in acid periodically increased and decreased. Both these systems were heterogenous mixtures, leading to the belief that homogenous oscillating reactions were impossible, a belief that persisted through much of the 20th century. Their relatively recent discovery and study makes homogenous chemical oscillators a topic of particular interest. Mentions of "oscillators" in this dissertation refer to this type of chemical oscillator.
 
 Prior to leaving science to work for an insurance company, Alfred Lotka authored a monograph on theoretical biology. In 1910, he showed that a set of consecutive mass-action reactions can create damped oscillators which eventually settle at an equilibrium. A decade later he published a second paper on mass-action oscillatory systems. ALthough this publication did not apply to any real chemical system, it's dynamics inspired Vito Volterra to apply the model to ecology. The Volterra used similar ideas to investigate migration effects and interactions between several species. The Lotka-Volterra model is well-known today as a simple representation of predator-prey interactions, where both populations oscillate in time.
@@ -154,7 +187,7 @@ X + Y \to 2Y
 Y \to P
 \end{equation}
 
-These ``reactions" assume ``mass-action" kinetics where the rate of each depends on the amount of grass (constant) and sizes of the population of rabbits and lynx respectively. These rates can be described by the following differential equations, where ${k_{y}}$ describes the rate of lynx reproduction given a rabbit of population size ${x}$, ${k_{d}}$ describes the mortality rate of lynx, and ${k_{x}}$ describes the rate at which rabbits reproduce. The population of rabbits and lynxes will oscillate for any set of these constants.
+These ``reactions" assume ``mass-action" kinetics where the rate of each depends on the amount of grass (constant) and sizes of the population of rabbits and lynx respectively. These rates can be described by the following differential equations, where ${k_{y}}$ describes the rate of lynx reproduction given a rabbit of population size ${x}$, ${k_{d}}$ describes the mortality rate of lynx, and ${k_{x}}$ describes the rate at which rabbits reproduce. 
 
 \begin{equation}
 dx/dt = k_{x}ax - k_{y}xy
@@ -166,6 +199,10 @@ dy/dt = k_{y}xy - k_{d}y
 The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenom can be observed in nature. Figure XXXX shows the oscillating populations of Canada lynx and Snowshoe hares from 1850 to 1920. The predator-prey model has also been demonstrated in the laboratory with paramecia that eat yeast (FIGURE XXX AND CITATION).
 
 A key feature of this oscillating system, and of most chemical oscillating systems is the presence of autocatalysis. The rate of growth of a population increases as the size of the population increases. The prominence of autocatalysis is also observed in the evolution of \textit{in silico} theoretical chemical reaction networks, as is described in chapter \ref{chap: cesium_paper} and the associated publication [CITATION]. In chemical systems, autocatalysis serves as a from of positive feedback to drive oscillation.
+
+Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. Often the feeback mechanism takes the form of autocatalysis. However, when unchecked, a system with autocatalysis can lead to explosion as the product concentration continues to build and increase the rate of product formation. An inhibition step is necessary to prevent this explosion of products. However, if autocatalysis and inhibition occur simultaneously, the steady state is stabilized and oscillation does not occur. The inhibition step must be delayed. Often this is accomplished by intermediate reactions. 
+
+Oscillations require bistability and 
 
 [MORE STUFF HERE ABOUT AUTOCATALYSIS- POSITIVE FEEDBACK in oscillators]
 
@@ -186,6 +223,10 @@ of Chemical Reaction Networks"
 
 """
 Most oscillators are associated with unstable steady states. Destabilizing processes can be classified as 1) direct autocatalysis, 2) indirect autocatalysis (a positive feedback loop), and 3) end-product inhibition (a negative feedback loop)~\cite{Tyson1975, tyson2007}. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Given the two types of oscillators, negative feedback and negative feedback coupled with positive feedback~\cite{Sauro_dynamics}, it is unsurprising that autocatalytic reactions are enriched in the oscillator population as these reactions are a form of positive feedback."""
+
+\section{A Brief History of Evolutionary Computing}
+
+
 
 \section{Existing Tools for Evolutionary and Genetic Algorithms}
 Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the exisiting tools require advanced programming skill to use them.
@@ -281,8 +322,6 @@ Oscillating models were generated using evolution scripts written in python, ava
 
 
 \subsection{Model Representation}
-
-see figure \ref{fig:reaction}
 
 Models and reactions were represented by custom data structures. An instance of the \textit{reaction} object represents a single reaction and consists of one or two reactants, one or two products, a rate constant, and an integer representing the reaction type (uni-uni, uni-bi, bi-uni, or bi-bi). The \textit{model} object represents a single reaction network and consists of a list of species, a list of initial concentrations, and a list of \textit{reaction} objects. The software converts \textit{model} objects into systems of ordinary differential equations which are then numerically solved to produce time series data of species concentrations. After the evolution process is complete, the models are converted to antimony~\cite{Smith2009}, a human readable model definition language.
 
@@ -443,33 +482,7 @@ Although there are numerous studies implemting genetic algorithms in systems bio
 
 Chandran and Sauro devloped a C library with basic functions for evolution of biological networks including genetic networks, protein networks, and mass-action networks. Although highly versatile, the library requires some C programming knowledge in order to customize the evolutionary algorithm.
 
-\section{CRN basics}
-The projects described focus on computational models of (bio)chemical reaction networks (CRNs). Although several modeling paradigms exist to describe CRNs, this work uses CRNs represented by systems of ordinary differential equations. A CRN is a set of chemical reactions $R_i$ where i is the index over the range 1 to n, the total number of reactions in the network . Reactions involve the chemical species of the network, $S_j$ where j is the index of each species from 1 to the total number of species. A reaction is then represented as follows:
-\begin{equation*}
-Ri: \sum_{j\in S}^{}\alpha_{ij}S_j\to \sum_{j\in S}^{}\beta_{ij}S_j
-\end{equation*}
-where $\alpha_{ij}$ and $\beta_{ij}$ are non-negative integers, stoichiometry coefficients. For example, a simple 3-species, 2-reaction network can be represented by the following reactions:
-\begin{equation}
-\begin{split}
-S1 + S2 \to S3 \\
-S3 \to S1 + S2
-\end{split}
-\end{equation}
-However, these reactions alone are insufficient to completely describe the small network. The rate constants and rate laws for the reaction are unspecified. This research focuses on mass-action kinetics, where the rate of a reaction is dictated by the concentration of its substrates and a rate constant:
-\begin{equation}
-\begin{split}
-S1 + S2 \to S3; \;\;\;\;\;\; k_1*S1*S2\\
-S3 \to S1 + S2; \;\;\;\;\;\;\;\;\;\;\;\;\; k_2*S3
-\end{split}
-\end{equation}
-The rate of change of each species can then be put in the form of a differential equation (equation 1.3) and solved numerically.
-\begin{equation}
-\begin{split}
-\frac{dS1}{dt}=k_2S3 - k_1S1S2\\
-\frac{dS2}{dt}=k_2S3 -k_1S1S2\\
-\frac{dS3}{dt}=k1S1S2 - k_2S3
-\end{split}
-\end{equation}
+
 
 \chapter{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}
 \label{chap: NetEvolve}
