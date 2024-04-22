@@ -1,52 +1,62 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tatka_dissertation.aux
-The style file: unsrt.bst
+The style file: plain.bst
 Database file #1: researchbib.bib
-Warning--empty year in Tyson2004
+Warning--I didn't find a database entry for "mittenthal2000"
+Name 4 in "Heinrich, R. and Melendez-Hevia, E. and Montero, F. and Nuno, J.C., and Stephani, A. and Waddell, T.G." has a comma at the end for entry Heinrich1999
+while executing---line 1049 of file plain.bst
+Name 2 in "Stephani, A. and Nuno, J.C., and Heinrich, R." has a comma at the end for entry stephani1999
+while executing---line 1049 of file plain.bst
 Warning--empty title in LEAP
-Warning--empty journal in nobile2013
 Warning--empty journal in francois_hakim_2004
+Name 4 in "Heinrich, R. and Melendez-Hevia, E. and Montero, F. and Nuno, J.C., and Stephani, A. and Waddell, T.G." has a comma at the end for entry Heinrich1999
+while executing---line 1090 of file plain.bst
+Warning--empty journal in nobile2013
+Warning--empty journal in pohlheim1994geatbx
 Warning--empty journal in andy2020
-You've used 44 entries,
-            1791 wiz_defined-function locations,
-            734 strings with 11414 characters,
-and the built_in function-call counts, 10283 in all, are:
-= -- 903
-> -- 465
+Name 2 in "Stephani, A. and Nuno, J.C., and Heinrich, R." has a comma at the end for entry stephani1999
+while executing---line 1090 of file plain.bst
+Warning--empty year in Tyson2004
+You've used 55 entries,
+            2118 wiz_defined-function locations,
+            851 strings with 13663 characters,
+and the built_in function-call counts, 18668 in all, are:
+= -- 1799
+> -- 956
 < -- 5
-+ -- 173
-- -- 129
-* -- 759
-:= -- 1636
-add.period$ -- 134
-call.type$ -- 44
-change.case$ -- 40
++ -- 382
+- -- 322
+* -- 1423
+:= -- 3162
+add.period$ -- 165
+call.type$ -- 55
+change.case$ -- 322
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 450
-empty$ -- 998
-format.name$ -- 129
-if$ -- 2262
+cite$ -- 61
+duplicate$ -- 649
+empty$ -- 1401
+format.name$ -- 322
+if$ -- 3802
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 45
-newline$ -- 222
-num.names$ -- 44
-pop$ -- 113
+int.to.str$ -- 55
+missing$ -- 54
+newline$ -- 275
+num.names$ -- 110
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 271
 quote$ -- 0
-skip$ -- 203
+skip$ -- 460
 stack$ -- 0
-substring$ -- 721
-swap$ -- 88
+substring$ -- 1171
+swap$ -- 98
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 5
-while$ -- 97
-width$ -- 46
-write$ -- 473
-(There were 5 warnings)
+type$ -- 216
+warning$ -- 6
+while$ -- 172
+width$ -- 57
+write$ -- 586
+(There were 4 error messages)

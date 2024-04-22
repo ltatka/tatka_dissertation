@@ -76,7 +76,7 @@ Bioengineering
 \end{center}
 \end{titlepage}
 
-%\maketitle
+
 \null
 \begin{center}
 \textcopyright Copyright 2024\\
@@ -224,12 +224,29 @@ of Chemical Reaction Networks"
 """
 Most oscillators are associated with unstable steady states. Destabilizing processes can be classified as 1) direct autocatalysis, 2) indirect autocatalysis (a positive feedback loop), and 3) end-product inhibition (a negative feedback loop)~\cite{Tyson1975, tyson2007}. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Given the two types of oscillators, negative feedback and negative feedback coupled with positive feedback~\cite{Sauro_dynamics}, it is unsurprising that autocatalytic reactions are enriched in the oscillator population as these reactions are a form of positive feedback."""
 
-\section{A Brief History of Evolutionary Computing}
+\section{Applications of Evolutionary and Genetic Algorithms in Systems Biology}
+Genetic and evolutionary algorithms are optimization techniques inspired by the principles of natural selection and genetics. These algorithms mimic the process of natural evolution to solve complex optimization problems across various domains. Evolutionary algorithms offer a computational framework for addressing the inherent complexity and nonlinearity of biological systems, providing a means to explore large solution spaces and optimize model parameters and structures.
 
+The use of evolutionary aglorithms in systems biology became popular in the late 1990s, often to better understand metabolic pathways. This approach has been used to demonstrate the optimality of the glycolysis \cite{Heinrich1999, stephani1999} and the Krebs citric acid cycle \cite{mittenthal2000}. In these studies, genetic algorithms were used to optimize reaction rates but not the structure of the networks.
 
+Francois and Hakim evolved both the structure and reaction rates of genetic regulatory networks in an effort to generate small genetic networks that functioned as bistable switches and oscillators \cite{francois_hakim_2004}. The  algorithm used only mutation and selection, avoiding crossover, to minimize the difference between the candidate networks' output and idealized time series data displaying the desired behavior. Although the evolutionary scheme was relatively simple, they achieved promising results which encouraged the exploration of evolutionary techniques on similar problems.
 
-\section{Existing Tools for Evolutionary and Genetic Algorithms}
-Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the exisiting tools require advanced programming skill to use them.
+Fujimoto et al. employed a similar strategy to study genetic networks leading to striped patterning and ultimately body segmentation in arthropods \cite{fujimoto_network_2008}. When analyzing the resulting networks, they found three distinct classes, feed-forward loops, feed-back loops, and interconnections between the two. These three classes reproduced various segmentation strategies observed in arthropods.
+
+Kobayashi et al. also explored the evolution of oscillatory genetic networks, however their algorithm fixed parameter values and only allowed connection rewiring to achieve oscillations with prescribed time periods \cite{kobayashi_evolutionary_2010}. Deckard and Sauro expanded this concept beyond genetic regulatory networks to evolve small networks with specific computational capabilities such as square root and cube route calculators \cite{deckard_preliminary_2004}. As with the previously mentioned algorithms, their algorithm avoided crossover relying solely on mutation to develop candidate solutions. Attempts to use crossover did not result in fitter offspring, possibly due to combining heterologous networks and thus disrupting developing solutions. This work was continued by Paladugu et al seeking to generate mass-action network functional modules with specific behaviors, including oscillators \cite{Paladugu2006}.  This algorithm avoided crossover as the authors argued that it would be disruptive.
+
+Marchisio and Stelling argued that brute force optimization algorithms lack efficiency and that implementing some element of rational design could speed up automatic design of genetic networks implementing boolean logic gates \cite{marchisio_automatic_2011}. They separate structural and parameter optimization by first generating several possible circuits and then ranks feasibility based on the structure. Then the best solutions undergo parameter optimization. Separating structural design from parameter optimization certainly saves computation time, but it relies on the existence of a rational solution, and is better suited for genetic networks, where these attributes are more easily separated. For more complex tasks, a solution might depend on a precise combination of both structure and parameter.
+
+Other approaches fix structure and make use of evolutionary algorithms to explore the parameter space while fixing network topology. Jin and Sendhoff used an evolution strategy to explore parameters of regulatory motifs with fixed structures \cite{jin_evolving_2008}. Porubsky and Sauro use an evolutionary algorithm to search for parameters that yield oscillations in mass-action networks of fixed structure \cite{porubsky2019}.
+
+Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. Instead of evolving sets of differential equations, Drennan and Beer encoded their genetic regulatory networks using strings of 4 different letters, analogous to DNA encoding. This approach allows for the straightforward implementation of crossover, but limits the space of possible models. Due to this encoding, there was a high probability of breaking connections making it difficult to pass on structural innovations.
+
+\texbf{HERE}
+
+ Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
+
+\section{Tools for Evolutionary and Genetic Algorithms}
+Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the existing tools require advanced programming skill to use them.
 
 \subsection{Python Libraries}
 
@@ -272,18 +289,36 @@ As with the other software tools described here, the main drawback of pyGAD for 
 
 
 \subsection{Libraries in Other Languages}
-Beyond python, R and MATLAB are languages commonly found in science applications. Julia has fewer users and less package support, but this can likely be attributed to it's relative newness. Julia was first introduced 2012, a new language compared to MATLAB (1984), Python (1990), and R (1993). R is widely used in statistics applications. MATLAB is commonly used in academia, but less often in industry applications owing to its expensive license.
+Python is one of the more commonly used languages for scientific computing, however other languages offer various advantages. C++ and Java offer high performance compared to interpreted languages, but tend to have steeper learning curves and are less common in scientific computing. R excels at statistical computing but is less versatile than python. MATLAB is less common outside of academia likely owing to its high licensing costs. Julia is a relatively new language (2012) and has less package support and a smaller community than python. Likely for these reasons, fewer evoltuionary packages exist in other programming languages and are less likely to be used by scientists. Notable non-python packages are briefly reviewed here.
 
-CITATIONS FOR THIS PARAGRAPH
+<<Note about the gene structure issue for all of these>>
 
+\subsubsection{Evolutionary Computation in Java}
+Evolutionary Computation in Java (ECJ) is a framework that supports several evolutionary computation techniques including genetic algorithms and differential evolution \cite{Luke1998ECJSoftware}. It offers a high level of flexibility and customization and is well-suited for large-scale optimization problems. 
+ECJ has a steeper learning curve compared to other frameworks, especially for those not familiar with Java programming. Java is less frequently used in scientific programming making ECJ beyond the reach of many computational biologists. 
 
-GA (R)
-MATLAB toolbox
--Evolutionary.jl
+\subsubsection{JMetal}
+Jmetal is a well-documented Java library offering a range of evolutionary algorithms and metahueristics for multi-objective programming \cite{Durillo2011}. It provides good performance and scalability for large-scale optimization problems. However, it requires knowledge of Java programming and a deeper understanding of the framework in order to customize it beyond the built-in algorithms. 
 
-Maybe ju
--GALGO (R)
--Resistance GA (R)
+\subsubsection{Bio-Inspired Algorithms Building Blocks}
+Bio-Inspired Algorithms Building Blocks (openBEAGLE) is a library providing evolutionary computation tools and components \cite{Gagne2006}. Written in C++, it offers good performance for  intensive tasks. However, it's documentation and community support are limited compared to more widely used frameworks and it may have a steep learning curve for those not familiar with C++.
+
+\subsubsection{Many-Objective Genetic Metric-based Algorithms}
+Many-Objective Genetic Metric-based Algorithms (MAGMA) is a library for many-objective optimization problems with a range of performance metrics for evaluating algorithms \cite{Wang2023}. It is written in MATLAB making it more accessible to many scientific users, however this limits performance for large-scale optimization problems compared to compiled languages.
+
+\subsubsection{Genetic and Evolutionary Algorithm Toolbox for use with MATLAB}
+Genetic and Evolutionary Algorithm Toolbox for use with MATLAB (GEATbx) seamlessly integrates with MATLAB's core functionalities, making it easy to implement and test evolutionary algorithms within the MATLAB environment \cite{pohlheim1994geatbx}. MATLAB's rich visualization capabilities allow users to easily visualize optimization processes and analyze results, aiding in understanding and debugging algorithms. GEATbx can be easily integrated with other MATLAB toolboxes for tasks such as data preprocessing, feature selection, and model evaluation, facilitating end-to-end optimization workflows. While MATLAB provides a wide range of functions for implementing evolutionary algorithms, the level of customization may be limited compared to lower-level languages or more specialized frameworks, particularly for advanced users requiring highly customized algorithms or optimization processes.
+ 
+ 
+\subsubsection{Genetic Algorithms}
+Genetic Algorithms (GA) offers a simple and intuited interface for implementing genetic algorithms in R, making it accessible to users with varying levels of programming experience \cite{GA1, GA2}. It has a range of customization options, including different selection methods, crossover and mutation operators, and termination criteria, allowing users to tailor algorithms to their specific problem domains. GA supports parallel execution, enabling users to leverage multi-core processors for faster execution of genetic algorithms, particularly useful for computationally intensive tasks. The package is actively maintained and updated by the R community, ensuring compatibility with the latest versions of R and incorporating new features and improvements over time. While suitable for many applications, R may not offer the same level of performance as lower-level languages like C++ or Java, especially for large-scale optimization problems or computationally intensive tasks.
+
+\subsubsection{GALGO}
+
+Like the GA package, GALGO integrates seamlessly with the R programming language, allowing users to leverage the rich ecosystem of statistical and machine learning libraries available in R \cite{Trevino2006}. GALGO offers a variety of evolutionary algorithms beyond genetic algorithms, including differential evolution, particle swarm optimization, and simulated annealing, providing users with flexibility in choosing the most suitable algorithm for their optimization problem. The package allows users to customize various aspects of the evolutionary algorithms, such as population size, crossover and mutation operators, and termination criteria, enabling tailored solutions for different optimization tasks. Like GA, GALGO may suffer from performance limitations compared to compiled languages.
+
+\subsubsection{Evolutionary.jl}
+Evolutionary.jl offers a user-friendly interface for implementing evolutionary algorithms in Julia, making it accessible to users with varying levels of programming expertise \cite{evolutionary.jl}. The package provides a range of evolutionary algorithms, including genetic algorithms, differential evolution, and particle swarm optimization, among others, allowing users to choose the most suitable algorithm for their optimization problems. Evolutionary.jl allows users to customize various aspects of the evolutionary algorithms, such as population size, crossover and mutation operators, and termination criteria, enabling tailored solutions for different optimization tasks. Julia is designed for high-performance numerical computing, and Evolutionary.jl benefits from Julia's performance advantages, providing efficient execution of evolutionary algorithms. However, this package is not suited for evolving chemical reaction networks due to the limitations of encoding solutions.
 
 
 \chapter{A Public Database of Evolved Oscillatory Reaction Networks}
@@ -482,24 +517,16 @@ Although there are numerous studies implemting genetic algorithms in systems bio
 
 Chandran and Sauro devloped a C library with basic functions for evolution of biological networks including genetic networks, protein networks, and mass-action networks. Although highly versatile, the library requires some C programming knowledge in order to customize the evolutionary algorithm.
 
-
+Beyond python, R and MATLAB are languages commonly found in science applications. Julia has fewer users and less package support, but this can likely be attributed to it's relative newness. Julia was first introduced 2012, a new language compared to MATLAB (1984), Python (1990), and R (1993). R is widely used in statistics applications. MATLAB is commonly used in academia, but less often in industry applications owing to its expensive license.
 
 \chapter{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}
 \label{chap: NetEvolve}
+\section{Introduction}
 Genetic algorithms (GAs), inspired by the principles of natural selection and genetics, have emerged as a powerful computational technique for solving optimization and search problems.Developed by John Holland in the 1970s, GAs mimic the process of biological evolution to solve optimization and search problems \cite{holland_1975}. At their core, genetic algorithms operate on a population of potential solutions, represented as individuals or ``chromosomes," each encoding a candidate solution to the problem at hand. Through iterative generations, genetic algorithms apply mechanisms of selection, crossover, and mutation to evolve and refine the population, gradually converging towards optimal or near-optimal solutions. Selection favors individuals with higher fitness, mirroring the process of natural selection, while crossover and mutation introduce variation and diversity into the population, allowing for exploration of the solution space. By leveraging the principles of evolution, genetic algorithms offer a versatile and robust approach to solving complex problems across various domains, from engineering and optimization to biology and beyond.
 
-Francois and Hakim were among the first to apply genetic algorithms to systems biology \cite{francois_hakim_2004}. In an effort to generate small genetic networks that functioned as bistable switches and oscillators, they implemented a simple genetic algorithm to evolve both the structure and rate constants of idealized abstractions of genetic regulatory networks. The  algorithm used only mutation and selection, avoiding crossover, to minimize the difference between the candidate networks' output and idealized time series data displaying the desired behavior. Although the evolutionary scheme was relatively simple, they achieved promising results which encouraged the exploration of evolutionary techniques on similar problems.
-
-Fujimoto et al. employed a similar strategy to study genetic networks leading to striped patterning and ultimately body segmentation in arthropods \cite{fujimoto_network_2008}. When analyzing the resulting networks, they found three distinct classes, feed-forward loops, feed-back loops, and interconnections between the two. These three classes reproduced various segmentation strategies observed in arthropods.
-
-Kobayashi et al. also explored the evolution of oscillatory genetic networks, however their algorithm fixed parameter values and only allowed connection rewiring to achieve oscillations with prescribed time periods \cite{kobayashi_evolutionary_2010}. Deckard and Sauro expanded this concept beyond genetic regulatory networks to evolve small networks with specific computational capabilities such as square root and cube route calculators \cite{deckard_preliminary_2004}. As with the previously mentioned algorithms, their algorithm avoided crossover relying solely on mutation to develop candidate solutions. Attempts to use crossover did not result in fitter offspring, possibly due to combining heterologous networks and thus disrupting developing solutions. This work was continued by Paladugu et al seeking to generate mass-action network functional modules with specific behaviors, including oscillators \cite{Paladugu2006}.  This algorithm avoided crossover as the authors argued that it would be disruptive.
-
-Marchisio and Stelling argued that brute force optimization algorithms lack efficiency and that implementing some element of rational design could speed up automatic design of genetic networks implementing boolean logic gates \cite{marchisio_automatic_2011}. They separate structural and parameter optimization by first generating several possible circuits and then ranks feasibility based on the structure. Then the best solutions undergo parameter optimization. Separating structural design from parameter optimization certainly saves computation time, but it relies on the existence of a rational solution, and is better suited for genetic networks, where these attributes are more easily separated. For more complex tasks, a solution might depend on a precise combination of both structure and parameter.
-
-Other approaches fix structure and make use of evolutionary algorithms to explore the parameter space while fixing network topology. Jin and Sendhoff used an evolution strategy to explore parameters of regulatory motifs with fixed structures \cite{jin_evolving_2008}. Porubsky and Sauro use an evolutionary algorithm to search for parameters that yield oscillations in mass-action networks of fixed structure \cite{porubsky2019}.
 
 
-Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. However, due to the encoding of the network graph, there was a high probability of breaking connections making it difficult to pass on structural innovations. Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
+
 
 This work describes the adaptation of the NEAT algorithm to mass-action chemical reaction networks and explores the utility of crossover, speciation, and other hyper-parameters in evolving oscillatory networks. A software package to systematize the study of hyperparameters is introduced. This package, written in the julia programming language \cite{bezanson2017julia}, simplifies the customization of evolutionary algorithms. It has broad applications as it can be run from the command line and allows users to specify settings in a json file. It is capable of matching any time series data. 
 
@@ -663,7 +690,7 @@ Yay I did it.
 
 
 % Bibliography
-\bibliographystyle{unsrt}
+\bibliographystyle{plain}
 \bibliography{researchbib}
 \end{document}
 

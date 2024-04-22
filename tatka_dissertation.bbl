@@ -1,80 +1,37 @@
 \begin{thebibliography}{10}
 
-\bibitem{Sharma2006}
-Monika Sharma and Praveen Kumar.
-\newblock Chemical oscillations: 1. basic principles and examples.
-\newblock {\em Resonance}, 11(2):43–50, February 2006.
+\bibitem{Aulehla2008}
+Alexander Aulehla and Olivier Pourqui{\'e}.
+\newblock Oscillating signaling pathways during embryonic development.
+\newblock {\em Current opinion in cell biology}, 20(6):632--637, dec 2008.
 
-\bibitem{Tyson1975}
-John~J. Tyson.
-\newblock Classification of instabilities in chemical reaction systems.
-\newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
-  1975.
+\bibitem{bezanson2017julia}
+Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
+\newblock Julia: A fresh approach to numerical computing.
+\newblock {\em SIAM review}, 59(1):65--98, 2017.
 
-\bibitem{tyson2007}
-J.J Tyson.
-\newblock Biochemical oscillators.
-\newblock In {\em Computational Cell Biology}. Springer New York, 2007.
-
-\bibitem{Tyson2004}
-John~J. Tyson.
-\newblock Biochemical oscillations.
-\newblock In {\em Interdisciplinary Applied Mathematics}, pages 230--260.
-  Springer New York.
-
-\bibitem{Sauro_dynamics}
-Herbert Sauro.
-\newblock {teUtils} [software].
-\newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
-
-\bibitem{python3}
-Guido Van~Rossum and Fred~L. Drake.
-\newblock {\em Python 3 Reference Manual}.
-\newblock CreateSpace, Scotts Valley, CA, 2009.
-
-\bibitem{DEAP_JMLR2012}
-F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
-  Gardner, Marc Parizeau, and Christian Gagn\'e.
-\newblock {DEAP}: Evolutionary algorithms made easy.
-\newblock {\em Journal of Machine Learning Research}, 13:2171--2175, jul 2012.
-
-\bibitem{pyevolve}
-Christian~S. Perone.
-\newblock Pyevolve: a python open-source framework for genetic algorithms.
-\newblock {\em SIGEVOlution}, 4, 2009.
+\bibitem{Choi2018}
+Kiri Choi, J.~Kyle Medley, Matthias K\"{o}nig, Kaylene Stocking, Lucian Smith,
+  Stanley Gu, and Herbert~M. Sauro.
+\newblock Tellurium: An extensible python-based modeling environment for
+  systems and synthetic biology.
+\newblock {\em Biosystems}, 171:74--79, September 2018.
 
 \bibitem{LEAP}
 Mark~A. Coletti, Eric~O. Scott, and Jeffrey~K. Basset.
 \newblock In {\em Proceedings of the 2020 Genetic and Evolutionary Computationa
   Conference Companion}, 2020.
 
-\bibitem{easyGA}
-Daniel Wilczak and Jack Nguyen.
-\newblock {\em EasyGA - Genetic Aglorithms made Easy}, 2021.
-
-\bibitem{gad2023pygad}
-Ahmed~Fawzy Gad.
-\newblock Pygad: An intuitive genetic algorithm python library.
-\newblock {\em Multimedia Tools and Applications}, pages 1--14, 2023.
+\bibitem{deckard_preliminary_2004}
+Anastasia Deckard and Herbert~M Sauro.
+\newblock Preliminary {Studies} on the {In} {Silico} {Evolution} of
+  {Biochemical} {Networks}.
+\newblock {\em ChemBioChem}, 5(10):1423--1431, October 2004.
 
 \bibitem{deckard2009}
 Anastasia~C Deckard, Frank~T Bergmann, and Herbert~M Sauro.
 \newblock Enumeration and online library of mass-action reaction networks.
 \newblock {\em arXiv preprint arXiv:0901.3067}, 2009.
-
-\bibitem{pantea2010}
-Casian Pantea and Gheorghe Craciun.
-\newblock Computational methods for analyzing bistability in biochemical
-  reaction networks.
-\newblock In {\em Proceedings of 2010 IEEE International Symposium on Circuits
-  and Systems}, pages 549--552, 2010.
-
-\bibitem{nobile2013}
-Marco~S. Nobile, Daniela Besozzi, Paolo Cazzaniga, Dario Pescini, and Giancarlo
-  Mauri.
-\newblock Reverse engineering of kinetic reaction networks by means of
-  cartesian genetic programming and particle swarm optimization.
-\newblock pages 1594--1601, 2013.
 
 \bibitem{donnell2014}
 Pete Donnell, Murad Banaji, Anca Marginean, and Casian Pantea.
@@ -82,88 +39,29 @@ Pete Donnell, Murad Banaji, Anca Marginean, and Casian Pantea.
   reaction networks}.
 \newblock {\em Bioinformatics}, 30(11):1633--1634, 01 2014.
 
-\bibitem{Novak2008}
-B{\'{e}}la Nov{\'{a}}k and John~J. Tyson.
-\newblock Design principles of biochemical oscillators.
-\newblock {\em Nature Reviews Molecular Cell Biology}, 9(12):981--991, oct
-  2008.
+\bibitem{drennan_beer}
+Barry Drennan and Randall~D. Beer.
+\newblock Evolution of repressilators using a biologically-motivated model of
+  gene expression.
+\newblock In {\em Artificial Life X: Proceedings of the Tenth International
+  Conf. on the Simulation and Synthesis of Living Systems}, 2006.
 
-\bibitem{Aulehla2008}
-Alexander Aulehla and Olivier Pourqui{\'e}.
-\newblock Oscillating signaling pathways during embryonic development.
-\newblock {\em Current opinion in cell biology}, 20(6):632--637, dec 2008.
+\bibitem{Durillo2011}
+Juan~J. Durillo and Antonio~J. Nebro.
+\newblock jmetal: A java framework for multi-objective optimization.
+\newblock {\em Advances in Engineering Software}, 42(10):760–771, October
+  2011.
 
-\bibitem{GevaZatorsky2006}
-Naama Geva-Zatorsky, Nitzan Rosenfeld, Shalev Itzkovitz, Ron Milo, Alex Sigal,
-  Erez Dekel, Talia Yarnitzky, Yuvalal Liron, Paz Polak, Galit Lahav, and Uri
-  Alon.
-\newblock Oscillations and variability in the p53 system.
-\newblock {\em Molecular systems biology}, 2(1):2006--0033, jan 2006.
+\bibitem{Elowitz2000}
+Michael~B. Elowitz and Stanislas Leibler.
+\newblock A synthetic oscillatory network of transcriptional regulators.
+\newblock {\em Nature}, 403(6767):335–338, January 2000.
 
-\bibitem{Pol1928}
-Balth. van~der Pol and J.~van~der Mark.
-\newblock {LXXII}.the heartbeat considered as a relaxation oscillation, and an
-  electrical model of the heart.
-\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
-  Journal of Science}, 6(38):763--775, nov 1928.
-
-\bibitem{Lotka1910}
-Alfred~J. Lotka.
-\newblock Contribution to the theory of periodic reactions.
-\newblock {\em The Journal of Physical Chemistry}, 14(3):271--274, March 1910.
-
-\bibitem{Higgins1967}
-Joseph Higgins.
-\newblock The theory of oscillating reactions - kinetics symposium.
-\newblock {\em Industrial {\&}amp; Engineering Chemistry}, 59(5):18--62, May
-  1967.
-
-\bibitem{Paladugu2006}
-SR~Paladugu, V~Chickarmane, A~Deckard, JP~Frumkin, M~McCormack, and HM~Sauro.
-\newblock In silico evolution of functional modules in biochemical networks.
-\newblock {\em IEE Proceedings-Systems Biology}, 2006.
-
-\bibitem{Smith2009}
-Lucian Smith, Frank Bergmann, Deepak Chandran, and Herbert Sauro.
-\newblock Antimony: A modular model definition language.
-\newblock {\em Bioinformatics (Oxford, England)}, 25:2452--4, 08 2009.
-
-\bibitem{Somogyi2015}
-Endre~T Somogyi, Jean-Marie Bouteiller, James~A Glazier, Matthias K{\"o}nig,
-  J~Kyle Medley, Maciej~H Swat, and Herbert~M Sauro.
-\newblock libroadrunner: a high performance sbml simulation and analysis
-  library.
-\newblock {\em Bioinformatics}, 31(20):3315--3321, jun 2015.
-
-\bibitem{hindmarsh2005sundials}
-Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
-  Dan~E Shumaker, and Carol~S Woodward.
-\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
-  solvers.
-\newblock {\em ACM Transactions on Mathematical Software (TOMS)},
-  31(3):363--396, 2005.
-
-\bibitem{Miller1995}
-Brad~L. Miller and David~E. Goldberg.
-\newblock Genetic algorithms, tournament selection, and the effects of noise.
-\newblock {\em Complex Syst.}, 9, 1995.
-
-\bibitem{SauroteUtils_2020}
-Herbert Sauro.
-\newblock Network dynamics.
-\newblock {\em Methods in Molecular Biology}, 2009.
-
-\bibitem{Katoch2020}
-Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
-\newblock A review on genetic algorithm: past, present, and future.
-\newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
-  2020.
-
-\bibitem{holland_1975}
-John Holland.
-\newblock {\em Adaptation in natural and artificial systems: An introductory
-  analysis with applications in biology, control, and artificial intelligence}.
-\newblock U Michigan Press, 1975.
+\bibitem{DEAP_JMLR2012}
+F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
+  Gardner, Marc Parizeau, and Christian Gagn\'e.
+\newblock {DEAP}: Evolutionary algorithms made easy.
+\newblock {\em Journal of Machine Learning Research}, 13:2171--2175, jul 2012.
 
 \bibitem{francois_hakim_2004}
 Paul Francois and Vincent Hakim.
@@ -176,21 +74,50 @@ Koichi Fujimoto, Shuji Ishihara, and Kunihiko Kaneko.
 \newblock Network {Evolution} of {Body} {Plans}.
 \newblock {\em PLoS ONE}, 3(7):e2772, July 2008.
 
-\bibitem{kobayashi_evolutionary_2010}
-Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
-\newblock Evolutionary design of oscillatory genetic networks.
-\newblock {\em Eur. Phys. J. B}, 76(1):167--178, July 2010.
+\bibitem{gad2023pygad}
+Ahmed~Fawzy Gad.
+\newblock Pygad: An intuitive genetic algorithm python library.
+\newblock {\em Multimedia Tools and Applications}, pages 1--14, 2023.
 
-\bibitem{deckard_preliminary_2004}
-Anastasia Deckard and Herbert~M Sauro.
-\newblock Preliminary {Studies} on the {In} {Silico} {Evolution} of
-  {Biochemical} {Networks}.
-\newblock {\em ChemBioChem}, 5(10):1423--1431, October 2004.
+\bibitem{Gagne2006}
+Christian Gagn\'e and Marc Parizeau.
+\newblock Genericity in evolutionary computation software tools: Principles and
+  case study.
+\newblock {\em International Journal on Artificial Intelligence Tools},
+  15(2):173--194, 2006.
 
-\bibitem{marchisio_automatic_2011}
-Mario~A. Marchisio and Jörg Stelling.
-\newblock Automatic {Design} of {Digital} {Synthetic} {Gene} {Circuits}.
-\newblock {\em PLoS Comput Biol}, 7(2):e1001083, February 2011.
+\bibitem{GevaZatorsky2006}
+Naama Geva-Zatorsky, Nitzan Rosenfeld, Shalev Itzkovitz, Ron Milo, Alex Sigal,
+  Erez Dekel, Talia Yarnitzky, Yuvalal Liron, Paz Polak, Galit Lahav, and Uri
+  Alon.
+\newblock Oscillations and variability in the p53 system.
+\newblock {\em Molecular systems biology}, 2(1):2006--0033, jan 2006.
+
+\bibitem{Heinrich1999}
+R.~Heinrich, E.~Melendez-Hevia, F.~Montero, J.C. Nuno, A.~Stephani, and T.G.
+  Waddell.
+\newblock The structural design of glycolysis: an evolutionary approach.
+\newblock {\em Biochemical Society Transactions}, 27:294--298, 1999.
+
+\bibitem{Higgins1967}
+Joseph Higgins.
+\newblock The theory of oscillating reactions - kinetics symposium.
+\newblock {\em Industrial {\&}amp; Engineering Chemistry}, 59(5):18--62, May
+  1967.
+
+\bibitem{hindmarsh2005sundials}
+Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
+  Dan~E Shumaker, and Carol~S Woodward.
+\newblock {SUNDIALS}: Suite of nonlinear and differential/algebraic equation
+  solvers.
+\newblock {\em ACM Transactions on Mathematical Software (TOMS)},
+  31(3):363--396, 2005.
+
+\bibitem{holland_1975}
+John Holland.
+\newblock {\em Adaptation in natural and artificial systems: An introductory
+  analysis with applications in biology, control, and artificial intelligence}.
+\newblock U Michigan Press, 1975.
 
 \bibitem{jin_evolving_2008}
 Yaochu Jin and Bernhard Sendhoff.
@@ -200,39 +127,76 @@ Yaochu Jin and Bernhard Sendhoff.
   ({IEEE} {World} {Congress} on {Computational} {Intelligence})}, pages
   386--391, Hong Kong, China, June 2008. IEEE.
 
+\bibitem{Katoch2020}
+Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
+\newblock A review on genetic algorithm: past, present, and future.
+\newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
+  2020.
+
+\bibitem{kobayashi_evolutionary_2010}
+Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
+\newblock Evolutionary design of oscillatory genetic networks.
+\newblock {\em Eur. Phys. J. B}, 76(1):167--178, July 2010.
+
+\bibitem{Lotka1910}
+Alfred~J. Lotka.
+\newblock Contribution to the theory of periodic reactions.
+\newblock {\em The Journal of Physical Chemistry}, 14(3):271--274, March 1910.
+
+\bibitem{Luke1998ECJSoftware}
+Sean Luke.
+\newblock {ECJ} evolutionary computation library, 1998.
+
+\bibitem{marchisio_automatic_2011}
+Mario~A. Marchisio and Jörg Stelling.
+\newblock Automatic {Design} of {Digital} {Synthetic} {Gene} {Circuits}.
+\newblock {\em PLoS Comput Biol}, 7(2):e1001083, February 2011.
+
+\bibitem{Miller1995}
+Brad~L. Miller and David~E. Goldberg.
+\newblock Genetic algorithms, tournament selection, and the effects of noise.
+\newblock {\em Complex Syst.}, 9, 1995.
+
+\bibitem{nobile2013}
+Marco~S. Nobile, Daniela Besozzi, Paolo Cazzaniga, Dario Pescini, and Giancarlo
+  Mauri.
+\newblock Reverse engineering of kinetic reaction networks by means of
+  cartesian genetic programming and particle swarm optimization.
+\newblock pages 1594--1601, 2013.
+
+\bibitem{Novak2008}
+B{\'{e}}la Nov{\'{a}}k and John~J. Tyson.
+\newblock Design principles of biochemical oscillators.
+\newblock {\em Nature Reviews Molecular Cell Biology}, 9(12):981--991, oct
+  2008.
+
+\bibitem{Paladugu2006}
+SR~Paladugu, V~Chickarmane, A~Deckard, JP~Frumkin, M~McCormack, and HM~Sauro.
+\newblock In silico evolution of functional modules in biochemical networks.
+\newblock {\em IEE Proceedings-Systems Biology}, 2006.
+
+\bibitem{pantea2010}
+Casian Pantea and Gheorghe Craciun.
+\newblock Computational methods for analyzing bistability in biochemical
+  reaction networks.
+\newblock In {\em Proceedings of 2010 IEEE International Symposium on Circuits
+  and Systems}, pages 549--552, 2010.
+
+\bibitem{pyevolve}
+Christian~S. Perone.
+\newblock Pyevolve: a python open-source framework for genetic algorithms.
+\newblock {\em SIGEVOlution}, 4, 2009.
+
+\bibitem{pohlheim1994geatbx}
+Hartmut Pohlheim.
+\newblock Geatbx-genetic and evolutionary algorithm toolbox for matlab.
+\newblock 1994.
+
 \bibitem{porubsky2019}
 Veronica Porubsky and Herbert Sauro.
 \newblock Application of parameter optimization to search for oscillatory
   mass-action networks using python.
 \newblock {\em Processes}, 7(3):163, mar 2019.
-
-\bibitem{Elowitz2000}
-Michael~B. Elowitz and Stanislas Leibler.
-\newblock A synthetic oscillatory network of transcriptional regulators.
-\newblock {\em Nature}, 403(6767):335–338, January 2000.
-
-\bibitem{drennan_beer}
-Barry Drennan and Randall~D. Beer.
-\newblock Evolution of repressilators using a biologically-motivated model of
-  gene expression.
-\newblock In {\em Artificial Life X: Proceedings of the Tenth International
-  Conf. on the Simulation and Synthesis of Living Systems}, 2006.
-
-\bibitem{stanley_evolving_2002}
-Kenneth~O. Stanley and Risto Miikkulainen.
-\newblock Evolving {Neural} {Networks} through {Augmenting} {Topologies}.
-\newblock {\em Evolutionary Computation}, 10(2):99--127, June 2002.
-
-\bibitem{bezanson2017julia}
-Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
-\newblock Julia: A fresh approach to numerical computing.
-\newblock {\em SIAM review}, 59(1):65--98, 2017.
-
-\bibitem{Tatka2023}
-Lillian~T. Tatka, Wesley Luk, Timothy~C. Elston, Joseph~L. Hellerstein, and
-  Herbert~M. Sauro.
-\newblock Cesium: A public database of evolved oscillatory reaction networks.
-\newblock {\em Biosystems}, 224:104836, February 2023.
 
 \bibitem{DifferentialEquations.jl-2017}
 Christopher Rackauckas and Qing Nie.
@@ -241,16 +205,114 @@ Christopher Rackauckas and Qing Nie.
 \newblock {\em The Journal of Open Research Software}, 5(1), 2017.
 \newblock Exported from https://app.dimensions.ai on 2019/05/05.
 
-\bibitem{Choi2018}
-Kiri Choi, J.~Kyle Medley, Matthias K\"{o}nig, Kaylene Stocking, Lucian Smith,
-  Stanley Gu, and Herbert~M. Sauro.
-\newblock Tellurium: An extensible python-based modeling environment for
-  systems and synthetic biology.
-\newblock {\em Biosystems}, 171:74--79, September 2018.
+\bibitem{SauroteUtils_2020}
+Herbert Sauro.
+\newblock Network dynamics.
+\newblock {\em Methods in Molecular Biology}, 2009.
+
+\bibitem{Sauro_dynamics}
+Herbert Sauro.
+\newblock {teUtils} [software].
+\newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
+
+\bibitem{GA1}
+Luca Scrucca.
+\newblock {GA}: A package for genetic algorithms in {R}.
+\newblock {\em Journal of Statistical Software}, 53(4):1--37, 2013.
+
+\bibitem{GA2}
+Luca Scrucca.
+\newblock On some extensions to {GA} package: hybrid optimisation,
+  parallelisation and islands evolution.
+\newblock {\em The R Journal}, 9(1):187--206, 2017.
+
+\bibitem{Sharma2006}
+Monika Sharma and Praveen Kumar.
+\newblock Chemical oscillations: 1. basic principles and examples.
+\newblock {\em Resonance}, 11(2):43–50, February 2006.
+
+\bibitem{Smith2009}
+Lucian Smith, Frank Bergmann, Deepak Chandran, and Herbert Sauro.
+\newblock Antimony: A modular model definition language.
+\newblock {\em Bioinformatics (Oxford, England)}, 25:2452--4, 08 2009.
 
 \bibitem{andy2020}
 Andy Somogyi, J~Kyle Medley, Kiri Choi, and Herbert Suaro.
 \newblock Roadrunner [software].
 \newblock 2020.
+
+\bibitem{Somogyi2015}
+Endre~T Somogyi, Jean-Marie Bouteiller, James~A Glazier, Matthias K{\"o}nig,
+  J~Kyle Medley, Maciej~H Swat, and Herbert~M Sauro.
+\newblock libroadrunner: a high performance sbml simulation and analysis
+  library.
+\newblock {\em Bioinformatics}, 31(20):3315--3321, jun 2015.
+
+\bibitem{stanley_evolving_2002}
+Kenneth~O. Stanley and Risto Miikkulainen.
+\newblock Evolving {Neural} {Networks} through {Augmenting} {Topologies}.
+\newblock {\em Evolutionary Computation}, 10(2):99--127, June 2002.
+
+\bibitem{stephani1999}
+A.~Stephani, J.C. Nuno, and R.~Heinrich.
+\newblock Optimal stoichiometric designs of atp-producing systems as determined
+  by an evolutionary algorithm.
+\newblock {\em Jounral of Theoretical Biology}, 199, 1999.
+
+\bibitem{Tatka2023}
+Lillian~T. Tatka, Wesley Luk, Timothy~C. Elston, Joseph~L. Hellerstein, and
+  Herbert~M. Sauro.
+\newblock Cesium: A public database of evolved oscillatory reaction networks.
+\newblock {\em Biosystems}, 224:104836, February 2023.
+
+\bibitem{Trevino2006}
+Victor Trevino and Francesco Falciani.
+\newblock Galgo: an r package for multivariate variable selection using genetic
+  algorithms.
+\newblock {\em Bioinformatics}, 22(9):1154–1156, March 2006.
+
+\bibitem{tyson2007}
+J.J Tyson.
+\newblock Biochemical oscillators.
+\newblock In {\em Computational Cell Biology}. Springer New York, 2007.
+
+\bibitem{Tyson2004}
+John~J. Tyson.
+\newblock Biochemical oscillations.
+\newblock In {\em Interdisciplinary Applied Mathematics}, pages 230--260.
+  Springer New York.
+
+\bibitem{Tyson1975}
+John~J. Tyson.
+\newblock Classification of instabilities in chemical reaction systems.
+\newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
+  1975.
+
+\bibitem{Pol1928}
+Balth. van~der Pol and J.~van~der Mark.
+\newblock {LXXII}.the heartbeat considered as a relaxation oscillation, and an
+  electrical model of the heart.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
+  Journal of Science}, 6(38):763--775, nov 1928.
+
+\bibitem{python3}
+Guido Van~Rossum and Fred~L. Drake.
+\newblock {\em Python 3 Reference Manual}.
+\newblock CreateSpace, Scotts Valley, CA, 2009.
+
+\bibitem{Wang2023}
+Xujian Wang, Fenggan Zhang, and Minli Yao.
+\newblock A many-objective evolutionary algorithm with metric-based reference
+  vector adjustment.
+\newblock {\em Complex and Intelligent Systems}, 10(1):207–231, July 2023.
+
+\bibitem{easyGA}
+Daniel Wilczak and Jack Nguyen.
+\newblock {\em EasyGA - Genetic Aglorithms made Easy}, 2021.
+
+\bibitem{evolutionary.jl}
+Art Wilde, Daniel Thiem, {, Leo}, {Abhinav Gupta}, Andrew Haselgrove, Daniel
+  Molina, {Honeypot95}, {Matago}, {Rogerluo}, and Valentin Churavy.
+\newblock Evolutionary.jl, 2021.
 
 \end{thebibliography}
