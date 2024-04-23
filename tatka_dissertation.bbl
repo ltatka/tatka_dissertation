@@ -1,5 +1,18 @@
 \begin{thebibliography}{10}
 
+\bibitem{circadianOverview}
+Overview of circadian rhythms.
+\newblock {\em Alcohol Research and Health}, 25, 2001.
+
+\bibitem{circadianReview}
+Circadian rhythm, lifestyle and health: A narrative review.
+\newblock {\em Iran Journal of Public Health}, 47, 2018.
+
+\bibitem{lotka-volterra}
+Stefano Allesina.
+\newblock chapter Generalized Lotka-Volterra.
+\newblock 2020.
+
 \bibitem{Aulehla2008}
 Alexander Aulehla and Olivier Pourqui{\'e}.
 \newblock Oscillating signaling pathways during embryonic development.
@@ -10,6 +23,24 @@ Jeff Bezanson, Alan Edelman, Stefan Karpinski, and Viral~B Shah.
 \newblock Julia: A fresh approach to numerical computing.
 \newblock {\em SIAM review}, 59(1):65--98, 2017.
 
+\bibitem{Cebolla2019}
+Ana~Maria Cebolla and Guy Cheron.
+\newblock Understanding neural oscillations in the human brain: From movement
+  to consciousness and vice versa.
+\newblock {\em Frontiers in Psychology}, 10, August 2019.
+
+\bibitem{Cerone2012}
+Luca Cerone and Zoltán Neufeld.
+\newblock Differential gene expression regulated by oscillatory transcription
+  factors.
+\newblock {\em PLoS ONE}, 7(1):e30283, January 2012.
+
+\bibitem{Cheong2010}
+Raymond Cheong and Andre Levchenko.
+\newblock Oscillatory signaling processes: the how, the why and the where.
+\newblock {\em Current Opinion in Genetics and Development}, 20(6):665–669,
+  December 2010.
+
 \bibitem{Choi2018}
 Kiri Choi, J.~Kyle Medley, Matthias K\"{o}nig, Kaylene Stocking, Lucian Smith,
   Stanley Gu, and Herbert~M. Sauro.
@@ -17,10 +48,21 @@ Kiri Choi, J.~Kyle Medley, Matthias K\"{o}nig, Kaylene Stocking, Lucian Smith,
   systems and synthetic biology.
 \newblock {\em Biosystems}, 171:74--79, September 2018.
 
+\bibitem{Chu_oscillator}
+Dominique Chu.
+\newblock Evolving genetic regulatory networks for systems biology.
+\newblock In {\em 2007 IEEE Congress on Evolutionary Computation}, 2007.
+
 \bibitem{LEAP}
 Mark~A. Coletti, Eric~O. Scott, and Jeffrey~K. Basset.
 \newblock In {\em Proceedings of the 2020 Genetic and Evolutionary Computationa
   Conference Companion}, 2020.
+
+\bibitem{CubillosRuiz2021}
+Andres Cubillos-Ruiz, Tingxi Guo, Anna Sokolovska, Paul~F. Miller, James~J.
+  Collins, Timothy~K. Lu, and Jose~M. Lora.
+\newblock Engineering living therapeutics with synthetic biology.
+\newblock {\em Nature Reviews Drug Discovery}, 20(12):941–960, October 2021.
 
 \bibitem{deckard_preliminary_2004}
 Anastasia Deckard and Herbert~M Sauro.
@@ -52,10 +94,21 @@ Juan~J. Durillo and Antonio~J. Nebro.
 \newblock {\em Advances in Engineering Software}, 42(10):760–771, October
   2011.
 
+\bibitem{Dyachok2006}
+Oleg Dyachok, Yegor Isakov, Jenny Sågetorp, and Anders Tengholm.
+\newblock Oscillations of cyclic amp in hormone-stimulated insulin-secreting
+  $\beta$-cells.
+\newblock {\em Nature}, 439(7074):349–352, January 2006.
+
 \bibitem{Elowitz2000}
 Michael~B. Elowitz and Stanislas Leibler.
 \newblock A synthetic oscillatory network of transcriptional regulators.
 \newblock {\em Nature}, 403(6767):335–338, January 2000.
+
+\bibitem{Elton1942}
+Charles Elton and Mary Nicholson.
+\newblock The ten-year cycle in numbers of the lynx in canada.
+\newblock {\em The Journal of Animal Ecology}, 11(2):215, November 1942.
 
 \bibitem{DEAP_JMLR2012}
 F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
@@ -86,12 +139,24 @@ Christian Gagn\'e and Marc Parizeau.
 \newblock {\em International Journal on Artificial Intelligence Tools},
   15(2):173--194, 2006.
 
+\bibitem{Gause}
+G.F. Gause.
+\newblock Experimental demonstration of volterra's periodic oscillations in the
+  numbers of animals.
+\newblock {\em The Journal of Experimental Biology}, 1935.
+
 \bibitem{GevaZatorsky2006}
 Naama Geva-Zatorsky, Nitzan Rosenfeld, Shalev Itzkovitz, Ron Milo, Alex Sigal,
   Erez Dekel, Talia Yarnitzky, Yuvalal Liron, Paz Polak, Galit Lahav, and Uri
   Alon.
 \newblock Oscillations and variability in the p53 system.
 \newblock {\em Molecular systems biology}, 2(1):2006--0033, jan 2006.
+
+\bibitem{Ghosh1964}
+A.~Ghosh and B.~Chance.
+\newblock Oscillations of glycolytic intermediates in yeast cells.
+\newblock {\em Biochemical and Biophysical Research Communications},
+  16(2):174–181, June 1964.
 
 \bibitem{Heinrich1999}
 R.~Heinrich, E.~Melendez-Hevia, F.~Montero, J.C. Nuno, A.~Stephani, and T.G.
@@ -102,8 +167,7 @@ R.~Heinrich, E.~Melendez-Hevia, F.~Montero, J.C. Nuno, A.~Stephani, and T.G.
 \bibitem{Higgins1967}
 Joseph Higgins.
 \newblock The theory of oscillating reactions - kinetics symposium.
-\newblock {\em Industrial {\&}amp; Engineering Chemistry}, 59(5):18--62, May
-  1967.
+\newblock {\em Industrial {\&} Engineering Chemistry}, 59(5):18--62, May 1967.
 
 \bibitem{hindmarsh2005sundials}
 Alan~C Hindmarsh, Peter~N Brown, Keith~E Grant, Steven~L Lee, Radu Serban,
@@ -119,6 +183,13 @@ John Holland.
   analysis with applications in biology, control, and artificial intelligence}.
 \newblock U Michigan Press, 1975.
 
+\bibitem{Huang2024}
+Beichen Huang, Ran Cheng, Zhuozhao Li, Yaochu Jin, and Kay~Chen Tan.
+\newblock Evox: A distributed gpu-accelerated framework for scalable
+  evolutionary computation.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, page 1–1,
+  2024.
+
 \bibitem{jin_evolving_2008}
 Yaochu Jin and Bernhard Sendhoff.
 \newblock Evolving in silico bistable and oscillatory dynamics for gene
@@ -127,11 +198,30 @@ Yaochu Jin and Bernhard Sendhoff.
   ({IEEE} {World} {Congress} on {Computational} {Intelligence})}, pages
   386--391, Hong Kong, China, June 2008. IEEE.
 
+\bibitem{Jolma2010}
+Ingunn~W. Jolma, Xiao~Yu Ni, Ludger Rensing, and Peter Ruoff.
+\newblock Harmonic oscillations in homeostatic controllers: Dynamics of the p53
+  regulatory system.
+\newblock {\em Biophysical Journal}, 98(5):743–752, March 2010.
+
 \bibitem{Katoch2020}
 Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
 \newblock A review on genetic algorithm: past, present, and future.
 \newblock {\em Multimedia Tools and Applications}, 80(5):8091--8126, October
   2020.
+
+\bibitem{Kis2015}
+Zoltán Kis, Hugo~Sant’Ana Pereira, Takayuki Homma, Ryan~M. Pedrigi, and Rob
+  Krams.
+\newblock Mammalian synthetic biology: emerging medical applications.
+\newblock {\em Journal of The Royal Society Interface}, 12(106):20141000, May
+  2015.
+
+\bibitem{knabe}
+J.~Knabe, C.~Nehaniv, M.~Schilstra, and T.~Quick.
+\newblock Evolving biological clocks using genetic regulatory networks.
+\newblock In {\em Proceedings of the Artificial Life X Conference (Alife 10)},
+  2006.
 
 \bibitem{kobayashi_evolutionary_2010}
 Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
@@ -142,6 +232,18 @@ Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
 Alfred~J. Lotka.
 \newblock Contribution to the theory of periodic reactions.
 \newblock {\em The Journal of Physical Chemistry}, 14(3):271--274, March 1910.
+
+\bibitem{Lotka1920b}
+Alfred~J. Lotka.
+\newblock Analytical note on certain rhythmic relations in organic systems.
+\newblock In {\em Proceedings of the National Academy of Sciences}, volume~6,
+  1920.
+
+\bibitem{Lotka1920}
+Alfred~J. Lotka.
+\newblock Undamped oscillations derived from the law of mass action.
+\newblock {\em Journal of the American Chemical Society}, 42(8):1595–1599,
+  August 1920.
 
 \bibitem{Luke1998ECJSoftware}
 Sean Luke.
@@ -156,6 +258,18 @@ Mario~A. Marchisio and Jörg Stelling.
 Brad~L. Miller and David~E. Goldberg.
 \newblock Genetic algorithms, tournament selection, and the effects of noise.
 \newblock {\em Complex Syst.}, 9, 1995.
+
+\bibitem{mittenthal2000}
+J.E. Mittenthal, B.~Clarke, T.~Waddell, and G.~Fawcett.
+\newblock A new method for assembling metabolic networks with application to
+  the krebs citric acid cycle.
+\newblock {\em Journal of Theoretical Biology}, 2001.
+
+\bibitem{Montano2001}
+Nicola Montano, Chiara Cogliati, Valdo~Jose’ Dias~da Silva, Tomaso
+  Gnecchi-Ruscone, and Alberto Malliani.
+\newblock Sympathetic rhythms and cardiovascular oscillations.
+\newblock {\em Autonomic Neuroscience}, 90(1–2):29–34, July 2001.
 
 \bibitem{nobile2013}
 Marco~S. Nobile, Daniela Besozzi, Paolo Cazzaniga, Dario Pescini, and Giancarlo
@@ -186,6 +300,13 @@ Casian Pantea and Gheorghe Craciun.
 Christian~S. Perone.
 \newblock Pyevolve: a python open-source framework for genetic algorithms.
 \newblock {\em SIGEVOlution}, 4, 2009.
+
+\bibitem{Pett2016}
+J.~Patrick Pett, Anja Korenčič, Felix Wesener, Achim Kramer, and Hanspeter
+  Herzel.
+\newblock Feedback loops of the mammalian circadian clock constitute
+  repressilator.
+\newblock {\em PLOS Computational Biology}, 12(12):e1005266, December 2016.
 
 \bibitem{pohlheim1994geatbx}
 Hartmut Pohlheim.
@@ -230,6 +351,12 @@ Luca Scrucca.
 Monika Sharma and Praveen Kumar.
 \newblock Chemical oscillations: 1. basic principles and examples.
 \newblock {\em Resonance}, 11(2):43–50, February 2006.
+
+\bibitem{Smedler2014}
+Erik Smedler and Per Uhlén.
+\newblock Frequency decoding of calcium oscillations.
+\newblock {\em Biochimica et Biophysica Acta (BBA) - General Subjects},
+  1840(3):964–969, March 2014.
 
 \bibitem{Smith2009}
 Lucian Smith, Frank Bergmann, Deepak Chandran, and Herbert Sauro.
@@ -300,11 +427,29 @@ Guido Van~Rossum and Fred~L. Drake.
 \newblock {\em Python 3 Reference Manual}.
 \newblock CreateSpace, Scotts Valley, CA, 2009.
 
+\bibitem{Volterra}
+Vito Volterra.
+\newblock Fluctuations in the abundance of a species considered mathematically.
+\newblock {\em Nature}, 118, 1926.
+
 \bibitem{Wang2023}
 Xujian Wang, Fenggan Zhang, and Minli Yao.
 \newblock A many-objective evolutionary algorithm with metric-based reference
   vector adjustment.
 \newblock {\em Complex and Intelligent Systems}, 10(1):207–231, July 2023.
+
+\bibitem{Watts2014}
+Margaret Watts, Bernard Fendler, Matthew~J. Merrins, Leslie~S. Satin, Richard
+  Bertram, and Arthur Sherman.
+\newblock Calcium and metabolic oscillations in pancreatic islets: Who’s
+  driving the bus?
+\newblock {\em SIAM Journal on Applied Dynamical Systems}, 13(2):683–703,
+  January 2014.
+
+\bibitem{Weiss2010}
+James~N. Weiss and Jun-Hai Yang.
+\newblock Oscillations at odds in the heart.
+\newblock {\em Journal of General Physiology}, 135(4):303–305, March 2010.
 
 \bibitem{easyGA}
 Daniel Wilczak and Jack Nguyen.
@@ -314,5 +459,13 @@ Daniel Wilczak and Jack Nguyen.
 Art Wilde, Daniel Thiem, {, Leo}, {Abhinav Gupta}, Andrew Haselgrove, Daniel
   Molina, {Honeypot95}, {Matago}, {Rogerluo}, and Valentin Churavy.
 \newblock Evolutionary.jl, 2021.
+
+\bibitem{YAMASHINO2013}
+Takafumi Yamashino.
+\newblock From a repressilator-based circadian clock mechanism to an external
+  coincidence model responsible for photoperiod and temperature control of
+  plant architecture inarabodopsis thaliana.
+\newblock {\em Bioscience, Biotechnology, and Biochemistry}, 77(1):10–16,
+  January 2013.
 
 \end{thebibliography}

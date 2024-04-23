@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  22 APR 2024 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  23 APR 2024 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -292,52 +292,71 @@ Package: blkarray 2015/02/27 v0.07 Block array (dpc)
 \BA@dashbox=\box49
 \BA@ddashbox=\box50
 )
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen164
+\Gm@wd@mp=\dimen165
+\Gm@odd@mp=\dimen166
+\Gm@even@mp=\dimen167
+\Gm@layoutwidth=\dimen168
+\Gm@layoutheight=\dimen169
+\Gm@layouthoffset=\dimen170
+\Gm@layoutvoffset=\dimen171
+\Gm@dimlist=\toks23
+)
 (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count271
-\cp@tempcnt=\count272
+\c@cp@cntr=\count274
+\cp@tempcnt=\count275
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count273
+\l__kernel_color_stack_int=\count276
 \l__pdf_internal_box=\box51
 )
 (./tatka_dissertation.aux)
 \openout1 = `tatka_dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count274
-\scratchdimen=\dimen164
+\scratchcounter=\count277
+\scratchdimen=\dimen172
 \scratchbox=\box52
-\nofMPsegments=\count275
-\nofMParguments=\count276
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count277
-\MPscratchDim=\dimen165
-\MPnumerator=\count278
-\makeMPintoPDFobject=\count279
-\everyMPtoPDFconversion=\toks24
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count280
+\MPscratchDim=\dimen173
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -348,7 +367,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box53
-Package hyperref Info: Link coloring OFF on input line 36.
+Package hyperref Info: Link coloring OFF on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -359,24 +378,59 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count280
+\c@section@level=\count283
 )
-LaTeX Info: Redefining \ref on input line 36.
-LaTeX Info: Redefining \pageref on input line 36.
-LaTeX Info: Redefining \nameref on input line 36.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./tatka_dissertation.out) (./tatka_dissertation.out)
 \@outlinefile=\write3
 \openout3 = `tatka_dissertation.out'.
 
- [1
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1]pdfTeX warning (ext4): 
 destination with the same identifier (name{page.}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.106 \tableofcontents
+l.107 \tableofcontents
                        [1] (./tatka_dissertation.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
@@ -391,10 +445,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...ng Network Examples}{25}{subsection.3.3.2}
+l.35 ...works for Evolution}{27}{subsection.3.2.6}
                                                   % [2
 
-])
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 ...mberline {5.5}Discussion}{54}{section.5.5}
+                                                  % [3])
 \tf@toc=\write4
 \openout4 = `tatka_dissertation.toc'.
 
@@ -402,245 +461,239 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 \chapter
-              {Introduction} [3]
+l.111 \chapter
+              {Introduction} [4]
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 
+l.118 
        [1
 
 ] [2] [3]
 Chapter 2.
-
-Overfull \hbox (1.39714pt too wide) in paragraph at lines 139--140
-\OT1/cmr/m/n/12 The projects de-scribed here fo-cus on com-pu-ta-tional mod-els
- of (bio)chemical re-ac-tion net-works (CRNs).
- []
-
 [4
 
-] [5] [6] [7]
-
-LaTeX Warning: Citation `mittenthal2000' on page 8 undefined on input line 230.
-
-
-[8] [9]
-! Undefined control sequence.
-l.244 \texbf
-            {HERE}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[10] [11] [12] [13] [14] [15] [16]
+] [5] [6] [7] [8]
+<images/repressilator.png, id=351, 369.38pt x 313.17pt>
+File: images/repressilator.png Graphic file (type png)
+<use images/repressilator.png>
+Package pdftex.def Info: images/repressilator.png  used on input line 223.
+(pdftex.def)             Requested size: 199.16928pt x 168.86078pt.
+ [9 <./images/repressilator.png>] [10] [11] [12] [13]
+[14] [15] [16] [17] [18] [19] [20]
 Chapter 3.
-[17
+[21
 
-]
-<images/Reactions.png, id=443, 1186.4325pt x 996.72375pt>
+] [22]
+<images/Reactions.png, id=557, 1186.4325pt x 996.72375pt>
 File: images/Reactions.png Graphic file (type png)
 <use images/Reactions.png>
-Package pdftex.def Info: images/Reactions.png  used on input line 349.
-(pdftex.def)             Requested size: 199.16928pt x 167.31157pt.
-
-Overfull \hbox (50.58968pt too wide) in paragraph at lines 344--354
-\OT1/cmr/m/n/12 Oscillating mod-els were gen-er-ated us-ing evo-lu-tion scripts
- writ-ten in python, avail-able at https://github.com/sys-
- []
-
-[18] [19 <./images/Reactions.png>]
-<images/fitness.png, id=460, 975.645pt x 596.2275pt>
+Package pdftex.def Info: images/Reactions.png  used on input line 376.
+(pdftex.def)             Requested size: 284.52756pt x 239.03609pt.
+ [23 <./images/Reactions.png>]
+<images/fitness.png, id=567, 975.645pt x 596.2275pt>
 File: images/fitness.png Graphic file (type png)
 <use images/fitness.png>
-Package pdftex.def Info: images/fitness.png  used on input line 369.
-(pdftex.def)             Requested size: 284.52756pt x 173.875pt.
- [20 <./images/fitness.png>]
-<images/algorithm.png, id=475, 1555.8125pt x 880.28876pt>
+Package pdftex.def Info: images/fitness.png  used on input line 396.
+(pdftex.def)             Requested size: 426.79134pt x 260.8216pt.
+ [24] [25 <./images/fitness.png>]
+<images/algorithm.png, id=584, 1555.8125pt x 880.28876pt>
 File: images/algorithm.png Graphic file (type png)
 <use images/algorithm.png>
-Package pdftex.def Info: images/algorithm.png  used on input line 388.
-(pdftex.def)             Requested size: 341.43306pt x 193.18056pt.
- [21] [22 <./images/algorithm.png>] [23]
-<images/examples.png, id=497, 1260.71pt x 944.52875pt>
+Package pdftex.def Info: images/algorithm.png  used on input line 416.
+(pdftex.def)             Requested size: 483.69684pt x 273.67918pt.
+
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 416--417
+ [] 
+ []
+
+[26] [27 <./images/algorithm.png>] [28]
+<images/examples.png, id=607, 1260.71pt x 944.52875pt>
 File: images/examples.png Graphic file (type png)
 <use images/examples.png>
-Package pdftex.def Info: images/examples.png  used on input line 408.
-(pdftex.def)             Requested size: 241.84842pt x 181.1918pt.
+Package pdftex.def Info: images/examples.png  used on input line 437.
+(pdftex.def)             Requested size: 426.79134pt x 319.75194pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 410.
+(caption)                particular \caption on input line 439.
 See the caption package documentation for explanation.
 
-[24 <./images/examples.png>]
-<images/website.png, id=507, 486.81876pt x 624.3325pt>
+[29] [30 <./images/examples.png>]
+<images/website.png, id=622, 486.81876pt x 624.3325pt>
 File: images/website.png Graphic file (type png)
 <use images/website.png>
-Package pdftex.def Info: images/website.png  used on input line 429.
-(pdftex.def)             Requested size: 227.62204pt x 291.9216pt.
- [25 <./images/website.png>]
-<images/model-diagrams.png, id=514, 1136.245pt x 863.225pt>
+Package pdftex.def Info: images/website.png  used on input line 458.
+(pdftex.def)             Requested size: 341.43306pt x 437.87764pt.
+<images/model-diagrams.png, id=624, 1136.245pt x 863.225pt>
 File: images/model-diagrams.png Graphic file (type png)
 <use images/model-diagrams.png>
-Package pdftex.def Info: images/model-diagrams.png  used on input line 440.
-(pdftex.def)             Requested size: 227.62204pt x 172.91855pt.
-<images/feedback-cycle.png, id=516, 402.50375pt x 320.19624pt>
+Package pdftex.def Info: images/model-diagrams.png  used on input line 469.
+(pdftex.def)             Requested size: 341.43306pt x 259.39099pt.
+ [31] [32 <./images/website.png>]
+<images/feedback-cycle.png, id=638, 402.50375pt x 320.19624pt>
 File: images/feedback-cycle.png Graphic file (type png)
 <use images/feedback-cycle.png>
-Package pdftex.def Info: images/feedback-cycle.png  used on input line 459.
-(pdftex.def)             Requested size: 142.26378pt x 113.16966pt.
+Package pdftex.def Info: images/feedback-cycle.png  used on input line 488.
+(pdftex.def)             Requested size: 227.62204pt x 181.07243pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 460.
+(caption)                particular \caption on input line 489.
 See the caption package documentation for explanation.
 
-[26 <./images/model-diagrams.png>] [27 <./images/feedback-cycle.png>]
-<images/composition.png, id=535, 895.345pt x 368.37625pt>
+[33 <./images/model-diagrams.png>] [34 <./images/feedback-cycle.png>]
+<images/composition.png, id=656, 895.345pt x 368.37625pt>
 File: images/composition.png Graphic file (type png)
 <use images/composition.png>
-Package pdftex.def Info: images/composition.png  used on input line 474.
-(pdftex.def)             Requested size: 227.62204pt x 93.65083pt.
+Package pdftex.def Info: images/composition.png  used on input line 503.
+(pdftex.def)             Requested size: 341.43306pt x 140.47906pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 475.
+(caption)                particular \caption on input line 504.
 See the caption package documentation for explanation.
 
-[28 <./images/composition.png>]
-<images/autocomp.png, id=543, 887.315pt x 395.4775pt>
+[35]
+<images/autocomp.png, id=663, 887.315pt x 395.4775pt>
 File: images/autocomp.png Graphic file (type png)
 <use images/autocomp.png>
-Package pdftex.def Info: images/autocomp.png  used on input line 482.
-(pdftex.def)             Requested size: 227.62204pt x 101.44585pt.
+Package pdftex.def Info: images/autocomp.png  used on input line 511.
+(pdftex.def)             Requested size: 341.43306pt x 152.1718pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 483.
+(caption)                particular \caption on input line 512.
 See the caption package documentation for explanation.
 
-[29 <./images/autocomp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 499--507
+[36 <./images/composition.png> <./images/autocomp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 528--536
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--507
+Underfull \hbox (badness 10000) in paragraph at lines 528--536
 
  []
 
-[30]
+[37] [38]
 Chapter 4.
-[31
+[39
 
-] [32]
+] [40]
 Chapter 5.
-[33
+[41
 
-] [34]
-<images/algo_description_crossover.png, id=578, 1053.9375pt x 1166.3575pt>
+] [42]
+<images/algo_description_crossover.png, id=703, 1053.9375pt x 1166.3575pt>
 File: images/algo_description_crossover.png Graphic file (type png)
 <use images/algo_description_crossover.png>
 Package pdftex.def Info: images/algo_description_crossover.png  used on input l
-ine 560.
+ine 589.
 (pdftex.def)             Requested size: 227.62204pt x 251.90099pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 561.
+(caption)                particular \caption on input line 590.
 See the caption package documentation for explanation.
 
-[35 <./images/algo_description_crossover.png>] [36] [37] [38] [39] [40]
+[43] [44 <./images/algo_description_crossover.png>] [45] [46] [47] [48]
+[49]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 6
-34.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+63.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 634.
-<images/num_unique_networks.png, id=630, 462.528pt x 346.896pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 663.
+<images/num_unique_networks.png, id=759, 462.528pt x 346.896pt>
 File: images/num_unique_networks.png Graphic file (type png)
 <use images/num_unique_networks.png>
-Package pdftex.def Info: images/num_unique_networks.png  used on input line 637
+Package pdftex.def Info: images/num_unique_networks.png  used on input line 666
 .
 (pdftex.def)             Requested size: 512.1496pt x 384.1328pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 638.
+(caption)                particular \caption on input line 667.
 See the caption package documentation for explanation.
 
-[41] [42 <./images/num_unique_networks.png>]
-<images/portion_best_network.png, id=643, 929.4725pt x 307.1475pt>
+
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 666--667
+ [] 
+ []
+
+[50] [51 <./images/num_unique_networks.png>]
+<images/portion_best_network.png, id=771, 929.4725pt x 307.1475pt>
 File: images/portion_best_network.png Graphic file (type png)
 <use images/portion_best_network.png>
-Package pdftex.def Info: images/portion_best_network.png  used on input line 64
-6.
+Package pdftex.def Info: images/portion_best_network.png  used on input line 67
+5.
 (pdftex.def)             Requested size: 512.1496pt x 169.24565pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 647.
+(caption)                particular \caption on input line 676.
 See the caption package documentation for explanation.
 
-<images/species_success_rate.png, id=645, 924.45375pt x 678.535pt>
+
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 675--676
+ [] 
+ []
+
+[52 <./images/portion_best_network.png>]
+<images/species_success_rate.png, id=780, 924.45375pt x 678.535pt>
 File: images/species_success_rate.png Graphic file (type png)
 <use images/species_success_rate.png>
-Package pdftex.def Info: images/species_success_rate.png  used on input line 65
-9.
+Package pdftex.def Info: images/species_success_rate.png  used on input line 68
+8.
 (pdftex.def)             Requested size: 426.79134pt x 313.25842pt.
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 660.
+(caption)                particular \caption on input line 689.
 See the caption package documentation for explanation.
 
-[43 <./images/portion_best_network.png>] [44 <./images/species_success_rate.png
->]
-<images/testSummary.png, id=659, 1004.75375pt x 626.34pt>
+[53 <./images/species_success_rate.png>]
+<images/testSummary.png, id=787, 1004.75375pt x 626.34pt>
 File: images/testSummary.png Graphic file (type png)
 <use images/testSummary.png>
-Package pdftex.def Info: images/testSummary.png  used on input line 685.
+Package pdftex.def Info: images/testSummary.png  used on input line 714.
 (pdftex.def)             Requested size: 540.60236pt x 336.99524pt.
 
-Overfull \hbox (24.12987pt too wide) in paragraph at lines 685--686
+Overfull \hbox (70.84734pt too wide) in paragraph at lines 714--715
  [][] 
  []
 
-(./tatka_dissertation.bbl [45] [46 <./images/testSummary.png>] [47
+(./tatka_dissertation.bbl [54] [55 <./images/testSummary.png>] [56
 
-] [48]
-[49] [50] [51])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 695.
- [52]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 695.
+] [57]
+Underfull \hbox (badness 1337) in paragraph at lines 114--118
+[]\OT1/cmr/m/n/12 F^^Selix-Antoine Fortin, Fran^^Xcois-Michel De Rainville, Mar
+c-Andr^^Se Gard-ner, Marc
+ []
+
+[58] [59] [60] [61] [62] [63])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
+ [64]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
  (./tatka_dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 695.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 695.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 724.
 Package rerunfilecheck Info: File `tatka_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 6C6190316032FC8DFBE41399449A4C60;3076.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 695.
+(rerunfilecheck)             Checksum: 561C116E8A070B4091D12ACA6D277349;3391.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 724.
  ) 
 Here is how much of TeX's memory you used:
- 8223 strings out of 483183
- 124931 string characters out of 5966292
- 374396 words of memory out of 5000000
- 22887 multiletter control sequences out of 15000+600000
+ 8764 strings out of 483183
+ 132806 string characters out of 5966292
+ 387702 words of memory out of 5000000
+ 23377 multiletter control sequences out of 15000+600000
  541659 words of font info for 60 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,42p,1515b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,42p,1515b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/hellsbells/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
 0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -654,10 +707,10 @@ ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb>
-Output written on tatka_dissertation.pdf (57 pages, 1756326 bytes).
+Output written on tatka_dissertation.pdf (70 pages, 1785414 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
- 678 compressed objects within 7 object streams
- 196 named destinations out of 1000 (max. 500000)
- 415 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 938 PDF objects out of 1000 (max. 8388607)
+ 813 compressed objects within 9 object streams
+ 240 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 

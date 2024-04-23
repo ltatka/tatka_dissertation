@@ -22,11 +22,12 @@
 
 
 % Margin adustment
-\addtolength{\oddsidemargin}{-.875in}
-\addtolength{\evensidemargin}{-.875in}
-\addtolength{\textwidth}{1.75in}
-\addtolength{\topmargin}{-.875in}
-\addtolength{\textheight}{1.75in}
+\usepackage[margin=1in]{geometry}
+%\addtolength{\oddsidemargin}{-1in}
+%\addtolength{\evensidemargin}{-1in}
+%\addtolength{\textwidth}{1.75in}
+%\addtolength{\topmargin}{-1in}
+%\addtolength{\textheight}{1.75in}
 
 % Paragraph indentation
 \usepackage{changepage}
@@ -135,7 +136,10 @@ This research will result in two first author publications, the titles of which 
 
 \chapter{Background}
 
+This chapter provides context for the major themes of this dissertation. Section \ref{section:intro_crn} introduces the basic theoretical concepts behind computational modeling of chemical reaction networks. Section \ref{section:intro_oscillators} seeks to explain the interest in oscillators by describing their history, dynamics, and biological relevance. Finally, section \ref{section:intro_GA} provides a brief introduction to evolutionary algorithms, their use in systems biology, and current tools for evolutionary computation. 
+
 \section{Introduction to Chemical Reaction Network Modeling}
+\label{section:intro_crn}
 The projects described here focus on computational models of (bio)chemical reaction networks (CRNs). Although several modeling paradigms exist to describe CRNs, this work uses CRNs represented by systems of ordinary differential equations. A CRN is a set of chemical reactions $R_i$ where i is the index over the range 1 to n, the total number of reactions in the network . Reactions involve the chemical species of the network, $S_j$ where j is the index of each species from 1 to the total number of species. A reaction is then represented as follows:
 \begin{equation*}
 Ri: \sum_{j\in S}^{}\alpha_{ij}S_j\to \sum_{j\in S}^{}\beta_{ij}S_j
@@ -168,9 +172,16 @@ Chemical reaction network modeling is used across a variety of fields including 
 
 
 \section{Chemical Oscillators}
-The first oscillating chemical system was described in 1828. Gustav Fechner described and electrochemical cell that produced an oscillating current. Later, in 1899, Fredriech Ostwald observed that the rate of chromium dissolution in acid periodically increased and decreased. Both these systems were heterogenous mixtures, leading to the belief that homogenous oscillating reactions were impossible, a belief that persisted through much of the 20th century. Their relatively recent discovery and study makes homogenous chemical oscillators a topic of particular interest. Mentions of "oscillators" in this dissertation refer to this type of chemical oscillator.
+\label{section:intro_oscillators}
 
-Prior to leaving science to work for an insurance company, Alfred Lotka authored a monograph on theoretical biology. In 1910, he showed that a set of consecutive mass-action reactions can create damped oscillators which eventually settle at an equilibrium. A decade later he published a second paper on mass-action oscillatory systems. ALthough this publication did not apply to any real chemical system, it's dynamics inspired Vito Volterra to apply the model to ecology. The Volterra used similar ideas to investigate migration effects and interactions between several species. The Lotka-Volterra model is well-known today as a simple representation of predator-prey interactions, where both populations oscillate in time.
+Chemical oscillators provide a tangible and accessible means to study the dynamics of nonlinear systems. They offer insights into how simple chemical reactions can produce complex, time-varying behaviors, shedding light on fundamental principles of dynamical systems theory. Understanding how these patterns emerge from the collective behavior of individual molecules can inform our understanding of the mechanisms underlying biological oscillations, providing insights into the molecular processes driving rhythmic behaviors in living organisms. This dissertation explores evolutionary algorithms in systems biology with focus on the generation and study of synthetic oscillatory networks.
+
+\subsection{A Brief History}
+The first oscillating chemical system was described in 1828. Gustav Fechner described and electrochemical cell that produced an oscillating current. Later, in 1899, Fredriech Ostwald observed that the rate of chromium dissolution in acid periodically increased and decreased. Both these systems were heterogenous mixtures, leading to the belief that homogenous oscillating reactions were impossible, a belief that persisted through much of the 20th century. Their relatively recent discovery and study makes homogenous chemical oscillators a topic of particular interest. 
+
+In 1910, prior to leaving science to work for an insurance company, Alfred Lotka authored a monograph on theoretical biology \cite{Lotka1910}. He showed that a set of consecutive mass-action reactions can create damped oscillators which eventually settle at an equilibrium. A decade later he published a second paper on theoretical mass-action oscillatory systems \cite{Lotka1920, Lotka1920b}.
+
+Shortly thereafter, physicist Vito Volterra's interest in mathematical biology was piqued by the observation that piscivorous fish had prospered in abandoned fisheries while populations of herbivrous fish remained constant. In 1926, he published a study to explain this phenomena proposing the same equations as Lotka, which he graciously acknowledged when Lotka penned a letter to Nature pointing out his publication of the same equations in 1925 \cite{Volterra, lotka-volterra}. The Lotka-Volterra model is well-known today as a simple representation of predator-prey interactions, where both populations oscillate in time. 
 
 The Lotka-Volterra model consists of three irreversible steps describing the relationships between grass, rabbits, and lynxes. A represents grass, which is assumed to be constant. Rabbits, represented by X, consume grass to grow their population (equation \ref{eqn: LV_1}). Lynx, in turn, consume rabbits to grow their population (equation \ref{eqn: LV_2}) before eventually dying (equation \ref{eqn: LV_3}).
 
@@ -196,40 +207,55 @@ dx/dt = k_{x}ax - k_{y}xy
 dy/dt = k_{y}xy - k_{d}y
 \end{equation}
 
-The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenom can be observed in nature. Figure XXXX shows the oscillating populations of Canada lynx and Snowshoe hares from 1850 to 1920. The predator-prey model has also been demonstrated in the laboratory with paramecia that eat yeast (FIGURE XXX AND CITATION).
+The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenom can be observed in nature, as was carefully documented by Charles Elton in 1942 \cite{Elton1942}. The predator-prey model has also been demonstrated in the laboratory with paramecia that consume yeast \cite{Gause}.
 
-A key feature of this oscillating system, and of most chemical oscillating systems is the presence of autocatalysis. The rate of growth of a population increases as the size of the population increases. The prominence of autocatalysis is also observed in the evolution of \textit{in silico} theoretical chemical reaction networks, as is described in chapter \ref{chap: cesium_paper} and the associated publication [CITATION]. In chemical systems, autocatalysis serves as a from of positive feedback to drive oscillation.
+
+\subsection{Dynamics}
+A key feature of the Lotka-Volterra model, and of most chemical oscillating systems is the presence of autocatalysis. The rate of growth of a population increases as the size of the population increases. In chemical systems, Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}
+The prominence of autocatalysis is also observed in the evolution of \textit{in silico} theoretical chemical reaction networks, as is described in chapter \ref{chap: cesium_paper} \cite{Tatka2023}. 
 
 Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. Often the feeback mechanism takes the form of autocatalysis. However, when unchecked, a system with autocatalysis can lead to explosion as the product concentration continues to build and increase the rate of product formation. An inhibition step is necessary to prevent this explosion of products. However, if autocatalysis and inhibition occur simultaneously, the steady state is stabilized and oscillation does not occur. The inhibition step must be delayed. Often this is accomplished by intermediate reactions. 
 
-Oscillations require bistability and 
+Oscillation can also be achieved with negative feedback \cite{Tyson1975, Sauro_dynamics}. In chemical reaction networks, this takes the form of end-product inhibition, where the final product in a series of reactions inhibits an enzyme from an earlier step in the sequence. A classic example of this is the repressilator, a three gene (or species) loop where each gene expresses a protein that represses the next gene in the loop (figure \ref{fig:repressilator}) \cite{Elowitz2000}. The invention of the repressilator was a landmark achievement in the field of synthetic biology showcasing the feasibility of engineering complex gene circuits with predefined functions. It provided a foundational framework for the design and construction of synthetic genetic oscillators and inspired subsequent research in the development of artificial gene regulatory networks.
 
-[MORE STUFF HERE ABOUT AUTOCATALYSIS- POSITIVE FEEDBACK in oscillators]
+\begin{figure}
+    \centering
+    \includegraphics[width=7cm]{images/repressilator.png}
+    \captionof{figure}{caption}
+    \label{fig:repressilator}
+\end{figure}
 
-From Kumar and Sharma 2006
+\subsection{Biological Relevance}
+Oscillators are biological relevant beyond ecological interactions. A fundamental aspect of living systems, oscillators occur across several levels of biological organization. 
 
-Even though oscillators might appear to violate second law of thermodynamics, they down because it is driven by decrease of Gibbs-free energy of an overall chemical reaction occurring far from thermo equilirbium.  These are thermodynamically open systems.
+The circadian clock exemplifies a well-studied molecular oscillator that regulates daily rhythms in behavior, metabolism, and physiology across organisms \cite{circadianReview, circadianOverview}. At its core, the circadian clock consists of interconnected transcriptional-translational feedback loops involving clock genes and proteins. These feedback loops take the form of interconnected repressilators \cite{YAMASHINO2013, Pett2016}. These molecular oscillators synchronize cellular processes with the day-night cycle, optimizing organismal fitness and survival. Disruptions to circadian rhythms have profound implications for health, contributing to various disorders such as sleep disorders, metabolic syndrome, and mood disorders \cite{circadianReview}.
 
-Long lasting oscillations occur only if the proper feedback mechanism is present.
-Presence of 1+ autocatalyic step leads to oscillations, but you can get an explosion as product concentration keeps building, so you need an inhibition step too. But if these occur at the same time, you stabilize the steady state and don't get oscillations, so the inhibition step has to be delayed.
 
-You need bistability (?). and some intermediate that reacts with both X and Y which allows the system to periodically switch between the steady states.
+Beyond the circadian clock, molecular oscillators operate within cells to regulate diverse processes such as gene expression, signal transduction, and metabolic pathways. Examples include calcium oscillations \cite{Smedler2014}, cyclic AMP (cAMP) signaling \cite{Dyachok2006}, and oscillatory patterns of gene expression driven by transcriptional regulatory networks \cite{Cerone2012}. These intracellular oscillatory systems enable cells to respond dynamically to external stimuli, coordinate complex physiological responses, and maintain cellular homeostasis under changing conditions \cite{Cheong2010, Jolma2010}. Oscillations are also present in systems such as neuronal networks \cite{Cebolla2019}, cardiac muscle cells \cite{Weiss2010, Montano2001}, pancreatic beta cells \cite{Watts2014}, and glycolysis \cite{Ghosh1964}, among others, highlighting the importance of molecular oscillators in physiological function.
 
-Tyson Book section
-2 component oscillators: need autocatal and negative feedback. 
+Synthetic oscillatory systems offer considerable potential for advancing biomedicine and biotechnology. These dynamic systems can serve as biosensors, detecting the presence and concentration of proteins, drugs, and other chemicals \cite{Kis2015, CubillosRuiz2021}. Synthetic genetic oscillators can be employed to modulate the local delivery of effector molecules to tumors \cite{CubillosRuiz2021}. More broadly, synthetic oscillators could serve as essential components for engineering complex synthetic gene and protein networks. These networks could be used for disease diagnosis, pharmaceutical screening, and bio-manufacturing or used therapeutically to modulate endogenous oscillating systems \cite{Kis2015}.
 
-At some point might want to mention this paper; "Evolution of Autocatalytic Sets in Computational Models
-of Chemical Reaction Networks"
 
-"""
-Most oscillators are associated with unstable steady states. Destabilizing processes can be classified as 1) direct autocatalysis, 2) indirect autocatalysis (a positive feedback loop), and 3) end-product inhibition (a negative feedback loop)~\cite{Tyson1975, tyson2007}. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Given the two types of oscillators, negative feedback and negative feedback coupled with positive feedback~\cite{Sauro_dynamics}, it is unsurprising that autocatalytic reactions are enriched in the oscillator population as these reactions are a form of positive feedback."""
+
+\subsection{Maybe a short thing about this research and oscillators?}
+
 
 \section{Applications of Evolutionary and Genetic Algorithms in Systems Biology}
-Genetic and evolutionary algorithms are optimization techniques inspired by the principles of natural selection and genetics. These algorithms mimic the process of natural evolution to solve complex optimization problems across various domains. Evolutionary algorithms offer a computational framework for addressing the inherent complexity and nonlinearity of biological systems, providing a means to explore large solution spaces and optimize model parameters and structures.
+\label{section:intro_GA}
+Genetic and evolutionary algorithms are optimization techniques inspired by the principles of natural selection and genetics. These algorithms mimic the process of natural evolution to solve complex optimization problems across various domains. At the core of genetic algorithms lies the concept of natural selection, a fundamental mechanism driving evolution in biological systems. Natural selection operates on populations of individuals, favoring those with traits that confer a reproductive advantage. Over successive generations, beneficial traits become more prevalent in the population, leading to the emergence of better-adapted individuals.
 
-The use of evolutionary aglorithms in systems biology became popular in the late 1990s, often to better understand metabolic pathways. This approach has been used to demonstrate the optimality of the glycolysis \cite{Heinrich1999, stephani1999} and the Krebs citric acid cycle \cite{mittenthal2000}. In these studies, genetic algorithms were used to optimize reaction rates but not the structure of the networks.
 
-Francois and Hakim evolved both the structure and reaction rates of genetic regulatory networks in an effort to generate small genetic networks that functioned as bistable switches and oscillators \cite{francois_hakim_2004}. The  algorithm used only mutation and selection, avoiding crossover, to minimize the difference between the candidate networks' output and idealized time series data displaying the desired behavior. Although the evolutionary scheme was relatively simple, they achieved promising results which encouraged the exploration of evolutionary techniques on similar problems.
+
+
+
+
+Evolutionary algorithms offer a computational framework for addressing the inherent complexity and nonlinearity of biological systems, providing a means to explore large solution spaces and optimize model parameters and structures.
+
+
+
+The use of evolutionary algorithms in systems biology became popular in the late 1990s, often to better understand metabolic pathways. This approach has been used to demonstrate the optimality of the glycolysis \cite{Heinrich1999, stephani1999} and the Krebs citric acid cycle \cite{mittenthal2000}. In these studies, genetic algorithms were used to optimize reaction rates but not the structure of the networks.
+
+Francois and Hakim evolved both the structure and reaction rates of genetic regulatory networks in an effort to generate small genetic networks that functioned as bistable switches and oscillators \cite{francois_hakim_2004}. The  algorithm used only mutation and selection, avoiding crossover, to minimize the difference between the candidate networks' output and idealized time series data displaying the desired behavior. Francois and Hakim argued that one of their evolved oscillators was structurally similar to the networks responsible for the circadian rhythm. However, Chu extended this work and found no consistent patterns in the evolved oscillators \cite{Chu_oscillator}. She noted that it is computationally unfeasible to thoroughly examine all resulting networks, but argued that the similarity to the circadian rhythm was likely coincidental. Despite Chu's study occurring almost 20 years ago, the problem of thoroughly pattern mining evolved networks remains and issue. The results of these works encouraged the exploration of evolutionary techniques on similar problems.
 
 Fujimoto et al. employed a similar strategy to study genetic networks leading to striped patterning and ultimately body segmentation in arthropods \cite{fujimoto_network_2008}. When analyzing the resulting networks, they found three distinct classes, feed-forward loops, feed-back loops, and interconnections between the two. These three classes reproduced various segmentation strategies observed in arthropods.
 
@@ -239,9 +265,8 @@ Marchisio and Stelling argued that brute force optimization algorithms lack effi
 
 Other approaches fix structure and make use of evolutionary algorithms to explore the parameter space while fixing network topology. Jin and Sendhoff used an evolution strategy to explore parameters of regulatory motifs with fixed structures \cite{jin_evolving_2008}. Porubsky and Sauro use an evolutionary algorithm to search for parameters that yield oscillations in mass-action networks of fixed structure \cite{porubsky2019}.
 
-Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. Instead of evolving sets of differential equations, Drennan and Beer encoded their genetic regulatory networks using strings of 4 different letters, analogous to DNA encoding. This approach allows for the straightforward implementation of crossover, but limits the space of possible models. Due to this encoding, there was a high probability of breaking connections making it difficult to pass on structural innovations.
+Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. Instead of evolving sets of differential equations, Drennan and Beer encoded their genetic regulatory networks using strings of 4 different letters, analogous to DNA encoding. Knabe et al. used a similar approach to evolve oscillators that interact with the environment \cite{knabe}. This approach allows for the straightforward implementation of crossover, but limits the space of possible models. Due to this encoding, there was a high probability of breaking connections making it difficult to pass on structural innovations.
 
-\texbf{HERE}
 
  Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
 
@@ -287,6 +312,8 @@ In 2020, pyGAD was released with the aim to simplify the implementation of genet
 
 As with the other software tools described here, the main drawback of pyGAD for applications in systems biology is the restrictions on encoding individual solutions. Solutions must be encoded as a 1D vector of numbers. This is insufficient for evolving chemical reaction networks, where a solution is an entire reaction network and all parameters needed to simulate the network.
 
+\subsubsection{EvoX}
+Most recently, Huange et al. released EvoX, a python library for evolutionary computing \cite{Huang2024}. Unlike other libraries described here, EvoX is optimized for distributed GPU acceleration. This improves scalability and performance while remaining in the Python ecosystem.
 
 \subsection{Libraries in Other Languages}
 Python is one of the more commonly used languages for scientific computing, however other languages offer various advantages. C++ and Java offer high performance compared to interpreted languages, but tend to have steeper learning curves and are less common in scientific computing. R excels at statistical computing but is less versatile than python. MATLAB is less common outside of academia likely owing to its high licensing costs. Julia is a relatively new language (2012) and has less package support and a smaller community than python. Likely for these reasons, fewer evoltuionary packages exist in other programming languages and are less likely to be used by scientists. Notable non-python packages are briefly reviewed here.
@@ -346,7 +373,7 @@ Oscillating models were generated using evolution scripts written in python, ava
 % \centering
 \begin{figure}
     \centering
-    \includegraphics[width=7cm]{images/Reactions.png}
+    \includegraphics[width=10cm]{images/Reactions.png}
     \captionof{figure}{Models were composed of four reaction types and rate laws: (A) uni-uni, (B) uni-bi, (C) bi-uni, (D) bi-bi}
     \label{fig:reaction}
     
@@ -366,7 +393,7 @@ The objective function minimized error between the candidate model's time course
 
 \begin{figure}
     \centering
-    \includegraphics[width=10cm]{images/fitness.png}
+    \includegraphics[width=15cm]{images/fitness.png}
     \captionof{figure}{For the time series data of this species, the error is calculated by summing the square difference between the observed time series data (blue) and a set of idealized oscillator points (red). This process is repeated for each species in the model and the fitness is defined as the minimum of these sums. }
     \label{fig:fitness}
 \end{figure}
@@ -385,9 +412,11 @@ In the case of reaction modification, a reaction was either added or deleted wit
 \subsection{Random Networks for Evolution}
 A population of 40 random networks were generated using the {\tt teUtils} python package~\cite{SauroteUtils_2020}. Each network was initialized with three species, and nine reactions with the probability of each reaction type being 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactions. These settings were chosen to maximize the number of evolution trials that successfully product oscillators. All reactions had mass-action kinetics with a random rate constant between 0 and 50. 
 \begin{figure}
-    \includegraphics[width=12cm]{images/algorithm.png}
+\begin{center}
+    \includegraphics[width=17cm]{images/algorithm.png}
     \captionof{figure}{The evolution algorithm. (1) An initial population of random models is created. (2) The fitness of each model is evaluated. (3) The entire population is sorted by most fit to least fit. (4) The top 10\% of the models are transferred to the subsequent generation unmodified. (5)  Tournament selection is used to populate the remainder of the subsequent generation. Models are randomly selected, the more fit model is chosen to be modified and carried over to the subsequent generation. Steps 2-5 are repeated. }
     \label{fig:algorithm}
+    \end{center}
 \end{figure}
 
 \subsection{Custom Evolution Algorithm}
@@ -405,7 +434,7 @@ Random models were generated as described in the previous section. To control fo
 Evolved models are processed to remove any undesirable oscillators from the population, namely oscillators that dampen over time or oscillators where one or more species concentrations rise indefinitely towards infinity. Next,  duplicated reactions were fused and reactions that are superfluous to oscillation are deleted to minimize network size resulting in a population of reaction networks that oscillate indefinitely in species concentration, examples of which are shown in figure 4.
 
 \begin{center}
-    \includegraphics[width=8.5cm]{images/examples.png}
+    \includegraphics[width=15cm]{images/examples.png}
     \label{fig:examples}
     \captionof{figure}{Time series data of sixteen 3-node oscillators generated using differential evolution.}
 \end{center}
@@ -426,7 +455,7 @@ The Cesium database is publicly available on the web at \url{https://cesiumdb.he
 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm]{images/website.png}
+    \includegraphics[width=12cm]{images/website.png}
     \captionof{figure}{Landing page for the Cesium database.}
     \label{fig:website}
 \end{figure}
@@ -437,7 +466,7 @@ Four oscillating networks from the database are shown in figure \ref{fig:model-d
 
 \begin{figure}
     \centering
-    \includegraphics[width=8cm]{images/model-diagrams.png}
+    \includegraphics[width=12cm]{images/model-diagrams.png}
     \captionof{figure}{Examples of 3-species oscillating networks from the Cesium database.}
     \label{fig:model-diagrams}
 \end{figure}
@@ -456,7 +485,7 @@ S0 & S1 & S2 \\
 In the bottom row center, the negative number indicates that there is an inhibitory relationship between S1 and S2. An increase in S2 will decrease the production rate of S1. These interactions for a cycle with negative feedback, suggesting that this is a feedback oscillator (figure \ref{fig:feedback}). Similar analyses reveal that networks C and D are also likely to be feedback oscillators.
 
 \begin{center}
-    \includegraphics[width=5cm]{images/feedback-cycle.png}
+    \includegraphics[width=8cm]{images/feedback-cycle.png}
     \captionof{figure}{Species interactions of Network B. Green arrows indicate activation and blunt red arrows indicate inhibition. The interactions form a cycle with negative feedback suggesting that Network B is a feedback oscillator.}
     \label{fig:feedback}
 \end{center}
@@ -471,7 +500,7 @@ Given the enrichment of autocatalytic reactions, one might expect a similar enri
 To determine if any reaction types were enriched in the oscillator population compared to the control population, the average model compositions were compared. The average model composition was assessed as the average number of reactions of the specific type were divided by the average total number of reactions for each group. For example, there were an average of 6.592 reactions per model in the oscillator population, of which an average of 0.99 were uni-uni reactions, for an average of 15.3\% uni-uni reactions in the average oscillator model (Table \ref{fig:avg-comp}). Compositions were compared with permutation tests, showing that model compositions and sizes were significantly different between the oscillator and control populations (the reduced size of oscillating networks can be accounted for by the fusion of duplicate reactions). Oscillators possessed significantly more uni-bi reactions compared to random control models. This is consistent with the enrichment of autocatalytic reactions which are often uni-bi. However, autocatalytic reactions can also be bi-bi reactions, which were not enriched in oscillating models. Although bi-bi reactions were less likely to be created during evolution due to the initial settings (10\%), it is somewhat surprising that bi-bi reactions were decreased in oscillatory networks given that a bi-bi reaction is slightly more likely to be autocatalytic ($\frac{4}{27}$) compared to a uni-bi reaction ($\frac{1}{9}$).
 
 \begin{center}
-    \includegraphics[width=8cm]{images/composition.png}
+    \includegraphics[width=12cm]{images/composition.png}
     \captionof{table}{Average reaction compositions of oscillating networks compared to non-oscillating controls.}
     \label{fig:avg-comp}
 \end{center}
@@ -479,7 +508,7 @@ To determine if any reaction types were enriched in the oscillator population co
 Next, oscillators containing autocatalytic reactions (498 models) were compared to oscillators lacking them (98 models). Populations were compared by permutation test. There was a significant increase in the portion of uni-bi reactions and a significant decrease in the portion of bi-uni reactions in non-autocatalytic models as compared to autocatalytic oscillators (Table \ref{fig:autocatal}). This result is interesting given that autocatalytic reactions are either uni-bi or bi-bi and both reaction types were reduced in oscillators with autocatalytic reactions compared to oscillators without. It is possible that oscillators without a single autocatalytic reaction are achieving autocatalysis through a combination of non-autocatalytic reactions.
 
 \begin{center}
-    \includegraphics[width=8cm]{images/autocomp.png}
+    \includegraphics[width=12cm]{images/autocomp.png}
     \captionof{table}{Average reaction compositions of autocatalytic oscillating networks compared to non-autocatalytic oscillating networks.}
     \label{fig:autocatal}
 \end{center}

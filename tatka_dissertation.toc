@@ -1,56 +1,61 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction to Chemical Reaction Network Modeling}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Chemical Oscillators}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Applications of Evolutionary and Genetic Algorithms in Systems Biology}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Tools for Evolutionary and Genetic Algorithms}{10}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Python Libraries}{11}{subsection.2.4.1}%
-\contentsline {subsubsection}{DEAP}{11}{section*.2}%
-\contentsline {subsubsection}{Pyevolve}{12}{section*.3}%
-\contentsline {subsubsection}{EasyGA}{12}{section*.4}%
-\contentsline {subsubsection}{LEAP}{12}{section*.5}%
-\contentsline {subsubsection}{PyGAD}{13}{section*.6}%
-\contentsline {subsection}{\numberline {2.4.2}Libraries in Other Languages}{13}{subsection.2.4.2}%
-\contentsline {subsubsection}{Evolutionary Computation in Java}{14}{section*.7}%
-\contentsline {subsubsection}{JMetal}{14}{section*.8}%
-\contentsline {subsubsection}{Bio-Inspired Algorithms Building Blocks}{14}{section*.9}%
-\contentsline {subsubsection}{Many-Objective Genetic Metric-based Algorithms}{14}{section*.10}%
-\contentsline {subsubsection}{Genetic and Evolutionary Algorithm Toolbox for use with MATLAB}{15}{section*.11}%
-\contentsline {subsubsection}{Genetic Algorithms}{15}{section*.12}%
-\contentsline {subsubsection}{GALGO}{16}{section*.13}%
-\contentsline {subsubsection}{Evolutionary.jl}{16}{section*.14}%
-\contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Background}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Methods}{19}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Model Representation}{19}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Objective Function}{20}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}ODE Solver}{20}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Selection}{21}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Mutation}{21}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{21}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Custom Evolution Algorithm}{22}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Random Control Networks}{23}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Results}{24}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Database Construction}{24}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Oscillating Network Examples}{26}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Discussion}{27}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Parking lot for abandoned text that might be useful later}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Existing Software}{32}{section.4.1}%
-\contentsline {chapter}{\numberline {5}In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Evolving Reaction Networks}{34}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Methods}{35}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Encoding}{36}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Mutation}{36}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Crossover}{37}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Speciation}{37}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Objective Function}{38}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}ODE Solver}{39}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}Reproduction}{39}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Output}{40}{subsection.5.3.8}%
-\contentsline {section}{\numberline {5.4}Results}{41}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Speciation Maintains Diversity and Increases Success Rate}{41}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Crossover Does Not Improve Success Rate}{44}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Effect of Selection Method}{45}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Discussion}{45}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Conclusion}{45}{section.5.6}%
+\contentsline {section}{\numberline {2.2}Chemical Oscillators}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}A Brief History}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Dynamics}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Biological Relevance}{9}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Maybe a short thing about this research and oscillators?}{10}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Applications of Evolutionary and Genetic Algorithms in Systems Biology}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Tools for Evolutionary and Genetic Algorithms}{13}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Python Libraries}{14}{subsection.2.4.1}%
+\contentsline {subsubsection}{DEAP}{14}{section*.3}%
+\contentsline {subsubsection}{Pyevolve}{15}{section*.4}%
+\contentsline {subsubsection}{EasyGA}{15}{section*.5}%
+\contentsline {subsubsection}{LEAP}{16}{section*.6}%
+\contentsline {subsubsection}{PyGAD}{16}{section*.7}%
+\contentsline {subsubsection}{EvoX}{17}{section*.8}%
+\contentsline {subsection}{\numberline {2.4.2}Libraries in Other Languages}{17}{subsection.2.4.2}%
+\contentsline {subsubsection}{Evolutionary Computation in Java}{17}{section*.9}%
+\contentsline {subsubsection}{JMetal}{18}{section*.10}%
+\contentsline {subsubsection}{Bio-Inspired Algorithms Building Blocks}{18}{section*.11}%
+\contentsline {subsubsection}{Many-Objective Genetic Metric-based Algorithms}{18}{section*.12}%
+\contentsline {subsubsection}{Genetic and Evolutionary Algorithm Toolbox for use with MATLAB}{18}{section*.13}%
+\contentsline {subsubsection}{Genetic Algorithms}{19}{section*.14}%
+\contentsline {subsubsection}{GALGO}{19}{section*.15}%
+\contentsline {subsubsection}{Evolutionary.jl}{20}{section*.16}%
+\contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Background}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Methods}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Model Representation}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Objective Function}{24}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}ODE Solver}{24}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Selection}{26}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Mutation}{26}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{27}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Custom Evolution Algorithm}{28}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Random Control Networks}{29}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Results}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Database Construction}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Oscillating Network Examples}{31}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Discussion}{34}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Parking lot for abandoned text that might be useful later}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Existing Software}{40}{section.4.1}%
+\contentsline {chapter}{\numberline {5}In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Evolving Reaction Networks}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Methods}{44}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Encoding}{44}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Mutation}{45}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Crossover}{45}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Speciation}{46}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Objective Function}{47}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}ODE Solver}{48}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Reproduction}{48}{subsection.5.3.7}%
+\contentsline {subsection}{\numberline {5.3.8}Output}{49}{subsection.5.3.8}%
+\contentsline {section}{\numberline {5.4}Results}{50}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Speciation Maintains Diversity and Increases Success Rate}{50}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Crossover Does Not Improve Success Rate}{53}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Effect of Selection Method}{54}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Discussion}{54}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Conclusion}{54}{section.5.6}%
