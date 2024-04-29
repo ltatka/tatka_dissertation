@@ -136,7 +136,8 @@ This research will result in two first author publications, the titles of which 
 
 \chapter{Background}
 
-This chapter provides context for the major themes of this dissertation. Section \ref{section:intro_crn} introduces the basic theoretical concepts behind computational modeling of chemical reaction networks. Section \ref{section:intro_oscillators} seeks to explain the interest in oscillators by describing their history, dynamics, and biological relevance. Finally, section \ref{section:intro_GA} provides a brief introduction to evolutionary algorithms, their use in systems biology, and current tools for evolutionary computation. 
+This chapter provides context for the major themes of this dissertation: chemical oscillators and evolutionary algorithms. This chapter begins with a brief introduction to computational chemical reaction network modeling. Section \ref{section:intro_oscillators} describes the motivations for focusing on oscillatory systems. Lastly, sections \ref{section:intro_GA}, \ref{section:tools_GA}, and \ref{section:tools_networks} describe the current state of evolutionary algorithms in systems biology, including relevant software tools.
+
 
 \section{Introduction to Chemical Reaction Network Modeling}
 \label{section:intro_crn}
@@ -237,8 +238,6 @@ Synthetic oscillatory systems offer considerable potential for advancing biomedi
 
 
 
-\subsection{Maybe a short thing about this research and oscillators?}
-
 
 \section{Applications of Evolutionary and Genetic Algorithms in Systems Biology}
 \label{section:intro_GA}
@@ -267,17 +266,24 @@ Other approaches fix structure and make use of evolutionary algorithms to explor
 
 Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. Instead of evolving sets of differential equations, Drennan and Beer encoded their genetic regulatory networks using strings of 4 different letters, analogous to DNA encoding. Knabe et al. used a similar approach to evolve oscillators that interact with the environment \cite{knabe}. This approach allows for the straightforward implementation of crossover, but limits the space of possible models. Due to this encoding, there was a high probability of breaking connections making it difficult to pass on structural innovations.
 
+Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
 
- Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
+\textbf{paragraph about how these are really just ways to change parameters}
 
 \section{Tools for Evolutionary and Genetic Algorithms}
-Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. This can likely be attributed to the challenge of encoding chemical reaction networks in a way that allows for easy modification and re-simulation, a requirement of evolutionary algorithms. Most of the existing tools require advanced programming skill to use them.
+\label{section:tools_GA}
+Although there are many tools that enable evolutionary algorithms and simulating chemical reaction networks, there are none that facilitate evolutionary algorithms using chemical reaction networks. The two main issues with packages described here are user-friendliness and network encoding.
+
+All of the tools described here require at least basic programming knowledge. Some packages boast extreme customizability, but require the user to essentially use the package as building blocks to write their own evolutionary algorithm program. These tools have significant barriers for users who's focus is not software development and programming.
+
+Perhaps the larger issue is that all packages described here are intended for ``classic" evolutionary algorithm applications, where solutions can be encoded as vectors or matrices of integers and floating point numbers. This is not the case for the problem of evolving reaction networks, where candidate solutions are entire networks. To completely describe a chemical reaction network, an encoding must include (at the minimum) numerous reactions, including reactants, products, and rate constants and initial concentrations for each chemical species.  
 
 \subsection{Python Libraries}
 
 Most packages for implementing genetic and evolutionary algorithms are written in python \cite{python3}. Python is one of the most ubiquitous programming languages frequently topping lists of the most commonly used languages. It is often used in scientific applications due to it being open source, easy to use, and having vast library support. Likely for these reasons, most existing evolutionary algorithm tools are python libraries.
 
 Although likely not an exhaustive list, the main python packages for evolutionary and genetic algorithms are described here.
+
 
 \subsubsection{DEAP}
 In 2012, Fortin et al. released the python package DEAP (Distributed Evolutionary Algorithms in Python) \cite{DEAP_JMLR2012}. The packages offers a toolbox of evolutionary algorithm features including different types of crossover, evolutionary strategies, and mutation operators. Unlike other frameworks DEAP makes algorithm explicit and data structures transparent, as opposed to black-box frameworks. Although DEAP allows for extensive customization, individuals are represented as arrays of values. Users can customize these arrays, such as specifying integers or floats at specific locations, but individuals must be in this form. For most optimization problems, this representation is adequate, however it is difficult to fully represent a chemical reaction network in this form. Reaction networks have varying numbers of reaction, so a stoichiometry matrix would be inadequate unless it contained a row for every possible reaction. Additionally, reactions require rate constants, and networks require initial values for each species. 
@@ -316,9 +322,9 @@ As with the other software tools described here, the main drawback of pyGAD for 
 Most recently, Huange et al. released EvoX, a python library for evolutionary computing \cite{Huang2024}. Unlike other libraries described here, EvoX is optimized for distributed GPU acceleration. This improves scalability and performance while remaining in the Python ecosystem.
 
 \subsection{Libraries in Other Languages}
-Python is one of the more commonly used languages for scientific computing, however other languages offer various advantages. C++ and Java offer high performance compared to interpreted languages, but tend to have steeper learning curves and are less common in scientific computing. R excels at statistical computing but is less versatile than python. MATLAB is less common outside of academia likely owing to its high licensing costs. Julia is a relatively new language (2012) and has less package support and a smaller community than python. Likely for these reasons, fewer evoltuionary packages exist in other programming languages and are less likely to be used by scientists. Notable non-python packages are briefly reviewed here.
+Python is one of the more commonly used languages for scientific computing, however other languages offer various advantages. C++ and Java offer high performance compared to interpreted languages, but tend to have steeper learning curves and are less common in scientific computing. R excels at statistical computing but is less versatile than python. MATLAB is less common outside of academia likely owing to its high licensing costs. Julia is a relatively new language (2012) and has less package support and a smaller community than python. Likely for these reasons, fewer evolutionary packages exist in other programming languages and are less likely to be used by scientists. Notable non-python packages are briefly reviewed here.
 
-<<Note about the gene structure issue for all of these>>
+\textbf{citations for programming language statements?}
 
 \subsubsection{Evolutionary Computation in Java}
 Evolutionary Computation in Java (ECJ) is a framework that supports several evolutionary computation techniques including genetic algorithms and differential evolution \cite{Luke1998ECJSoftware}. It offers a high level of flexibility and customization and is well-suited for large-scale optimization problems. 
@@ -347,6 +353,18 @@ Like the GA package, GALGO integrates seamlessly with the R programming language
 \subsubsection{Evolutionary.jl}
 Evolutionary.jl offers a user-friendly interface for implementing evolutionary algorithms in Julia, making it accessible to users with varying levels of programming expertise \cite{evolutionary.jl}. The package provides a range of evolutionary algorithms, including genetic algorithms, differential evolution, and particle swarm optimization, among others, allowing users to choose the most suitable algorithm for their optimization problems. Evolutionary.jl allows users to customize various aspects of the evolutionary algorithms, such as population size, crossover and mutation operators, and termination criteria, enabling tailored solutions for different optimization tasks. Julia is designed for high-performance numerical computing, and Evolutionary.jl benefits from Julia's performance advantages, providing efficient execution of evolutionary algorithms. However, this package is not suited for evolving chemical reaction networks due to the limitations of encoding solutions.
 
+\section{Julia Packages for Reaction Network Modeling}
+\label{section:tools_networks}
+There are two primary packages for simulating chemical reaction networks in the julia programming langauge: RoadRunner and Catalyst. Although both offer a range of functionality for network modeling, they were not suitable for use in a julia package for generating reaction networks using genetic algorithms. The problem with both packages is the manner in which reaction networks are encoded.
+
+RoadRunner is one of the fastest network simulation tools and has an interface for both python and julia \cite{Welsh2022}. It achieves its performance advantage by compiling reaction network models directly into native machine code. For evolutionary algorithms, where a network must be frequently modified and re-simulated, the performance advantage is lost as the network must be repeatedly converted to machine code after each sight modification.
+
+Catalyst is a julia package for analysis and high performance simulation of chemical reaction networks \cite{Loman2023}. Catalyst converts chemical reaction networks to symbolic representations of concrete mathematical models and generating compiled code for numerical solvers. It includes several tools for analyzing, visualizing, and simulating networks making it highly versatile and relatively user friendly. However, Catalyst's reaction network object makes it difficult to modify the topology of reaction networks automatically making it unsuitable for genetic algorithms. 
+
+\section{Conclusion}
+Due to their interesting dynamics and biological relevance, chemical oscillator research has blossomed over the past 100 years. Their varied topology and interesting dynamics makes oscillation a compelling problem to explore with evolutionary algorithms. However, although evolutionary algorithms have been used to study and generate oscillators and other network behaviors, the software used for these studies was designed for one-time use and was not made available to the public. Additionally, previous research suggests that simple evolutionary algorithms have low success rates in generating oscillators.
+
+There are numerous software tools for evolutionary algorithms and simulating chemical reaction networks, but none of these existing tools are suitable for using evolutionary algorithms on chemical reaction networks. Despite the interest in such a tool, as demonstrated in previous studies, there is no software tool that enables the evolution of chemical reaction networks in a speedy, user-friendly manner with a decent success rate.
 
 \chapter{A Public Database of Evolved Oscillatory Reaction Networks}
 \label{chap: cesium_paper}
@@ -534,30 +552,24 @@ This chapter was adapted from the following publication:
 https://doi.org/10.1016/j.biosystems.2023.104836. 
 \\
 
-\chapter{Parking lot for abandoned text that might be useful later}
-Applying GAs to problems of parameter optimization is fairly straightforward as ``chromosomes" can be sequences of values, easily mutated and crossed over with other strings of values. This approach becomes more complex when applied to network problems, where network topology is deeply intertwined with parameter values. In these problems, the challenges becomes innovating while preserving decent candidate solutions. 
-At its core, NEAT employs a genetic algorithm to evolve populations of neural networks. Each individual in the population represents a neural network with its own unique topology (i.e., arrangement of nodes and connections). NEAT starts with a population of simple neural networks, often with minimal structure, and evolves them over generations to solve a given task.
-
-One of the key innovations of NEAT is its ability to handle the complex task of evolving neural network topological structures. NEAT accomplishes this by employing three main mechanisms: speciation, historical marking, and structural innovation. Speciation encourages diversity within the population by comparing individuals against similar individuals as opposed to the entire population. This shelters innovations that may be weak at first, but will develop into robust solutions over several generations. A historical record of topological innovations serves as a "chromosome" and enables meaningful crossover without computationally expensive matching procedures required in other algorithms. Lastly, NEAT allows for the introduction of new structural innovations in neural networks through mutation. New nodes and connections can be added to existing networks, providing the potential for incremental growth and improvement over successive generations.
-
-\section{Existing Software}
-
-Although there are numerous studies implemting genetic algorithms in systems biology applications, few software packages exist to aid in this pursuit. In 2008, Kratz and Krishna developed GeNESis, a C based software with GUI to enable evolution of gene regulation networks. Its purpose was to help researchers undersatnd the evoltuionary behavior of populations of genetic regulatory networks. Connections were represented by binary strings, enabling the use of crossover. The URL to this tool is currently inactive.
-
-Chandran and Sauro devloped a C library with basic functions for evolution of biological networks including genetic networks, protein networks, and mass-action networks. Although highly versatile, the library requires some C programming knowledge in order to customize the evolutionary algorithm.
-
-Beyond python, R and MATLAB are languages commonly found in science applications. Julia has fewer users and less package support, but this can likely be attributed to it's relative newness. Julia was first introduced 2012, a new language compared to MATLAB (1984), Python (1990), and R (1993). R is widely used in statistics applications. MATLAB is commonly used in academia, but less often in industry applications owing to its expensive license.
 
 \chapter{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}
 \label{chap: NetEvolve}
 \section{Introduction}
 Genetic algorithms (GAs), inspired by the principles of natural selection and genetics, have emerged as a powerful computational technique for solving optimization and search problems.Developed by John Holland in the 1970s, GAs mimic the process of biological evolution to solve optimization and search problems \cite{holland_1975}. At their core, genetic algorithms operate on a population of potential solutions, represented as individuals or ``chromosomes," each encoding a candidate solution to the problem at hand. Through iterative generations, genetic algorithms apply mechanisms of selection, crossover, and mutation to evolve and refine the population, gradually converging towards optimal or near-optimal solutions. Selection favors individuals with higher fitness, mirroring the process of natural selection, while crossover and mutation introduce variation and diversity into the population, allowing for exploration of the solution space. By leveraging the principles of evolution, genetic algorithms offer a versatile and robust approach to solving complex problems across various domains, from engineering and optimization to biology and beyond.
 
+A key feature of genetic algorithms is crossover, the exchange of multiple parameters between two candidate solutions to create a new offspring solution. Crossover proves challenging when solutions are not vectors of matrices of numbers, but also include graphs. Stanley and  Miikkulainen devised a method, NEAT, to crossover topologies when evolving artificial neural networks. Dinh et al. adapted NEAT to enable crossover when evolving gene regulatory networks. Here, the NEAT algorithm is adapted and explored with mass-action chemical reaction networks. In contrast to previous studies in different domains, the crossover method presented here does slightly reduces the success rate of evolution. 
+
+Speciation, though not essential to evolutionary algorithms, can improve their success by protecting innovations and allowing them time to develop into better solutions. This work also introduces a method for separating chemical reaction networks into species and explores the effect of speciation on evolutionary success. Separating similar chemical reaction networks into species significantly improves the sucess of the algorithm.
+
+\textbf{Some stuff about speciation}
+
+The purpose of this work it twofold: (1) to create a general purpose, easily customizable, module for evolving mass-action chemical reaction networks and (2) to explore the effects of crossover, speciation, and other hyperparameters on the success rate of the algorithm. Speciation is found to be essential to the success of the algorithm. In contrast to previous studies in different domains, the crossover method presented here does slightly reduces the success rate of evolution. 
 
 
+In addition to speciation and crossover, a variety of evolutionary hyperparameters are explored in evolving oscillatory mass-action networks. The evolutionary algorithm is packaged in a library written in the julia programming language \cite{bezanson2017julia}. It is highly configurable and allows users to easily specify settings via the command line for a simple json file. It can generate reaction networks to match a variety of time series data beyond oscillators.
 
 
-This work describes the adaptation of the NEAT algorithm to mass-action chemical reaction networks and explores the utility of crossover, speciation, and other hyper-parameters in evolving oscillatory networks. A software package to systematize the study of hyperparameters is introduced. This package, written in the julia programming language \cite{bezanson2017julia}, simplifies the customization of evolutionary algorithms. It has broad applications as it can be run from the command line and allows users to specify settings in a json file. It is capable of matching any time series data. 
 
 
 \section{Evolving Reaction Networks}
@@ -568,17 +580,9 @@ Oscillatory behavior is useful in a variety of biological processes including p5
 
 Other people have done similar things, but this is different. It starts with the concept of genetic algorithms, way back in 1975. These are algorithms to come up with optimization solutions. The algorithms kind of look like biologic evolution. You have a bunch of individuals, the fitter individuals share their genes and reproduce, less fit individuals die off, sometimes mutations occur and these can be either good or bad. Since then, the concept of genetic algorithms has been thoroughly explored, but here we present something slightly new. And that's how I'm going to get my PhD lol.
 
-This all starts with the NEAt algorithm which is a way of evolving neural networks to do stuff.  What's interesting about this is they claim to have meaningful crossover and they use speciation to protect innovation. Dinh et al somehwat adapted this appraoch to genetic circuits, but those are a much easier problem because they just have activation and inhibition. Here, I adapt this algorthim to mass-action networks. That's way harder because there is way more complexity. In the first case, you just have an edge that connects two nodes and a weight. In the second, you add that the edge can either be activating or inhibiting, but here we add that the edge could connect multiple nodes (in the case of everything beyond a uni-uni reaction) and the reaction weight depends on what nodes it connects. More on that later.
+This all starts with the NEAT algorithm which is a way of evolving neural networks to do stuff.  What's interesting about this is they claim to have meaningful crossover and they use speciation to protect innovation. Dinh et al somehwat adapted this appraoch to genetic circuits, but those are a much easier problem because they just have activation and inhibition. Here, I adapt this algorthim to mass-action networks. That's way harder because there is way more complexity. In the first case, you just have an edge that connects two nodes and a weight. In the second, you add that the edge can either be activating or inhibiting, but here we add that the edge could connect multiple nodes (in the case of everything beyond a uni-uni reaction) and the reaction weight depends on what nodes it connects. More on that later.
 
 I need to go over a bunch of times that this was done for a similar thing. Just as a quick review
-
-
----------------------------------
-Some review stuff
-
-
-Evolutionary design of oscillatory genetic networks (Kobayashi 2010)
-Wanted to evolve genetic oscillatory networks. Get a large population of them and then mine them for statistics about oscillators and network motifs. They have fixed parameter values though and only change connections (?). Looks like they are also trying to evolve oscillators with specific frequencies. They have a cost function which looks at periodicity
 
 
 
@@ -603,7 +607,17 @@ A reaction mutation is either the addition of a new random reaction or the delet
 probability of 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactions respectively. These probabilities are also configurable. If the randomly generated reaction is already present in the reaction network, the new reaction's rate constant is added to the existing reaction's rate constant. This feature can allow some rate constants to grow to several multiples of the next largest rate constant in the network. When a reaction is deleted, it is ``switched off" and becomes inactive in the network, but is preserved as it can become reactivated under certain circumstances.
 
 \subsection{Crossover}
-During crossover, two parent networks from the same species group are chosen to mate. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent. 
+During crossover, two parent networks from the same species group are chosen to mate. Analogous to natural evolution, crossover is essential a means of changing more parameters simultaneously and to a greater degree. It injects for novelty into the offspring network compared to single mutations. This could either result in faster progress towards a good solution, or could interrupt progress by destroying decent solutions.
+
+Crossover occurs by examining each reaction in the parent networks. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent (table \ref{table:crossover_table}). 
+
+\begin{center}
+    \includegraphics[width=12cm]{images/crossover_table.png}
+    \captionof{table}{Every reaction in the more fit network is passed down to the offspring network. If it occurs in both parent networks, the rate constant is randomly inherited from one parent or the other.}
+    \label{table:crossover_table}
+\end{center}
+
+A second crossover strategy for similar networks was tested in later trials. Networks that were members of the same species and had similar fitness score (within 5\% of each other) underwent a slightly different crossover process. All reactions that the two networks had in common were passed down to the offspring network with rate constants chosen randomly from one parent or the other. Reactions that occurred in one parent network but not the other had a 50\% chance of being passed down to the offspring network.
 
 \subsection{Speciation}
 In many cases, modifying a network, especially through the addition or deletion of reactions, initially makes the system less fit. Without speciation, these innovations seldom last for more than a generation. However, often these topological innovations prove an essential step in evolution \cite{stanley_evolving_2002}. For this reason, a speciation strategy is employed to protect innovations and allow them time to optimize. Individuals with similar topologies are grouped into species. Members of a species compete only with each other and not the population at large.  A compatibility distance metric, $\delta$, is used to assign reaction networks to a species, defined as
@@ -636,7 +650,8 @@ fitness = max(\frac{1}{\sum|ideal - candidate|})
 During the fitness evaluation phase, reaction networks were converted to systems of ordinary differential equations. These equations were then numerically solved using the DifferentialEquations.jl julia package \cite{DifferentialEquations.jl-2017} and the CVODE solver from the Sundials suite for solving initial value problems \cite{hindmarsh2005sundials}. The CVODE solver was shown to be effective for this application in previous work \cite{Tatka2023}.
 
 \subsection{Reproduction}
-Each model species was allotted offspring in proportion with its fitness. More fit species were allowed more offspring. To calculate the number of offspring allotted to each species group the sum of fitness values was computed across the entire population. Then each species, $s$, was assigned an offspring number proportional to its contribution to the fitness of the entire population (equation \ref{equation: num_offspring}). The calculated number of offspring for each species was rounded to the nearest integer. By default, a single species was only allowed to produce at most 10\% of the subsequent generation in order to prevent a single species from taking over the entire population (but this value could be adjusted by the user). For these reasons, the total number of individuals fluctuated slightly over time.
+
+Each model species was allocated offspring in proportion with its fitness. More fit species were allowed more offspring. To calculate the number of offspring allocated to each species group the sum of fitness values was computed across the entire population. Then each species, $s$, was assigned an offspring number proportional to its contribution to the fitness of the entire population (equation \ref{equation: num_offspring}). Two strategies were tested for assigning species fitness. In one case, species fitness was calculated as the average fitness of the individuals in the species. In the second case, species fitness was the fitness of the best network in the species. The calculated number of offspring for each species was rounded to the nearest integer. By default, a single species was only allowed to produce at most 10\% of the subsequent generation in order to prevent a single species from taking over the entire population (but this value could be adjusted by the user). For these reasons, the total number of individuals fluctuated slightly over time.
 
 
 \begin{equation}
@@ -644,7 +659,8 @@ Each model species was allotted offspring in proportion with its fitness. More f
 offspring_{s} = \frac{\sum{fitness_{s}}}{\sum{fitness_{pop}}}*populationsize
 \end{equation} 
 
-The reproduction phase began with an elitism selection strategy. The top 10\% of networks in each species were copied to the next generation directly. If a species had 10 or fewer individuals, the single best network was copied without modification to the next generation. Then, the bottom 10\% of networks in each species are deleted. For the remainder of the allotted offspring for each species, a random number, $p$, was generated. If the $p$ was less than the probability of crossover, then two networks from the same species were selected and crossed over to produce a single offspring network. Otherwise a single network was chosen. If $p$ was greater than or equal to 1 - the probability of mutation, the network was mutated. Outside of the elite networks, all networks were either crossed over or mutated. Some were both crossed over and mutated. The probabilities of crossover and mutation could be configured by the user. Probabilities for specific types of mutations are described in section \ref{section: mutation}.
+
+The reproduction phase began with an elitism selection strategy. The top 10\% of networks in each species were copied to the next generation directly. If a species had 10 or fewer individuals, the single best network was copied without modification to the next generation. Then, the bottom 10\% of networks in each species are deleted. For the remainder of the allocated offspring for each species, a random number, $p$, was generated. If the $p$ was less than the probability of crossover, then two networks from the same species were selected and crossed over to produce a single offspring network. Otherwise a single network was chosen. If $p$ was greater than or equal to 1 - the probability of mutation, the network was mutated. Outside of the elite networks, all networks were either crossed over or mutated. Some were both crossed over and mutated. The probabilities of crossover and mutation could be configured by the user. Probabilities for specific types of mutations are described in section \ref{section: mutation}.
 
 Tournament selection was also explored and can be configured in settings. In this case, two networks from the same species were randomly chosen and the more fit network was then crossed over, mutated, or both. If crossed over, a second network was also chosen by tournament selection.
 
@@ -656,37 +672,68 @@ The best models from each evolution trial were automatically assessed with a Pyt
 \section{Results}
 The software was evaluated with multiple hyperparameter settings to assess its ability to generate oscillatory mass-action chemical reaction networks. Each set of hyperparameters were evaluated over 700 evolutionary trials and the success rate recorded. A trial was deemed successful if it generated a network with sustained oscillations, as evaluated by the criteria described previously.
 
+
+\subsection{Verifying Speciation}
+Before evaluating the effects of speciation on evolution, tests were run to verify that speciation was occurring and that the adaptive $\delta$ threshold was maintaining the target number of species. Batches of 700 trials were run for a target number of 1 (no speciation), 5, 10, 30, and 50 species. Figure \ref{fig:avg_num_species} shows that on average, these target numbers were achieved. During the initial generations, the number of species fluctuates more dramatically. This is like due to the fact that while $\delta$ is adaptive, $\epsilon$, the amount by which $\delta$ is changed, is not. During the first several generations, adjustments to $\delta$ tend to over or under shoot the target number of species, likely due to there being large differences between individual networks at first. This over and undershooting causes the number of species to fluctuate before leveling out to the target level after approximately 15 generations.
+
+\begin{center}
+    \includegraphics[width=18cm]{images/avg_num_species.png}
+    \captionof{figure}{Adapting $\delta$ maintains the target number of species.}
+    \label{fig:avg_num_species}
+\end{center}
+
+
+Although the total number of species remains relatively constant over time, the different species tend to become more similar to each other. The inter-species distance between two species is defined as the distance between the best networks from each species. At each generation, the distance between every combination of 2 species were measured and the average of these measurements recorded. This measurement was performed for batches of 700 trials each for a target of 5, 10, 30, and 50 species. For all four conditions, the average inter-species distance is reduced over time, possibly due to convergence to a single best solution. All three batches started with an average inter-species distance of approximately 0.9, meaning that species differed by an average of 90\% of their reactions. The batch with a target of 10 species converged the most, with an average inter-species difference of approximately 0.55 after 800 generations.   Batches with a target of 30 and 50 species did not converge as much and ended with an average inter-species distance of approximately 0.75 and 0.80 respectively. Larger distances with more species may be due to elitism. With a target of 50 species, at least 50 individuals will be copied to the next generation with no modification. Perhaps lesser networks that otherwise would have been removed if forced to compete with more individuals are allowed to reproduce. Reducing the removal of less fit individuals may allow them to maintain their distances over time. Trials with a target of 5 species converged more rapidly at first, but ultimately did not converge as much as trials with a target of 10 species. Perhaps with too few species, more fit networks dominate the population early on and cause more rapid convergence. However, as evolution progresses, trials with fewer species are less likely to find a good solution and therefor do not further converge.
+
+\begin{center}
+    \includegraphics[width=18cm]{images/avg_species_differences.png}
+    \captionof{figure}{Different species become more similar over time.}
+    \label{fig:avg_species_differences}
+\end{center}
+
+Next, the average intra-species distances were compared for different target numbers of species. The intra-species distances was computed by averaging the distance between every combination of pairs of networks within a single species. As evolution progresses, species tend to converge on a solution and individuals within a species become more similar. This happens more quickly for trials with larger target species numbers. In order to maintain a larger number of species, the speciation threshold must be stricter, so each species has fewer individuals and individuals within a species are more similar.
+
+\begin{center}
+    \includegraphics[width=18cm]{images/intraspecies_distance.png}
+    \captionof{figure}{Networks within a species become more similar over time.}
+    \label{fig:avg_species_differences}
+\end{center}
+
+textbf{TODO: intraspecies distances}
+
 \subsection{Speciation Maintains Diversity and Increases Success Rate}
 \label{section:speciation}
 In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then mutation is performed on the entire population to populate the remainder of the subsequent generation (crossover was not performed for these experiments). Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. Significance levels were calculated using two-tailed t-tests. 
 
-In trials where no speciation was allowed, the average portion of unique networks was 0.228 $\pm$ 0.026 across 800 generations. This is significantly (p \textless 0.0001) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.298 $\pm$ 0.033 (figure \ref{fig:num_unique_species}).
+
+In trials where no speciation was allowed, the average portion of unique networks was 0.294 $\pm$ 0.035 across 800 generations. This is significantly (p \textless xxx) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.344 $\pm$ 0.037 (figure \ref{fig:num_unique_species}).
 
 \begin{center}
     \includegraphics[width=18cm]{images/num_unique_networks.png}
-    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (left), 0.0298 $\pm$ 0.033, and without (right), 0.228 $\pm$ 0.026. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
+    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (red), 0.344 $\pm$ 0.037, and without (blue), 0.296 $\pm$ 0.034. Shading is the 95\% confidence interval.}
     \label{fig:num_unique_species}
 \end{center}
 
 One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  When speciated was enabled, the portion of the population occupied by copies of the most fit network
-remained constant with an average portion of best networks of 0.071 $\pm$ 0.008. Without speciation, the portion of best networks rose gradually over time with an average portion of XXX $\pm$ XXX(figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless XXX).
+remained constant with an average portion of best networks of 0.071 $\pm$ 0.008. Without speciation, the portion of best networks rose gradually over time with an average portion of 0.402 $\pm$ 0.079 (figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless 0.0001).
 
 \begin{center}
     \includegraphics[width=18cm]{images/portion_best_network.png}
-    \captionof{figure}{The average portion of best networks over 800 generations with speciation (left), 0.079 $\pm$ 0.011, and without (right), 0.495 $\pm$ 0.094. Dark blue line represents the average portion for each generation and light blue shading is the 95\% confidence interval.}
+    \captionof{figure}{The average portion of best networks over 800 generations with speciation (red), 0.071 $\pm$ 0.008, and without (blue), 0.402 $\pm$ 0.079. Shading is the 95\% confidence interval.}
     \label{fig:portion_best_network}
 \end{center}
 
 
-Next, the effects of speciation on evolution success rate was evaluated comparing no speciation to speciation with a target species number of 10 and 30. Again, crossover was omitted from these studies. For each speciation level, a batch of 700 trials of evolution were run and the number of oscillators resulting from each batch. Significance levels were calculated using a binomial distribution. 
+Next, the effects of speciation on evolution success rate was evaluated comparing no speciation to speciation with a target species number of 10, 30, and 50 (figure \ref{fig:species_success_rate}. Again, crossover was omitted from these studies. For each speciation level, a batch of 700 trials of evolution were run and the number of oscillators resulting from each batch. Significance levels were calculated using a binomial test. 
 
-With a target species of 10 (the default condition), evolution trials resulted in sustained oscillators at a rate of 0.19 (134/700). Without speciation, the success was significantly reduced (p \textless 0.0001), with oscillators occurring at a rate of 0.06 (44/700). TO more thoroughly evaluate the benefits of speciation, a batch of 700 evolution trials was run with a target species number of 30. This resulted in a success rate of 0.17 (117/700). This rate is not significantly different (p = 0.1127) than the rate with a target species number of 10. Speciation increases the success rate of evolution, but grouping networks into more species with fewer members does not improve success (figure \ref{fig:species_success_rate}). 
+With a target species of 10 (the default condition), evolution trials resulted in sustained oscillators at a rate of 0.22 (154/700). Without speciation, the success was significantly reduced (p \textless 0.0001), with oscillators occurring at a rate of 0.12 (83/700). To more thoroughly evaluate the benefits of speciation, two more evolution batches (with 700 trials each) of evolution were run with target species of 30 and 50. The batch with a target of 30 species also had a success rate of 0.22 (153/700). Increasing the target number of species to 50 significantly (p=0.002) worsened results with a success rate of 0.16 (110/700). This success is still a significant improvement over evolution without speciation (p \textless 0.0001).
 
-\textbf{Might be interesting to try with 50 species and see if I can get it to be worse just to make a point}
+Speciation increases the success rate of evolution by sheltering innovations and maintaining population diversity. However, with too many species, there are not enough individuals in any given species to adequate explore the space and the success rate is reduced.
+
  
 \begin{center}
     \includegraphics[width=15cm]{images/species_success_rate.png}
-    \captionof{figure}{Evolution success rate of 700 trials with no speciation, with a target species of 10, and with a target species of 30. Speciation significantly improves success rate, but more species does not improve success.}
+    \captionof{figure}{Evolution success rate of 700 trials with no speciation and with a target species of 5, 10, 30, and 50.}
     \label{fig:species_success_rate}
 \end{center}
 
@@ -696,7 +743,34 @@ Batches of 700 evolution trials with and without crossover were compared. The ba
 
 \textbf{Just realized that in the non crossover batch, there were some networks that wouldn't get changed at all under the right circumstances. Should redo this}
 
+\subsection{Elitism is Crucial to Evolutionary Success}
+\label{section:elites}
+Populating each generations begins with elitist selection. For each species, 10\% of its allocated offspring are unmodified copies of the best networks from the previous generation. In cases where a species is only allocated a single offspring, a mutation is performed on the best network in the species. If the mutation improves the network, the network is passed on to the next generation with the mutation. If the mutation does not improve the network, the unmodified network is passed on to the next generation.
+
+To explore the influence of elitist selection, batches of 700 trials of evolution were run with and without elitism. For batches with elitism, levels of 10, 25, and 50\% were tested\footnote{This is the percentage of the \textit{next} generation that is composed of unmodified, higher fitness models. For example, if a species has 20 members but is only allowed 10 offspring with an elitism rate of 10\%, then the single best network of the 20 will be passed down to the next generation unmodified.}. Eliminating elitism resulted in drastically reduced success rates, with only 1\% (7/700) trials resulting in oscillators. However, in batches with elitism, the percentage of high fitness models copied to the next generation did not result in significantly different success rates. Batches with 10, 25, and 50\% elitism had success rates of 0.220 (154/700), 0.224 (157/700), and 0.197 (138/700) respectively (figure \ref{fig:elitism_success}). It is likely that evolution is driven primarily by the top few individuals. When elitism is removed, these top individuals are not preserved and evolution mostly fails. However keeping more individuals in addition to these top performers does not improve success rates.
+
+\begin{center}
+    \includegraphics[width=15cm]{images/elitism_success.png}
+    \captionof{figure}{Evolution success rate of 700 trials with no speciation and with a target species of 10, 30, and 50.}
+    \label{fig:elitism_success}
+\end{center}
+
+
 \subsection{Effect of Selection Method}
+After the elite networks were copied to the next generation, the remaining offspring were produced by randomly selecting networks (including the elites, excluding the bottom 10\%) to mutate or crossover. As demonstrated in section \ref{section:elites}, elitism is crucial to the algorithms success. But could a different selection strategy for the non-elite offpsring improve success rate? To test this, tournament selection, with and without speciation, was used to select the non-elite offspring.
+
+Tournament selection involves running several comparisons of a few individuals chosen at random from the population \cite{tournamentselect,  Miller1995}. The best of the subset is chosen for crossover or mutation. It is efficient to code and scales well population size and objective function. In this case, two individuals from the same species were randomly chosen (with replacement) and the individual with the better fitness score was allowed to mutate or crossover and continue to the next generation.
+
+Tournament selection trials with a target species number of 10 and without speciation were compared to trials where non-elite networks were randomly selected. The trial with tournament selection and no speciation performed worst, with only 7.5\% of trials resulting in an oscillator (105/1400). With random selection, 11.1\% of trials resulting in oscillators (155/1400). This difference is statistically significant with p \textless 0.0001. This result was unexpected, as it would seem that biasing selection towards more fit networks with tournament selection should improve the results. However, it is possible that random selection helped maintain diversity by including less fit networks that ultimately developed into good solutions.
+
+When considering tournament selection with speciation, results improved, with 21.1\% (148/700) of trials resulting in an oscillator. However, this result in not significantly different than random selection with speciation, which resulted in oscillators in 22.0\% of trials (154/700). This bolsters the conclusion that speciation drives evolutionary success more than any other factors explored here.
+
+\begin{center}
+    \includegraphics[width=15cm]{images/tournament_speciation.png}
+    \captionof{figure}{Evolution success rate with and without tournament selection and with and without speciation. Speciation influences success rate far more than tournament selection (n=1400 for each no speciation batch, n=700 for speciation batches).}
+    \label{fig:elitism_success}
+\end{center}
+
 
 \section{Discussion}
 Configurability is cool. 

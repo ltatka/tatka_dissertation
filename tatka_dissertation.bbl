@@ -158,6 +158,11 @@ A.~Ghosh and B.~Chance.
 \newblock {\em Biochemical and Biophysical Research Communications},
   16(2):174–181, June 1964.
 
+\bibitem{tournamentselect}
+David~E. Goldberg, Bradley Korb, and Kalyanmoy Deb.
+\newblock Messy genetic algorithms: Motivation, analysis, and first results.
+\newblock {\em Complex Systems}, 3, 1989.
+
 \bibitem{Heinrich1999}
 R.~Heinrich, E.~Melendez-Hevia, F.~Montero, J.C. Nuno, A.~Stephani, and T.G.
   Waddell.
@@ -227,6 +232,12 @@ J.~Knabe, C.~Nehaniv, M.~Schilstra, and T.~Quick.
 Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
 \newblock Evolutionary design of oscillatory genetic networks.
 \newblock {\em Eur. Phys. J. B}, 76(1):167--178, July 2010.
+
+\bibitem{Loman2023}
+Torkel~E. Loman, Yingbo Ma, Vasily Ilin, Shashi Gowda, Niklas Korsbo, Nikhil
+  Yewale, Chris Rackauckas, and Samuel~A. Isaacson.
+\newblock Catalyst: Fast and flexible modeling of reaction networks.
+\newblock {\em PLOS Computational Biology}, 19(10):e1011530, October 2023.
 
 \bibitem{Lotka1910}
 Alfred~J. Lotka.
@@ -450,6 +461,13 @@ Margaret Watts, Bernard Fendler, Matthew~J. Merrins, Leslie~S. Satin, Richard
 James~N. Weiss and Jun-Hai Yang.
 \newblock Oscillations at odds in the heart.
 \newblock {\em Journal of General Physiology}, 135(4):303–305, March 2010.
+
+\bibitem{Welsh2022}
+Ciaran Welsh, Jin Xu, Lucian Smith, Matthias K\"{o}nig, Kiri Choi, and
+  Herbert~M Sauro.
+\newblock libroadrunner 2.0: a high performance sbml simulation and analysis
+  library.
+\newblock {\em Bioinformatics}, 39(1), December 2022.
 
 \bibitem{easyGA}
 Daniel Wilczak and Jack Nguyen.

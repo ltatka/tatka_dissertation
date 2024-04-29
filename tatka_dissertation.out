@@ -5,43 +5,44 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{A Brief History}{section.2.2}% 5
 \BOOKMARK [2][-]{subsection.2.2.2}{Dynamics}{section.2.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.3}{Biological Relevance}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.4}{Maybe a short thing about this research and oscillators?}{section.2.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Applications of Evolutionary and Genetic Algorithms in Systems Biology}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.4}{Tools for Evolutionary and Genetic Algorithms}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.4.1}{Python Libraries}{section.2.4}% 11
-\BOOKMARK [2][-]{subsection.2.4.2}{Libraries in Other Languages}{section.2.4}% 12
-\BOOKMARK [0][-]{chapter.3}{A Public Database of Evolved Oscillatory Reaction Networks}{}% 13
-\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.2.1}{Model Representation}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.3}{ODE Solver}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.4}{Selection}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.5}{Mutation}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.6}{Random Networks for Evolution}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.7}{Custom Evolution Algorithm}{section.3.2}% 22
-\BOOKMARK [2][-]{subsection.3.2.8}{Random Control Networks}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{Database Construction}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{Oscillating Network Examples}{section.3.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Parking lot for abandoned text that might be useful later}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Existing Software}{chapter.4}% 29
-\BOOKMARK [0][-]{chapter.5}{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 31
-\BOOKMARK [1][-]{section.5.2}{Evolving Reaction Networks}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.3}{Methods}{chapter.5}% 33
-\BOOKMARK [2][-]{subsection.5.3.1}{Encoding}{section.5.3}% 34
-\BOOKMARK [2][-]{subsection.5.3.2}{Mutation}{section.5.3}% 35
-\BOOKMARK [2][-]{subsection.5.3.3}{Crossover}{section.5.3}% 36
-\BOOKMARK [2][-]{subsection.5.3.4}{Speciation}{section.5.3}% 37
-\BOOKMARK [2][-]{subsection.5.3.5}{Objective Function}{section.5.3}% 38
-\BOOKMARK [2][-]{subsection.5.3.6}{ODE Solver}{section.5.3}% 39
-\BOOKMARK [2][-]{subsection.5.3.7}{Reproduction}{section.5.3}% 40
-\BOOKMARK [2][-]{subsection.5.3.8}{Output}{section.5.3}% 41
-\BOOKMARK [1][-]{section.5.4}{Results}{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.4.1}{Speciation Maintains Diversity and Increases Success Rate}{section.5.4}% 43
-\BOOKMARK [2][-]{subsection.5.4.2}{Crossover Does Not Improve Success Rate}{section.5.4}% 44
-\BOOKMARK [2][-]{subsection.5.4.3}{Effect of Selection Method}{section.5.4}% 45
-\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 47
+\BOOKMARK [1][-]{section.2.3}{Applications of Evolutionary and Genetic Algorithms in Systems Biology}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Tools for Evolutionary and Genetic Algorithms}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.4.1}{Python Libraries}{section.2.4}% 10
+\BOOKMARK [2][-]{subsection.2.4.2}{Libraries in Other Languages}{section.2.4}% 11
+\BOOKMARK [1][-]{section.2.5}{Julia Packages for Reaction Network Modeling}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.6}{Conclusion}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{A Public Database of Evolved Oscillatory Reaction Networks}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Background}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.2.1}{Model Representation}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.3}{ODE Solver}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.4}{Selection}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.5}{Mutation}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.6}{Random Networks for Evolution}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.7}{Custom Evolution Algorithm}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.8}{Random Control Networks}{section.3.2}% 24
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Database Construction}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Oscillating Network Examples}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 28
+\BOOKMARK [0][-]{chapter.4}{In Silico Speciated Evolution of Oscillatory Mass-Action Reaction Networks}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.2}{Evolving Reaction Networks}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.3}{Methods}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.3.1}{Encoding}{section.4.3}% 33
+\BOOKMARK [2][-]{subsection.4.3.2}{Mutation}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.3}{Crossover}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.4}{Speciation}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.5}{Objective Function}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.6}{ODE Solver}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.7}{Reproduction}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.8}{Output}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.1}{Verifying Speciation}{section.4.4}% 42
+\BOOKMARK [2][-]{subsection.4.4.2}{Speciation Maintains Diversity and Increases Success Rate}{section.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.3}{Crossover Does Not Improve Success Rate}{section.4.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.4}{Elitism is Crucial to Evolutionary Success}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.5}{Effect of Selection Method}{section.4.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 48
