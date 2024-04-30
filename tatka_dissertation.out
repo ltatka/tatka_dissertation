@@ -40,9 +40,15 @@
 \BOOKMARK [2][-]{subsection.4.3.8}{Output}{section.4.3}% 40
 \BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 41
 \BOOKMARK [2][-]{subsection.4.4.1}{Verifying Speciation}{section.4.4}% 42
-\BOOKMARK [2][-]{subsection.4.4.2}{Speciation Maintains Diversity and Increases Success Rate}{section.4.4}% 43
-\BOOKMARK [2][-]{subsection.4.4.3}{Crossover Does Not Improve Success Rate}{section.4.4}% 44
-\BOOKMARK [2][-]{subsection.4.4.4}{Elitism is Crucial to Evolutionary Success}{section.4.4}% 45
-\BOOKMARK [2][-]{subsection.4.4.5}{Effect of Selection Method}{section.4.4}% 46
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.2}{Speciation Effects}{section.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.3}{Crossover}{section.4.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.4}{Elitist Selection}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.5}{Tournament Selection}{section.4.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.6}{Increased Population size}{section.4.4}% 47
+\BOOKMARK [2][-]{subsection.4.4.7}{More Generations}{section.4.4}% 48
+\BOOKMARK [2][-]{subsection.4.4.8}{fitness function with rate constants}{section.4.4}% 49
+\BOOKMARK [2][-]{subsection.4.4.9}{More Generations}{section.4.4}% 50
+\BOOKMARK [2][-]{subsection.4.4.10}{Maybe: optimal parameters}{section.4.4}% 51
+\BOOKMARK [2][-]{subsection.4.4.11}{Match Timeseries Data}{section.4.4}% 52
+\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 54

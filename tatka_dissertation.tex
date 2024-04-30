@@ -106,7 +106,9 @@ Computational models are increasingly used in high-impact decision making in sci
 
 \tableofcontents
 
+\listoffigures
 
+\listoftables
 
 \chapter{Introduction}
 \pagenumbering{arabic}
@@ -222,7 +224,7 @@ Oscillation can also be achieved with negative feedback \cite{Tyson1975, Sauro_d
 \begin{figure}
     \centering
     \includegraphics[width=7cm]{images/repressilator.png}
-    \captionof{figure}{caption}
+    \caption[Three node repressilator]{A three species repressilator.}
     \label{fig:repressilator}
 \end{figure}
 
@@ -392,7 +394,7 @@ Oscillating models were generated using evolution scripts written in python, ava
 \begin{figure}
     \centering
     \includegraphics[width=10cm]{images/Reactions.png}
-    \captionof{figure}{Models were composed of four reaction types and rate laws: (A) uni-uni, (B) uni-bi, (C) bi-uni, (D) bi-bi}
+    \caption[Types of reactions and their rate laws]{Models were composed of four reaction types and rate laws: (A) uni-uni, (B) uni-bi, (C) bi-uni, (D) bi-bi}
     \label{fig:reaction}
     
 \end{figure}
@@ -412,7 +414,7 @@ The objective function minimized error between the candidate model's time course
 \begin{figure}
     \centering
     \includegraphics[width=15cm]{images/fitness.png}
-    \captionof{figure}{For the time series data of this species, the error is calculated by summing the square difference between the observed time series data (blue) and a set of idealized oscillator points (red). This process is repeated for each species in the model and the fitness is defined as the minimum of these sums. }
+    \caption[Oscillator objective function]{For the time series data of this species, the error is calculated by summing the square difference between the observed time series data (blue) and a set of idealized oscillator points (red). This process is repeated for each species in the model and the fitness is defined as the minimum of these sums. }
     \label{fig:fitness}
 \end{figure}
 
@@ -432,7 +434,7 @@ A population of 40 random networks were generated using the {\tt teUtils} python
 \begin{figure}
 \begin{center}
     \includegraphics[width=17cm]{images/algorithm.png}
-    \captionof{figure}{The evolution algorithm. (1) An initial population of random models is created. (2) The fitness of each model is evaluated. (3) The entire population is sorted by most fit to least fit. (4) The top 10\% of the models are transferred to the subsequent generation unmodified. (5)  Tournament selection is used to populate the remainder of the subsequent generation. Models are randomly selected, the more fit model is chosen to be modified and carried over to the subsequent generation. Steps 2-5 are repeated. }
+    \caption[Overview of the evolution algorithm in Python]{The evolution algorithm. (1) An initial population of random models is created. (2) The fitness of each model is evaluated. (3) The entire population is sorted by most fit to least fit. (4) The top 10\% of the models are transferred to the subsequent generation unmodified. (5)  Tournament selection is used to populate the remainder of the subsequent generation. Models are randomly selected, the more fit model is chosen to be modified and carried over to the subsequent generation. Steps 2-5 are repeated. }
     \label{fig:algorithm}
     \end{center}
 \end{figure}
@@ -451,11 +453,11 @@ Random models were generated as described in the previous section. To control fo
 \section{Results}
 Evolved models are processed to remove any undesirable oscillators from the population, namely oscillators that dampen over time or oscillators where one or more species concentrations rise indefinitely towards infinity. Next,  duplicated reactions were fused and reactions that are superfluous to oscillation are deleted to minimize network size resulting in a population of reaction networks that oscillate indefinitely in species concentration, examples of which are shown in figure 4.
 
-\begin{center}
+\begin{figure}
     \includegraphics[width=15cm]{images/examples.png}
     \label{fig:examples}
-    \captionof{figure}{Time series data of sixteen 3-node oscillators generated using differential evolution.}
-\end{center}
+    \caption[Examples of oscillator time series data]{Time series data of sixteen 3-node oscillators generated using differential evolution.}
+\end{figure}
 
 
 \subsection{Database Construction}
@@ -474,7 +476,7 @@ The Cesium database is publicly available on the web at \url{https://cesiumdb.he
 \begin{figure}
     \centering
     \includegraphics[width=12cm]{images/website.png}
-    \captionof{figure}{Landing page for the Cesium database.}
+    \caption[Landing page for the Cesium database website]{Landing page for the Cesium database.}
     \label{fig:website}
 \end{figure}
 
@@ -485,7 +487,7 @@ Four oscillating networks from the database are shown in figure \ref{fig:model-d
 \begin{figure}
     \centering
     \includegraphics[width=12cm]{images/model-diagrams.png}
-    \captionof{figure}{Examples of 3-species oscillating networks from the Cesium database.}
+    \caption[Examples of evolved oscillating networks]{Examples of 3-species oscillating networks from the Cesium database.}
     \label{fig:model-diagrams}
 \end{figure}
 
@@ -502,11 +504,12 @@ S0 & S1 & S2 \\
  \]
 In the bottom row center, the negative number indicates that there is an inhibitory relationship between S1 and S2. An increase in S2 will decrease the production rate of S1. These interactions for a cycle with negative feedback, suggesting that this is a feedback oscillator (figure \ref{fig:feedback}). Similar analyses reveal that networks C and D are also likely to be feedback oscillators.
 
-\begin{center}
+\begin{figure}
+	\centering
     \includegraphics[width=8cm]{images/feedback-cycle.png}
-    \captionof{figure}{Species interactions of Network B. Green arrows indicate activation and blunt red arrows indicate inhibition. The interactions form a cycle with negative feedback suggesting that Network B is a feedback oscillator.}
+    \caption[Feedback diagram of an oscillating network]{Species interactions of Network B. Green arrows indicate activation and blunt red arrows indicate inhibition. The interactions form a cycle with negative feedback suggesting that Network B is a feedback oscillator.}
     \label{fig:feedback}
-\end{center}
+\end{figure}
 
 
 \section{Discussion}
@@ -517,19 +520,21 @@ Given the enrichment of autocatalytic reactions, one might expect a similar enri
 
 To determine if any reaction types were enriched in the oscillator population compared to the control population, the average model compositions were compared. The average model composition was assessed as the average number of reactions of the specific type were divided by the average total number of reactions for each group. For example, there were an average of 6.592 reactions per model in the oscillator population, of which an average of 0.99 were uni-uni reactions, for an average of 15.3\% uni-uni reactions in the average oscillator model (Table \ref{fig:avg-comp}). Compositions were compared with permutation tests, showing that model compositions and sizes were significantly different between the oscillator and control populations (the reduced size of oscillating networks can be accounted for by the fusion of duplicate reactions). Oscillators possessed significantly more uni-bi reactions compared to random control models. This is consistent with the enrichment of autocatalytic reactions which are often uni-bi. However, autocatalytic reactions can also be bi-bi reactions, which were not enriched in oscillating models. Although bi-bi reactions were less likely to be created during evolution due to the initial settings (10\%), it is somewhat surprising that bi-bi reactions were decreased in oscillatory networks given that a bi-bi reaction is slightly more likely to be autocatalytic ($\frac{4}{27}$) compared to a uni-bi reaction ($\frac{1}{9}$).
 
-\begin{center}
+\begin{table}
+	\centering
     \includegraphics[width=12cm]{images/composition.png}
-    \captionof{table}{Average reaction compositions of oscillating networks compared to non-oscillating controls.}
+    \caption[Composition of oscillator vs. control models]{Average reaction compositions of oscillating networks compared to non-oscillating controls.}
     \label{fig:avg-comp}
-\end{center}
+\end{table}
 
 Next, oscillators containing autocatalytic reactions (498 models) were compared to oscillators lacking them (98 models). Populations were compared by permutation test. There was a significant increase in the portion of uni-bi reactions and a significant decrease in the portion of bi-uni reactions in non-autocatalytic models as compared to autocatalytic oscillators (Table \ref{fig:autocatal}). This result is interesting given that autocatalytic reactions are either uni-bi or bi-bi and both reaction types were reduced in oscillators with autocatalytic reactions compared to oscillators without. It is possible that oscillators without a single autocatalytic reaction are achieving autocatalysis through a combination of non-autocatalytic reactions.
 
-\begin{center}
+\begin{table}
+	\centering
     \includegraphics[width=12cm]{images/autocomp.png}
-    \captionof{table}{Average reaction compositions of autocatalytic oscillating networks compared to non-autocatalytic oscillating networks.}
+    \caption[Composition of autocatalyitic vs. non autocatalytic oscillators]{Average reaction compositions of autocatalytic oscillating networks compared to non-autocatalytic oscillating networks.}
     \label{fig:autocatal}
-\end{center}
+\end{table}
 
 Several manually inspected oscillators had reactions with extremely high rate constants (greater than 300, whereas most rate constants were between 5 and 75). The initial range for rate constants is 0 to 50 and with each mutation, they can only increase a maximum of 15\% of the current value. Although there is no upper limit for rate constants, it is nearly impossible to mutate a rate constant from the initial range to over 100 during the course of evolution. To bypass this limit and achieve high rate constants, many successful models have simply duplicated reactions during the evolutionary process. During post-processing, these duplicate reactions are fused and their rate constants summed. Fusing duplicate reactions to achieve high rate constants accounts for the observation that oscillators generally have fewer reactions than non-oscillators in this study. These high rate constant reactions can not be removed, nor can the rate constant be significantly lowered without impacting oscillation. Further investigation is needed to determine what essential function these high rate reactions seem to play in most of the oscillators included in this study. 
 
@@ -589,11 +594,14 @@ I need to go over a bunch of times that this was done for a similar thing. Just 
 
 \section{Methods}
 
-\begin{center}
+\begin{figure}
+\centering
     \includegraphics[width=8cm]{images/algo_description_crossover.png}
-    \captionof{figure}{The evolutionary algorithm begins with a population of randomly generated reaction networks. These networks are then grouped into species and their fitness evaluated. The next generation is constructed by first selecting the top performing individuals from each species without modification. The rest of the subsequent generation is populated by networks that are modified by either crossover, mutation, or both. This new generation is then grouped into species based on structural similarity and the process repeats.}
+    \caption[Overview of the evolution algorithm with speciation]{The evolutionary algorithm begins with a population of randomly generated reaction networks. These networks are then grouped into species and their fitness evaluated. The next generation is constructed by first selecting the top performing individuals from each species without modification. The rest of the subsequent generation is populated by networks that are modified by either crossover, mutation, or both. This new generation is then grouped into species based on structural similarity and the process repeats.}
     \label{fig:algo_description_crossover}
-\end{center}
+\end{figure}
+
+
 \subsection{Encoding}
 Chemical reactions are represented as custom data structures that contain one or two reactants, one or two products, a rate constant, and a boolean value indicating if the reaction is active or inactive. Four types of mass-action reaction are possible: uni-uni (a single reactant to a single product), bi-uni (two reactants form a single product), uni-bi, and bi-bi. A reaction that is active participates in the network that it is part of. An inactive reaction is ``turned off" but remains part of the network as a historical record. It can be activated again or crossed over under certain circumstances. 
 
@@ -607,15 +615,17 @@ A reaction mutation is either the addition of a new random reaction or the delet
 probability of 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactions respectively. These probabilities are also configurable. If the randomly generated reaction is already present in the reaction network, the new reaction's rate constant is added to the existing reaction's rate constant. This feature can allow some rate constants to grow to several multiples of the next largest rate constant in the network. When a reaction is deleted, it is ``switched off" and becomes inactive in the network, but is preserved as it can become reactivated under certain circumstances.
 
 \subsection{Crossover}
+\label{section:crossover}
 During crossover, two parent networks from the same species group are chosen to mate. Analogous to natural evolution, crossover is essential a means of changing more parameters simultaneously and to a greater degree. It injects for novelty into the offspring network compared to single mutations. This could either result in faster progress towards a good solution, or could interrupt progress by destroying decent solutions.
 
 Crossover occurs by examining each reaction in the parent networks. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent (table \ref{table:crossover_table}). 
 
-\begin{center}
+\begin{table}
+	\centering
     \includegraphics[width=12cm]{images/crossover_table.png}
-    \captionof{table}{Every reaction in the more fit network is passed down to the offspring network. If it occurs in both parent networks, the rate constant is randomly inherited from one parent or the other.}
+    \caption[Crossover procedure]{Every reaction in the more fit network is passed down to the offspring network. If it occurs in both parent networks, the rate constant is randomly inherited from one parent or the other.}
     \label{table:crossover_table}
-\end{center}
+\end{table}
 
 A second crossover strategy for similar networks was tested in later trials. Networks that were members of the same species and had similar fitness score (within 5\% of each other) underwent a slightly different crossover process. All reactions that the two networks had in common were passed down to the offspring network with rate constants chosen randomly from one parent or the other. Reactions that occurred in one parent network but not the other had a 50\% chance of being passed down to the offspring network.
 
@@ -676,52 +686,66 @@ The software was evaluated with multiple hyperparameter settings to assess its a
 \subsection{Verifying Speciation}
 Before evaluating the effects of speciation on evolution, tests were run to verify that speciation was occurring and that the adaptive $\delta$ threshold was maintaining the target number of species. Batches of 700 trials were run for a target number of 1 (no speciation), 5, 10, 30, and 50 species. Figure \ref{fig:avg_num_species} shows that on average, these target numbers were achieved. During the initial generations, the number of species fluctuates more dramatically. This is like due to the fact that while $\delta$ is adaptive, $\epsilon$, the amount by which $\delta$ is changed, is not. During the first several generations, adjustments to $\delta$ tend to over or under shoot the target number of species, likely due to there being large differences between individual networks at first. This over and undershooting causes the number of species to fluctuate before leveling out to the target level after approximately 15 generations.
 
-\begin{center}
-    \includegraphics[width=18cm]{images/avg_num_species.png}
-    \captionof{figure}{Adapting $\delta$ maintains the target number of species.}
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/avg_num_species.png}
+    \caption[Average total number of species over time]{Adapting $\delta$ maintains the target number of species without the need to select a value that results in the target number of species through trial and error.}
     \label{fig:avg_num_species}
-\end{center}
+\end{figure}
+
+The benefit of an adaptive $\delta$ is that the user need only specify the target number of species and $\delta$ will change to accommodate that specification. Without adaptation, $\delta$ must be chosen through trial and error so that it results in the target number of species. For example, in the case of a target species of 10, with an adaptive $\delta$, the total number of species converges to 10 after a few generations and remains there until the end of the trial (figure \ref{fig:adaptive_delta}). With a constant $\delta$, the total number of species is gradually reduced over the course of the trial. In this example, in both cases the success rate was about the same 22\% vs 22.5\% for adaptive and constant $\delta$ respectively. 
+
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/adaptive_delta.png}
+    \caption[Adaptive $\delta$ maintains the target number of species]{Adaptive $\delta$ maintains the target number of species compared to a constant delta.}
+    \label{fig:adaptive_delta}
+\end{figure}
 
 
 Although the total number of species remains relatively constant over time, the different species tend to become more similar to each other. The inter-species distance between two species is defined as the distance between the best networks from each species. At each generation, the distance between every combination of 2 species were measured and the average of these measurements recorded. This measurement was performed for batches of 700 trials each for a target of 5, 10, 30, and 50 species. For all four conditions, the average inter-species distance is reduced over time, possibly due to convergence to a single best solution. All three batches started with an average inter-species distance of approximately 0.9, meaning that species differed by an average of 90\% of their reactions. The batch with a target of 10 species converged the most, with an average inter-species difference of approximately 0.55 after 800 generations.   Batches with a target of 30 and 50 species did not converge as much and ended with an average inter-species distance of approximately 0.75 and 0.80 respectively. Larger distances with more species may be due to elitism. With a target of 50 species, at least 50 individuals will be copied to the next generation with no modification. Perhaps lesser networks that otherwise would have been removed if forced to compete with more individuals are allowed to reproduce. Reducing the removal of less fit individuals may allow them to maintain their distances over time. Trials with a target of 5 species converged more rapidly at first, but ultimately did not converge as much as trials with a target of 10 species. Perhaps with too few species, more fit networks dominate the population early on and cause more rapid convergence. However, as evolution progresses, trials with fewer species are less likely to find a good solution and therefor do not further converge.
 
-\begin{center}
-    \includegraphics[width=18cm]{images/avg_species_differences.png}
-    \captionof{figure}{Different species become more similar over time.}
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/avg_species_differences.png}
+    \caption[Average inter-species distance over time]{Different species become more similar over time.}
     \label{fig:avg_species_differences}
-\end{center}
+\end{figure}
 
 Next, the average intra-species distances were compared for different target numbers of species. The intra-species distances was computed by averaging the distance between every combination of pairs of networks within a single species. As evolution progresses, species tend to converge on a solution and individuals within a species become more similar. This happens more quickly for trials with larger target species numbers. In order to maintain a larger number of species, the speciation threshold must be stricter, so each species has fewer individuals and individuals within a species are more similar.
 
-\begin{center}
-    \includegraphics[width=18cm]{images/intraspecies_distance.png}
-    \captionof{figure}{Networks within a species become more similar over time.}
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/intraspecies_distance.png}
+    \caption[Average intra-species distance over time]{Networks within a species become more similar over time.}
     \label{fig:avg_species_differences}
-\end{center}
+\end{figure}
 
-textbf{TODO: intraspecies distances}
 
-\subsection{Speciation Maintains Diversity and Increases Success Rate}
+
+\subsection{Speciation Effects}
 \label{section:speciation}
 In order to test the effects of speciation on population diversity and oscillator success rate, evolution was run without speciation, and with 10 and 30 as the target number of species. When speciation is disabled, the top 10\% of the entire population is passed on to the next generation unmodified and the bottom 10\% of the entire population is deleted. Then mutation is performed on the entire population to populate the remainder of the subsequent generation (crossover was not performed for these experiments). Each network must compete against every other network in the population. To account for fluctuations in population size when speciation is enabled, diversity was measured as the number of unique networks over the total number of networks in the population. A network was considered unique if differed by one or more reactions from all other networks. Reactions are considered different if they differ in product or reactant. Rate constants are not considered in these comparisons. Significance levels were calculated using two-tailed t-tests. 
 
 
 In trials where no speciation was allowed, the average portion of unique networks was 0.294 $\pm$ 0.035 across 800 generations. This is significantly (p \textless xxx) less than the portion of unique networks in evolution trials with a target number of species of 10, 0.344 $\pm$ 0.037 (figure \ref{fig:num_unique_species}).
 
-\begin{center}
-    \includegraphics[width=18cm]{images/num_unique_networks.png}
-    \captionof{figure}{The average portion of unique networks over 800 generations with speciation (red), 0.344 $\pm$ 0.037, and without (blue), 0.296 $\pm$ 0.034. Shading is the 95\% confidence interval.}
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/num_unique_networks.png}
+    \caption[Unique networks with and without speciation]{The average portion of unique networks over 800 generations with speciation (red), 0.344 $\pm$ 0.037, and without (blue), 0.296 $\pm$ 0.034. Shading is the 95\% confidence interval.}
     \label{fig:num_unique_species}
-\end{center}
+\end{figure}
 
 One purpose of speciation was to prevent the most fit network from overtaking the population over time. When a single network dominates the population, there are not enough unique networks to adequately explore the solution space and the evolution algorithm converges on a solution prematurely. To account for fluctuating population sizes when speciation is allowed, the number of copies of the best network divided by the total number of networks was measured at each generation with speciation (with a target species number of 10) and without speciation.  When speciated was enabled, the portion of the population occupied by copies of the most fit network
 remained constant with an average portion of best networks of 0.071 $\pm$ 0.008. Without speciation, the portion of best networks rose gradually over time with an average portion of 0.402 $\pm$ 0.079 (figure \ref{fig:portion_best_network}). This shows that speciation effectively prevents a single network from dominating the population (p \textless 0.0001).
 
-\begin{center}
+\begin{figure}
+	\centering
     \includegraphics[width=18cm]{images/portion_best_network.png}
-    \captionof{figure}{The average portion of best networks over 800 generations with speciation (red), 0.071 $\pm$ 0.008, and without (blue), 0.402 $\pm$ 0.079. Shading is the 95\% confidence interval.}
+    \caption[Portion of top network over time, with and without speciation]{The average portion of best networks over 800 generations with speciation (red), 0.071 $\pm$ 0.008, and without (blue), 0.402 $\pm$ 0.079. Shading is the 95\% confidence interval.}
     \label{fig:portion_best_network}
-\end{center}
+\end{figure}
 
 
 Next, the effects of speciation on evolution success rate was evaluated comparing no speciation to speciation with a target species number of 10, 30, and 50 (figure \ref{fig:species_success_rate}. Again, crossover was omitted from these studies. For each speciation level, a batch of 700 trials of evolution were run and the number of oscillators resulting from each batch. Significance levels were calculated using a binomial test. 
@@ -731,32 +755,47 @@ With a target species of 10 (the default condition), evolution trials resulted i
 Speciation increases the success rate of evolution by sheltering innovations and maintaining population diversity. However, with too many species, there are not enough individuals in any given species to adequate explore the space and the success rate is reduced.
 
  
-\begin{center}
+\begin{figure}
+	\centering
     \includegraphics[width=15cm]{images/species_success_rate.png}
-    \captionof{figure}{Evolution success rate of 700 trials with no speciation and with a target species of 5, 10, 30, and 50.}
+    \caption[Evolutionary success rate with varying target species numbers]{Evolution success rate of 700 trials with no speciation and with a target species of 5, 10, 30, and 50.}
     \label{fig:species_success_rate}
-\end{center}
+\end{figure}
 
-\subsection{Crossover Does Not Improve Success Rate}
-Batches of 700 evolution trials with and without crossover were compared. The batch without crossover was the same batch described in \ref{section:speciation} with a target species number of 10 and a success rate of 0.19. This batch had 0.0 probability of crossover and 0.75 probability of mutation. This meant that there was a 25\% chance that a network was passed on to the next generation without modification. The batch with crossover used the crossover procedure described in the Methods section. The probability of crossover was 0.75 and the probability of mutation was 0.75. All networks were either crossed over or mutated ($p_{crossover} + p_{mutation} - p_{crossover} \cap p_{mutation} = 1$). This meant that networks had a 50\% chance of being crossed over and then mutated ($p_{crossover} \cap p_{mutation} = p_{crossover} + p_{mutation} -1$). With these settings, evolution trials with crossover enabled resulted in a sustained oscillator at a rate of 0.16 (112/700). This was significantly lower than the success rate without crossover (p = 0.0344).
+\subsection{Crossover}
+To assess the effects of crossover on evolutionary success, batches of 700 evolution trials without crossover and with several type of crossover were compared. None of the crossover batches tested here had better evolutionary success than the batch without crossover. 
+
+First, the crossover technique described previously was compared to a batch with no crossover. Both batches had a target species of 10 and all other parameters in common. The batch with without crossover had 0\% chance of crossover and 100\% chance of mutation.  22\% (154/700) of trials in this batch resulted in oscillators The batch with crossover used the crossover procedure described in the Methods section. The probability of crossover was 0.75 and the probability of mutation was 0.75. All networks were either crossed over or mutated ($p_{crossover} + p_{mutation} - p_{crossover} \cap p_{mutation} = 1$). This meant that networks had a 50\% chance of being crossed over and then mutated ($p_{crossover} \cap p_{mutation} = p_{crossover} + p_{mutation} -1$). With these settings, evolution trials with crossover resulted oscillators at a rate of 17\% (119/700) of the time. This was significantly lower than the success rate without crossover (p = 0.001181).
+
+It's possible that allowing some networks to undergo both crossover and mutation was too much change in a single step and was disrupting any progress towards a solution. In the next batch, networks were only allowed to undergo crossover or mutation (50\% of each), but never both. In this case, 13.7\% (96/700) trials resulted in oscillators, significantly less than both the batch without crossover and the batch with the original crossover method.
+
+In a second attempt to address the problem of too much change, the probably of crossover was reduced from 0.75 to 0.25. For this batch, 20.6\% of trials resulted in oscillators. This is significantly better than the batch with a 0.75 probability of crossover (p=0.014), but not significantly different than the batch with no crossover. 
+
+With the original crossover method described in \ref{section: crossover}, when two networks have the exact same fitness, one is randomly chosen as the more fit network. It is highly improbable that two networks would have exactly the same fitness, but this prompted the thought that there may be some benefit to more leniently combining two networks with similar fitness scores. For the next batch, networks with a fitness score within 5\% of one another underwent a slightly different crossover method. Like the original crossover method, all reactions that were present in both parent networks were passed to the offspring, with the rate constant chosen randomly from one parent or the other. Reactions that were not shared between the two networks were passed down with a 0.5 probability. As with the original crossover method, reactions that were inactive had a 0.25 probability of reactivation. The success of this batch (16.1\%, 111/700) was no different than the success of the original crossover batch and both were worse than the batch without crossover (p \textless 0.0001).
+
+\begin{figure}
+	\centering
+    \includegraphics[width=18cm]{images/crossover_success.png}
+    \caption[Evolutionary success rate with different crossover strategies]{Evolution success rate of 700 trials with no crossover, 0.25 and 0.75 probability of crossover, 50-50 exclusive chance of crossover or mutation, and 0.75 probability of crossover with more lenient crossover method for networks with similar fitness.}
+    \label{fig:crossover_success}
+\end{figure}
 
 
-\textbf{Just realized that in the non crossover batch, there were some networks that wouldn't get changed at all under the right circumstances. Should redo this}
-
-\subsection{Elitism is Crucial to Evolutionary Success}
+\subsection{Elitist Selection}
 \label{section:elites}
 Populating each generations begins with elitist selection. For each species, 10\% of its allocated offspring are unmodified copies of the best networks from the previous generation. In cases where a species is only allocated a single offspring, a mutation is performed on the best network in the species. If the mutation improves the network, the network is passed on to the next generation with the mutation. If the mutation does not improve the network, the unmodified network is passed on to the next generation.
 
 To explore the influence of elitist selection, batches of 700 trials of evolution were run with and without elitism. For batches with elitism, levels of 10, 25, and 50\% were tested\footnote{This is the percentage of the \textit{next} generation that is composed of unmodified, higher fitness models. For example, if a species has 20 members but is only allowed 10 offspring with an elitism rate of 10\%, then the single best network of the 20 will be passed down to the next generation unmodified.}. Eliminating elitism resulted in drastically reduced success rates, with only 1\% (7/700) trials resulting in oscillators. However, in batches with elitism, the percentage of high fitness models copied to the next generation did not result in significantly different success rates. Batches with 10, 25, and 50\% elitism had success rates of 0.220 (154/700), 0.224 (157/700), and 0.197 (138/700) respectively (figure \ref{fig:elitism_success}). It is likely that evolution is driven primarily by the top few individuals. When elitism is removed, these top individuals are not preserved and evolution mostly fails. However keeping more individuals in addition to these top performers does not improve success rates.
 
-\begin{center}
+\begin{figure}
+	\centering
     \includegraphics[width=15cm]{images/elitism_success.png}
-    \captionof{figure}{Evolution success rate of 700 trials with no speciation and with a target species of 10, 30, and 50.}
+    \caption[Evolutionary success rate with different levels of elitist selection]{Evolution success rate of 700 trials with no speciation and with a target species of 10, 30, and 50.}
     \label{fig:elitism_success}
-\end{center}
+\end{figure}
 
 
-\subsection{Effect of Selection Method}
+\subsection{Tournament Selection}
 After the elite networks were copied to the next generation, the remaining offspring were produced by randomly selecting networks (including the elites, excluding the bottom 10\%) to mutate or crossover. As demonstrated in section \ref{section:elites}, elitism is crucial to the algorithms success. But could a different selection strategy for the non-elite offpsring improve success rate? To test this, tournament selection, with and without speciation, was used to select the non-elite offspring.
 
 Tournament selection involves running several comparisons of a few individuals chosen at random from the population \cite{tournamentselect,  Miller1995}. The best of the subset is chosen for crossover or mutation. It is efficient to code and scales well population size and objective function. In this case, two individuals from the same species were randomly chosen (with replacement) and the individual with the better fitness score was allowed to mutate or crossover and continue to the next generation.
@@ -765,20 +804,69 @@ Tournament selection trials with a target species number of 10 and without speci
 
 When considering tournament selection with speciation, results improved, with 21.1\% (148/700) of trials resulting in an oscillator. However, this result in not significantly different than random selection with speciation, which resulted in oscillators in 22.0\% of trials (154/700). This bolsters the conclusion that speciation drives evolutionary success more than any other factors explored here.
 
-\begin{center}
+\begin{figure}
+	\centering
     \includegraphics[width=15cm]{images/tournament_speciation.png}
-    \captionof{figure}{Evolution success rate with and without tournament selection and with and without speciation. Speciation influences success rate far more than tournament selection (n=1400 for each no speciation batch, n=700 for speciation batches).}
+    \caption[Evolutionary success rates with tournament selection and speciation]{Evolution success rate with and without tournament selection and with and without speciation. Speciation influences success rate far more than tournament selection (n=1400 for each no speciation batch, n=700 for speciation batches).}
     \label{fig:elitism_success}
-\end{center}
+\end{figure}
 
+\subsection{Increased Population size}
+Unlike other hyperparmaters discussed here, increasing the population size has a direct effect on computation time. The bulk of the algorithm consists of numerically solving the ODEs for each network. However, increasing the population size increases the number of individuals exploring the solution landscape and thus increases the chances of finding a good solution. 
+
+When the population size was doubled, from 100 individuals to 200 individuals, evolutionary success significantly improved from 22\% to 26\% (p = 0.012), with 182 of 700 trials producing an oscillator. However, this computation took roughly twice as long. The batch with 100 individuals resulted in 154 oscillators (out of 700 trials). Running this batch twice would result in ~300 oscillators and take roughly the same amount of time as a 200 individual population that produces ~180 oscillators.
+
+Next, a batch with a population of 200 and a target of 20 species was run. For a population of 100, a target species of 10 was shown to result in the highest success rate, so this experiment sought to test if the optimal target number of species scaled with population size. This appeared to be the case as 38.5\% (77/200) trials in this batch resulted in oscillators, a significant improvement over both 200 individuals with 10 species and 100 individuals with 10 species. 
+
+\subsection{More Generations}
+Like population size, the number of generations directly effects computation time. However, increasing the number of generations allows more time for the algorithm to discover and optimize solutions and increase evolutionary success. 
+
+The maximum number of generations was doubled, from 800 to 1600, and evolution was run with default parameters: no crossover, 100 individuals, target species of 10. Trials in this batch resulted in oscillators 37\% (74/200) of the time. Fit fitness of the top network in each generation was measured and the average fitness of the top networks across 200 trials is shown in figure \ref{fig:1600_top_fitness}. After 1600 generations, the average top fitness continues to rise suggesting that the success rate may further increase with more generations. When the top network reaches a high level of fitness, it is saved and the evolution trial is discontinued. This results in small spikes in the average top fitness when networks dramatically improve in a single generation.  
+
+
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/1600_top_fitness.png}
+    \caption[Average top fitness over 1600 generations]{Average fitness of the best network of each generation over 200 trials.}
+    \label{fig:1600_top_fitness}
+\end{figure}
+
+\subsection{fitness function with rate constants}
+
+\subsection{More Generations}
+
+\subsection{Maybe: optimal parameters}
+
+\subsection{Match Timeseries Data}
+Should try with a 3 species time series, do it after I trial optimal parameters
 
 \section{Discussion}
+Speciation was shown to signficantly benefit evolutionary success by protection innovations and maintaining evolutionary diversity throughout the process. Fine tuning is necessary to achieve the maximum benefit of speciation. The target number of species must be chosen with consideration of the population size. Additionally, D and D step sizes may require adjustment for different population sizes, target number of species, and different objectives. 
+
+Elitism is also essential to evolution as it preserves the best individuals of each generation. It pairs well with speciation as it allows the best individuals not just from the whole population but from the each species to be passed on to the next generation. Interestingly, the evolutionary success did not seem to vary with different levels of elitism suggesting that evolutionary progress is driven primarily by the top individuals of each species and that including additional elite networks does not improve success. This seems to be confirmed by the observation that alternative selection strategies for non-elite individuals did not affect evolutionary performance.
+
+Although crossover has shown success in other topological evolution problems \cite{stanley_evolving_2002, dinh_effective_2015}, this was not the case with mass-action networks. Both artificial neural networks (ANNs) and genetic regulatory networks (GRNs) (domains where crossover has been shown effective) have more edges that can more easily be separated from their weights. In both cases, edges simply connect two nodes together. For ANNs, all edges activate the output node and have a weight which increases or decreases the signal strength. GRNs are similar but edges can also be inhibitory. The weights of the edges are not influence by the nodes the edge is connected to. On the other hand, in this work, reactions are analogous to edges and can connect two to four nodes (chemical species). The rate constants are analogous to weights. But unlike weights, the extent to which one node activates another (or the speed at which a reactant becomes a product) is also influenced by the reactant's concentration. That is to say, in the case of mass-action chemical reaction networks, it is far more difficult to isolate subsets of a network and maintain their function. When crossover occurs, it tends to disrupt the finely tuned developing solutions by changing several rate constants simultaneously. This could explain why crossover reduces success in this application despite its utility in other domains. 
+
+Although this algorithm is faster than previous iterations, it still computationally expensive. A single trial of 800 generations and 100 individuals take approximately 90 seconds on average. The vast majority of this time is consumed by numerically solving the ODEs. The software uses a custom function to compute the rate of change of each concentration, but the solver is from julia's DifferentialEquations and Sundials libraries, both highly optimized for performance. Additionally, the software uses strict typing, pre-allocation wherever possible, and hash maps to further improve performance. Although the current implementation of NetEvolve does not make use of parallelization within a single trial, in practice multiple trials can be dispatch to different CPUs using a bash script or job array. Improving success rate in future iterations would likely prove more beneficial than slightly increasing computational performance.
+
+
+Using an adaptive speciation threshold, $\delta$, did not directly influence evolutionary success, but it maintained the target number of species which did influence success. Without an adaptive $\delta$, the user would have to manually tune $\delta$ through trial and error to achieve the target number of species. Given the utility of this adaptive feature, it may be useful to implement a similar strategy for other evolutionary hyperparameters.
+
+
+Given the importance of the adaptible delta (it is important...right?), it may be useful to make other things adaptable in teh futre. Like reducing probability of changing topology as networks get more fit, and change rate constants by smaller amounts etc.
+
+Unless I get around to it: might be interesitng to incorportate rate constants into difference score. THis was done with the ANN paper but not the GRN paper. At first probably netowrks would be classified as different mostly based on their topology. But as they converged on a solution, the differences in rate constants would influence speciation more. THis might allow them to more thoroughly and finely explore a good solution near the end of eovlution.
+
+MIght also be useful to add in some penalty for large networks. IT tends to make overly complicated networks. OR maybe you have an adaptable p deletion so reactions are more likely to be inactivated as the average number of reactions grows.
+
 Configurability is cool. 
 You could also use this to match timeseries data or evolve other network behaviors
 As of today's results, it seems that people were right and there's not really a good computationally efficient way to crossover networks without wrecking them.
 
 \section{Conclusion}
 Yay I did it.
+\\
+
 
 	
 

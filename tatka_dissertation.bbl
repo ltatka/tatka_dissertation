@@ -75,6 +75,13 @@ Anastasia~C Deckard, Frank~T Bergmann, and Herbert~M Sauro.
 \newblock Enumeration and online library of mass-action reaction networks.
 \newblock {\em arXiv preprint arXiv:0901.3067}, 2009.
 
+\bibitem{dinh_effective_2015}
+Huy~Q. Dinh, Nathanael Aubert, Nasimul Noman, Teruo Fujii, Yannick Rondelez,
+  and Hitoshi Iba.
+\newblock An {Effective} {Method} for {Evolving} {Reaction} {Networks} in
+  {Synthetic} {Biochemical} {Systems}.
+\newblock {\em IEEE Trans. Evol. Computat.}, 19(3):374--386, June 2015.
+
 \bibitem{donnell2014}
 Pete Donnell, Murad Banaji, Anca Marginean, and Casian Pantea.
 \newblock {CoNtRol: an open source framework for the analysis of chemical
