@@ -20,9 +20,7 @@
 \usepackage{blkarray}
 \usepackage{amsmath}
 
-% Code blocks
 \usepackage{fancyvrb}
-\usepackage{tcolorbox}
 
 % Margin adustment
 \usepackage[margin=1in]{geometry}
@@ -618,7 +616,7 @@ A reaction mutation is either the addition of a new random reaction or the delet
 probability of 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactions respectively. These probabilities are also configurable. If the randomly generated reaction is already present in the reaction network, the new reaction's rate constant is added to the existing reaction's rate constant. This feature can allow some rate constants to grow to several multiples of the next largest rate constant in the network. When a reaction is deleted, it is ``switched off" and becomes inactive in the network, but is preserved as it can become reactivated under certain circumstances.
 
 \subsection{Crossover}
-\label{section:crossover}
+\label{section: crossover}
 During crossover, two parent networks from the same species group are chosen to mate. Analogous to natural evolution, crossover is essential a means of changing more parameters simultaneously and to a greater degree. It injects for novelty into the offspring network compared to single mutations. This could either result in faster progress towards a good solution, or could interrupt progress by destroying decent solutions.
 
 Crossover occurs by examining each reaction in the parent networks. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent (table \ref{table:crossover_table}). 
@@ -721,7 +719,7 @@ Next, the average intra-species distances were compared for different target num
 \centering
     \includegraphics[width=15cm]{images/intraspecies_distance.png}
     \caption[Average intra-species distance over time]{Networks within a species become more similar over time.}
-    \label{fig:avg_species_differences}
+    \label{fig:intra_species_distance}
 \end{figure}
 
 
@@ -811,7 +809,7 @@ When considering tournament selection with speciation, results improved, with 21
 	\centering
     \includegraphics[width=15cm]{images/tournament_speciation.png}
     \caption[Evolutionary success rates with tournament selection and speciation]{Evolution success rate with and without tournament selection and with and without speciation. Speciation influences success rate far more than tournament selection (n=1400 for each no speciation batch, n=700 for speciation batches).}
-    \label{fig:elitism_success}
+    \label{fig:tournament_speciation}
 \end{figure}
 
 \subsection{Increased Population size}
@@ -905,44 +903,76 @@ Yay I did it.
 \section{Introduction}
 The purpose of this chapter is to briefly describe the logistics of acquiring, using, and customizing the NetEvolve software. Several settings and some applications not described in the previous chapter are mentioned here.
 
-\section{Acquiring NetEvolve}
+\section{Download and Quick Start}
 NetEvolve is currently available as a github repository. In the future, it will be registered as a julia package in the general registry to more easily download. The package requires the julia programming language, which can be downloaded with directions from the julia website, \url{https://julialang.org/downloads/ }.
 
 In a terminal, clone the github repository, located at \url{https://github.com/ltatka/NetEvolve.git} and navigate to the nearly created NetEvolve directory.
 
-\begin{tcolorbox}
-\begin{verbatim}
-git clone https://github.com/ltatka/NetEvolve.git
-cd NetEvolve
-\end{verbatim}
-end{tcolorbox}
 
+\begin{Verbatim}[frame=single]
+	git clone https://github.com/ltatka/NetEvolve.git
+	cd NetEvolve
+\end{Verbatim}
+%\end{tcolorbox}
 The julia programming language has a built in package manager allowing for the seamless download and activation of all dependencies in a virtual environment.
-\begin{verbatim}
-julia --project=. -e 'using Pkg; Pkg.instantiate()'
-\end{verbatim}
+\begin{Verbatim}[frame=single]
+	julia --project=. -e `using Pkg; Pkg.instantiate()'
+\end{Verbatim}
 
 The evolution algorithm can be run with the default settings via the following command:
-\begin{verbatim}
-julia --project=. run_evolution.jl
-\end{verbatim}
+\begin{Verbatim}[frame=single]
+	julia --project=. run_evolution.jl
+\end{Verbatim}
 
-The \verb+run_evolution+ command can be modified with several command line arguments to quickly customize the evolutionary algorithm. 
+NetEvolve supports several command line arguments for the most frequently changed settings. These include the number of trials, generations, and population size as well as paths to additional settings and an output directory and random seed (table \ref{table:flag_args}). For example, a user can change the number of generations on the command line as follows:
 
-\begin{table}[]
-\begin{tabular}{|l|l|}
-\hline
-\textbf{Flag}    & \textbf{Description}                                     \\ \hline
-\verb+--ntrials+        & The number of evolutionary trials to run, 100 by default \\ \hline
-\verb+--ngenerations+   & The number of generations for each trial, 800 by default \\ \hline
-\verb+--populationsize+ & The number of individuals in each trial, 100 by default  \\ \hline
-\verb+--pathtosettings+ & Path to a json file with custom settings                 \\ \hline
-\verb+--outputpath+     & Path to directory where output networks will be written  \\ \hline
-\verb+--seed+           & Random seed                                              \\ \hline
-\caption[The ground truth network compared to the best evolved network]{The ground truth network compared to the best evolved network}
-    \label{fig:evolved_network_structure}
-\end{tabular}
+
+\begin{Verbatim}[frame=single]
+	julia --project=. run_evolution.jl --ngenerations=1600
+\end{Verbatim}
+
+\begin{table}
+    \centering
+    \includegraphics[width=15cm]{images/flag_args_table.png}
+    \caption[Description of command line flag arguments]{Command line flag arguments. Flag arguments take precedence over customizations in a json file.}
+    \label{table:flag_args}
 \end{table}
+
+A user can also use NetEvolve in their own julia script, accessing either the entire pre-packaged algorithm or individual functions as desired. 
+
+\begin{Verbatim}[frame=single]
+	# Using NetEvolve within a julia script
+	using NetEvolve
+	NetEvolve.run_evolution()
+\end{Verbatim}
+
+\section{Further Customization}
+Beyond the basic customizations available with command line arguments, there are many settings options that can be adjusted with a json file. The json file is written as a dictionary, with the name of the setting as the key. The user then supplies the path to the json settings file as a command line argument. Settings can be specified in any order. Any settings that are not specified will be set to the default value. All settings and their default values are described in table \ref{table:hyperparams}.
+
+\begin{Verbatim}[frame=single]
+	# Example customization file
+	{"populationsize": 200,
+	"p_crossover": 0.25,
+	"ngenerations": 1600}
+\end{Verbatim}
+
+\begin{Verbatim}[frame=single]
+# Supplying the custom settings json file
+julia --project=. run_evolution.jl --pathtosettings="/path/settings.json"
+\end{Verbatim}
+
+
+\begin{table}
+
+    \includegraphics[width=18cm]{images/hyperparams.png}
+    \caption[Evolution algorithm settings]{Evolutionary algorithm settings and default values.}
+    \label{table:hyperparams}
+\end{table}
+
+\section{Additional Applications of NetEvolve}
+Chapter \ref{chap: NetEvolve} extensively demonstrated NetEvolve's ability to produce oscillating reaction networks, but the software was designed to be flexible for other uses. The user can supply a different time series, either another network behavior or a general time series, and use NetEvolve to generate a variety of networks to fit the timeseries.
+
+Additionally, NetEvolve can be used for parameter fitting. In this case, the user would supply a known network structure and set the probability of altering topology to zero. 
 
 - Intro
 - how to get the software
@@ -956,16 +986,6 @@ The \verb+run_evolution+ command can be modified with several command line argum
 	- Parameter fitting with no topology change
 	
 - THings you can customize
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=19cm]{images/testSummary.png}
-    \captionof{table}{Summary of proposed tests and possible implementations.}
-    \label{table:sensitivity}
-\end{figure}
-
-
 
 % Bibliography
 \bibliographystyle{plain}
