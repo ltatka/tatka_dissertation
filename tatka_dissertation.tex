@@ -20,6 +20,9 @@
 \usepackage{blkarray}
 \usepackage{amsmath}
 
+% Code blocks
+\usepackage{fancyvrb}
+\usepackage{tcolorbox}
 
 % Margin adustment
 \usepackage[margin=1in]{geometry}
@@ -210,14 +213,14 @@ dx/dt = k_{x}ax - k_{y}xy
 dy/dt = k_{y}xy - k_{d}y
 \end{equation}
 
-The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenom can be observed in nature, as was carefully documented by Charles Elton in 1942 \cite{Elton1942}. The predator-prey model has also been demonstrated in the laboratory with paramecia that consume yeast \cite{Gause}.
+The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenon can be observed in nature, as was carefully documented by Charles Elton in 1942 \cite{Elton1942}. The predator-prey model has also been demonstrated in the laboratory with paramecia that consume yeast \cite{Gause}.
 
 
 \subsection{Dynamics}
 A key feature of the Lotka-Volterra model, and of most chemical oscillating systems is the presence of autocatalysis. The rate of growth of a population increases as the size of the population increases. In chemical systems, Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}
 The prominence of autocatalysis is also observed in the evolution of \textit{in silico} theoretical chemical reaction networks, as is described in chapter \ref{chap: cesium_paper} \cite{Tatka2023}. 
 
-Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. Often the feeback mechanism takes the form of autocatalysis. However, when unchecked, a system with autocatalysis can lead to explosion as the product concentration continues to build and increase the rate of product formation. An inhibition step is necessary to prevent this explosion of products. However, if autocatalysis and inhibition occur simultaneously, the steady state is stabilized and oscillation does not occur. The inhibition step must be delayed. Often this is accomplished by intermediate reactions. 
+Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. Often the feedback mechanism takes the form of autocatalysis. However, when unchecked, a system with autocatalysis can lead to explosion as the product concentration continues to build and increase the rate of product formation. An inhibition step is necessary to prevent this explosion of products. However, if autocatalysis and inhibition occur simultaneously, the steady state is stabilized and oscillation does not occur. The inhibition step must be delayed. Often this is accomplished by intermediate reactions. 
 
 Oscillation can also be achieved with negative feedback \cite{Tyson1975, Sauro_dynamics}. In chemical reaction networks, this takes the form of end-product inhibition, where the final product in a series of reactions inhibits an enzyme from an earlier step in the sequence. A classic example of this is the repressilator, a three gene (or species) loop where each gene expresses a protein that represses the next gene in the loop (figure \ref{fig:repressilator}) \cite{Elowitz2000}. The invention of the repressilator was a landmark achievement in the field of synthetic biology showcasing the feasibility of engineering complex gene circuits with predefined functions. It provided a foundational framework for the design and construction of synthetic genetic oscillators and inspired subsequent research in the development of artificial gene regulatory networks.
 
@@ -821,27 +824,58 @@ Next, a batch with a population of 200 and a target of 20 species was run. For a
 \subsection{More Generations}
 Like population size, the number of generations directly effects computation time. However, increasing the number of generations allows more time for the algorithm to discover and optimize solutions and increase evolutionary success. 
 
-The maximum number of generations was doubled, from 800 to 1600, and evolution was run with default parameters: no crossover, 100 individuals, target species of 10. Trials in this batch resulted in oscillators 37\% (74/200) of the time. Fit fitness of the top network in each generation was measured and the average fitness of the top networks across 200 trials is shown in figure \ref{fig:1600_top_fitness}. After 1600 generations, the average top fitness continues to rise suggesting that the success rate may further increase with more generations. When the top network reaches a high level of fitness, it is saved and the evolution trial is discontinued. This results in small spikes in the average top fitness when networks dramatically improve in a single generation.  
-
+The maximum number of generations was doubled, from 800 to 1600, and evolution was run with default parameters: no crossover, 100 individuals, target species of 10. Trials in this batch resulted in oscillators 37\% (74/200) of the time. Fit fitness of the top network in each generation was measured and the average fitness of the top networks across 200 trials is shown in figure \ref{fig:1600_top_fitness}. After 1600 generations, the average top fitness continues to rise suggesting that the success rate may further increase with more generations. When the number of generations was doubled again, from 1600 to 3200, the success rate was 50\% (100/200).
+ 
 
 \begin{figure}
 \centering
     \includegraphics[width=15cm]{images/1600_top_fitness.png}
-    \caption[Average top fitness over 1600 generations]{Average fitness of the best network of each generation over 200 trials.}
+    \caption[Average top fitness over 1600 generations]{Average fitness of the best network of each generation over 200 trials. Small spikes can likely be attributed to writing out networks with high fitness and discontinuing evolution trials.}
     \label{fig:1600_top_fitness}
 \end{figure}
 
 \subsection{fitness function with rate constants}
 
-\subsection{More Generations}
 
 \subsection{Maybe: optimal parameters}
 
-\subsection{Match Timeseries Data}
-Should try with a 3 species time series, do it after I trial optimal parameters
+\subsection{Matching Time Series Data}
+Beyond generating oscillators, the NetEvolve software is intended to implement an evolutionary algorithm for more broad systems biology problems. One application could be evolving reaction networks that match time series data. To test if NetEvolve could generate networks to match time series data, a simple, 3 chemical, 5 reaction synthetic network was constructed and its time series data collected (figure \ref{fig:groundtruth}). Then the NetEvolve software was given the time series data as an objective. 
+
+\begin{figure}
+\centering
+    \includegraphics[width=18cm]{images/groundtruth.png}
+    \caption[A ground truth synthetic network and its time series]{A synthetic network and its time series data.}
+    \label{fig:groundtruth}
+\end{figure}
+
+Four hundred trials of evolution were run, each with 1600 generations in an effort to match the ground truth time series data. The 12 best matching evolved time series are shown in figure \ref{fig:12_timeseries}. The time series data of the 12 best evolved networks all closely match the dynamics in the ground truth network. The best matching time series (top row left of figure \ref{fig:12_timeseries}) is shown overlaid with the ground truth time series in figure \ref{fig:truth_vs_evolved}. The solid lines are data from the ground truth network and the dashed lines are from the evolved network.
+
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/12_timeseries.png}
+    \caption[The 12 trials that most closely matched the time series data]{The 12 trials that most closely matched the time series data.}
+    \label{fig:12_timeseries}
+\end{figure}
+
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/ground_truth_vs_evolved.png}
+    \caption[Time series of the ground truth network compared to the best evolved network]{Time series of the ground truth network (solid lines) compared to the best evolved network (dashed lines).}
+    \label{fig:truth_vs_evolved}
+\end{figure}
+
+Interestingly, the evolved network that most closely matched the ground truth time series data only had one reaction in common with the original network (figure \ref{fig:evolved_network_structure}). Of the 12 best evolved networks the third best network had the most reactions, 3 of 5, in common with the original network. The last reaction, S1 + S3 $\to$ S1, occurred in 10 of the 12 best networks. The next most common was the reaction S2 $\to$ S3, which occurred in 7 of the 12 best networks. All networks that had the reaction S2 $\to$ S3 also had the reaction S1 + S3 $\to$ S1.
+
+\begin{figure}
+\centering
+    \includegraphics[width=15cm]{images/antimony_truth_evolved.png}
+    \caption[The ground truth network compared to the best evolved network]{The ground truth network compared to the best evolved network}
+    \label{fig:evolved_network_structure}
+\end{figure}
 
 \section{Discussion}
-Speciation was shown to signficantly benefit evolutionary success by protection innovations and maintaining evolutionary diversity throughout the process. Fine tuning is necessary to achieve the maximum benefit of speciation. The target number of species must be chosen with consideration of the population size. Additionally, D and D step sizes may require adjustment for different population sizes, target number of species, and different objectives. 
+Speciation was shown to signficantly benefit evolutionary success by protection innovations and maintaining evolutionary diversity throughout the process. Fine tuning is necessary to achieve the maximum benefit of speciation. The target number of species must be chosen with consideration of the population size. Additionally, $\delta$ and $\delta$ step sizes may require adjustment for different population sizes, target number of species, and different objectives. 
 
 Elitism is also essential to evolution as it preserves the best individuals of each generation. It pairs well with speciation as it allows the best individuals not just from the whole population but from the each species to be passed on to the next generation. Interestingly, the evolutionary success did not seem to vary with different levels of elitism suggesting that evolutionary progress is driven primarily by the top individuals of each species and that including additional elite networks does not improve success. This seems to be confirmed by the observation that alternative selection strategies for non-elite individuals did not affect evolutionary performance.
 
@@ -850,18 +884,15 @@ Although crossover has shown success in other topological evolution problems \ci
 Although this algorithm is faster than previous iterations, it still computationally expensive. A single trial of 800 generations and 100 individuals take approximately 90 seconds on average. The vast majority of this time is consumed by numerically solving the ODEs. The software uses a custom function to compute the rate of change of each concentration, but the solver is from julia's DifferentialEquations and Sundials libraries, both highly optimized for performance. Additionally, the software uses strict typing, pre-allocation wherever possible, and hash maps to further improve performance. Although the current implementation of NetEvolve does not make use of parallelization within a single trial, in practice multiple trials can be dispatch to different CPUs using a bash script or job array. Improving success rate in future iterations would likely prove more beneficial than slightly increasing computational performance.
 
 
-Using an adaptive speciation threshold, $\delta$, did not directly influence evolutionary success, but it maintained the target number of species which did influence success. Without an adaptive $\delta$, the user would have to manually tune $\delta$ through trial and error to achieve the target number of species. Given the utility of this adaptive feature, it may be useful to implement a similar strategy for other evolutionary hyperparameters.
+Using an adaptive speciation threshold, $\delta$, did not directly influence evolutionary success, but it maintained the target number of species which did influence success. Without an adaptive $\delta$, the user would have to manually tune $\delta$ through trial and error to achieve the target number of species. Given the utility of this adaptive feature, it may be useful to implement a similar strategy for other evolutionary hyperparameters. For example, the probability of changing the topology (adding or deleting reactions) versus changing rate constants remains the same throughout the evolutionary process. Early on, it may be useful to change topology more frequently in an effort to find a decent solution. However, later in the process, when hopefully a promising solution has been found, it is more useful to modify rate constants in an effort to optimize the solution. Changing topology may be wasted effort and may divert resources that may be better spent optimizing an existing solution. In future iterations of NetEvolve, it may be useful to change the balance of topological versus rate constant mutation over time or as fitness reaches a pre-specified threshold.
 
+Similarly, as evolution progresses and homes in a promising solution, smaller rate constant changes may be necessary to explore a small area in the solution space in more detail. The amount by which rate constants are changed could be adaptively reduced over time, either based on fitness or generation number. 
 
-Given the importance of the adaptible delta (it is important...right?), it may be useful to make other things adaptable in teh futre. Like reducing probability of changing topology as networks get more fit, and change rate constants by smaller amounts etc.
+Another means of more thoroughly exploring a promising solution space as evolution progresses could be altering the metric used to determine the ``distance" between two networks, and thus their species. In the current iteration of NetEvolve, the distance between two networks is entirely determined by the amount of reactions that the two networks do not share with no consideration to the rate constants for shared reactions. Networks with the same topology are considered identical even if rate constants for their different reactions vary by orders of magnitude. Including the differences in rate constants when considering distance could improve evolution by encouraging more thorough explorations of viable solution spaces towards the end of the process. As networks become more similar topologically as evolution progresses, including rate constants in the distance metric would encourage speciation based on on how much parameters differ. This would direct more resources towards optimizing a decent solution as opposed to continuing to explore the broader solution space.
 
-Unless I get around to it: might be interesitng to incorportate rate constants into difference score. THis was done with the ANN paper but not the GRN paper. At first probably netowrks would be classified as different mostly based on their topology. But as they converged on a solution, the differences in rate constants would influence speciation more. THis might allow them to more thoroughly and finely explore a good solution near the end of eovlution.
+One flaw of the existing iteration of NetEvolve is the tendency to add extraneous reactions. It appears that more often than not, deleting a reaction reduces fitness whereas adding a reaction may slightly improve fitness. Although there was equal probability of adding and deleting reactions, networks at the end of evolution tended to be much larger (~15 reactions) than at the start (5) reactions. In some cases, this may not be of concern. For example, if the goal is simply to create a population of oscillators, it may not matter that some of them are overly complicated. However, if attempting to gather simple networks to fit time series data, the tendency to over complicate networks could be detrimental. Overfitting by over complicating models (for example, by including too many predictors) is a well-known problem in machine learning. Often, the solution is to penalize models that use too many features. A similar technique could be implemented here, penalizing candidate networks for each additional reaction. 
 
-MIght also be useful to add in some penalty for large networks. IT tends to make overly complicated networks. OR maybe you have an adaptable p deletion so reactions are more likely to be inactivated as the average number of reactions grows.
-
-Configurability is cool. 
-You could also use this to match timeseries data or evolve other network behaviors
-As of today's results, it seems that people were right and there's not really a good computationally efficient way to crossover networks without wrecking them.
+Additionally, the algorithm has demonstrated its ability to produced oscillators, but its ability to match other network behaviors is untested. It successfully generated a network to match simple time series data, but did not manage to recover the network that produced the data. More testing and algorithm development could improve NetEvolve's performance in tasks beyond generating oscillators. 
 
 \section{Conclusion}
 Yay I did it.
@@ -869,6 +900,62 @@ Yay I did it.
 
 
 	
+\chapter{Logistic Considerations for NetEvolve}
+
+\section{Introduction}
+The purpose of this chapter is to briefly describe the logistics of acquiring, using, and customizing the NetEvolve software. Several settings and some applications not described in the previous chapter are mentioned here.
+
+\section{Acquiring NetEvolve}
+NetEvolve is currently available as a github repository. In the future, it will be registered as a julia package in the general registry to more easily download. The package requires the julia programming language, which can be downloaded with directions from the julia website, \url{https://julialang.org/downloads/ }.
+
+In a terminal, clone the github repository, located at \url{https://github.com/ltatka/NetEvolve.git} and navigate to the nearly created NetEvolve directory.
+
+\begin{tcolorbox}
+\begin{verbatim}
+git clone https://github.com/ltatka/NetEvolve.git
+cd NetEvolve
+\end{verbatim}
+end{tcolorbox}
+
+The julia programming language has a built in package manager allowing for the seamless download and activation of all dependencies in a virtual environment.
+\begin{verbatim}
+julia --project=. -e 'using Pkg; Pkg.instantiate()'
+\end{verbatim}
+
+The evolution algorithm can be run with the default settings via the following command:
+\begin{verbatim}
+julia --project=. run_evolution.jl
+\end{verbatim}
+
+The \verb+run_evolution+ command can be modified with several command line arguments to quickly customize the evolutionary algorithm. 
+
+\begin{table}[]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Flag}    & \textbf{Description}                                     \\ \hline
+\verb+--ntrials+        & The number of evolutionary trials to run, 100 by default \\ \hline
+\verb+--ngenerations+   & The number of generations for each trial, 800 by default \\ \hline
+\verb+--populationsize+ & The number of individuals in each trial, 100 by default  \\ \hline
+\verb+--pathtosettings+ & Path to a json file with custom settings                 \\ \hline
+\verb+--outputpath+     & Path to directory where output networks will be written  \\ \hline
+\verb+--seed+           & Random seed                                              \\ \hline
+\caption[The ground truth network compared to the best evolved network]{The ground truth network compared to the best evolved network}
+    \label{fig:evolved_network_structure}
+\end{tabular}
+\end{table}
+
+- Intro
+- how to get the software
+- using the software
+	- quickstart
+	- Running with a bash script locally
+	- submitting to cluster
+- Uses:
+	- evolve general behaviors such as oscillator
+	- Match time series
+	- Parameter fitting with no topology change
+	
+- THings you can customize
 
 
 \begin{figure}
