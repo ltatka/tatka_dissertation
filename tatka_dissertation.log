@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  2 MAY 2024 10:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  3 MAY 2024 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -301,15 +301,21 @@ Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
 \FV@StepNumber=\count273
 \FV@OutFile=\write3
 )
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count274
+\c@@ppsavesec=\count275
+\c@@ppsaveapp=\count276
+)
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
 \Gm@bindingoffset=\dimen164
 \Gm@wd@mp=\dimen165
 \Gm@odd@mp=\dimen166
@@ -322,49 +328,49 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count277
-\cp@tempcnt=\count278
+\c@cp@cntr=\count280
+\cp@tempcnt=\count281
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count279
+\l__kernel_color_stack_int=\count282
 \l__pdf_internal_box=\box52
 )
 (./tatka_dissertation.aux)
 \openout1 = `tatka_dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count280
+\scratchcounter=\count283
 \scratchdimen=\dimen172
 \scratchbox=\box53
-\nofMPsegments=\count281
-\nofMParguments=\count282
+\nofMPsegments=\count284
+\nofMParguments=\count285
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count283
+\MPscratchCnt=\count286
 \MPscratchDim=\dimen173
-\MPnumerator=\count284
-\makeMPintoPDFobject=\count285
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -376,7 +382,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 42.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -387,11 +393,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count286
+\c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
 (./tatka_dissertation.out) (./tatka_dissertation.out)
 \@outlinefile=\write4
@@ -439,7 +445,7 @@ destination with the same identifier (name{page.}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.108 \tableofcontents
+l.113 \tableofcontents
                        [1] (./tatka_dissertation.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
@@ -454,14 +460,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...ine {3.2.5}Mutation}{28}{subsection.3.2.5}
+l.39 ...ne {3.2.4}Selection}{31}{subsection.3.2.4}
                                                   % [2
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 ...sed Population size}{65}{subsection.4.4.6}
+l.65 ...sed Population size}{68}{subsection.4.3.6}
                                                   % [3])
 \tf@toc=\write5
 \openout5 = `tatka_dissertation.toc'.
@@ -470,13 +476,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.110 \listoffigures
+l.115 \listoffigures
                      [4] (./tatka_dissertation.lofpdfTeX warning (ext4): destin
 ation with the same identifier (name{page.}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.25 ...d its time series}}{68}{figure.caption.43}
+l.25 ...on and speciation}}{68}{figure.caption.48}
                                                   % [5
 
 ])
@@ -487,7 +493,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.112 \listoftables
+l.117 \listoftables
                     [6] (./tatka_dissertation.lot)
 \tf@lot=\write7
 \openout7 = `tatka_dissertation.lot'.
@@ -496,7 +502,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \chapter
+l.119 \chapter
               {Introduction} [7
 
 ]
@@ -505,286 +511,305 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 
+l.126 
        [1
 
 ] [2] [3]
 Chapter 2.
 [4
 
-] [5] [6] [7] [8]
-<images/repressilator.png, id=477, 369.38pt x 313.17pt>
+] [5] [6] [7] [8] [9]
+<images/repressilator.png, id=524, 369.38pt x 313.17pt>
 File: images/repressilator.png Graphic file (type png)
 <use images/repressilator.png>
-Package pdftex.def Info: images/repressilator.png  used on input line 227.
+Package pdftex.def Info: images/repressilator.png  used on input line 238.
 (pdftex.def)             Requested size: 199.16928pt x 168.86078pt.
- [9 <./images/repressilator.png>] [10] [11] [12] [13]
-[14] [15] [16] [17] [18] [19] [20] [21] [22]
+ [10 <./images/repressilator.png>]
+<images/circadian.png, id=539, 742.775pt x 385.44pt>
+File: images/circadian.png Graphic file (type png)
+<use images/circadian.png>
+Package pdftex.def Info: images/circadian.png  used on input line 254.
+(pdftex.def)             Requested size: 341.43306pt x 177.18105pt.
+ [11 <./images/circadian.png>]
+<images/bistability.png, id=551, 754.82pt x 567.11874pt>
+File: images/bistability.png Graphic file (type png)
+<use images/bistability.png>
+Package pdftex.def Info: images/bistability.png  used on input line 268.
+(pdftex.def)             Requested size: 341.43306pt x 256.52505pt.
+ [12 <./images/bistability.png>] [13] [14] [15] [16] [17] [18] [19]
+[20] [21] [22] [23] [24] [25]
 Chapter 3.
-[23
+[26
 
-] [24]
-<images/Reactions.png, id=695, 1186.4325pt x 996.72375pt>
+] [27]
+<images/Reactions.png, id=764, 1186.4325pt x 996.72375pt>
 File: images/Reactions.png Graphic file (type png)
 <use images/Reactions.png>
-Package pdftex.def Info: images/Reactions.png  used on input line 397.
+Package pdftex.def Info: images/Reactions.png  used on input line 436.
 (pdftex.def)             Requested size: 284.52756pt x 239.03609pt.
- [25 <./images/Reactions.png>]
-<images/fitness.png, id=704, 975.645pt x 596.2275pt>
+ [28 <./images/Reactions.png>]
+<images/fitness.png, id=774, 975.645pt x 596.2275pt>
 File: images/fitness.png Graphic file (type png)
 <use images/fitness.png>
-Package pdftex.def Info: images/fitness.png  used on input line 417.
+Package pdftex.def Info: images/fitness.png  used on input line 456.
 (pdftex.def)             Requested size: 426.79134pt x 260.8216pt.
- [26] [27 <./images/fitness.png>]
-<images/algorithm.png, id=719, 1555.8125pt x 880.28876pt>
+ [29] [30 <./images/fitness.png>]
+<images/algorithm.png, id=789, 1555.8125pt x 880.28876pt>
 File: images/algorithm.png Graphic file (type png)
 <use images/algorithm.png>
-Package pdftex.def Info: images/algorithm.png  used on input line 437.
+Package pdftex.def Info: images/algorithm.png  used on input line 476.
 (pdftex.def)             Requested size: 483.69684pt x 273.67918pt.
 
-Overfull \hbox (13.94182pt too wide) in paragraph at lines 437--438
+Overfull \hbox (13.94182pt too wide) in paragraph at lines 476--477
  [] 
  []
 
-[28] [29 <./images/algorithm.png>] [30]
-<images/examples.png, id=742, 1260.71pt x 944.52875pt>
+[31] [32 <./images/algorithm.png>] [33]
+<images/examples.png, id=812, 1260.71pt x 944.52875pt>
 File: images/examples.png Graphic file (type png)
 <use images/examples.png>
-Package pdftex.def Info: images/examples.png  used on input line 458.
+Package pdftex.def Info: images/examples.png  used on input line 497.
 (pdftex.def)             Requested size: 426.79134pt x 319.75194pt.
- [31] [32 <./images/examples.png>]
-<images/website.png, id=754, 486.81876pt x 624.3325pt>
+ [34] [35 <./images/examples.png>]
+<images/website.png, id=825, 486.81876pt x 624.3325pt>
 File: images/website.png Graphic file (type png)
 <use images/website.png>
-Package pdftex.def Info: images/website.png  used on input line 479.
+Package pdftex.def Info: images/website.png  used on input line 518.
 (pdftex.def)             Requested size: 341.43306pt x 437.87764pt.
 
-[33] [34 <./images/website.png>]
-<images/model-diagrams.png, id=767, 1136.245pt x 863.225pt>
+[36] [37 <./images/website.png>]
+<images/model-diagrams.png, id=837, 1136.245pt x 863.225pt>
 File: images/model-diagrams.png Graphic file (type png)
 <use images/model-diagrams.png>
-Package pdftex.def Info: images/model-diagrams.png  used on input line 490.
+Package pdftex.def Info: images/model-diagrams.png  used on input line 529.
 (pdftex.def)             Requested size: 341.43306pt x 259.39099pt.
- [35 <./images/model-diagrams.png>]
-<images/feedback-cycle.png, id=774, 402.50375pt x 320.19624pt>
+ [38 <./images/model-diagrams.png>]
+<images/feedback-cycle.png, id=844, 402.50375pt x 320.19624pt>
 File: images/feedback-cycle.png Graphic file (type png)
 <use images/feedback-cycle.png>
-Package pdftex.def Info: images/feedback-cycle.png  used on input line 510.
+Package pdftex.def Info: images/feedback-cycle.png  used on input line 549.
 (pdftex.def)             Requested size: 227.62204pt x 181.07243pt.
- [36 <./images/feedback-cycle.png>] [37]
-<images/composition.png, id=791, 895.345pt x 368.37625pt>
+ [39 <./images/feedback-cycle.png>] [40]
+<images/composition.png, id=861, 895.345pt x 368.37625pt>
 File: images/composition.png Graphic file (type png)
 <use images/composition.png>
-Package pdftex.def Info: images/composition.png  used on input line 526.
+Package pdftex.def Info: images/composition.png  used on input line 565.
 (pdftex.def)             Requested size: 341.43306pt x 140.47906pt.
-<images/autocomp.png, id=793, 887.315pt x 395.4775pt>
+<images/autocomp.png, id=863, 887.315pt x 395.4775pt>
 File: images/autocomp.png Graphic file (type png)
 <use images/autocomp.png>
-Package pdftex.def Info: images/autocomp.png  used on input line 535.
+Package pdftex.def Info: images/autocomp.png  used on input line 574.
 (pdftex.def)             Requested size: 341.43306pt x 152.1718pt.
- [38 <./images/composition.png>] [39 <./images/autocomp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 552--560
+ [41 <./images/composition.png>] [42 <./images/autocomp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 591--599
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--560
+Underfull \hbox (badness 10000) in paragraph at lines 591--599
 
  []
 
-[40]
+[43]
 Chapter 4.
-[41
+[44
 
-] [42] [43]
-<images/algo_description_crossover.png, id=828, 1053.9375pt x 1166.3575pt>
+]
+<images/algo_description_crossover.png, id=890, 1053.9375pt x 1166.3575pt>
 File: images/algo_description_crossover.png Graphic file (type png)
 <use images/algo_description_crossover.png>
 Package pdftex.def Info: images/algo_description_crossover.png  used on input l
-ine 600.
+ine 620.
 (pdftex.def)             Requested size: 227.62204pt x 251.90099pt.
- [44 <./images/algo_description_crossover.png>] [45]
-<images/crossover_table.png, id=840, 661.47125pt x 255.95625pt>
+ [45] [46 <./images/algo_description_crossover.png>] [47]
+<images/crossover_table.png, id=907, 661.47125pt x 255.95625pt>
 File: images/crossover_table.png Graphic file (type png)
 <use images/crossover_table.png>
-Package pdftex.def Info: images/crossover_table.png  used on input line 626.
+Package pdftex.def Info: images/crossover_table.png  used on input line 643.
 (pdftex.def)             Requested size: 341.43306pt x 132.1138pt.
- [46 <./images/crossover_table.png>] [47] [48] [49] [50]
-<images/avg_num_species.png, id=884, 531.1845pt x 428.5611pt>
+<images/crossover_example.png, id=910, 467.7475pt x 419.5675pt>
+File: images/crossover_example.png Graphic file (type png)
+<use images/crossover_example.png>
+Package pdftex.def Info: images/crossover_example.png  used on input line 653.
+(pdftex.def)             Requested size: 341.43306pt x 306.28172pt.
+ [48 <./images/crossover_table.png>] [49 <./images/crossover_example.png>] [50]
+ [51] [52]
+[53]
+<images/avg_num_species.png, id=960, 531.1845pt x 428.5611pt>
 File: images/avg_num_species.png Graphic file (type png)
 <use images/avg_num_species.png>
-Package pdftex.def Info: images/avg_num_species.png  used on input line 692.
+Package pdftex.def Info: images/avg_num_species.png  used on input line 720.
 (pdftex.def)             Requested size: 426.79134pt x 344.35338pt.
- [51] [52 <./images/avg_num_species.png>]
-<images/adaptive_delta.png, id=897, 462.528pt x 346.896pt>
+<images/adaptive_delta.png, id=962, 462.528pt x 346.896pt>
 File: images/adaptive_delta.png Graphic file (type png)
 <use images/adaptive_delta.png>
-Package pdftex.def Info: images/adaptive_delta.png  used on input line 701.
+Package pdftex.def Info: images/adaptive_delta.png  used on input line 729.
 (pdftex.def)             Requested size: 426.79134pt x 320.11154pt.
- [53 <./images/adaptive_delta.png>]
-<images/avg_species_differences.png, id=903, 552.1428pt x 444.4605pt>
+ [54] [55 <./images/avg_num_species.png>] [56 <./images/adaptive_delta.png>]
+<images/avg_species_differences.png, id=977, 552.1428pt x 444.4605pt>
 File: images/avg_species_differences.png Graphic file (type png)
 <use images/avg_species_differences.png>
 Package pdftex.def Info: images/avg_species_differences.png  used on input line
- 711.
+ 739.
 (pdftex.def)             Requested size: 426.79134pt x 343.5649pt.
-<images/intraspecies_distance.png, id=904, 462.528pt x 346.896pt>
+<images/intraspecies_distance.png, id=978, 462.528pt x 346.896pt>
 File: images/intraspecies_distance.png Graphic file (type png)
 <use images/intraspecies_distance.png>
 Package pdftex.def Info: images/intraspecies_distance.png  used on input line 7
-20.
+48.
 (pdftex.def)             Requested size: 426.79134pt x 320.11154pt.
- [54] [55 <./images/avg_species_differences.png>] [56 <./images/intraspecies_di
+ [57] [58 <./images/avg_species_differences.png>] [59 <./images/intraspecies_di
 stance.png>]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 7
-32.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+60.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 732.
-<images/num_unique_networks.png, id=920, 462.528pt x 346.896pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 760.
+<images/num_unique_networks.png, id=995, 462.528pt x 346.896pt>
 File: images/num_unique_networks.png Graphic file (type png)
 <use images/num_unique_networks.png>
-Package pdftex.def Info: images/num_unique_networks.png  used on input line 736
+Package pdftex.def Info: images/num_unique_networks.png  used on input line 764
 .
 (pdftex.def)             Requested size: 426.79134pt x 320.11154pt.
-<images/portion_best_network.png, id=922, 530.4618pt x 404.712pt>
+ [60 <./images/num_unique_networks.png>]
+<images/portion_best_network.png, id=1002, 530.4618pt x 404.712pt>
 File: images/portion_best_network.png Graphic file (type png)
 <use images/portion_best_network.png>
-Package pdftex.def Info: images/portion_best_network.png  used on input line 74
-6.
+Package pdftex.def Info: images/portion_best_network.png  used on input line 77
+4.
 (pdftex.def)             Requested size: 512.1496pt x 390.75461pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 746--747
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 774--775
  [][] 
  []
 
-[57] [58 <./images/num_unique_networks.png>] [59 <./images/portion_best_network
-.png>]
-<images/species_success_rate.png, id=939, 541.3023pt x 401.8212pt>
+[61 <./images/portion_best_network.png>]
+<images/species_success_rate.png, id=1009, 541.3023pt x 401.8212pt>
 File: images/species_success_rate.png Graphic file (type png)
 <use images/species_success_rate.png>
-Package pdftex.def Info: images/species_success_rate.png  used on input line 76
-1.
+Package pdftex.def Info: images/species_success_rate.png  used on input line 78
+9.
 (pdftex.def)             Requested size: 426.79134pt x 316.82826pt.
- [60] [61 <./images/species_success_rate.png>]
-<images/crossover_success.png, id=950, 1091.9997pt x 536.2434pt>
+ [62] [63 <./images/species_success_rate.png>]
+<images/crossover_success.png, id=1020, 1091.9997pt x 536.2434pt>
 File: images/crossover_success.png Graphic file (type png)
 <use images/crossover_success.png>
-Package pdftex.def Info: images/crossover_success.png  used on input line 779.
+Package pdftex.def Info: images/crossover_success.png  used on input line 807.
 (pdftex.def)             Requested size: 512.1496pt x 251.51076pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 779--780
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 807--808
  [][] 
  []
 
-[62]
-<images/elitism_success.png, id=957, 513.117pt x 453.1329pt>
+[64] [65 <./images/crossover_success.png>]
+<images/elitism_success.png, id=1036, 513.117pt x 453.1329pt>
 File: images/elitism_success.png Graphic file (type png)
 <use images/elitism_success.png>
-Package pdftex.def Info: images/elitism_success.png  used on input line 793.
+Package pdftex.def Info: images/elitism_success.png  used on input line 821.
 (pdftex.def)             Requested size: 426.79134pt x 376.90918pt.
- [63 <./images/crossover_success.png>] [64 <./images/elitism_success.png>]
-<images/tournament_speciation.png, id=974, 706.0779pt x 416.9979pt>
+ [66 <./images/elitism_success.png>]
+<images/tournament_speciation.png, id=1045, 706.0779pt x 416.9979pt>
 File: images/tournament_speciation.png Graphic file (type png)
 <use images/tournament_speciation.png>
 Package pdftex.def Info: images/tournament_speciation.png  used on input line 8
-10.
+38.
 (pdftex.def)             Requested size: 426.79134pt x 252.05862pt.
 
-[65] [66 <./images/tournament_speciation.png>]
-<images/1600_top_fitness.png, id=986, 622.2447pt x 403.2666pt>
+[67] [68 <./images/tournament_speciation.png>]
+<images/1600_top_fitness.png, id=1057, 622.2447pt x 403.2666pt>
 File: images/1600_top_fitness.png Graphic file (type png)
 <use images/1600_top_fitness.png>
-Package pdftex.def Info: images/1600_top_fitness.png  used on input line 830.
+Package pdftex.def Info: images/1600_top_fitness.png  used on input line 858.
 (pdftex.def)             Requested size: 426.79134pt x 276.60515pt.
- [67 <./images/1600_top_fitness.png>]
-<images/groundtruth.png, id=993, 824.07875pt x 486.81876pt>
+ [69] [70 <./images/1600_top_fitness.png>]
+<images/groundtruth.png, id=1069, 824.07875pt x 486.81876pt>
 File: images/groundtruth.png Graphic file (type png)
 <use images/groundtruth.png>
-Package pdftex.def Info: images/groundtruth.png  used on input line 845.
+Package pdftex.def Info: images/groundtruth.png  used on input line 874.
 (pdftex.def)             Requested size: 512.1496pt x 302.55247pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 845--846
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 874--875
  [][] 
  []
 
-[68 <./images/groundtruth.png>]
-<images/12_timeseries.png, id=1002, 714.67pt x 531.9875pt>
+<images/12_timeseries.png, id=1073, 714.67pt x 531.9875pt>
 File: images/12_timeseries.png Graphic file (type png)
 <use images/12_timeseries.png>
-Package pdftex.def Info: images/12_timeseries.png  used on input line 854.
+Package pdftex.def Info: images/12_timeseries.png  used on input line 883.
 (pdftex.def)             Requested size: 426.79134pt x 317.69324pt.
-<images/ground_truth_vs_evolved.png, id=1003, 508.7808pt x 382.3083pt>
+[71 <./images/groundtruth.png>]
+<images/ground_truth_vs_evolved.png, id=1079, 508.7808pt x 382.3083pt>
 File: images/ground_truth_vs_evolved.png Graphic file (type png)
 <use images/ground_truth_vs_evolved.png>
 Package pdftex.def Info: images/ground_truth_vs_evolved.png  used on input line
- 861.
+ 890.
 (pdftex.def)             Requested size: 426.79134pt x 320.71675pt.
-<images/antimony_truth_evolved.png, id=1005, 541.02126pt x 394.47375pt>
+<images/antimony_truth_evolved.png, id=1081, 541.02126pt x 394.47375pt>
 File: images/antimony_truth_evolved.png Graphic file (type png)
 <use images/antimony_truth_evolved.png>
 Package pdftex.def Info: images/antimony_truth_evolved.png  used on input line 
-870.
+899.
 (pdftex.def)             Requested size: 426.79134pt x 311.19144pt.
- [69 <./images/12_timeseries.png>] [70 <./images/ground_truth_vs_evolved.png>] 
-[71 <./images/antimony_truth_evolved.png>]
-[72] [73] [74]
-Underfull \hbox (badness 10000) in paragraph at lines 896--898
-
- []
-
-[75]
+ [72 <./images/12_timeseries.png>] [73 <./images/ground_truth_vs_evolved.png>] 
+[74 <./images/antimony_truth_evolved.png>]
+[75] [76] [77] [78]
 Chapter 5.
-[76
+[79
+
+] [80
+
 
 ]
-<images/flag_args_table.png, id=1051, 814.04124pt x 351.3125pt>
+Appendix A.
+[81
+
+]
+<images/flag_args_table.png, id=1135, 814.04124pt x 351.3125pt>
 File: images/flag_args_table.png Graphic file (type png)
 <use images/flag_args_table.png>
-Package pdftex.def Info: images/flag_args_table.png  used on input line 936.
+Package pdftex.def Info: images/flag_args_table.png  used on input line 975.
 (pdftex.def)             Requested size: 426.79134pt x 184.18987pt.
- [77 <./images/flag_args_table.png>]
-<images/hyperparams.png, id=1058, 850.17625pt x 751.80875pt>
+ [82 <./images/flag_args_table.png>]
+<images/hyperparams.png, id=1143, 650.43pt x 766.865pt>
 File: images/hyperparams.png Graphic file (type png)
 <use images/hyperparams.png>
-Package pdftex.def Info: images/hyperparams.png  used on input line 967.
-(pdftex.def)             Requested size: 512.1496pt x 452.91272pt.
+Package pdftex.def Info: images/hyperparams.png  used on input line 1006.
+(pdftex.def)             Requested size: 512.1496pt x 603.8743pt.
 
-Overfull \hbox (42.39458pt too wide) in paragraph at lines 967--968
+Overfull \hbox (42.39458pt too wide) in paragraph at lines 1006--1007
 [][] 
  []
 
-[78] [79 <./images/hyperparams.png>] (./tatka_dissertation.bbl [80] [81
+(./tatka_dissertation.bbl [83] [84 <./images/hyperparams.png>] [85
 
-]
-[82]
-Underfull \hbox (badness 1337) in paragraph at lines 121--125
+] [86]
+Underfull \hbox (badness 1337) in paragraph at lines 138--142
 []\OT1/cmr/m/n/12 F^^Selix-Antoine Fortin, Fran^^Xcois-Michel De Rainville, Mar
 c-Andr^^Se Gard-ner, Marc
  []
 
-[83] [84] [85] [86] [87] [88] [89])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 993.
- [90]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 993.
+[87] [88] [89] [90] [91] [92] [93] [94])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1017.
+ [95]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1017.
  (./tatka_dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 993.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 993.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1017.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1017.
+
 Package rerunfilecheck Info: File `tatka_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 71F71371E9E0D48645EC8F5E75285F43;4094.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 993.
+(rerunfilecheck)             Checksum: 821FF3502EE79B578654FE13985D3506;4143.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1017.
  ) 
 Here is how much of TeX's memory you used:
- 9322 strings out of 483183
- 142691 string characters out of 5966292
- 394669 words of memory out of 5000000
- 23852 multiletter control sequences out of 15000+600000
+ 9473 strings out of 483183
+ 145146 string characters out of 5966292
+ 397761 words of memory out of 5000000
+ 23972 multiletter control sequences out of 15000+600000
  542005 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,15n,42p,1928b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,15n,42p,1928b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/hellsbells/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
 0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
@@ -799,10 +824,10 @@ fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 >
-Output written on tatka_dissertation.pdf (99 pages, 2495384 bytes).
+Output written on tatka_dissertation.pdf (104 pages, 2535045 bytes).
 PDF statistics:
- 1233 PDF objects out of 1440 (max. 8388607)
- 1048 compressed objects within 11 object streams
- 298 named destinations out of 1000 (max. 500000)
- 610 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1321 PDF objects out of 1440 (max. 8388607)
+ 1125 compressed objects within 12 object streams
+ 323 named destinations out of 1000 (max. 500000)
+ 633 words of extra memory for PDF output out of 10000 (max. 10000000)
 

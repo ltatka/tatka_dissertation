@@ -1,17 +1,14 @@
 \begin{thebibliography}{10}
 
-\bibitem{circadianOverview}
-Overview of circadian rhythms.
-\newblock {\em Alcohol Research and Health}, 25, 2001.
-
-\bibitem{circadianReview}
-Circadian rhythm, lifestyle and health: A narrative review.
-\newblock {\em Iran Journal of Public Health}, 47, 2018.
-
 \bibitem{lotka-volterra}
 Stefano Allesina.
 \newblock chapter Generalized Lotka-Volterra.
 \newblock 2020.
+
+\bibitem{Alon2007}
+Uri Alon.
+\newblock Network motifs: theory and experimental approaches.
+\newblock {\em Nature Reviews Genetics}, 8(6):450--461, jun 2007.
 
 \bibitem{Aulehla2008}
 Alexander Aulehla and Olivier Pourqui{\'e}.
@@ -55,6 +52,7 @@ Dominique Chu.
 
 \bibitem{LEAP}
 Mark~A. Coletti, Eric~O. Scott, and Jeffrey~K. Basset.
+\newblock Library for evolutionary algorithms in python (leap).
 \newblock In {\em Proceedings of the 2020 Genetic and Evolutionary Computationa
   Conference Companion}, 2020.
 
@@ -117,6 +115,25 @@ Charles Elton and Mary Nicholson.
 \newblock The ten-year cycle in numbers of the lynx in canada.
 \newblock {\em The Journal of Animal Ecology}, 11(2):215, November 1942.
 
+\bibitem{epstein_design_1984}
+Irving~R. Epstein and Kenneth Kustin.
+\newblock Design of inorganic chemical oscillators.
+\newblock In {\em New {Developments}}, volume~56, pages 1--33. Springer Berlin
+  Heidelberg, Berlin, Heidelberg, 1984.
+\newblock Series Title: Structure and Bonding.
+
+\bibitem{epstein_introduction_1998}
+Irving~R. Epstein and John~A. Pojman.
+\newblock {\em An introduction to nonlinear chemical dynamics: oscillations,
+  waves, patterns, and chaos}.
+\newblock Topics in physical chemistry. Oxford University Press, New York,
+  1998.
+
+\bibitem{circadianReview}
+Dariush Farhud and Zahra Aryan.
+\newblock Circadian rhythm, lifestyle and health: A narrative review.
+\newblock {\em Iran Journal of Public Health}, 47, 2018.
+
 \bibitem{DEAP_JMLR2012}
 F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
   Gardner, Marc Parizeau, and Christian Gagn\'e.
@@ -127,7 +144,7 @@ F\'elix-Antoine Fortin, Fran\c{c}ois-Michel {De Rainville}, Marc-Andr\'e
 Paul Francois and Vincent Hakim.
 \newblock Design of genetic networks with specified functions by evolution in
   silico.
-\newblock 2004.
+\newblock {\em PNAS}, 2004.
 
 \bibitem{fujimoto_network_2008}
 Koichi Fujimoto, Shuji Ishihara, and Kunihiko Kaneko.
@@ -216,6 +233,11 @@ Ingunn~W. Jolma, Xiao~Yu Ni, Ludger Rensing, and Peter Ruoff.
   regulatory system.
 \newblock {\em Biophysical Journal}, 98(5):743–752, March 2010.
 
+\bibitem{SAnode}
+Anthony~H. Kashou, Hajira Basit, and Lovely Chhabra.
+\newblock Physiology, sinoatrial node.
+\newblock {\em StatPearls}, 2022.
+
 \bibitem{Katoch2020}
 Sourabh Katoch, Sumit~Singh Chauhan, and Vijay Kumar.
 \newblock A review on genetic algorithm: past, present, and future.
@@ -239,6 +261,12 @@ J.~Knabe, C.~Nehaniv, M.~Schilstra, and T.~Quick.
 Y.~Kobayashi, T.~Shibata, Y.~Kuramoto, and A.~S. Mikhailov.
 \newblock Evolutionary design of oscillatory genetic networks.
 \newblock {\em Eur. Phys. J. B}, 76(1):167--178, July 2010.
+
+\bibitem{Liu2020}
+Chuang Liu, Yifang Ma, Jing Zhao, Ruth Nussinov, Yi-Cheng Zhang, Feixiong
+  Cheng, and Zi-Ke Zhang.
+\newblock Computational network biology: Data, models, and applications.
+\newblock {\em Physics Reports}, 846:1–66, March 2020.
 
 \bibitem{Loman2023}
 Torkel~E. Loman, Yingbo Ma, Vasily Ilin, Shashi Gowda, Niklas Korsbo, Nikhil
@@ -294,13 +322,19 @@ Marco~S. Nobile, Daniela Besozzi, Paolo Cazzaniga, Dario Pescini, and Giancarlo
   Mauri.
 \newblock Reverse engineering of kinetic reaction networks by means of
   cartesian genetic programming and particle swarm optimization.
-\newblock pages 1594--1601, 2013.
+\newblock In {\em 2013 IEEE Congress on Evolutionary Computation}, pages
+  1594--1601, 2013.
 
 \bibitem{Novak2008}
 B{\'{e}}la Nov{\'{a}}k and John~J. Tyson.
 \newblock Design principles of biochemical oscillators.
 \newblock {\em Nature Reviews Molecular Cell Biology}, 9(12):981--991, oct
   2008.
+
+\bibitem{novak_design_2008}
+Béla Novák and John~J. Tyson.
+\newblock Design principles of biochemical oscillators.
+\newblock {\em Nat Rev Mol Cell Biol}, 9(12):981--991, December 2008.
 
 \bibitem{Paladugu2006}
 SR~Paladugu, V~Chickarmane, A~Deckard, JP~Frumkin, M~McCormack, and HM~Sauro.
@@ -328,8 +362,8 @@ J.~Patrick Pett, Anja Korenčič, Felix Wesener, Achim Kramer, and Hanspeter
 
 \bibitem{pohlheim1994geatbx}
 Hartmut Pohlheim.
-\newblock Geatbx-genetic and evolutionary algorithm toolbox for matlab.
-\newblock 1994.
+\newblock Genetic and evolutionary algorithm toolbox for matlab.
+\newblock page 157–170, 2000.
 
 \bibitem{porubsky2019}
 Veronica Porubsky and Herbert Sauro.
@@ -344,15 +378,27 @@ Christopher Rackauckas and Qing Nie.
 \newblock {\em The Journal of Open Research Software}, 5(1), 2017.
 \newblock Exported from https://app.dimensions.ai on 2019/05/05.
 
-\bibitem{SauroteUtils_2020}
+\bibitem{Rossetti2012}
+Stefano Rossetti, Francesca Corlazzoli, Alex Gregorski, Nurul Hidayah~A. Azmi,
+  and Nicoletta Sacchi.
+\newblock Identification of an estrogen-regulated circadian mechanism necessary
+  for breast acinar morphogenesis.
+\newblock {\em Cell Cycle}, 11(19):3691–3700, August 2012.
+
+\bibitem{Sauro_dynamics}
 Herbert Sauro.
 \newblock Network dynamics.
 \newblock {\em Methods in Molecular Biology}, 2009.
 
-\bibitem{Sauro_dynamics}
+\bibitem{SauroteUtils_2020}
 Herbert Sauro.
 \newblock {teUtils} [software].
 \newblock {\em retrieved from https://github.com/sys-bio/teUtils}, 2020.
+
+\bibitem{sauro_network_2009}
+Herbert~M. Sauro.
+\newblock Network {Dynamics}.
+\newblock {\em Methods Mol Biol}, 541:269, 2009.
 
 \bibitem{GA1}
 Luca Scrucca.
@@ -364,6 +410,11 @@ Luca Scrucca.
 \newblock On some extensions to {GA} package: hybrid optimisation,
   parallelisation and islands evolution.
 \newblock {\em The R Journal}, 9(1):187--206, 2017.
+
+\bibitem{sharma_chemical_2006}
+Monika Sharma and Praveen Kumar.
+\newblock Chemical oscillations: 1. {Basic} principles and examples.
+\newblock {\em Reson}, 11(2):43--50, February 2006.
 
 \bibitem{Sharma2006}
 Monika Sharma and Praveen Kumar.
@@ -380,6 +431,12 @@ Erik Smedler and Per Uhlén.
 Lucian Smith, Frank Bergmann, Deepak Chandran, and Herbert Sauro.
 \newblock Antimony: A modular model definition language.
 \newblock {\em Bioinformatics (Oxford, England)}, 25:2452--4, 08 2009.
+
+\bibitem{smith_designing_2017}
+Robert~W. Smith, Bob van Sluijs, and Christian Fleck.
+\newblock Designing synthetic networks in silico: a generalised evolutionary
+  algorithm approach.
+\newblock {\em BMC Syst Biol}, 11(1):118, December 2017.
 
 \bibitem{andy2020}
 Andy Somogyi, J~Kyle Medley, Kiri Choi, and Herbert Suaro.
@@ -433,6 +490,12 @@ John~J. Tyson.
 \newblock {\em The Journal of Chemical Physics}, 62(3):1010--1015, February
   1975.
 
+\bibitem{Tyson2003}
+John~J Tyson, Katherine~C Chen, and Bela Novak.
+\newblock Sniffers, buzzers, toggles and blinkers: dynamics of regulatory and
+  signaling pathways in the cell.
+\newblock {\em Current Opinion in Cell Biology}, 15(2):221–231, April 2003.
+
 \bibitem{Pol1928}
 Balth. van~der Pol and J.~van~der Mark.
 \newblock {LXXII}.the heartbeat considered as a relaxation oscillation, and an
@@ -444,6 +507,11 @@ Balth. van~der Pol and J.~van~der Mark.
 Guido Van~Rossum and Fred~L. Drake.
 \newblock {\em Python 3 Reference Manual}.
 \newblock CreateSpace, Scotts Valley, CA, 2009.
+
+\bibitem{circadianOverview}
+Martha~Hotz Vitaterna, Joseph~S. Takahashi, and Fred~W. Turek.
+\newblock Overview of circadian rhythms.
+\newblock {\em Alcohol Research and Health}, 25, 2001.
 
 \bibitem{Volterra}
 Vito Volterra.
@@ -492,5 +560,11 @@ Takafumi Yamashino.
   plant architecture inarabodopsis thaliana.
 \newblock {\em Bioscience, Biotechnology, and Biochemistry}, 77(1):10–16,
   January 2013.
+
+\bibitem{Zou2020}
+Huixi Zou, Parikshit Banerjee, Sharon Shui~Yee Leung, and Xiaoyu Yan.
+\newblock Application of pharmacokinetic-pharmacodynamic modeling in drug
+  delivery: Development and challenges.
+\newblock {\em Frontiers in Pharmacology}, 11, July 2020.
 
 \end{thebibliography}

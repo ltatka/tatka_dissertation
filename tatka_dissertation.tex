@@ -20,7 +20,11 @@
 \usepackage{blkarray}
 \usepackage{amsmath}
 
+% Code blocks
 \usepackage{fancyvrb}
+
+% Appendix
+\usepackage[toc,page]{appendix}
 
 % Margin adustment
 \usepackage[margin=1in]{geometry}
@@ -103,7 +107,8 @@ Bioengineering
 \pagenumbering{gobble}
 \end{center}
 \vspace*{\fill}
-Computational models are increasingly used in high-impact decision making in science, engineering, and medicine. It is crucial that computational models meet a standard of credibility when using them in high-stakes decision making. For this reason, institutes including NASA, the FDA, and the EMA have developed standards to promote and assess the credibility of computational models and simulations. However, due to the breadth of models these institutes assess, these credibility standards are mostly qualitative and avoid making specific recommendations. On the other hand, modeling and simulation in systems biology is a narrower domain and several standards are already in place. These factors facilitate the development of a quantitative credibility standard. A systems biology credibility standard is essential given the rise in complexity and influence of models. This proposal describes the development of a testing suite to standardize and automate credibility testing and scoring of computational systems biology models. The test suite will include dynamic tests that examine the output of a simulated model, verification and validation tests, and a preliminary assessment of parameter sensitivity to gauge uncertainty in the model's predictions. 
+Evolutionary algorithms have emerged as powerful tools for the optimization of complex systems, including the evolution of mass-action chemical reaction networks. This dissertation delves into the efficacy of evolutionary algorithms in this domain, presenting a novel approach inspired by neural network evolution methodologies. The algorithm demonstrates remarkable effectiveness of separating candidate reaction networks into species based on their similarity, which maintains diversity and protects innovations. Crossover has also been shown to be an effective means of improving evolutionary success in other domains. Here, crossover of mass-action networks is tested and found to be detrimental to the evolutionary process. Other factors influencing evolutionary success are also explored and optimized resulting in a 10-fold improvement over previous algorithms. This work goes beyond theoretical exploration by offering a practical contribution in the form of a user-friendly software module. This module encapsulates the newly devised algorithm, empowering researchers and practitioners to readily apply the speciation-based approach in their own investigations of mass-action chemical reaction networks.
+
 
 \tableofcontents
 
@@ -113,29 +118,23 @@ Computational models are increasingly used in high-impact decision making in sci
 
 \chapter{Introduction}
 \pagenumbering{arabic}
-The \textit{in silico} evolution of chemical reaction networks can be a useful tool to create functional networks with specific behaviors as well as to investigate possible pathways of natural evolution. Large sets of synthetic networks can be useful for exploring design patterns and network motifs, gathering statistics network characteristics, benchmarking software, and informing design of synthetic networks. Although several studies use \textit{in silico} evolution to generate networks, the vast majority of them focus on genetic regulatory networks, and almost none of them provide software for others to reproduce their results or use evolutionary strategies in other work. A fast and user-friendly software package would allow researchers to experiment with \textit{in silico} evolution without significant knowledge of programming. 
+The \textit{in silico} evolution of chemical reaction networks can be a useful tool to create functional networks with specific behaviors as well as to investigate possible pathways of natural evolution. Large sets of synthetic networks can be useful for exploring design patterns and network motifs \cite{Novak2008, Alon2007, jin_evolving_2008} , gathering statistics network characteristics \cite{Tatka2023, deckard2009}, benchmarking software, and informing design of synthetic networks \cite{smith_designing_2017}. Although several studies use \textit{in silico} evolution to generate networks, the vast majority of them focus on genetic regulatory networks, and almost none of them provide software for others to reproduce their results or use evolutionary strategies in other work. A fast and user-friendly software package would allow researchers to experiment with \textit{in silico} evolution without significant knowledge of programming. 
 
 The key objective of this work is to produce a software package that enables the \textit{in silico} evolution of mass-action chemical reaction networks and to explore features and hyperparameters of the evolutionary algorithm that influence the evolution of oscillatory reaction network. The software should be accessible to researchers with minimal programming experience, produce results relatively quickly, and be problem agnostic, meaning that a variety of behaviors could be evolved.  
 
-This project began with the creation of a python tool to evolve oscillating chemical reaction networks. Described in chapter \ref{chap: cesium_paper}, this work was intended as a small initial step towards understanding the function of biochemical oscillators and identifying common design patterns that enable oscillation. Oscillating systems of are of particular interest due to their biological relevance and interesting dynamics and serve as a good candidate problem due to the presence of an intermediate state (damped oscillations). A large population of oscillators was computationally evolved and their reaction characteristics compared to non-oscillating systems. The library of reaction networks generated in this research was used to construct a publicly available database to enable further oscillator/design pattern research as well as to serve as a standardized data set for testing novel software and algorithms. 
+This project began with the creation of a python tool to evolve oscillating chemical reaction networks. Described in chapter \ref{chap: cesium_paper}, this work was intended as a small initial step towards understanding the function of biochemical oscillators and identifying common design patterns that enable oscillation. Oscillating systems of are of particular interest due to their biological relevance and interesting dynamics and serve as a good candidate problem due to the presence of an intermediate state (damped oscillations). A large population of oscillators was computationally evolved and their reaction characteristics compared to non-oscillating systems. The library of reaction networks generated in this research was used to construct a publicly available database to enable further oscillator/design pattern research as well as to serve as a standardized data set for testing novel software and algorithms \cite{Tatka2023}. 
 
 However, the algorithm used to generate these oscillating networks had its flaws. It took a long time to execute, several minutes per run, and failed to generate oscillators most of the time. Only approximately 5\% of evolution trials would result in an oscillator. It took several days of computing time to generate the small database. The most likely cause of this low success rate was the rapid convergence of solutions. The design of the algorithm allowed the most fit reaction networks to dominate the population, even if they were not oscillators or close to becoming oscillators. This dominance would reduce the space for innovation and prevent more fit networks from developing. If a promising candidate network failed to develop in the first few generations, it was unlikely that the evolution trial would be successful.
 
 Additionally, the structure of the code and algorithm did not allow for easy modification and exploration. For example, a user might wish to implement a different selection technique in an attempt to avoid the problem of rapid convergence, but the software was not created to allow for such tinkering. Users could modify some hyperparameters, such as the number of generations and population size, but the fundamental evolution algorithm could not be modified. 
 
-To address these shortcomings and explore evolution strategies for mass-action reaction networks, a new software tool was developed, NetEvolve, described in detail in chapter \ref{chap: NetEvolve}. The software is written in the Julia programming language [CITTEEEEE], which uses just-in-time (JIT) compiling, type stability, and multiple dispatch to gain significant speed advantages over interpreted languages such as Python. The evolution algorithm can be used immediately using default settings or customized using a JSON file. By default, the algorithm evolves oscillators, but users could provide any time series data and the algorithm would attempt to generate networks to match. 
+To address these shortcomings and explore evolution strategies for mass-action reaction networks, a new software tool was developed, NetEvolve, described in detail in chapter \ref{chap: NetEvolve}. The software is written in the Julia programming language \cite{bezanson2017julia}, which uses just-in-time (JIT) compiling, type stability, and multiple dispatch to gain significant speed advantages over interpreted languages such as Python. The evolution algorithm can be used immediately using default settings or customized using a JSON file. By default, the algorithm evolves oscillators, but users could provide any time series data and the algorithm would attempt to generate networks to match. 
 
 To combat premature convergence, NetEvolve separates candidate reaction networks into groups based on similarity. These groups are analogous to species in natural evolution and individuals are compared only against members of the same species. This prevents more fit candidate networks from dominating the population and shelters network innovations that may reduce fitness at first but develop into useful features over the course of several generations. 
 
-Inspired by the use of evolutionary algorithms to create artificial neural networks, NetEvolve also implements a form of crossover, a mutation operator that combines features from two ``parent" networks to create a new ``offspring" network. This feature was shown to improve evolution performance when evolving artificial neural networks and genetic regulatory networks, but has been thought to be disruptive for evolving mass-action networks. The application of crossover to mass-action networks is explored in detail in chapter \ref{chap: NetEvolve}.
+Inspired by the use of evolutionary algorithms to create artificial neural networks \cite{stanley_evolving_2002}, NetEvolve also implements a form of crossover, a mutation operator that combines features from two ``parent" networks to create a new ``offspring" network. This feature was shown to improve evolution performance when evolving artificial neural networks and genetic regulatory networks, but has been thought to be disruptive for evolving mass-action networks. The application of crossover to mass-action networks is explored in detail in chapter \ref{chap: NetEvolve}.
 
-\begin{itemize}
-\item\textbf{Aim 1:} Develop a python package to perform dynamic tests on systems biology models in order to assess their credibility
-\item\textbf{Aim 2:} Create tools to automatically verify and validate models
-\item\textbf{Aim 3:} Build software to automate simple parameter sensitivity analyses
-\end{itemize}
-
-This research will result in two first author publications, the titles of which are to be determined. The first publication will describe the design and purpose of the software package and include some preliminary examples of implementation. The second publication will present the full software package and demonstrate its use on several existing models. I hope to finish this work by June 2024.
+This work contributes to the understanding of evolutionary algorithms applied to mass-action chemical reaction networks. It also provides a tool for the broader scientific community to study oscillators and other chemical reaction network behaviors using an evolutionary algorithm.
 
 \chapter{Background}
 
@@ -172,7 +171,7 @@ The rate of change of each species can then be put in the form of a system of di
 \end{split}
 \end{equation}
 
-Chemical reaction network modeling is used across a variety of fields including pharmacology, biological sciences, physical chemistry, chemical engineering, and synthetic biology \textbf{CITATIONS}. To this end, numerous tools have been developed to aid in model development, description, and simulation. This dissertation introduces an additional software tool for exploring small chemical reaction networks. Of particular interest are chemical oscillators.
+Chemical reaction network modeling is used across a variety of fields including pharmacology \cite{Zou2020}, biological sciences\cite{Liu2020}, physical chemistry, chemical engineering, and synthetic biology. To this end, numerous tools have been developed to aid in model development, description, and simulation. This dissertation introduces an additional software tool for exploring small chemical reaction networks. Of particular interest are chemical oscillators.
 
 
 \section{Chemical Oscillators}
@@ -182,6 +181,7 @@ Chemical oscillators provide a tangible and accessible means to study the dynami
 
 \subsection{A Brief History}
 The first oscillating chemical system was described in 1828. Gustav Fechner described and electrochemical cell that produced an oscillating current. Later, in 1899, Fredriech Ostwald observed that the rate of chromium dissolution in acid periodically increased and decreased. Both these systems were heterogenous mixtures, leading to the belief that homogenous oscillating reactions were impossible, a belief that persisted through much of the 20th century. Their relatively recent discovery and study makes homogenous chemical oscillators a topic of particular interest. 
+
 
 In 1910, prior to leaving science to work for an insurance company, Alfred Lotka authored a monograph on theoretical biology \cite{Lotka1910}. He showed that a set of consecutive mass-action reactions can create damped oscillators which eventually settle at an equilibrium. A decade later he published a second paper on theoretical mass-action oscillatory systems \cite{Lotka1920, Lotka1920b}.
 
@@ -213,14 +213,25 @@ dy/dt = k_{y}xy - k_{d}y
 
 The oscillations in this system result from the time delay between the growth in rabbit population growth and lynx population growth as well as the delay from rabbit population decline to lynx decline. Rabbits reproduce because grass is in constant supply. As the rabbit population grows, the lynx population follows as prey becomes plentiful. Once the lynx population gets too high, it will begin consuming rabbits at a rate faster than they can reproduce due to the constant supply of grass. Once the rabbit population declines, the lynx population will follow as food grows scarce and they begin to starve. When the lynx population is depleted, there will be less predation pressure and the population of rabbits will begin to grow again. This phenomenon can be observed in nature, as was carefully documented by Charles Elton in 1942 \cite{Elton1942}. The predator-prey model has also been demonstrated in the laboratory with paramecia that consume yeast \cite{Gause}.
 
+The study of modern non-linear dynamics began with Boris Pavlovich Belousov, who was in search of an inorganic analog of the Krebs cycle. He investigated a solution of bromate, citric acid, and ceric ions. To his surprise, the solution repeatedly altered between clear and yellow in color. After thoroughly studying the system, he submitted the results as a manuscript, which was promptly rejected as the ``supposed discovered discovery" was impossible. He spent six more yesrs revising the manuscript before abandoning the work \cite{epstein_introduction_1998}.
+
+In 1961, a graduate student, Anatol Zhabotinksy, began to examine the system, replacing some ingredients. In 1968 Zhabotinksy presented their results which led to the extensive study of the Belousov-Zhabotinksy (BZ) reaction. The scientific community continued to dispute the existence of a homogenous oscillator, leading to much discussion and study of the subject \cite{epstein_design_1984}.
+
+More recently, oscillation in cellular networks has been of scientific interest. Once thought to be an inconsequential rarity, modern experimental techniques have revealed that oscillatory dynamics are highly biologically relevant \cite{Sauro_dynamics}.
+
 
 \subsection{Dynamics}
-A key feature of the Lotka-Volterra model, and of most chemical oscillating systems is the presence of autocatalysis. The rate of growth of a population increases as the size of the population increases. In chemical systems, Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}
-The prominence of autocatalysis is also observed in the evolution of \textit{in silico} theoretical chemical reaction networks, as is described in chapter \ref{chap: cesium_paper} \cite{Tatka2023}. 
+Novak and Tyson describe four requirements for biochemcial oscillation \cite{Novak2008}. First, negative feedback is necessary to restore the reaction network to its original state. Second, the negative feedback signal must be delayed so that the system does not achieve a stable steady state. Third, there must be a means of destabilizing the steady state. And finally, the reactions must occur at appropriate time scales.
 
-Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. Often the feedback mechanism takes the form of autocatalysis. However, when unchecked, a system with autocatalysis can lead to explosion as the product concentration continues to build and increase the rate of product formation. An inhibition step is necessary to prevent this explosion of products. However, if autocatalysis and inhibition occur simultaneously, the steady state is stabilized and oscillation does not occur. The inhibition step must be delayed. Often this is accomplished by intermediate reactions. 
+\subsubsection{Negative Feedback and Time Delay}
+All known oscillators have some form of negative feedback \cite{novak_design_2008}. But to sustain oscillation, the negative feedback must also come with some sort of time delay, otherwise it will cause the system to reach a stable steady state.For genetic regulatory networks, this can be the time necessary to carry out transcription and translation. It can also be the time needed to transport chemicals between cellular compartment or a series of intermediate reactions \cite{sharma_chemical_2006, Novak2008}.
 
-Oscillation can also be achieved with negative feedback \cite{Tyson1975, Sauro_dynamics}. In chemical reaction networks, this takes the form of end-product inhibition, where the final product in a series of reactions inhibits an enzyme from an earlier step in the sequence. A classic example of this is the repressilator, a three gene (or species) loop where each gene expresses a protein that represses the next gene in the loop (figure \ref{fig:repressilator}) \cite{Elowitz2000}. The invention of the repressilator was a landmark achievement in the field of synthetic biology showcasing the feasibility of engineering complex gene circuits with predefined functions. It provided a foundational framework for the design and construction of synthetic genetic oscillators and inspired subsequent research in the development of artificial gene regulatory networks.
+\subsubsection{Destabilizing Steady State}
+The stability of a system is dictated by its response to a disturbance to its state. Disturbances can come in the form of stochastic fluctuations in concentrations or external factors that cause concentrations to change. If the system is able to return to its original state after a disturbance, it is considered stable, otherwise it is considered unstable \cite{sauro_network_2009}. To achieve oscillation, a systems steady state must be destabilized. Tyson identifies two primary means by which a chemical reaction network's steady state can be destabilized \cite{Tyson1975}: autocatalysis (direct and indirect) and negative feedback. Long lasting oscillations occur only if the proper feedback mechanism is present \cite{Sharma2006}. 
+
+Autocatalysis is a feature of many oscillatory systems, including the Lotka-Volterra model described previously. Reactions are considered autocatalytic when the products increase the rate of reaction or when a chemical decelerates the rate of its own destruction~\cite{Tyson2004}. Autocatalysis causes one chemical species to rapidly increase increase in concentration, destabilizing the system and moving it away from steady state. Indirect autocatalysis, where an increase in a chemical species causes catalyzes its further increase, but indirectly through other members of the system, can also destabilize a system. Indirect autocatlysis can be achieved by symbiosis, where two species positively affect each other and competition, where an increase in one species reduces that of a competitor species. Positive feedback loops with a series of intermediates are also a means of destabilization via indirect autocatalysis.
+
+Negative feedback can also be a means of destabilizing a system. A classic example is the repressilator,  a three gene loop where each gene expresses a protein that represses the next gene in the loop (figure \ref{fig:repressilator}) \cite{Elowitz2000}. The repression of gene X causes expression of gene Y to increase. Gene Y represses gene Z, which eases the repression of gene X, etc. Time delay is achieved with the transcription and translation of the three genes. The invention of the repressilator was a landmark achievement in the field of synthetic biology showcasing the feasibility of engineering complex gene circuits with predefined functions. It provided a foundational framework for the design and construction of synthetic genetic oscillators and inspired subsequent research in the development of artificial gene regulatory networks.
 
 \begin{figure}
     \centering
@@ -228,6 +239,38 @@ Oscillation can also be achieved with negative feedback \cite{Tyson1975, Sauro_d
     \caption[Three node repressilator]{A three species repressilator.}
     \label{fig:repressilator}
 \end{figure}
+
+\subsection{Types of Oscillators}
+The two primary means of destabilizing a system give rise to two basic types of oscillators: one based on negative feedback and one based on the combination of negative and positive feedback \cite{sauro_network_2009}. Both types of oscillators have been found in biological systems \cite{Tyson2003}.
+
+\subsubsection{Negative Feedback Oscillators}
+Negative feedback oscillators, such as the repressilator, require some sort of delay and the correct strength of feedback. The time delay allows the signal to go out of phase.
+As the delay becomes longer, such as in systems with several intermediate steps, less feedback inhibition is needed to destabilize the system. Negative feedback oscillators tend to have smooth waveforms \cite{sauro_network_2009}.
+
+The circadian clock is an example of a biological negative feedback oscillator (figure \ref{fig:circadian}). The proteins BMAL1 and CLOCK dimerize and activate the transcription of the proteins CRY and PER. These proteins accumulate in the cell, dimerize, and are transported back to the nucleus where they inhibit BMAL1/CLOCK induced transcription \cite{Rossetti2012}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm]{images/circadian.png}
+    \caption[Negative feedback oscillation of the circadian cycle]{The circadian cycle is a negative feedback oscillator.}
+    \label{fig:circadian}
+\end{figure}
+
+\subsubsection{Relaxation Oscillators}
+Relaxation oscillators are bistable, meaning they have two equally likely but different stable states. Bistability occurs over a range of values of a suitable control parameters, meaning there are limited values for the system to exist in either state. When the parameter moves beyond the range of values, it moves to the other steady state \cite{Sharma2006}.
+
+For example, a bistable system with chemicals x and y is shown in figure \ref{fig:bistability}. The overlapping lower and upper curves represent the two stable states of the system. Moving along the lower curve, there is a point at which the lower steady state no longer exists for those values of X. At this point the system transitions to the upper steady state. Similarly, moving along the upper steady state, the concentration of x eventually exits the range of values for with the upper steady state exists and transitions back to the lower steady state.
+
+A relaxation oscillator works by charging a species, in this example x, until it reaches a threshold with changes the state of the system. Once the system returns to its original state, the sequence begins again \cite{sauro_network_2009}. The charging and rapid switching of the relaxation oscillator leads to much sharper oscillations.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=12cm]{images/bistability.png}
+    \caption[A simple bistable system]{A simple, two species, bistable system.}
+    \label{fig:bistability}
+\end{figure}
+
+A biological example of a relaxation is the pacemaker action potential in the sinoatrial (SA) node of the heart \cite{SAnode}. The pacemaker cells in the sinoatrial node slowly depolarize as positive ions pass into the cell. When the cell's potential reaches a threshold value, calcium channels open causing an influx of calcium and rapid depolarization until the cell has a positive voltage relative to its environment. This voltage triggers potassium channels which pump potassium out of the cell and return it to its negative voltage where the cycle is repeated.
 
 \subsection{Biological Relevance}
 Oscillators are biological relevant beyond ecological interactions. A fundamental aspect of living systems, oscillators occur across several levels of biological organization. 
@@ -270,8 +313,6 @@ Other approaches fix structure and make use of evolutionary algorithms to explor
 Most applications of evoltuionary algorithms in systems biology avoid the use of crossover as it tends to disrupt candidate solutions. For example, Drennan and Beer successfully evolved a repressilator (a specific type of oscillatory reaction netowrk \cite{Elowitz2000}) using a genetic algorithm that included crossover \cite{drennan_beer}. Instead of evolving sets of differential equations, Drennan and Beer encoded their genetic regulatory networks using strings of 4 different letters, analogous to DNA encoding. Knabe et al. used a similar approach to evolve oscillators that interact with the environment \cite{knabe}. This approach allows for the straightforward implementation of crossover, but limits the space of possible models. Due to this encoding, there was a high probability of breaking connections making it difficult to pass on structural innovations.
 
 Stanley and Miikkulainen addressed this problem in 2002 with NEAT (NeuroEvolution of Augmenting Topologies), a powerful algorithm used for evolving artificial neural networks (ANNs) \cite{stanley_evolving_2002}. Unlike traditional methods of neural network training, which typically involve adjusting the weights and biases of fixed network architectures, NEAT evolves both the structure and weights of neural networks simultaneously. A two key features of NEAT are the use of a more meaningful structural crossover technique, and speciation, which protects innovations and allows them time to develop by having candidate solutions compete only against similar individuals instead of the entire population. Dinh et al. adapted this technique to genetic regulatory networks and found improved performance in evolving oscillators with the use of crossover.
-
-\textbf{paragraph about how these are really just ways to change parameters}
 
 \section{Tools for Evolutionary and Genetic Algorithms}
 \label{section:tools_GA}
@@ -326,8 +367,6 @@ Most recently, Huange et al. released EvoX, a python library for evolutionary co
 
 \subsection{Libraries in Other Languages}
 Python is one of the more commonly used languages for scientific computing, however other languages offer various advantages. C++ and Java offer high performance compared to interpreted languages, but tend to have steeper learning curves and are less common in scientific computing. R excels at statistical computing but is less versatile than python. MATLAB is less common outside of academia likely owing to its high licensing costs. Julia is a relatively new language (2012) and has less package support and a smaller community than python. Likely for these reasons, fewer evolutionary packages exist in other programming languages and are less likely to be used by scientists. Notable non-python packages are briefly reviewed here.
-
-\textbf{citations for programming language statements?}
 
 \subsubsection{Evolutionary Computation in Java}
 Evolutionary Computation in Java (ECJ) is a framework that supports several evolutionary computation techniques including genetic algorithms and differential evolution \cite{Luke1998ECJSoftware}. It offers a high level of flexibility and customization and is well-suited for large-scale optimization problems. 
@@ -564,32 +603,13 @@ https://doi.org/10.1016/j.biosystems.2023.104836.
 \section{Introduction}
 Genetic algorithms (GAs), inspired by the principles of natural selection and genetics, have emerged as a powerful computational technique for solving optimization and search problems.Developed by John Holland in the 1970s, GAs mimic the process of biological evolution to solve optimization and search problems \cite{holland_1975}. At their core, genetic algorithms operate on a population of potential solutions, represented as individuals or ``chromosomes," each encoding a candidate solution to the problem at hand. Through iterative generations, genetic algorithms apply mechanisms of selection, crossover, and mutation to evolve and refine the population, gradually converging towards optimal or near-optimal solutions. Selection favors individuals with higher fitness, mirroring the process of natural selection, while crossover and mutation introduce variation and diversity into the population, allowing for exploration of the solution space. By leveraging the principles of evolution, genetic algorithms offer a versatile and robust approach to solving complex problems across various domains, from engineering and optimization to biology and beyond.
 
-A key feature of genetic algorithms is crossover, the exchange of multiple parameters between two candidate solutions to create a new offspring solution. Crossover proves challenging when solutions are not vectors of matrices of numbers, but also include graphs. Stanley and  Miikkulainen devised a method, NEAT, to crossover topologies when evolving artificial neural networks. Dinh et al. adapted NEAT to enable crossover when evolving gene regulatory networks. Here, the NEAT algorithm is adapted and explored with mass-action chemical reaction networks. In contrast to previous studies in different domains, the crossover method presented here does slightly reduces the success rate of evolution. 
+A key feature of genetic algorithms is crossover, the exchange of multiple parameters between two candidate solutions to create a new offspring solution. Crossover proves challenging when solutions are not vectors of matrices of numbers, but also include graphs. Stanley and  Miikkulainen devised a method, NEAT, to crossover topologies when evolving artificial neural networks \cite{stanley_evolving_2002}. Dinh et al. adapted NEAT to enable crossover when evolving gene regulatory networks \cite{dinh_effective_2015}. Here, the NEAT algorithm is adapted and explored with mass-action chemical reaction networks. In contrast to previous studies in different domains, the crossover method presented here does slightly reduces the success rate of evolution. 
 
-Speciation, though not essential to evolutionary algorithms, can improve their success by protecting innovations and allowing them time to develop into better solutions. This work also introduces a method for separating chemical reaction networks into species and explores the effect of speciation on evolutionary success. Separating similar chemical reaction networks into species significantly improves the sucess of the algorithm.
-
-\textbf{Some stuff about speciation}
+Speciation, though not essential to evolutionary algorithms, can improve their success by protecting innovations and allowing them time to develop into better solutions. This work also introduces a method for separating chemical reaction networks into species and explores the effect of speciation on evolutionary success.
 
 The purpose of this work it twofold: (1) to create a general purpose, easily customizable, module for evolving mass-action chemical reaction networks and (2) to explore the effects of crossover, speciation, and other hyperparameters on the success rate of the algorithm. Speciation is found to be essential to the success of the algorithm. In contrast to previous studies in different domains, the crossover method presented here does slightly reduces the success rate of evolution. 
 
-
 In addition to speciation and crossover, a variety of evolutionary hyperparameters are explored in evolving oscillatory mass-action networks. The evolutionary algorithm is packaged in a library written in the julia programming language \cite{bezanson2017julia}. It is highly configurable and allows users to easily specify settings via the command line for a simple json file. It can generate reaction networks to match a variety of time series data beyond oscillators.
-
-
-
-
-\section{Evolving Reaction Networks}
-The purpose of this work it twofold: (1) to create a general purpose, easily customizable, module for evolving mass-action chemical reaction networks and (2) to explore the effects of crossover,  speciation, and other hyperparameters on the success rate of the algorithm. Oscillatory chemical reaction networks were chosen as the target result of the evolutionary algorithm due to their biological relevance, poorly understood architectures (maybe??), and the presence of intermediary states (damped oscillations) which aids in gradual evolution.
-----
-
-Oscillatory behavior is useful in a variety of biological processes including p53, circadian rhythm, and cell cycle. But also, you might want to generate oscillators as a component in a syntehtic biology ciruit. But really, this isn't about oscillators, that's just the test case. You might want a certain behavior and don't know how to build a  network to get it. Well This algorithm is for you! 
-
-Other people have done similar things, but this is different. It starts with the concept of genetic algorithms, way back in 1975. These are algorithms to come up with optimization solutions. The algorithms kind of look like biologic evolution. You have a bunch of individuals, the fitter individuals share their genes and reproduce, less fit individuals die off, sometimes mutations occur and these can be either good or bad. Since then, the concept of genetic algorithms has been thoroughly explored, but here we present something slightly new. And that's how I'm going to get my PhD lol.
-
-This all starts with the NEAT algorithm which is a way of evolving neural networks to do stuff.  What's interesting about this is they claim to have meaningful crossover and they use speciation to protect innovation. Dinh et al somehwat adapted this appraoch to genetic circuits, but those are a much easier problem because they just have activation and inhibition. Here, I adapt this algorthim to mass-action networks. That's way harder because there is way more complexity. In the first case, you just have an edge that connects two nodes and a weight. In the second, you add that the edge can either be activating or inhibiting, but here we add that the edge could connect multiple nodes (in the case of everything beyond a uni-uni reaction) and the reaction weight depends on what nodes it connects. More on that later.
-
-I need to go over a bunch of times that this was done for a similar thing. Just as a quick review
-
 
 
 
@@ -601,7 +621,6 @@ I need to go over a bunch of times that this was done for a similar thing. Just 
     \caption[Overview of the evolution algorithm with speciation]{The evolutionary algorithm begins with a population of randomly generated reaction networks. These networks are then grouped into species and their fitness evaluated. The next generation is constructed by first selecting the top performing individuals from each species without modification. The rest of the subsequent generation is populated by networks that are modified by either crossover, mutation, or both. This new generation is then grouped into species based on structural similarity and the process repeats.}
     \label{fig:algo_description_crossover}
 \end{figure}
-
 
 \subsection{Encoding}
 Chemical reactions are represented as custom data structures that contain one or two reactants, one or two products, a rate constant, and a boolean value indicating if the reaction is active or inactive. Four types of mass-action reaction are possible: uni-uni (a single reactant to a single product), bi-uni (two reactants form a single product), uni-bi, and bi-bi. A reaction that is active participates in the network that it is part of. An inactive reaction is ``turned off" but remains part of the network as a historical record. It can be activated again or crossed over under certain circumstances. 
@@ -619,14 +638,23 @@ probability of 0.1, 0.4, 0.4, 0.1 for uni-uni, uni-bi, bi-uni, and bi-bi reactio
 \label{section: crossover}
 During crossover, two parent networks from the same species group are chosen to mate. Analogous to natural evolution, crossover is essential a means of changing more parameters simultaneously and to a greater degree. It injects for novelty into the offspring network compared to single mutations. This could either result in faster progress towards a good solution, or could interrupt progress by destroying decent solutions.
 
-Crossover occurs by examining each reaction in the parent networks. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reaction. If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent (table \ref{table:crossover_table}). 
-
 \begin{table}
 	\centering
     \includegraphics[width=12cm]{images/crossover_table.png}
     \caption[Crossover procedure]{Every reaction in the more fit network is passed down to the offspring network. If it occurs in both parent networks, the rate constant is randomly inherited from one parent or the other.}
     \label{table:crossover_table}
 \end{table}
+
+Crossover occurs by examining each reaction in the parent networks. If a reaction is present in both parents, the reaction will be passed down to the offspring network with the rate constant randomly chosen from one parent. If a reaction is present in the more fit parent, but not the less fit parent, the offspring network will inherit the reactio (figure \ref{figure:crossover_example}). If an inherited reaction is currently inactive meaning it was previously deleted during a mutation step), there is a 0.25 probability of the reaction becoming active again. If both parents are equally fit, one is randomly chosen to be the more fit parent (table \ref{table:crossover_table}). 
+
+
+\begin{table}
+	\centering
+    \includegraphics[width=12cm]{images/crossover_example.png}
+    \caption[Crossover example]{he topology of the more fit parent is passed to the offspring. Rate constants for reactions that are shared are passed down randomly.}
+    \label{figure:crossover_example}
+\end{table}
+
 
 A second crossover strategy for similar networks was tested in later trials. Networks that were members of the same species and had similar fitness score (within 5\% of each other) underwent a slightly different crossover process. All reactions that the two networks had in common were passed down to the offspring network with rate constants chosen randomly from one parent or the other. Reactions that occurred in one parent network but not the other had a 50\% chance of being passed down to the offspring network.
 
@@ -832,10 +860,11 @@ The maximum number of generations was doubled, from 800 to 1600, and evolution w
     \label{fig:1600_top_fitness}
 \end{figure}
 
-\subsection{fitness function with rate constants}
+\subsection{NOte about top network for species fitness and specation}
+In the 
 
-
-\subsection{Maybe: optimal parameters}
+\subsection{Evolving Oscillators with Optimal Settings}
+The experiments described above l
 
 \subsection{Matching Time Series Data}
 Beyond generating oscillators, the NetEvolve software is intended to implement an evolutionary algorithm for more broad systems biology problems. One application could be evolving reaction networks that match time series data. To test if NetEvolve could generate networks to match time series data, a simple, 3 chemical, 5 reaction synthetic network was constructed and its time series data collected (figure \ref{fig:groundtruth}). Then the NetEvolve software was given the time series data as an objective. 
@@ -892,13 +921,23 @@ One flaw of the existing iteration of NetEvolve is the tendency to add extraneou
 
 Additionally, the algorithm has demonstrated its ability to produced oscillators, but its ability to match other network behaviors is untested. It successfully generated a network to match simple time series data, but did not manage to recover the network that produced the data. More testing and algorithm development could improve NetEvolve's performance in tasks beyond generating oscillators. 
 
+Another possible application of NetEvolve is parameter fitting. NetEvolve can be supplied with seed networks for the initial population, in lieu of random networks. If time series to match is also supplied and the probability of changing the network's topology is set to zero, then NetEvolve would search only the parameter space. The distance metric for separating networks into species would have to be modified to include differences in parameters, as described previously.
+
 \section{Conclusion}
-Yay I did it.
-\\
+The NEAT algorithm for evolving artificial neural networks was successfully adapted to mass-action chemical reaction networks. The experimental results showed that speciation and elite selection drive evolutionary success. Unlike other domains, crossover negatively impacts evolution of oscillatory mass-action networks. 
+
+The adapted evolutionary algorithm is packaged in a julia module, NetEvolve, for easy use and customization. Compared to previous attempts to develop evolutionary algorithms for mass-action networks, NetEvolve has a considerably higher success rate and better performance.
+
+Future work will explore evolution of more complicated network behaviors. Other directions include improving the algorithm's ability to match time series data and exploring its ability to fit parameters for networks of fixed topology.
+
+\chapter{Summary}
+The primary goal of this research was to develop a novel algorithm for evolving mass-action networks, package the algorithm in a user-friendly software tool, and explore what aspects of the algorithm drove its success. This work was influenced by earlier work, described in chapter \ref{chap: cesium_paper}, which involved software to evolve oscillating mass-action networks. The software had a low success rate and poor computational performance. The software, NetEvolve, described in chapter \ref{chap: NetEvolve} addresses these issues and increases the success rate 10 fold. 
+
+In chapter \ref{chap: NetEvolve}, the novel evolutionary algorithm is probed to understand what aspect of it drive evolutionary success. Various parameters and slight algorithm adjustments were trialed and the rates of evolutionary success (trials that produced oscillators) were compared. It was found that speciation most effects the success rate by encouraging population diversity and protecting innovations. Elite selection was also essential for evolutionary success. Unlike previous works in other domains, crossover was found to be detrimental to the algorithm's success. Based on what was learned during these experiments, the algorithm was optimized resulting in an evolutionary success rate of 52\%.
 
 
-	
-\chapter{Logistic Considerations for NetEvolve}
+\begin{appendices}	
+\chapter{The NetEvolve Software}
 
 \section{Introduction}
 The purpose of this chapter is to briefly describe the logistics of acquiring, using, and customizing the NetEvolve software. Several settings and some applications not described in the previous chapter are mentioned here.
@@ -969,23 +1008,8 @@ julia --project=. run_evolution.jl --pathtosettings="/path/settings.json"
     \label{table:hyperparams}
 \end{table}
 
-\section{Additional Applications of NetEvolve}
-Chapter \ref{chap: NetEvolve} extensively demonstrated NetEvolve's ability to produce oscillating reaction networks, but the software was designed to be flexible for other uses. The user can supply a different time series, either another network behavior or a general time series, and use NetEvolve to generate a variety of networks to fit the timeseries.
 
-Additionally, NetEvolve can be used for parameter fitting. In this case, the user would supply a known network structure and set the probability of altering topology to zero. 
-
-- Intro
-- how to get the software
-- using the software
-	- quickstart
-	- Running with a bash script locally
-	- submitting to cluster
-- Uses:
-	- evolve general behaviors such as oscillator
-	- Match time series
-	- Parameter fitting with no topology change
-	
-- THings you can customize
+\end{appendices}	
 
 % Bibliography
 \bibliographystyle{plain}

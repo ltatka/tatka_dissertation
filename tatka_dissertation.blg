@@ -3,57 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tatka_dissertation.aux
 The style file: plain.bst
 Database file #1: researchbib.bib
-Warning--to sort, need author or key in circadianReview
-Warning--to sort, need author or key in circadianOverview
-Warning--empty author in circadianOverview
-Warning--empty author in circadianReview
 Warning--empty title in lotka-volterra
 Warning--empty publisher in lotka-volterra
-Warning--empty title in LEAP
-Warning--empty journal in francois_hakim_2004
-Warning--empty journal in nobile2013
 Warning--empty journal in pohlheim1994geatbx
 Warning--empty journal in andy2020
 Warning--empty year in Tyson2004
-You've used 85 entries,
+You've used 97 entries,
             2118 wiz_defined-function locations,
-            1042 strings with 19336 characters,
-and the built_in function-call counts, 28702 in all, are:
-= -- 2721
-> -- 1500
-< -- 8
-+ -- 601
-- -- 508
-* -- 2244
-:= -- 4874
-add.period$ -- 253
-call.type$ -- 85
-change.case$ -- 504
+            1117 strings with 21468 characters,
+and the built_in function-call counts, 33191 in all, are:
+= -- 3165
+> -- 1738
+< -- 11
++ -- 694
+- -- 588
+* -- 2575
+:= -- 5641
+add.period$ -- 295
+call.type$ -- 97
+change.case$ -- 580
 chr.to.int$ -- 0
-cite$ -- 97
-duplicate$ -- 994
-empty$ -- 2152
-format.name$ -- 508
-if$ -- 5822
+cite$ -- 102
+duplicate$ -- 1157
+empty$ -- 2472
+format.name$ -- 588
+if$ -- 6752
 int.to.chr$ -- 0
-int.to.str$ -- 85
-missing$ -- 85
-newline$ -- 423
-num.names$ -- 166
-pop$ -- 465
+int.to.str$ -- 97
+missing$ -- 98
+newline$ -- 487
+num.names$ -- 194
+pop$ -- 520
 preamble$ -- 1
-purify$ -- 424
+purify$ -- 488
 quote$ -- 0
-skip$ -- 696
+skip$ -- 819
 stack$ -- 0
-substring$ -- 1749
-swap$ -- 143
-text.length$ -- 8
+substring$ -- 2012
+swap$ -- 183
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 334
-warning$ -- 12
-while$ -- 247
-width$ -- 87
-write$ -- 906
-(There were 12 warnings)
+type$ -- 380
+warning$ -- 5
+while$ -- 290
+width$ -- 99
+write$ -- 1052
+(There were 5 warnings)
