@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Introduction to Chemical Reaction Network Modeling}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.1}align=nothyphenated}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Chemical Oscillators}{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}A Brief History}{6}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Dynamics}{8}{subsection.2.2.2}%
@@ -10,7 +10,7 @@
 \contentsline {subsubsection}{Negative Feedback Oscillators}{11}{section*.7}%
 \contentsline {subsubsection}{Relaxation Oscillators}{11}{section*.9}%
 \contentsline {subsection}{\numberline {2.2.4}Biological Relevance}{13}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Applications of Evolutionary and Genetic Algorithms in Systems Biology}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.3}align=nothyphenated}{14}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Tools for Evolutionary and Genetic Algorithms}{17}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Python Libraries}{17}{subsection.2.4.1}%
 \contentsline {subsubsection}{DEAP}{18}{section*.11}%
@@ -32,13 +32,13 @@
 \contentsline {section}{\numberline {2.6}Conclusion}{25}{section.2.6}%
 \contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{26}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Background}{26}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Methods}{28}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Model Representation}{29}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.2}Methods}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Model Representation}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Objective Function}{29}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}ODE Solver}{29}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Selection}{31}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Mutation}{31}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{32}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.6}Random Networks for Evolution}{31}{subsection.3.2.6}%
 \contentsline {subsection}{\numberline {3.2.7}Custom Evolution Algorithm}{33}{subsection.3.2.7}%
 \contentsline {subsection}{\numberline {3.2.8}Random Control Networks}{34}{subsection.3.2.8}%
 \contentsline {section}{\numberline {3.3}Results}{34}{section.3.3}%
@@ -64,9 +64,8 @@
 \contentsline {subsection}{\numberline {4.3.5}Tournament Selection}{67}{subsection.4.3.5}%
 \contentsline {subsection}{\numberline {4.3.6}Increased Population size}{68}{subsection.4.3.6}%
 \contentsline {subsection}{\numberline {4.3.7}More Generations}{69}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}NOte about top network for species fitness and specation}{69}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}Evolving Oscillators with Optimal Settings}{69}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Matching Time Series Data}{71}{subsection.4.3.10}%
+\contentsline {subsection}{\numberline {4.3.8}Evolving Oscillators with Optimal Settings}{69}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Matching Time Series Data}{71}{subsection.4.3.9}%
 \contentsline {section}{\numberline {4.4}Discussion}{75}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{78}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Summary}{79}{chapter.5}%

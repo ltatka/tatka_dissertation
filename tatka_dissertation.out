@@ -1,12 +1,12 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Introduction to Chemical Reaction Network Modeling}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.1}{align=nothyphenated}{chapter.2}% 3
 \BOOKMARK [1][-]{section.2.2}{Chemical Oscillators}{chapter.2}% 4
 \BOOKMARK [2][-]{subsection.2.2.1}{A Brief History}{section.2.2}% 5
 \BOOKMARK [2][-]{subsection.2.2.2}{Dynamics}{section.2.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.3}{Types of Oscillators}{section.2.2}% 7
 \BOOKMARK [2][-]{subsection.2.2.4}{Biological Relevance}{section.2.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Applications of Evolutionary and Genetic Algorithms in Systems Biology}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{align=nothyphenated}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.4}{Tools for Evolutionary and Genetic Algorithms}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.4.1}{Python Libraries}{section.2.4}% 11
 \BOOKMARK [2][-]{subsection.2.4.2}{Libraries in Other Languages}{section.2.4}% 12
@@ -46,14 +46,13 @@
 \BOOKMARK [2][-]{subsection.4.3.5}{Tournament Selection}{section.4.3}% 46
 \BOOKMARK [2][-]{subsection.4.3.6}{Increased Population size}{section.4.3}% 47
 \BOOKMARK [2][-]{subsection.4.3.7}{More Generations}{section.4.3}% 48
-\BOOKMARK [2][-]{subsection.4.3.8}{NOte about top network for species fitness and specation}{section.4.3}% 49
-\BOOKMARK [2][-]{subsection.4.3.9}{Evolving Oscillators with Optimal Settings}{section.4.3}% 50
-\BOOKMARK [2][-]{subsection.4.3.10}{Matching Time Series Data}{section.4.3}% 51
-\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 53
-\BOOKMARK [0][-]{chapter.5}{Summary}{}% 54
-\BOOKMARK [0][-]{section*.54}{Appendices}{}% 55
-\BOOKMARK [0][-]{appendix.1.A}{The NetEvolve Software}{}% 56
-\BOOKMARK [1][-]{section.1.A.1}{Introduction}{appendix.1.A}% 57
-\BOOKMARK [1][-]{section.1.A.2}{Download and Quick Start}{appendix.1.A}% 58
-\BOOKMARK [1][-]{section.1.A.3}{Further Customization}{appendix.1.A}% 59
+\BOOKMARK [2][-]{subsection.4.3.8}{Evolving Oscillators with Optimal Settings}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.9}{Matching Time Series Data}{section.4.3}% 50
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 52
+\BOOKMARK [0][-]{chapter.5}{Summary}{}% 53
+\BOOKMARK [0][-]{section*.54}{Appendices}{}% 54
+\BOOKMARK [0][-]{appendix.1.A}{The NetEvolve Software}{}% 55
+\BOOKMARK [1][-]{section.1.A.1}{Introduction}{appendix.1.A}% 56
+\BOOKMARK [1][-]{section.1.A.2}{Download and Quick Start}{appendix.1.A}% 57
+\BOOKMARK [1][-]{section.1.A.3}{Further Customization}{appendix.1.A}% 58

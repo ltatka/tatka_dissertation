@@ -4,6 +4,7 @@
 Stefano Allesina.
 \newblock chapter Generalized Lotka-Volterra.
 \newblock 2020.
+\newblock \url{https://stefanoallesina.github.io/Sao_Paulo_School/}.
 
 \bibitem{Alon2007}
 Uri Alon.
@@ -411,15 +412,15 @@ Luca Scrucca.
   parallelisation and islands evolution.
 \newblock {\em The R Journal}, 9(1):187--206, 2017.
 
-\bibitem{sharma_chemical_2006}
-Monika Sharma and Praveen Kumar.
-\newblock Chemical oscillations: 1. {Basic} principles and examples.
-\newblock {\em Reson}, 11(2):43--50, February 2006.
-
 \bibitem{Sharma2006}
 Monika Sharma and Praveen Kumar.
 \newblock Chemical oscillations: 1. basic principles and examples.
 \newblock {\em Resonance}, 11(2):43–50, February 2006.
+
+\bibitem{sharma_chemical_2006}
+Monika Sharma and Praveen Kumar.
+\newblock Chemical oscillations: 1. {Basic} principles and examples.
+\newblock {\em Reson}, 11(2):43--50, February 2006.
 
 \bibitem{Smedler2014}
 Erik Smedler and Per Uhlén.

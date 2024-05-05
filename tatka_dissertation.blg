@@ -10,16 +10,16 @@ Warning--empty journal in andy2020
 Warning--empty year in Tyson2004
 You've used 97 entries,
             2118 wiz_defined-function locations,
-            1117 strings with 21468 characters,
-and the built_in function-call counts, 33191 in all, are:
-= -- 3165
+            1118 strings with 21525 characters,
+and the built_in function-call counts, 33200 in all, are:
+= -- 3167
 > -- 1738
 < -- 11
 + -- 694
 - -- 588
 * -- 2575
-:= -- 5641
-add.period$ -- 295
+:= -- 5643
+add.period$ -- 296
 call.type$ -- 97
 change.case$ -- 580
 chr.to.int$ -- 0
@@ -27,13 +27,13 @@ cite$ -- 102
 duplicate$ -- 1157
 empty$ -- 2472
 format.name$ -- 588
-if$ -- 6752
+if$ -- 6754
 int.to.chr$ -- 0
 int.to.str$ -- 97
 missing$ -- 98
-newline$ -- 487
+newline$ -- 488
 num.names$ -- 194
-pop$ -- 520
+pop$ -- 519
 preamble$ -- 1
 purify$ -- 488
 quote$ -- 0
@@ -48,5 +48,5 @@ type$ -- 380
 warning$ -- 5
 while$ -- 290
 width$ -- 99
-write$ -- 1052
+write$ -- 1054
 (There were 5 warnings)
