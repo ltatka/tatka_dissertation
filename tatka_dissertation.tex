@@ -10,6 +10,9 @@
 %\onehalfspacing
 \doublespacing
 
+% Don't break words in section headers
+\usepackage[raggedright]{titlesec}
+
 % Figures
 \usepackage{caption}
 \usepackage{graphicx}
@@ -141,7 +144,7 @@ This work contributes to the understanding of evolutionary algorithms applied to
 This chapter provides context for the major themes of this dissertation: chemical oscillators and evolutionary algorithms. This chapter begins with a brief introduction to computational chemical reaction network modeling. Section \ref{section:intro_oscillators} describes the motivations for focusing on oscillatory systems. Lastly, sections \ref{section:intro_GA}, \ref{section:tools_GA}, and \ref{section:tools_networks} describe the current state of evolutionary algorithms in systems biology, including relevant software tools.
 
 
-\section[align=nothyphenated]{Introduction to Chemical Reaction Network Modeling}
+\section{Introduction to Chemical Reaction Network Modeling}
 \label{section:intro_crn}
 The projects described here focus on computational models of (bio)chemical reaction networks (CRNs). Although several modeling paradigms exist to describe CRNs, this work uses CRNs represented by systems of ordinary differential equations. A CRN is a set of chemical reactions $R_i$ where i is the index over the range 1 to n, the total number of reactions in the network . Reactions involve the chemical species of the network, $S_j$ where j is the index of each species from 1 to the total number of species. A reaction is then represented as follows:
 \begin{equation*}
@@ -284,7 +287,7 @@ Synthetic oscillatory systems offer considerable potential for advancing biomedi
 
 
 
-\section[align=nothyphenated]{Applications of Evolutionary Algorithms in \\Systems Biology}
+\section{Applications of Evolutionary Algorithms in Systems Biology}
 \label{section:intro_GA}
 Genetic and evolutionary algorithms are optimization techniques inspired by the principles of natural selection and genetics. These algorithms mimic the process of natural evolution to solve complex optimization problems across various domains. At the core of genetic algorithms lies the concept of natural selection, a fundamental mechanism driving evolution in biological systems. Natural selection operates on populations of individuals, favoring those with traits that confer a reproductive advantage. Over successive generations, beneficial traits become more prevalent in the population, leading to the emergence of better-adapted individuals.
 

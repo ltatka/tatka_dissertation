@@ -1,38 +1,38 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}align=nothyphenated}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Introduction to Chemical Reaction Network Modeling}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Chemical Oscillators}{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}A Brief History}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Dynamics}{8}{subsection.2.2.2}%
-\contentsline {subsubsection}{Negative Feedback and Time Delay}{9}{section*.4}%
-\contentsline {subsubsection}{Destabilizing Steady State}{9}{section*.5}%
-\contentsline {subsection}{\numberline {2.2.3}Types of Oscillators}{10}{subsection.2.2.3}%
-\contentsline {subsubsection}{Negative Feedback Oscillators}{11}{section*.7}%
-\contentsline {subsubsection}{Relaxation Oscillators}{11}{section*.9}%
-\contentsline {subsection}{\numberline {2.2.4}Biological Relevance}{13}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}align=nothyphenated}{14}{section.2.3}%
+\contentsline {subsection}{\numberline {2.2.2}Dynamics}{9}{subsection.2.2.2}%
+\contentsline {subsubsection}{Negative Feedback and Time Delay}{9}{subsubsection*.4}%
+\contentsline {subsubsection}{Destabilizing Steady State}{9}{subsubsection*.5}%
+\contentsline {subsection}{\numberline {2.2.3}Types of Oscillators}{11}{subsection.2.2.3}%
+\contentsline {subsubsection}{Negative Feedback Oscillators}{11}{subsubsection*.7}%
+\contentsline {subsubsection}{Relaxation Oscillators}{12}{subsubsection*.9}%
+\contentsline {subsection}{\numberline {2.2.4}Biological Relevance}{12}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Applications of Evolutionary Algorithms in Systems Biology}{14}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Tools for Evolutionary and Genetic Algorithms}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Python Libraries}{17}{subsection.2.4.1}%
-\contentsline {subsubsection}{DEAP}{18}{section*.11}%
-\contentsline {subsubsection}{Pyevolve}{18}{section*.12}%
-\contentsline {subsubsection}{EasyGA}{19}{section*.13}%
-\contentsline {subsubsection}{LEAP}{19}{section*.14}%
-\contentsline {subsubsection}{PyGAD}{20}{section*.15}%
-\contentsline {subsubsection}{EvoX}{20}{section*.16}%
+\contentsline {subsection}{\numberline {2.4.1}Python Libraries}{18}{subsection.2.4.1}%
+\contentsline {subsubsection}{DEAP}{18}{subsubsection*.11}%
+\contentsline {subsubsection}{Pyevolve}{19}{subsubsection*.12}%
+\contentsline {subsubsection}{EasyGA}{19}{subsubsection*.13}%
+\contentsline {subsubsection}{LEAP}{20}{subsubsection*.14}%
+\contentsline {subsubsection}{PyGAD}{20}{subsubsection*.15}%
+\contentsline {subsubsection}{EvoX}{21}{subsubsection*.16}%
 \contentsline {subsection}{\numberline {2.4.2}Libraries in Other Languages}{21}{subsection.2.4.2}%
-\contentsline {subsubsection}{Evolutionary Computation in Java}{21}{section*.17}%
-\contentsline {subsubsection}{JMetal}{21}{section*.18}%
-\contentsline {subsubsection}{Bio-Inspired Algorithms Building Blocks}{22}{section*.19}%
-\contentsline {subsubsection}{Many-Objective Genetic Metric-based Algorithms}{22}{section*.20}%
-\contentsline {subsubsection}{Genetic and Evolutionary Algorithm Toolbox for use with MATLAB}{22}{section*.21}%
-\contentsline {subsubsection}{Genetic Algorithms}{23}{section*.22}%
-\contentsline {subsubsection}{GALGO}{23}{section*.23}%
-\contentsline {subsubsection}{Evolutionary.jl}{23}{section*.24}%
+\contentsline {subsubsection}{Evolutionary Computation in Java}{21}{subsubsection*.17}%
+\contentsline {subsubsection}{JMetal}{22}{subsubsection*.18}%
+\contentsline {subsubsection}{Bio-Inspired Algorithms Building Blocks}{22}{subsubsection*.19}%
+\contentsline {subsubsection}{Many-Objective Genetic Metric-based Algorithms}{22}{subsubsection*.20}%
+\contentsline {subsubsection}{Genetic and Evolutionary Algorithm Toolbox for use with MATLAB}{22}{subsubsection*.21}%
+\contentsline {subsubsection}{Genetic Algorithms}{23}{subsubsection*.22}%
+\contentsline {subsubsection}{GALGO}{23}{subsubsection*.23}%
+\contentsline {subsubsection}{Evolutionary.jl}{24}{subsubsection*.24}%
 \contentsline {section}{\numberline {2.5}Julia Packages for Reaction Network Modeling}{24}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Conclusion}{25}{section.2.6}%
 \contentsline {chapter}{\numberline {3}A Public Database of Evolved Oscillatory Reaction Networks}{26}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Background}{26}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Methods}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Methods}{28}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Representation}{28}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Objective Function}{29}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}ODE Solver}{29}{subsection.3.2.3}%
@@ -69,7 +69,7 @@
 \contentsline {section}{\numberline {4.4}Discussion}{75}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Conclusion}{78}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Summary}{79}{chapter.5}%
-\contentsline {chapter}{Appendices}{80}{section*.54}%
+\contentsline {chapter}{Appendices}{80}{section*.52}%
 \contentsline {chapter}{\numberline {A}The NetEvolve Software}{81}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}Introduction}{81}{section.1.A.1}%
 \contentsline {section}{\numberline {A.2}Download and Quick Start}{81}{section.1.A.2}%
