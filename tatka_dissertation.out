@@ -38,36 +38,37 @@
 \BOOKMARK [2][-]{subsection.4.2.6}{ODE Solver}{section.4.2}% 38
 \BOOKMARK [2][-]{subsection.4.2.7}{Reproduction}{section.4.2}% 39
 \BOOKMARK [2][-]{subsection.4.2.8}{Output}{section.4.2}% 40
-\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{Verifying Speciation}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.2}{Speciation Effects}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.3}{Crossover}{section.4.3}% 44
-\BOOKMARK [2][-]{subsection.4.3.4}{Elitist Selection}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.5}{Tournament Selection}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.6}{Increased Population size}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.7}{More Generations}{section.4.3}% 48
-\BOOKMARK [2][-]{subsection.4.3.8}{Evolving Oscillators with Optimal Settings}{section.4.3}% 49
-\BOOKMARK [2][-]{subsection.4.3.9}{Matching Time Series Data}{section.4.3}% 50
-\BOOKMARK [2][-]{subsection.4.3.10}{Parameter Fitting}{section.4.3}% 51
-\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 52
-\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 53
-\BOOKMARK [0][-]{chapter.5}{Adapting Credibility Standards to Computational Systems Biology}{}% 54
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{Current Standards in Systems Biology}{chapter.5}% 56
-\BOOKMARK [2][-]{subsection.5.2.1}{Model Representation}{section.5.2}% 57
-\BOOKMARK [2][-]{subsection.5.2.2}{Annotation}{section.5.2}% 58
-\BOOKMARK [2][-]{subsection.5.2.3}{Simulation and Parameter Estimation}{section.5.2}% 59
-\BOOKMARK [2][-]{subsection.5.2.4}{Dissemination}{section.5.2}% 60
-\BOOKMARK [1][-]{section.5.3}{Credibility Guidelines in Systems Biology}{chapter.5}% 61
-\BOOKMARK [1][-]{section.5.4}{Qualitative Credibility Assessment in Other Modeling Fields}{chapter.5}% 62
-\BOOKMARK [2][-]{subsection.5.4.1}{NASA Credibility Assessment Scale}{section.5.4}% 63
-\BOOKMARK [2][-]{subsection.5.4.2}{Credibility Standards for Medical Models}{section.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.4.3}{Current Tools for Systems Biology Model Testing}{section.5.4}% 65
-\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 66
-\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 67
-\BOOKMARK [0][-]{chapter.6}{Summary}{}% 68
-\BOOKMARK [0][-]{section*.76}{Appendices}{}% 69
-\BOOKMARK [0][-]{appendix.1.A}{The ReactionNetworkEvolution.jl Software}{}% 70
-\BOOKMARK [1][-]{section.1.A.1}{Introduction}{appendix.1.A}% 71
-\BOOKMARK [1][-]{section.1.A.2}{Download and Quick Start}{appendix.1.A}% 72
-\BOOKMARK [1][-]{section.1.A.3}{Further Customization}{appendix.1.A}% 73
+\BOOKMARK [2][-]{subsection.4.2.9}{Success Metrics}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{Results}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Verifying Speciation}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Speciation Effects}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.3}{Crossover}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.4}{Elitist Selection}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.5}{Tournament Selection}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.6}{Increased Population size}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.7}{More Generations}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.8}{Evolving Oscillators with Optimal Settings}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.9}{Matching Time Series Data}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.10}{Parameter Fitting}{section.4.3}% 52
+\BOOKMARK [1][-]{section.4.4}{Discussion}{chapter.4}% 53
+\BOOKMARK [1][-]{section.4.5}{Conclusion}{chapter.4}% 54
+\BOOKMARK [0][-]{chapter.5}{Adapting Credibility Standards to Computational Systems Biology}{}% 55
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.2}{Current Standards in Systems Biology}{chapter.5}% 57
+\BOOKMARK [2][-]{subsection.5.2.1}{Model Representation}{section.5.2}% 58
+\BOOKMARK [2][-]{subsection.5.2.2}{Annotation}{section.5.2}% 59
+\BOOKMARK [2][-]{subsection.5.2.3}{Simulation and Parameter Estimation}{section.5.2}% 60
+\BOOKMARK [2][-]{subsection.5.2.4}{Dissemination}{section.5.2}% 61
+\BOOKMARK [1][-]{section.5.3}{Credibility Guidelines in Systems Biology}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.4}{Qualitative Credibility Assessment in Other Modeling Fields}{chapter.5}% 63
+\BOOKMARK [2][-]{subsection.5.4.1}{NASA Credibility Assessment Scale}{section.5.4}% 64
+\BOOKMARK [2][-]{subsection.5.4.2}{Credibility Standards for Medical Models}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.3}{Current Tools for Systems Biology Model Testing}{section.5.4}% 66
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.6}{Conclusion}{chapter.5}% 68
+\BOOKMARK [0][-]{chapter.6}{Summary}{}% 69
+\BOOKMARK [0][-]{section*.76}{Appendices}{}% 70
+\BOOKMARK [0][-]{appendix.1.A}{The ReactionNetworkEvolution.jl Software}{}% 71
+\BOOKMARK [1][-]{section.1.A.1}{Introduction}{appendix.1.A}% 72
+\BOOKMARK [1][-]{section.1.A.2}{Download and Quick Start}{appendix.1.A}% 73
+\BOOKMARK [1][-]{section.1.A.3}{Further Customization}{appendix.1.A}% 74
