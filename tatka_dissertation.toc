@@ -50,72 +50,72 @@
 \contentsline {section}{\numberline {4.2}Methods}{47}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Encoding}{47}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Mutation}{48}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Crossover}{48}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Crossover}{49}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Speciation}{51}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Objective Function}{52}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6}ODE Solver}{53}{subsection.4.2.6}%
 \contentsline {subsection}{\numberline {4.2.7}Reproduction}{53}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Output}{54}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.8}Output}{55}{subsection.4.2.8}%
 \contentsline {subsection}{\numberline {4.2.9}Success Metrics}{55}{subsection.4.2.9}%
 \contentsline {section}{\numberline {4.3}Results}{56}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Verifying Speciation}{56}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Speciation Effects}{61}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Crossover}{64}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Elitist Selection}{67}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Tournament Selection}{68}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Increased Population size}{69}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}More Generations}{71}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Evolving Oscillators with Optimal Settings}{71}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}Fitting Time Series Data}{74}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}Parameter Fitting}{80}{subsection.4.3.10}%
-\contentsline {section}{\numberline {4.4}Discussion}{82}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Conclusion}{86}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Adapting Credibility Standards to Computational Systems Biology}{88}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{88}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Current Standards in Systems Biology}{89}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Model Representation}{90}{subsection.5.2.1}%
-\contentsline {subsubsection}{SBML}{90}{subsubsection*.58}%
-\contentsline {subsubsection}{CellML}{91}{subsubsection*.59}%
-\contentsline {subsubsection}{BioPAX}{92}{subsubsection*.60}%
-\contentsline {subsection}{\numberline {5.2.2}Annotation}{92}{subsection.5.2.2}%
-\contentsline {subsubsection}{MIRIAM}{93}{subsubsection*.61}%
-\contentsline {subsubsection}{Systems Biology Ontology (SBO)}{94}{subsubsection*.62}%
-\contentsline {subsubsection}{OMEX}{94}{subsubsection*.63}%
-\contentsline {subsubsection}{Annotation in CellML and SBML}{95}{subsubsection*.64}%
-\contentsline {subsection}{\numberline {5.2.3}Simulation and Parameter Estimation}{96}{subsection.5.2.3}%
-\contentsline {subsubsection}{MIASE}{96}{subsubsection*.65}%
-\contentsline {subsubsection}{KiSAO}{96}{subsubsection*.66}%
-\contentsline {subsubsection}{SED-ML}{97}{subsubsection*.67}%
-\contentsline {subsubsection}{PEtab}{97}{subsubsection*.68}%
-\contentsline {subsection}{\numberline {5.2.4}Dissemination}{98}{subsection.5.2.4}%
-\contentsline {subsubsection}{MIRIAM Curation Guidelines}{98}{subsubsection*.69}%
-\contentsline {subsubsection}{FAIR}{98}{subsubsection*.70}%
-\contentsline {subsubsection}{COMBINE Archives}{99}{subsubsection*.71}%
-\contentsline {section}{\numberline {5.3}Credibility Guidelines in Systems Biology}{100}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Qualitative Credibility Assessment in Other Modeling Fields}{101}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}NASA Credibility Assessment Scale}{102}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Credibility Standards for Medical Models}{104}{subsection.5.4.2}%
-\contentsline {subsubsection}{ASME V\&V 40}{105}{subsubsection*.74}%
-\contentsline {subsubsection}{FDA Guidance on Computational Model Credibility in Medical Devices}{106}{subsubsection*.75}%
-\contentsline {subsubsection}{EMA Guidelines for PBPK Models}{107}{subsubsection*.76}%
-\contentsline {subsection}{\numberline {5.4.3}Current Tools for Systems Biology Model Testing}{108}{subsection.5.4.3}%
-\contentsline {subsubsection}{MEMOTE}{108}{subsubsection*.77}%
-\contentsline {subsubsection}{FROG Analysis}{109}{subsubsection*.78}%
-\contentsline {section}{\numberline {5.5}Discussion}{110}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Conclusion}{111}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Summary}{113}{chapter.6}%
-\contentsline {chapter}{Appendices}{114}{section*.79}%
-\contentsline {chapter}{\numberline {A}The ReactionNetworkEvolution.jl Software}{115}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}Introduction}{115}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}Download and Quick Start}{115}{section.1.A.2}%
-\contentsline {section}{\numberline {A.3}Further Customization}{119}{section.1.A.3}%
-\contentsline {section}{\numberline {A.4}Fit Arbitrary Timeseries Data}{119}{section.1.A.4}%
-\contentsline {section}{\numberline {A.5}Parameter Fitting}{121}{section.1.A.5}%
-\contentsline {section}{\numberline {A.6}Post-Processing}{121}{section.1.A.6}%
-\contentsline {subsection}{\numberline {A.6.1}Python Utilities Sub-Package}{122}{subsection.1.A.6.1}%
-\contentsline {subsubsection}{evaluate\_oscillators(path: str)}{122}{subsubsection*.82}%
-\contentsline {subsubsection}{evaluate\_fitness\_cutoff(path: str, cutoff: float)}{122}{subsubsection*.83}%
-\contentsline {subsubsection}{sort\_by\_fitness(path: str)}{123}{subsubsection*.84}%
-\contentsline {subsubsection}{plot\_timeseries(input, start=0, end=1, numpoints=200, savepath=None)}{123}{subsubsection*.85}%
-\contentsline {subsubsection}{plot\_fitness(path: str, limit: int=None, savepath: str=None)}{123}{subsubsection*.86}%
-\contentsline {subsubsection}{prune\_models(path: str)}{124}{subsubsection*.87}%
+\contentsline {subsection}{\numberline {4.3.2}Speciation Effects}{59}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Crossover}{65}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Elitist Selection}{68}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Tournament Selection}{69}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Increased Population size}{70}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}More Generations}{72}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Evolving Oscillators with Optimal Settings}{72}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}Fitting Time Series Data}{75}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}Parameter Fitting}{81}{subsection.4.3.10}%
+\contentsline {section}{\numberline {4.4}Discussion}{83}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Conclusion}{87}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Adapting Credibility Standards to Computational Systems Biology}{89}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{89}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Current Standards in Systems Biology}{90}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Model Representation}{91}{subsection.5.2.1}%
+\contentsline {subsubsection}{SBML}{91}{subsubsection*.58}%
+\contentsline {subsubsection}{CellML}{92}{subsubsection*.59}%
+\contentsline {subsubsection}{BioPAX}{93}{subsubsection*.60}%
+\contentsline {subsection}{\numberline {5.2.2}Annotation}{93}{subsection.5.2.2}%
+\contentsline {subsubsection}{MIRIAM}{94}{subsubsection*.61}%
+\contentsline {subsubsection}{Systems Biology Ontology (SBO)}{95}{subsubsection*.62}%
+\contentsline {subsubsection}{OMEX}{95}{subsubsection*.63}%
+\contentsline {subsubsection}{Annotation in CellML and SBML}{96}{subsubsection*.64}%
+\contentsline {subsection}{\numberline {5.2.3}Simulation and Parameter Estimation}{97}{subsection.5.2.3}%
+\contentsline {subsubsection}{MIASE}{97}{subsubsection*.65}%
+\contentsline {subsubsection}{KiSAO}{97}{subsubsection*.66}%
+\contentsline {subsubsection}{SED-ML}{98}{subsubsection*.67}%
+\contentsline {subsubsection}{PEtab}{98}{subsubsection*.68}%
+\contentsline {subsection}{\numberline {5.2.4}Dissemination}{99}{subsection.5.2.4}%
+\contentsline {subsubsection}{MIRIAM Curation Guidelines}{99}{subsubsection*.69}%
+\contentsline {subsubsection}{FAIR}{99}{subsubsection*.70}%
+\contentsline {subsubsection}{COMBINE Archives}{100}{subsubsection*.71}%
+\contentsline {section}{\numberline {5.3}Credibility Guidelines in Systems Biology}{101}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Qualitative Credibility Assessment in Other Modeling Fields}{102}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}NASA Credibility Assessment Scale}{103}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Credibility Standards for Medical Models}{105}{subsection.5.4.2}%
+\contentsline {subsubsection}{ASME V\&V 40}{106}{subsubsection*.74}%
+\contentsline {subsubsection}{FDA Guidance on Computational Model Credibility in Medical Devices}{107}{subsubsection*.75}%
+\contentsline {subsubsection}{EMA Guidelines for PBPK Models}{108}{subsubsection*.76}%
+\contentsline {subsection}{\numberline {5.4.3}Current Tools for Systems Biology Model Testing}{109}{subsection.5.4.3}%
+\contentsline {subsubsection}{MEMOTE}{109}{subsubsection*.77}%
+\contentsline {subsubsection}{FROG Analysis}{110}{subsubsection*.78}%
+\contentsline {section}{\numberline {5.5}Discussion}{111}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Conclusion}{112}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Summary}{114}{chapter.6}%
+\contentsline {chapter}{Appendices}{115}{section*.79}%
+\contentsline {chapter}{\numberline {A}The ReactionNetworkEvolution.jl Software}{116}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}Introduction}{116}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}Download and Quick Start}{116}{section.1.A.2}%
+\contentsline {section}{\numberline {A.3}Further Customization}{120}{section.1.A.3}%
+\contentsline {section}{\numberline {A.4}Fit Arbitrary Timeseries Data}{120}{section.1.A.4}%
+\contentsline {section}{\numberline {A.5}Parameter Fitting}{122}{section.1.A.5}%
+\contentsline {section}{\numberline {A.6}Post-Processing}{122}{section.1.A.6}%
+\contentsline {subsection}{\numberline {A.6.1}Python Utilities Sub-Package}{123}{subsection.1.A.6.1}%
+\contentsline {subsubsection}{evaluate\_oscillators(path: str)}{123}{subsubsection*.82}%
+\contentsline {subsubsection}{evaluate\_fitness\_cutoff(path: str, cutoff: float)}{123}{subsubsection*.83}%
+\contentsline {subsubsection}{sort\_by\_fitness(path: str)}{124}{subsubsection*.84}%
+\contentsline {subsubsection}{plot\_timeseries(input, start=0, end=1, numpoints=200, savepath=None)}{124}{subsubsection*.85}%
+\contentsline {subsubsection}{plot\_fitness(path: str, limit: int=None, savepath: str=None)}{124}{subsubsection*.86}%
+\contentsline {subsubsection}{prune\_models(path: str)}{125}{subsubsection*.87}%

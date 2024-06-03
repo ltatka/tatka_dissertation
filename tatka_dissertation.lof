@@ -20,22 +20,22 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive $\delta $ maintains the target number of species}}{58}{figure.caption.40}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Average inter-species distance over time}}{60}{figure.caption.41}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Average intra-species distance over time}}{61}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Unique networks with and without speciation}}{62}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Portion of top network over time, with and without speciation}}{63}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Evolutionary success rate with varying target species numbers}}{65}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Evolutionary success rate with different crossover strategies}}{67}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Evolutionary success rate with different levels of elitist selection}}{68}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Evolutionary success rates with tournament selection and speciation}}{70}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Average top fitness over 1600 generations}}{72}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Time series data of evolved oscillators}}{73}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Examples of oscillatory networks and their time series}}{75}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Fitness trajectories of successful evolution trials}}{76}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces A ground truth synthetic network and its time series}}{77}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces The 12 trials that most closely matched the time series data}}{78}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Time series of the ground truth network compared to the best evolved network}}{79}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces The ground truth network compared to the best evolved network}}{80}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Unique networks with and without speciation}}{63}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Portion of top network over time, with and without speciation}}{64}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Evolutionary success rate with varying target species numbers}}{66}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Evolutionary success rate with different crossover strategies}}{68}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Evolutionary success rate with different levels of elitist selection}}{69}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Evolutionary success rates with tournament selection and speciation}}{71}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Average top fitness over 1600 generations}}{73}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Time series data of evolved oscillators}}{74}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Examples of oscillatory networks and their time series}}{76}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Fitness trajectories of successful evolution trials}}{77}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces A ground truth synthetic network and its time series}}{78}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces The 12 trials that most closely matched the time series data}}{79}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Time series of the ground truth network compared to the best evolved network}}{80}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces The ground truth network compared to the best evolved network}}{81}{figure.caption.56}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The Committee on Credible Practice of Modeling and Simulation in Healthcare 10 rules of model credibility.\relax }}{101}{figure.caption.72}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Categories of the NASA Credibility Assessment Scale (CAS)\relax }}{103}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The Committee on Credible Practice of Modeling and Simulation in Healthcare 10 rules of model credibility.\relax }}{102}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Categories of the NASA Credibility Assessment Scale (CAS)\relax }}{104}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
