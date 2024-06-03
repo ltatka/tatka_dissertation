@@ -27,12 +27,15 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Evolutionary success rate with different levels of elitist selection}}{68}{figure.caption.47}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Evolutionary success rates with tournament selection and speciation}}{70}{figure.caption.48}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Average top fitness over 1600 generations}}{72}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces A ground truth synthetic network and its time series}}{73}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces The 12 trials that most closely matched the time series data}}{74}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Time series of the ground truth network compared to the best evolved network}}{75}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces The ground truth network compared to the best evolved network}}{76}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Time series data of evolved oscillators}}{73}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Examples of oscillatory networks and their time series}}{75}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Fitness trajectories of successful evolution trials}}{76}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces A ground truth synthetic network and its time series}}{77}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces The 12 trials that most closely matched the time series data}}{78}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Time series of the ground truth network compared to the best evolved network}}{79}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces The ground truth network compared to the best evolved network}}{80}{figure.caption.56}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces The Committee on Credible Practice of Modeling and Simulation in Healthcare 10 rules of model credibility.\relax }}{96}{figure.caption.69}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Categories of the NASA Credibility Assessment Scale (CAS)\relax }}{98}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The Committee on Credible Practice of Modeling and Simulation in Healthcare 10 rules of model credibility.\relax }}{101}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Categories of the NASA Credibility Assessment Scale (CAS)\relax }}{103}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
